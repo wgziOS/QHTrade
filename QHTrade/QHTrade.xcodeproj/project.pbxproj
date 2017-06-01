@@ -17,6 +17,12 @@
 		B2A215111EDEA9E900B19A4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A2150F1EDEA9E900B19A4A /* LaunchScreen.storyboard */; };
 		B2A2151C1EDEA9E900B19A4A /* QHTradeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2151B1EDEA9E900B19A4A /* QHTradeTests.m */; };
 		B2A215271EDEA9E900B19A4A /* QHTradeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A215261EDEA9E900B19A4A /* QHTradeUITests.m */; };
+		B2F205DC1EDFFEC800FA4D52 /* PersonalCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F205D41EDFFEC800FA4D52 /* PersonalCollectionCell.m */; };
+		B2F205DD1EDFFEC800FA4D52 /* PersonalCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F205D51EDFFEC800FA4D52 /* PersonalCollectionCell.xib */; };
+		B2F205DE1EDFFEC800FA4D52 /* PersonalFirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F205D71EDFFEC800FA4D52 /* PersonalFirstCell.m */; };
+		B2F205DF1EDFFEC800FA4D52 /* PersonalFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F205D81EDFFEC800FA4D52 /* PersonalFirstCell.xib */; };
+		B2F205E01EDFFEC800FA4D52 /* PersonalSecondCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F205DA1EDFFEC800FA4D52 /* PersonalSecondCell.m */; };
+		B2F205E11EDFFEC800FA4D52 /* PersonalSecondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F205DB1EDFFEC800FA4D52 /* PersonalSecondCell.xib */; };
 		B73AFA0A506780FED210E1D0 /* Pods_QHTrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972BB4CEA1349E67DFAA5B40 /* Pods_QHTrade.framework */; };
 		CEF330EE1EDF9B720032F0EF /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF330ED1EDF9B720032F0EF /* UIImage+Extension.m */; };
 		CEF330F11EDF9BC60032F0EF /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF330F01EDF9BC60032F0EF /* UIView+Extension.m */; };
@@ -75,6 +81,15 @@
 		B2A215221EDEA9E900B19A4A /* QHTradeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QHTradeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A215261EDEA9E900B19A4A /* QHTradeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QHTradeUITests.m; sourceTree = "<group>"; };
 		B2A215281EDEA9E900B19A4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2F205D31EDFFEC800FA4D52 /* PersonalCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCollectionCell.h; sourceTree = "<group>"; };
+		B2F205D41EDFFEC800FA4D52 /* PersonalCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCollectionCell.m; sourceTree = "<group>"; };
+		B2F205D51EDFFEC800FA4D52 /* PersonalCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalCollectionCell.xib; sourceTree = "<group>"; };
+		B2F205D61EDFFEC800FA4D52 /* PersonalFirstCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalFirstCell.h; sourceTree = "<group>"; };
+		B2F205D71EDFFEC800FA4D52 /* PersonalFirstCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalFirstCell.m; sourceTree = "<group>"; };
+		B2F205D81EDFFEC800FA4D52 /* PersonalFirstCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalFirstCell.xib; sourceTree = "<group>"; };
+		B2F205D91EDFFEC800FA4D52 /* PersonalSecondCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalSecondCell.h; sourceTree = "<group>"; };
+		B2F205DA1EDFFEC800FA4D52 /* PersonalSecondCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalSecondCell.m; sourceTree = "<group>"; };
+		B2F205DB1EDFFEC800FA4D52 /* PersonalSecondCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalSecondCell.xib; sourceTree = "<group>"; };
 		CEF330EC1EDF9B720032F0EF /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		CEF330ED1EDF9B720032F0EF /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		CEF330EF1EDF9BC60032F0EF /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -163,6 +178,15 @@
 		B21BD2C11EDFB9E500BAD836 /* PersonalCenter */ = {
 			isa = PBXGroup;
 			children = (
+				B2F205D31EDFFEC800FA4D52 /* PersonalCollectionCell.h */,
+				B2F205D41EDFFEC800FA4D52 /* PersonalCollectionCell.m */,
+				B2F205D51EDFFEC800FA4D52 /* PersonalCollectionCell.xib */,
+				B2F205D61EDFFEC800FA4D52 /* PersonalFirstCell.h */,
+				B2F205D71EDFFEC800FA4D52 /* PersonalFirstCell.m */,
+				B2F205D81EDFFEC800FA4D52 /* PersonalFirstCell.xib */,
+				B2F205D91EDFFEC800FA4D52 /* PersonalSecondCell.h */,
+				B2F205DA1EDFFEC800FA4D52 /* PersonalSecondCell.m */,
+				B2F205DB1EDFFEC800FA4D52 /* PersonalSecondCell.xib */,
 				B21BD2C31EDFB9F500BAD836 /* PersonalViewModel.h */,
 				B21BD2C21EDFB9F500BAD836 /* PersonalViewModel.m */,
 				B21BD2C61EDFB9F500BAD836 /* PersonalViewController.h */,
@@ -432,7 +456,7 @@
 				TargetAttributes = {
 					B2A214FD1EDEA9E900B19A4A = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = KXB9LY2JET;
+						DevelopmentTeam = RG8JYDVCLT;
 						ProvisioningStyle = Automatic;
 					};
 					B2A215161EDEA9E900B19A4A = {
@@ -475,8 +499,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2A215111EDEA9E900B19A4A /* LaunchScreen.storyboard in Resources */,
+				B2F205E11EDFFEC800FA4D52 /* PersonalSecondCell.xib in Resources */,
 				B21BD2CA1EDFB9F500BAD836 /* PersonalViewController.xib in Resources */,
 				B2A2150E1EDEA9E900B19A4A /* Assets.xcassets in Resources */,
+				B2F205DD1EDFFEC800FA4D52 /* PersonalCollectionCell.xib in Resources */,
+				B2F205DF1EDFFEC800FA4D52 /* PersonalFirstCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,8 +579,10 @@
 				CEF331031EDF9CC50032F0EF /* BaseTableViewCell.m in Sources */,
 				B21BD2CC1EDFB9F500BAD836 /* PersonalMainView.m in Sources */,
 				CEF3312A1EDFD9CA0032F0EF /* DynamicsViewController.m in Sources */,
+				B2F205DC1EDFFEC800FA4D52 /* PersonalCollectionCell.m in Sources */,
 				CEF331221EDFB3D50032F0EF /* UserInformation.m in Sources */,
 				CEF3311C1EDFAE330032F0EF /* QHRequestModel.m in Sources */,
+				B2F205DE1EDFFEC800FA4D52 /* PersonalFirstCell.m in Sources */,
 				CEF331051EDF9CC50032F0EF /* BaseViewModel.m in Sources */,
 				CEF331321EDFDF080032F0EF /* DiscoverViewController.m in Sources */,
 				CEF330EE1EDF9B720032F0EF /* UIImage+Extension.m in Sources */,
@@ -562,6 +591,7 @@
 				CEF331081EDF9CC50032F0EF /* ViewBaseController.m in Sources */,
 				CEF330F11EDF9BC60032F0EF /* UIView+Extension.m in Sources */,
 				CEF331071EDF9CC50032F0EF /* TabBarBaseController.m in Sources */,
+				B2F205E01EDFFEC800FA4D52 /* PersonalSecondCell.m in Sources */,
 				CEF331131EDFA4AA0032F0EF /* MBProgressHUD+NJ.m in Sources */,
 				CEF3311F1EDFB1E70032F0EF /* QHRequest+Api.m in Sources */,
 				CEF3312E1EDFDBCB0032F0EF /* QHTabBar.m in Sources */,
@@ -711,7 +741,7 @@
 			baseConfigurationReference = DB23E11BA4D680FD0F61CE42 /* Pods-QHTrade.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KXB9LY2JET;
+				DEVELOPMENT_TEAM = RG8JYDVCLT;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = QHTrade/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -726,7 +756,7 @@
 			baseConfigurationReference = E3D3E11B3D85ACEA2AE90524 /* Pods-QHTrade.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KXB9LY2JET;
+				DEVELOPMENT_TEAM = RG8JYDVCLT;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = QHTrade/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
