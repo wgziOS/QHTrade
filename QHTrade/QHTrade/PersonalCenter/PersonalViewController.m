@@ -7,16 +7,34 @@
 //
 
 #import "PersonalViewController.h"
+#import "PersonalMainView.h"
+#import "PersonalViewModel.h"
 
 @interface PersonalViewController ()
-
+@property (nonatomic,strong)PersonalMainView * mainView;
+@property (nonatomic,strong)PersonalViewModel * viewModel;
 @end
 
 @implementation PersonalViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+}
+
+-(PersonalMainView *)mainView{
+
+    if (!_mainView) {
+        _mainView = [[PersonalMainView alloc]init];
+    }
+    return _mainView;
+}
+-(PersonalViewModel *)viewModel{
+
+    if (!_viewModel) {
+        _viewModel = [[PersonalViewModel alloc]init];
+    }
+    return _viewModel;
 }
 
 - (void)didReceiveMemoryWarning {

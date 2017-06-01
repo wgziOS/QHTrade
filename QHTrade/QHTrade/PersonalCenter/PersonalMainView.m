@@ -8,6 +8,8 @@
 
 #import "PersonalMainView.h"
 #import "PersonalViewModel.h"
+#import "PersonalFirstCell.h"
+#import "PersonalSecondCell.h"
 
 @interface PersonalMainView()<UITableViewDelegate,UITableViewDataSource>
 
@@ -47,8 +49,17 @@
 #pragma mark - tableView代理
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
-    return nil;
+    if (indexPath.row == 0) {
+        
+        PersonalFirstCell * cell1 = [tableView dequeueReusableCellWithIdentifier:kPersonalFirstCell];
+        
+        return cell1;
+        
+    }else{
+        PersonalSecondCell * cell2 = [tableView dequeueReusableCellWithIdentifier:kPersonalSecondCell];
+        
+        return cell2;
+    }
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
@@ -56,7 +67,10 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    return 200;
+    if (indexPath.row == 0) {
+        return 200;
+    }else return 280;
+    
 }
 
 
