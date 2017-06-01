@@ -8,6 +8,10 @@
 
 #import "TabBarBaseController.h"
 #import "NavigationBaseController.h"
+#import "DynamicsViewController.h"
+#import "PersonalViewController.h"
+#import "DiscoverViewController.h"
+#import "QHTabBar.h"
 
 
 @interface TabBarBaseController ()
@@ -19,35 +23,29 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     self.delegate = self;
+    [self setValue:[[QHTabBar alloc] init] forKeyPath:@"tabBar"];
     
-    [UINavigationBar appearance];
-    
+   
     // 通过appearance统一设置所有UITabBarItem的文字属性
     // 后面带有UI_APPEARANCE_SELECTOR的方法, 都可以通过appearance对象来统一设置
-    NSDictionary *attrs =@{NSForegroundColorAttributeName:[UIColor colorWithRed:138.0/255.0 green:138.0/255.0 blue:138.0/255.0 alpha:1.0f],NSFontAttributeName:[UIFont systemFontOfSize:12]};
+    NSDictionary *attrs =@{NSFontAttributeName:[UIFont systemFontOfSize:12],NSForegroundColorAttributeName:RGB(127, 127, 127),};
+
     
-    
-    NSDictionary *selectedAttrs = @{NSFontAttributeName:[UIFont systemFontOfSize:12],NSForegroundColorAttributeName:[UIColor colorWithRed:63.0/255.0 green:152.0/255.0 blue:243.0/255.0 alpha:1.0f]};
+    NSDictionary *selectedAttrs = @{NSFontAttributeName:[UIFont systemFontOfSize:12],NSForegroundColorAttributeName:RGB(197, 160, 101)};
     
     
     UITabBarItem *item = [UITabBarItem appearance];
     [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
     [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
-    
+//
+    [self setupChildVc:[[DiscoverViewController alloc] init] title:@"发现" image:@"tabbar_discover" selectedImage:@"tabbar_discover_select"];
     // 添加子控制器
-    [self setupChildVc:[[UIViewController alloc] init] title:@"瑞达" image:@"icon_tabBarHome_defult" selectedImage:@"icon_tabBarHome_selected"];
-    
-//    [self setupChildVc:[[NewsViewController alloc] init] title:@"新闻" image:@"icon_tabBarNews_default" selectedImage:@"icon_tabBarNews_selected"];
-//    
-//    [self setupChildVc:[[NoticeViewController alloc] init] title:@"圈子" image:@"icon_tabBarGroup_defult" selectedImage:@"icon_tabBarGroup_selected"];
-//    
-//    [self setupChildVc:[[MineViewController alloc] init] title:@"我的" image:@"icon_tabBarSelf_defult" selectedImage:@"icon_tabBarSelf_selected"];
-    
-    
-    // 更换tabBar
-//    [self setValue:[[RDTabbar alloc] init] forKeyPath:@"tabBar"];
+    [self setupChildVc:[[DynamicsViewController alloc] init] title:@"交易" image:@"tabar_dynamic" selectedImage:@"tabar_dynamic_select"];
+    // 添加子控制器
+    [self setupChildVc:[[PersonalViewController alloc] init] title:@"个人中心" image:@"tabbar_personal" selectedImage:@"tabbar_personal_select"];
+
+
     
 }
 
@@ -82,23 +80,4 @@
 
 }
 
--(void)viewWillAppear:(BOOL)animated
-{
-    [self.selectedViewController beginAppearanceTransition: YES animated: animated];
-}
-
--(void) viewDidAppear:(BOOL)animated
-{
-    [self.selectedViewController endAppearanceTransition];
-}
-
--(void) viewWillDisappear:(BOOL)animated
-{
-    [self.selectedViewController beginAppearanceTransition: NO animated: animated];
-}
-
--(void) viewDidDisappear:(BOOL)animated
-{
-    [self.selectedViewController endAppearanceTransition];
-}
 @end

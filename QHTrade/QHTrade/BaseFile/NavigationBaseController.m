@@ -9,7 +9,7 @@
 #import "NavigationBaseController.h"
 
 @interface NavigationBaseController ()
-@property(nonatomic,strong)NSMutableArray *array;
+
 @end
 
 @implementation NavigationBaseController
@@ -19,44 +19,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self leftBarItem];
-//    [self getNotify];
-
+    
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer.colors = @[(__bridge id)RGB(202, 165, 108).CGColor, (__bridge id)RGB(173, 130, 66).CGColor];
+    gradientLayer.locations = @[@0.1, @1.0];
+    gradientLayer.startPoint = CGPointMake(0, 0);
+    gradientLayer.endPoint = CGPointMake(1.0, 0);
+    gradientLayer.frame = CGRectMake(0, -20, SCREEN_WIDTH, 64);
+    [self.navigationBar.layer addSublayer:gradientLayer];
 }
-+ (void)initialize
-{
-    UINavigationBar *bar = [UINavigationBar appearance];
-    [bar setBackgroundImage:[UIImage imageNamed:@"icon_navigationbar_backgroundImage"] forBarMetrics:UIBarMetricsDefault];
-    bar.translucent = YES;
-    
-    NSMutableDictionary *barAttrs = [NSMutableDictionary dictionary];
-    barAttrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:15];
-    [bar setTitleTextAttributes:barAttrs];
-    
-    UIBarButtonItem *item = [UIBarButtonItem appearance];
-    
-    NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
-    normalAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
-    normalAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:15];
-    [item setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
-    
-    NSMutableDictionary *disabledAttrs = [NSMutableDictionary dictionary];
-    disabledAttrs[NSForegroundColorAttributeName] = [UIColor grayColor];
-    [item setTitleTextAttributes:disabledAttrs forState:UIControlStateDisabled];
-    [bar setBackgroundImage:[UIImage imageNamed:@"icon_navigationbar_backgroundImage"] forBarMetrics:UIBarMetricsDefault];
-    
-    
-    [bar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],
-                                  NSFontAttributeName:[UIFont boldSystemFontOfSize:18]
-                                  }];
-    
-}
--(void)leftBarItem{
-    
-
-}
-
-
 
 /**
  * 可以在这个方法中拦截所有push进来的控制器
@@ -95,11 +66,5 @@
 {
     return self.childViewControllers.count > 1;
 }
--(NSMutableArray *)array{
-    if (!_array) {
-        _array = [[NSMutableArray alloc] init];
-        
-    }
-    return _array;
-}
+
 @end

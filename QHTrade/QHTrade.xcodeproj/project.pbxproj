@@ -31,7 +31,9 @@
 		CEF3311C1EDFAE330032F0EF /* QHRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3311B1EDFAE330032F0EF /* QHRequestModel.m */; };
 		CEF3311F1EDFB1E70032F0EF /* QHRequest+Api.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3311E1EDFB1E70032F0EF /* QHRequest+Api.m */; };
 		CEF331221EDFB3D50032F0EF /* UserInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF331211EDFB3D50032F0EF /* UserInformation.m */; };
-		CEF331261EDFC20F0032F0EF /* sssss.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF331251EDFC20F0032F0EF /* sssss.m */; };
+		CEF3312A1EDFD9CA0032F0EF /* DynamicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF331291EDFD9CA0032F0EF /* DynamicsViewController.m */; };
+		CEF3312E1EDFDBCB0032F0EF /* QHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3312D1EDFDBCB0032F0EF /* QHTabBar.m */; };
+		CEF331321EDFDF080032F0EF /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF331311EDFDF080032F0EF /* DiscoverViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,8 +107,12 @@
 		CEF3311E1EDFB1E70032F0EF /* QHRequest+Api.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QHRequest+Api.m"; sourceTree = "<group>"; };
 		CEF331201EDFB3D50032F0EF /* UserInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInformation.h; sourceTree = "<group>"; };
 		CEF331211EDFB3D50032F0EF /* UserInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInformation.m; sourceTree = "<group>"; };
-		CEF331241EDFC20F0032F0EF /* sssss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sssss.h; sourceTree = "<group>"; };
-		CEF331251EDFC20F0032F0EF /* sssss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sssss.m; sourceTree = "<group>"; };
+		CEF331281EDFD9CA0032F0EF /* DynamicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsViewController.h; sourceTree = "<group>"; };
+		CEF331291EDFD9CA0032F0EF /* DynamicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsViewController.m; sourceTree = "<group>"; };
+		CEF3312C1EDFDBCB0032F0EF /* QHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHTabBar.h; sourceTree = "<group>"; };
+		CEF3312D1EDFDBCB0032F0EF /* QHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHTabBar.m; sourceTree = "<group>"; };
+		CEF331301EDFDF080032F0EF /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		CEF331311EDFDF080032F0EF /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
 		DB23E11BA4D680FD0F61CE42 /* Pods-QHTrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QHTrade.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QHTrade/Pods-QHTrade.debug.xcconfig"; sourceTree = "<group>"; };
 		E3D3E11B3D85ACEA2AE90524 /* Pods-QHTrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QHTrade.release.xcconfig"; path = "Pods/Target Support Files/Pods-QHTrade/Pods-QHTrade.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -241,7 +247,7 @@
 		CEF330E41EDF9AC20032F0EF /* Dynamics */ = {
 			isa = PBXGroup;
 			children = (
-				CEF331231EDFC2050032F0EF /* New Group */,
+				CEF331271EDFD9B40032F0EF /* Dynamics */,
 			);
 			path = Dynamics;
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 		CEF330E51EDF9AC20032F0EF /* Find */ = {
 			isa = PBXGroup;
 			children = (
+				CEF3312F1EDFDEF80032F0EF /* Find */,
 			);
 			path = Find;
 			sourceTree = "<group>";
@@ -307,33 +314,52 @@
 		CEF330F21EDF9CBD0032F0EF /* BaseFile */ = {
 			isa = PBXGroup;
 			children = (
-				CEF330F31EDF9CC50032F0EF /* BaseTableViewCell.h */,
-				CEF330F41EDF9CC50032F0EF /* BaseTableViewCell.m */,
-				CEF330F51EDF9CC50032F0EF /* BaseTableViewCellProtocol.h */,
 				CEF330F61EDF9CC50032F0EF /* BaseView.h */,
 				CEF330F71EDF9CC50032F0EF /* BaseView.m */,
 				CEF330FB1EDF9CC50032F0EF /* BaseViewProtocol.h */,
+				CEF330F31EDF9CC50032F0EF /* BaseTableViewCell.h */,
+				CEF330F41EDF9CC50032F0EF /* BaseTableViewCell.m */,
+				CEF330F51EDF9CC50032F0EF /* BaseTableViewCellProtocol.h */,
 				CEF330F81EDF9CC50032F0EF /* BaseViewModel.h */,
 				CEF330F91EDF9CC50032F0EF /* BaseViewModel.m */,
 				CEF330FA1EDF9CC50032F0EF /* BaseViewModelProtocol.h */,
+				CEF331001EDF9CC50032F0EF /* ViewBaseController.h */,
+				CEF331011EDF9CC50032F0EF /* ViewBaseController.m */,
+				CEF331021EDF9CC50032F0EF /* ViewBaseControllerProtocol.h */,
 				CEF330FC1EDF9CC50032F0EF /* NavigationBaseController.h */,
 				CEF330FD1EDF9CC50032F0EF /* NavigationBaseController.m */,
 				CEF330FE1EDF9CC50032F0EF /* TabBarBaseController.h */,
 				CEF330FF1EDF9CC50032F0EF /* TabBarBaseController.m */,
-				CEF331001EDF9CC50032F0EF /* ViewBaseController.h */,
-				CEF331011EDF9CC50032F0EF /* ViewBaseController.m */,
-				CEF331021EDF9CC50032F0EF /* ViewBaseControllerProtocol.h */,
+				CEF3312C1EDFDBCB0032F0EF /* QHTabBar.h */,
+				CEF3312D1EDFDBCB0032F0EF /* QHTabBar.m */,
 			);
 			path = BaseFile;
 			sourceTree = "<group>";
 		};
-		CEF331231EDFC2050032F0EF /* New Group */ = {
+		CEF331271EDFD9B40032F0EF /* Dynamics */ = {
 			isa = PBXGroup;
 			children = (
-				CEF331241EDFC20F0032F0EF /* sssss.h */,
-				CEF331251EDFC20F0032F0EF /* sssss.m */,
+				CEF3312B1EDFD9D00032F0EF /* VC */,
 			);
-			name = "New Group";
+			path = Dynamics;
+			sourceTree = "<group>";
+		};
+		CEF3312B1EDFD9D00032F0EF /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				CEF331281EDFD9CA0032F0EF /* DynamicsViewController.h */,
+				CEF331291EDFD9CA0032F0EF /* DynamicsViewController.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		CEF3312F1EDFDEF80032F0EF /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				CEF331301EDFDF080032F0EF /* DiscoverViewController.h */,
+				CEF331311EDFDF080032F0EF /* DiscoverViewController.m */,
+			);
+			path = Find;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,7 +432,7 @@
 				TargetAttributes = {
 					B2A214FD1EDEA9E900B19A4A = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 3H53CUVWDV;
+						DevelopmentTeam = KXB9LY2JET;
 						ProvisioningStyle = Automatic;
 					};
 					B2A215161EDEA9E900B19A4A = {
@@ -524,11 +550,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF331031EDF9CC50032F0EF /* BaseTableViewCell.m in Sources */,
-				CEF331261EDFC20F0032F0EF /* sssss.m in Sources */,
 				B21BD2CC1EDFB9F500BAD836 /* PersonalMainView.m in Sources */,
+				CEF3312A1EDFD9CA0032F0EF /* DynamicsViewController.m in Sources */,
 				CEF331221EDFB3D50032F0EF /* UserInformation.m in Sources */,
 				CEF3311C1EDFAE330032F0EF /* QHRequestModel.m in Sources */,
 				CEF331051EDF9CC50032F0EF /* BaseViewModel.m in Sources */,
+				CEF331321EDFDF080032F0EF /* DiscoverViewController.m in Sources */,
 				CEF330EE1EDF9B720032F0EF /* UIImage+Extension.m in Sources */,
 				B2A215061EDEA9E900B19A4A /* AppDelegate.m in Sources */,
 				CEF331061EDF9CC50032F0EF /* NavigationBaseController.m in Sources */,
@@ -537,6 +564,7 @@
 				CEF331071EDF9CC50032F0EF /* TabBarBaseController.m in Sources */,
 				CEF331131EDFA4AA0032F0EF /* MBProgressHUD+NJ.m in Sources */,
 				CEF3311F1EDFB1E70032F0EF /* QHRequest+Api.m in Sources */,
+				CEF3312E1EDFDBCB0032F0EF /* QHTabBar.m in Sources */,
 				B2A215031EDEA9E900B19A4A /* main.m in Sources */,
 				CEF331041EDF9CC50032F0EF /* BaseView.m in Sources */,
 				B21BD2CB1EDFB9F500BAD836 /* PersonalViewController.m in Sources */,
@@ -683,12 +711,12 @@
 			baseConfigurationReference = DB23E11BA4D680FD0F61CE42 /* Pods-QHTrade.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3H53CUVWDV;
+				DEVELOPMENT_TEAM = KXB9LY2JET;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = QHTrade/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qihuo.QHTrade;
+				PRODUCT_BUNDLE_IDENTIFIER = Mr.L;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -698,12 +726,12 @@
 			baseConfigurationReference = E3D3E11B3D85ACEA2AE90524 /* Pods-QHTrade.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3H53CUVWDV;
+				DEVELOPMENT_TEAM = KXB9LY2JET;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = QHTrade/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qihuo.QHTrade;
+				PRODUCT_BUNDLE_IDENTIFIER = Mr.L;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
