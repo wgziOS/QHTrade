@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "ViewBaseControllerProtocol.h"
-#import "NotificationModel.h"
+
+
 @interface ViewBaseController : UIViewController<ViewControllerProtocol>
 @property(nonatomic,copy)NSString *centerTitle;
 
