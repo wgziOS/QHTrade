@@ -19,14 +19,4 @@
 - (UIBarButtonItem *)leftButton;
 - (UIBarButtonItem *)rightButton;
 
--(void)puchBreedRules;
--(void)puchBankInformation;
--(void)puchBond;
--(void)puchLastTradingDay;
--(void)puchLogin;
--(void)puchRDProfile;
--(void)puchContactUs;
--(void)puchOpenfirst;
--(void)pushProgress;
-+(CGSize)textForFont:(int)font andMAXSize:(CGSize)size andText:(NSString*)text;
 @end

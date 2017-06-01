@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TabBarBaseController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    self.window.rootViewController = [[TabBarBaseController alloc] init];
+    
+    [self.window makeKeyWindow];
+    
     
     return YES;
 }
@@ -47,6 +52,11 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
+-(UIWindow *)window{
+    if (!_window) {
+        _window = [[UIWindow alloc] init];
+    }
+    return _window;
+}
 
 @end

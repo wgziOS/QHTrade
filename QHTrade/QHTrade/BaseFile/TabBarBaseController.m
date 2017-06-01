@@ -79,20 +79,7 @@
     [self addChildViewController:nav];
 }
 -(void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
-//    
-//    if (tabBarController.selectedIndex == 3) {
-//        if (![[RDUserInformation getInformation] getLoginState]) {
-//            
-//            LoginViewController *login = [[LoginViewController alloc] init];
-//            login.puchTheWay = 1;
-//            NavigationBaseController *nav = [[NavigationBaseController alloc] initWithRootViewController:login];
-//            [self presentViewController:nav animated:YES completion:nil];
-//            [self setSelectedIndex:self.oldIndex];
-//        }
-//        return;
-//    }
-//    self.oldIndex = (int)tabBarController.selectedIndex;
-    
+
 }
 
 -(void)viewWillAppear:(BOOL)animated

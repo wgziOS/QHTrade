@@ -96,9 +96,6 @@
     
     [[vc rac_signalForSelector:@selector(viewWillAppear:)] subscribeNext:^(id x) {
         
-        @strongify(vc)
-        [vc layoutNavigation];
-        [vc getNewData];
         
         
     }];
@@ -115,66 +112,6 @@
 -(void)bindViewModel{
     
 }
--(void)getNewData{
-    
-}
--(void)layoutNavigation{
-    
-}
-+(CGSize)textForFont:(int)font andMAXSize:(CGSize)size andText:(NSString*)text
-{
-    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    [paragraphStyle setLineSpacing:2];
-    NSDictionary *attributes = @{ NSParagraphStyleAttributeName:paragraphStyle,NSFontAttributeName:[UIFont systemFontOfSize:font]};
-    CGRect rect = [text boundingRectWithSize:size
-                                     options:NSStringDrawingUsesLineFragmentOrigin
-                                  attributes:attributes
-                                     context:nil];
-    
-    return rect.size;
-}
 
--(void)pushProgress{
-    
-    ProgressViewController * PVC = [[ProgressViewController alloc]init];
-    [self.navigationController pushViewController:PVC animated:YES];
-}
--(void)puchContactUs{
-        ContactUsViewController *contactUs = [[ContactUsViewController alloc] init];
-        [self.navigationController pushViewController:contactUs animated:YES];
-//    AboutUsViewController * AVC = [[AboutUsViewController alloc]init];
-//    [self.navigationController pushViewController:AVC animated:YES];
-}
--(void)puchLastTradingDay{
-    LastTradingDayViewController *lastDay = [[LastTradingDayViewController alloc] init];
-    [self.navigationController pushViewController:lastDay animated:YES];
-}
--(void)puchBond{
-    BondViewController *bond = [[BondViewController alloc] init];
-    [self.navigationController pushViewController:bond animated:YES];
-}
--(void)puchBankInformation{
-    BankInformationViewController *bankInfor = [[BankInformationViewController alloc] init];
-    [self.navigationController pushViewController:bankInfor animated:YES];
-}
--(void)puchBreedRules{
-    BreedRulesViewController *breedRules = [[BreedRulesViewController alloc] init];
-    [self.navigationController pushViewController:breedRules animated:YES];
-}
--(void)puchRDProfile{
-    RDProfileViewController *profile = [[RDProfileViewController alloc] init];
-    [self.navigationController pushViewController:profile animated:YES];
-}
--(void)puchOpenfirst{
-    OpenAccountFirstViewController *main = [[OpenAccountFirstViewController alloc] init];
-    [self.navigationController pushViewController:main animated:YES];
-}
-
--(void)puchLogin{
-    LoginViewController *login = [[LoginViewController alloc] init];
-    login.puchTheWay =2;
-    [self.navigationController pushViewController:login animated:YES];
-    
-}
 
 @end

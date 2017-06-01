@@ -17,6 +17,4 @@
 
 -(void)bindViewModel;
 -(void)addChildView;
--(void)getNewData;
--(void)layoutNavigation;
 @end
