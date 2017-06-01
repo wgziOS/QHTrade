@@ -7,8 +7,6 @@
 //
 
 #import "NavigationBaseController.h"
-#import "NotificationModel.h"
-#import "MessageViewController.h"
 
 @interface NavigationBaseController ()
 @property(nonatomic,strong)NSMutableArray *array;
