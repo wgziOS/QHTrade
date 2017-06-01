@@ -525,6 +525,7 @@
 			files = (
 				CEF331031EDF9CC50032F0EF /* BaseTableViewCell.m in Sources */,
 				CEF331261EDFC20F0032F0EF /* sssss.m in Sources */,
+				B21BD2CC1EDFB9F500BAD836 /* PersonalMainView.m in Sources */,
 				CEF331221EDFB3D50032F0EF /* UserInformation.m in Sources */,
 				CEF3311C1EDFAE330032F0EF /* QHRequestModel.m in Sources */,
 				CEF331051EDF9CC50032F0EF /* BaseViewModel.m in Sources */,
