@@ -456,7 +456,7 @@
 				TargetAttributes = {
 					B2A214FD1EDEA9E900B19A4A = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = RG8JYDVCLT;
+						DevelopmentTeam = KXB9LY2JET;
 						ProvisioningStyle = Automatic;
 					};
 					B2A215161EDEA9E900B19A4A = {
@@ -741,7 +741,7 @@
 			baseConfigurationReference = DB23E11BA4D680FD0F61CE42 /* Pods-QHTrade.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RG8JYDVCLT;
+				DEVELOPMENT_TEAM = KXB9LY2JET;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = QHTrade/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -756,7 +756,7 @@
 			baseConfigurationReference = E3D3E11B3D85ACEA2AE90524 /* Pods-QHTrade.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RG8JYDVCLT;
+				DEVELOPMENT_TEAM = KXB9LY2JET;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = QHTrade/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
