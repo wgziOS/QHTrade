@@ -136,6 +136,8 @@
         NSLog(@"yes");
     }else{
         NSLog(@"no");
+      
+        
     }
 }
 -(UIScrollView *)segmentedControlScrollView{
