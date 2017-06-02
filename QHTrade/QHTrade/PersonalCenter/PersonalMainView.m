@@ -169,6 +169,7 @@
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [_tableView registerNib:[UINib nibWithNibName:kPersonalFirstCell bundle:nil] forCellReuseIdentifier:kPersonalFirstCell];
         [_tableView registerNib:[UINib nibWithNibName:kPersonalSecondCell bundle:nil] forCellReuseIdentifier:kPersonalSecondCell];
+        
         [_tableView registerNib:[UINib nibWithNibName:kPersonalBottomCell bundle:nil] forCellReuseIdentifier:kPersonalBottomCell];
         
         PersonalHeadView * headView = [[PersonalHeadView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 125)];

@@ -24,13 +24,13 @@
     _tableView.hidden = YES;
     
     //柱状
-    QHChartView *chart = [[QHChartView alloc] initWithFrame:CGRectMake(15, 0, SCREEN_WIDTH-30, 300)];
-    chart.numLabels = [NSArray arrayWithObjects:@10,@20,@3,@4, nil];
-    chart.nameLabels = [NSArray arrayWithObjects:@"第一",@"第二",@"第三",@"第四", nil];
-    [self addSubview:chart];
-    chart.maxNum = 100.0;
-
-    [chart show];
+//    QHChartView *chart = [[QHChartView alloc] initWithFrame:CGRectMake(15, 0, SCREEN_WIDTH-30, 300)];
+//    chart.numLabels = [NSArray arrayWithObjects:@10,@20,@3,@4, nil];
+//    chart.nameLabels = [NSArray arrayWithObjects:@"第一",@"第二",@"第三",@"第四", nil];
+//    [self addSubview:chart];
+//    chart.maxNum = 100.0;
+//
+//    [chart show];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

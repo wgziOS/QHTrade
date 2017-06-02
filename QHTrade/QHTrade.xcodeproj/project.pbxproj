@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B21783771EE191910079FC9E /* PersonalHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E7D1771EE0F8FF00918040 /* PersonalHeadView.m */; };
+		B21783791EE192650079FC9E /* QHChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E7D1891EE163DC00918040 /* QHChartView.m */; };
+		B217837A1EE192710079FC9E /* BarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E7D1861EE1613C00918040 /* BarChartView.m */; };
+		B21783831EE195460079FC9E /* PersonalBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B21783811EE195460079FC9E /* PersonalBottomCell.m */; };
+		B21783841EE195460079FC9E /* PersonalBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21783821EE195460079FC9E /* PersonalBottomCell.xib */; };
+		B21783871EE1959B0079FC9E /* TradeRecordsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B21783861EE1959B0079FC9E /* TradeRecordsCell.m */; };
+		B217838B1EE196000079FC9E /* TradeRecordsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B217838A1EE196000079FC9E /* TradeRecordsCell.xib */; };
 		B21BD2C91EDFB9F500BAD836 /* PersonalViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BD2C21EDFB9F500BAD836 /* PersonalViewModel.m */; };
 		B21BD2CA1EDFB9F500BAD836 /* PersonalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21BD2C41EDFB9F500BAD836 /* PersonalViewController.xib */; };
 		B21BD2CB1EDFB9F500BAD836 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BD2C51EDFB9F500BAD836 /* PersonalViewController.m */; };
@@ -17,14 +24,6 @@
 		B2A215111EDEA9E900B19A4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A2150F1EDEA9E900B19A4A /* LaunchScreen.storyboard */; };
 		B2A2151C1EDEA9E900B19A4A /* QHTradeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2151B1EDEA9E900B19A4A /* QHTradeTests.m */; };
 		B2A215271EDEA9E900B19A4A /* QHTradeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A215261EDEA9E900B19A4A /* QHTradeUITests.m */; };
-		B2E7D1781EE0F8FF00918040 /* PersonalHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E7D1771EE0F8FF00918040 /* PersonalHeadView.m */; };
-		B2E7D17A1EE142B300918040 /* white_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E7D1791EE142B300918040 /* white_bar.png */; };
-		B2E7D17E1EE14C0800918040 /* PersonalBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E7D17C1EE14C0800918040 /* PersonalBottomCell.m */; };
-		B2E7D17F1EE14C0800918040 /* PersonalBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E7D17D1EE14C0800918040 /* PersonalBottomCell.xib */; };
-		B2E7D1831EE1542D00918040 /* TradeRecordsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E7D1811EE1542D00918040 /* TradeRecordsCell.m */; };
-		B2E7D1841EE1542D00918040 /* TradeRecordsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E7D1821EE1542D00918040 /* TradeRecordsCell.xib */; };
-		B2E7D1871EE1613C00918040 /* BarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E7D1861EE1613C00918040 /* BarChartView.m */; };
-		B2E7D18A1EE163DC00918040 /* QHChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E7D1891EE163DC00918040 /* QHChartView.m */; };
 		B2F205DC1EDFFEC800FA4D52 /* PersonalCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F205D41EDFFEC800FA4D52 /* PersonalCollectionCell.m */; };
 		B2F205DD1EDFFEC800FA4D52 /* PersonalCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F205D51EDFFEC800FA4D52 /* PersonalCollectionCell.xib */; };
 		B2F205DE1EDFFEC800FA4D52 /* PersonalFirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F205D71EDFFEC800FA4D52 /* PersonalFirstCell.m */; };
@@ -73,6 +72,12 @@
 
 /* Begin PBXFileReference section */
 		972BB4CEA1349E67DFAA5B40 /* Pods_QHTrade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QHTrade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B21783801EE195460079FC9E /* PersonalBottomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalBottomCell.h; sourceTree = "<group>"; };
+		B21783811EE195460079FC9E /* PersonalBottomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalBottomCell.m; sourceTree = "<group>"; };
+		B21783821EE195460079FC9E /* PersonalBottomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalBottomCell.xib; sourceTree = "<group>"; };
+		B21783851EE1959B0079FC9E /* TradeRecordsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeRecordsCell.h; sourceTree = "<group>"; };
+		B21783861EE1959B0079FC9E /* TradeRecordsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeRecordsCell.m; sourceTree = "<group>"; };
+		B217838A1EE196000079FC9E /* TradeRecordsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradeRecordsCell.xib; sourceTree = "<group>"; };
 		B21BD2C21EDFB9F500BAD836 /* PersonalViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalViewModel.m; sourceTree = "<group>"; };
 		B21BD2C31EDFB9F500BAD836 /* PersonalViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalViewModel.h; sourceTree = "<group>"; };
 		B21BD2C41EDFB9F500BAD836 /* PersonalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalViewController.xib; sourceTree = "<group>"; };
@@ -96,12 +101,6 @@
 		B2E7D1761EE0F8FF00918040 /* PersonalHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalHeadView.h; sourceTree = "<group>"; };
 		B2E7D1771EE0F8FF00918040 /* PersonalHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalHeadView.m; sourceTree = "<group>"; };
 		B2E7D1791EE142B300918040 /* white_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_bar.png; sourceTree = "<group>"; };
-		B2E7D17B1EE14C0800918040 /* PersonalBottomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalBottomCell.h; sourceTree = "<group>"; };
-		B2E7D17C1EE14C0800918040 /* PersonalBottomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalBottomCell.m; sourceTree = "<group>"; };
-		B2E7D17D1EE14C0800918040 /* PersonalBottomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalBottomCell.xib; sourceTree = "<group>"; };
-		B2E7D1801EE1542D00918040 /* TradeRecordsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeRecordsCell.h; sourceTree = "<group>"; };
-		B2E7D1811EE1542D00918040 /* TradeRecordsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeRecordsCell.m; sourceTree = "<group>"; };
-		B2E7D1821EE1542D00918040 /* TradeRecordsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradeRecordsCell.xib; sourceTree = "<group>"; };
 		B2E7D1851EE1613C00918040 /* BarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarChartView.h; sourceTree = "<group>"; };
 		B2E7D1861EE1613C00918040 /* BarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarChartView.m; sourceTree = "<group>"; };
 		B2E7D1881EE163DC00918040 /* QHChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHChartView.h; sourceTree = "<group>"; };
@@ -307,12 +306,12 @@
 				B2F205D31EDFFEC800FA4D52 /* PersonalCollectionCell.h */,
 				B2F205D41EDFFEC800FA4D52 /* PersonalCollectionCell.m */,
 				B2F205D51EDFFEC800FA4D52 /* PersonalCollectionCell.xib */,
-				B2E7D17B1EE14C0800918040 /* PersonalBottomCell.h */,
-				B2E7D17C1EE14C0800918040 /* PersonalBottomCell.m */,
-				B2E7D17D1EE14C0800918040 /* PersonalBottomCell.xib */,
-				B2E7D1801EE1542D00918040 /* TradeRecordsCell.h */,
-				B2E7D1811EE1542D00918040 /* TradeRecordsCell.m */,
-				B2E7D1821EE1542D00918040 /* TradeRecordsCell.xib */,
+				B21783851EE1959B0079FC9E /* TradeRecordsCell.h */,
+				B21783861EE1959B0079FC9E /* TradeRecordsCell.m */,
+				B217838A1EE196000079FC9E /* TradeRecordsCell.xib */,
+				B21783801EE195460079FC9E /* PersonalBottomCell.h */,
+				B21783811EE195460079FC9E /* PersonalBottomCell.m */,
+				B21783821EE195460079FC9E /* PersonalBottomCell.xib */,
 				B2E7D18B1EE1654B00918040 /* BarChartView */,
 			);
 			name = View;
@@ -600,15 +599,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2E7D17F1EE14C0800918040 /* PersonalBottomCell.xib in Resources */,
 				B2A215111EDEA9E900B19A4A /* LaunchScreen.storyboard in Resources */,
 				B2F205E11EDFFEC800FA4D52 /* PersonalSecondCell.xib in Resources */,
-				B2E7D17A1EE142B300918040 /* white_bar.png in Resources */,
 				B21BD2CA1EDFB9F500BAD836 /* PersonalViewController.xib in Resources */,
-				B2E7D1841EE1542D00918040 /* TradeRecordsCell.xib in Resources */,
 				B2A2150E1EDEA9E900B19A4A /* Assets.xcassets in Resources */,
 				B2F205DD1EDFFEC800FA4D52 /* PersonalCollectionCell.xib in Resources */,
+				B21783841EE195460079FC9E /* PersonalBottomCell.xib in Resources */,
 				B2F205DF1EDFFEC800FA4D52 /* PersonalFirstCell.xib in Resources */,
+				B217838B1EE196000079FC9E /* TradeRecordsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,14 +679,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B217837A1EE192710079FC9E /* BarChartView.m in Sources */,
+				B21783791EE192650079FC9E /* QHChartView.m in Sources */,
+				B21783771EE191910079FC9E /* PersonalHeadView.m in Sources */,
+				B21783871EE1959B0079FC9E /* TradeRecordsCell.m in Sources */,
 				CEF331031EDF9CC50032F0EF /* BaseTableViewCell.m in Sources */,
 				B21BD2CC1EDFB9F500BAD836 /* PersonalMainView.m in Sources */,
-				B2E7D17E1EE14C0800918040 /* PersonalBottomCell.m in Sources */,
 				CEF3312A1EDFD9CA0032F0EF /* DynamicsViewController.m in Sources */,
 				B2F205DC1EDFFEC800FA4D52 /* PersonalCollectionCell.m in Sources */,
 				CEF331221EDFB3D50032F0EF /* UserInformation.m in Sources */,
-				B2E7D1781EE0F8FF00918040 /* PersonalHeadView.m in Sources */,
-				B2E7D1871EE1613C00918040 /* BarChartView.m in Sources */,
+				B21783831EE195460079FC9E /* PersonalBottomCell.m in Sources */,
+				CEF331381EE00A5D0032F0EF /* DynamicsView.m in Sources */,
 				CEF3311C1EDFAE330032F0EF /* QHRequestModel.m in Sources */,
 				B2F205DE1EDFFEC800FA4D52 /* PersonalFirstCell.m in Sources */,
 				CEF331051EDF9CC50032F0EF /* BaseViewModel.m in Sources */,
@@ -704,13 +705,12 @@
 				CEF331131EDFA4AA0032F0EF /* MBProgressHUD+NJ.m in Sources */,
 				CEF3311F1EDFB1E70032F0EF /* QHRequest+Api.m in Sources */,
 				CEF3312E1EDFDBCB0032F0EF /* QHTabBar.m in Sources */,
-				B2E7D1831EE1542D00918040 /* TradeRecordsCell.m in Sources */,
+				CEF7D5681EE1460E000A869E /* DynamicsNavigationCenterView.m in Sources */,
 				B2A215031EDEA9E900B19A4A /* main.m in Sources */,
 				CEF331041EDF9CC50032F0EF /* BaseView.m in Sources */,
 				CEF3313B1EE00BA60032F0EF /* DynamicsViewModel.m in Sources */,
 				B21BD2CB1EDFB9F500BAD836 /* PersonalViewController.m in Sources */,
 				B21BD2C91EDFB9F500BAD836 /* PersonalViewModel.m in Sources */,
-				B2E7D18A1EE163DC00918040 /* QHChartView.m in Sources */,
 				CEF331191EDFAC750032F0EF /* QHRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
