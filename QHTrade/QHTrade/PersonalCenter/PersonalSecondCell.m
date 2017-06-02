@@ -21,20 +21,34 @@
 
     UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc]init];
     
-    [flowLayout setItemSize:CGSizeMake((SCREEN_WIDTH-30)/3, (self.collectionView.frame.size.height-35)/3)];
+    [flowLayout setItemSize:CGSizeMake((SCREEN_WIDTH-34)/3, 60-4)];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
-    flowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
-    flowLayout.minimumLineSpacing = 0;
-    flowLayout.minimumInteritemSpacing = 0;
+    
     
     [self.collectionView setCollectionViewLayout:flowLayout];
     [self.collectionView registerNib:[UINib nibWithNibName:kPersonalCollectionCell bundle:nil] forCellWithReuseIdentifier:kPersonalCollectionCell];
     
+    self.collectionView.showsHorizontalScrollIndicator = NO;
+    self.collectionView.showsVerticalScrollIndicator = NO;
+    self.collectionView.scrollEnabled = NO;
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     
 }
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    return UIEdgeInsetsMake(1, 1, 1, 1);
+}
+//layout协议
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 1.f;
+}
 
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 1.f;
+}
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return 9;
