@@ -34,9 +34,6 @@
 
 - (void) setUpNavigationBar
 {
-    //    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"title.png"] forBarMetrics:UIBarMetricsDefault];//设置导航栏图片
-//    [self.navigationController.navigationBar setBarTintColor:RGB(255, 165, 33)];//设置导航栏的背景颜色
-    //    self.navigationController.navigationBar.alpha = 0;
     self.navigationController.navigationBar.shadowImage = [UIImage new];
     
     self.navigationItem.leftBarButtonItem = [self leftButton];//设置导航栏左边按钮

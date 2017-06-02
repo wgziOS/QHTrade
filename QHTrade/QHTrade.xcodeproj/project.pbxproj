@@ -40,6 +40,10 @@
 		CEF3312A1EDFD9CA0032F0EF /* DynamicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF331291EDFD9CA0032F0EF /* DynamicsViewController.m */; };
 		CEF3312E1EDFDBCB0032F0EF /* QHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3312D1EDFDBCB0032F0EF /* QHTabBar.m */; };
 		CEF331321EDFDF080032F0EF /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF331311EDFDF080032F0EF /* DiscoverViewController.m */; };
+		CEF331381EE00A5D0032F0EF /* DynamicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF331371EE00A5D0032F0EF /* DynamicsView.m */; };
+		CEF3313B1EE00BA60032F0EF /* DynamicsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3313A1EE00BA60032F0EF /* DynamicsViewModel.m */; };
+		CEF3313E1EE00BE40032F0EF /* DynamicsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3313D1EE00BE40032F0EF /* DynamicsModel.m */; };
+		CEF7D5681EE1460E000A869E /* DynamicsNavigationCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7D5671EE1460E000A869E /* DynamicsNavigationCenterView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +132,14 @@
 		CEF3312D1EDFDBCB0032F0EF /* QHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHTabBar.m; sourceTree = "<group>"; };
 		CEF331301EDFDF080032F0EF /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
 		CEF331311EDFDF080032F0EF /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		CEF331361EE00A5D0032F0EF /* DynamicsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsView.h; sourceTree = "<group>"; };
+		CEF331371EE00A5D0032F0EF /* DynamicsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsView.m; sourceTree = "<group>"; };
+		CEF331391EE00BA60032F0EF /* DynamicsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsViewModel.h; sourceTree = "<group>"; };
+		CEF3313A1EE00BA60032F0EF /* DynamicsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsViewModel.m; sourceTree = "<group>"; };
+		CEF3313C1EE00BE40032F0EF /* DynamicsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsModel.h; sourceTree = "<group>"; };
+		CEF3313D1EE00BE40032F0EF /* DynamicsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsModel.m; sourceTree = "<group>"; };
+		CEF7D5661EE1460E000A869E /* DynamicsNavigationCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsNavigationCenterView.h; sourceTree = "<group>"; };
+		CEF7D5671EE1460E000A869E /* DynamicsNavigationCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsNavigationCenterView.m; sourceTree = "<group>"; };
 		DB23E11BA4D680FD0F61CE42 /* Pods-QHTrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QHTrade.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QHTrade/Pods-QHTrade.debug.xcconfig"; sourceTree = "<group>"; };
 		E3D3E11B3D85ACEA2AE90524 /* Pods-QHTrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QHTrade.release.xcconfig"; path = "Pods/Target Support Files/Pods-QHTrade/Pods-QHTrade.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -363,6 +375,9 @@
 		CEF331271EDFD9B40032F0EF /* Dynamics */ = {
 			isa = PBXGroup;
 			children = (
+				CEF331341EE00A170032F0EF /* Model */,
+				CEF331331EE00A0F0032F0EF /* View */,
+				CEF331351EE00A240032F0EF /* ViewModel */,
 				CEF3312B1EDFD9D00032F0EF /* VC */,
 			);
 			path = Dynamics;
@@ -384,6 +399,35 @@
 				CEF331311EDFDF080032F0EF /* DiscoverViewController.m */,
 			);
 			path = Find;
+			sourceTree = "<group>";
+		};
+		CEF331331EE00A0F0032F0EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEF331361EE00A5D0032F0EF /* DynamicsView.h */,
+				CEF331371EE00A5D0032F0EF /* DynamicsView.m */,
+				CEF7D5661EE1460E000A869E /* DynamicsNavigationCenterView.h */,
+				CEF7D5671EE1460E000A869E /* DynamicsNavigationCenterView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CEF331341EE00A170032F0EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEF3313C1EE00BE40032F0EF /* DynamicsModel.h */,
+				CEF3313D1EE00BE40032F0EF /* DynamicsModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CEF331351EE00A240032F0EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEF331391EE00BA60032F0EF /* DynamicsViewModel.h */,
+				CEF3313A1EE00BA60032F0EF /* DynamicsViewModel.m */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,11 +625,13 @@
 				CEF3312A1EDFD9CA0032F0EF /* DynamicsViewController.m in Sources */,
 				B2F205DC1EDFFEC800FA4D52 /* PersonalCollectionCell.m in Sources */,
 				CEF331221EDFB3D50032F0EF /* UserInformation.m in Sources */,
+				CEF331381EE00A5D0032F0EF /* DynamicsView.m in Sources */,
 				CEF3311C1EDFAE330032F0EF /* QHRequestModel.m in Sources */,
 				B2F205DE1EDFFEC800FA4D52 /* PersonalFirstCell.m in Sources */,
 				CEF331051EDF9CC50032F0EF /* BaseViewModel.m in Sources */,
 				CEF331321EDFDF080032F0EF /* DiscoverViewController.m in Sources */,
 				CEF330EE1EDF9B720032F0EF /* UIImage+Extension.m in Sources */,
+				CEF3313E1EE00BE40032F0EF /* DynamicsModel.m in Sources */,
 				B2A215061EDEA9E900B19A4A /* AppDelegate.m in Sources */,
 				CEF331061EDF9CC50032F0EF /* NavigationBaseController.m in Sources */,
 				CEF331081EDF9CC50032F0EF /* ViewBaseController.m in Sources */,
@@ -595,8 +641,10 @@
 				CEF331131EDFA4AA0032F0EF /* MBProgressHUD+NJ.m in Sources */,
 				CEF3311F1EDFB1E70032F0EF /* QHRequest+Api.m in Sources */,
 				CEF3312E1EDFDBCB0032F0EF /* QHTabBar.m in Sources */,
+				CEF7D5681EE1460E000A869E /* DynamicsNavigationCenterView.m in Sources */,
 				B2A215031EDEA9E900B19A4A /* main.m in Sources */,
 				CEF331041EDF9CC50032F0EF /* BaseView.m in Sources */,
+				CEF3313B1EE00BA60032F0EF /* DynamicsViewModel.m in Sources */,
 				B21BD2CB1EDFB9F500BAD836 /* PersonalViewController.m in Sources */,
 				B21BD2C91EDFB9F500BAD836 /* PersonalViewModel.m in Sources */,
 				CEF331191EDFAC750032F0EF /* QHRequest.m in Sources */,
@@ -748,6 +796,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mr.L;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -763,6 +812,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mr.L;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
