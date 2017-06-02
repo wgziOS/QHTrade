@@ -10,11 +10,17 @@
 #import "PersonalViewModel.h"
 #import "PersonalFirstCell.h"
 #import "PersonalSecondCell.h"
+#import "PersonalHeadView.h"
+#import "PersonalBottomCell.h"
 
 @interface PersonalMainView()<UITableViewDelegate,UITableViewDataSource>
-
+{
+    CGFloat bottomCellHeight;
+    BOOL isFirstSegClick;//是否第一个seg点击
+}
 @property (nonatomic,strong)UITableView * tableView;
 @property (nonatomic,strong)PersonalViewModel * viewModel;
+@property (nonatomic,strong)UISegmentedControl * segment;
 @end
 
 @implementation PersonalMainView
@@ -46,33 +52,112 @@
     [super updateConstraints];
 }
 
+-(void)segmentClick:(UISegmentedControl *)seg{
+    NSInteger index = seg.selectedSegmentIndex;
+    int xVlaue = (short)index;
+    if (xVlaue == 0) {
+        isFirstSegClick = YES;
+        [_tableView beginUpdates];
+        [_tableView endUpdates];
+    }else {
+        isFirstSegClick = NO;
+        [_tableView beginUpdates];
+        [_tableView endUpdates];
+        
+    }
+
+}
 #pragma mark - tableView代理
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+
+    if (section == 0) {
+        UIImageView * bgImgView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 30)];
+        bgImgView.image = [UIImage imageNamed:@"navigation_image"];
+        UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/2-75, 6, 150, 20)];
+        label.textAlignment = NSTextAlignmentCenter;
+        label.textColor = [UIColor whiteColor];
+        label.font = [UIFont systemFontOfSize:16.0f];
+        label.text = @"我的交易";
+        [bgImgView addSubview:label];
+        UIView * gView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 30)];
+        [gView addSubview:bgImgView];
+        return gView;
+    }else if (section == 1){
+        UIView * gView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 30)];
+        NSArray * arr = [[NSArray alloc]initWithObjects:@"交易记录",@"历史收益率",@"盈亏品种",@"盈亏手数", nil];
+        _segment = [[UISegmentedControl alloc]initWithItems:arr];
+        _segment.selectedSegmentIndex = 0;
+        [_segment setWidth:(SCREEN_WIDTH-30)/4 forSegmentAtIndex:0];
+        [_segment setWidth:(SCREEN_WIDTH-30)/4 forSegmentAtIndex:1];
+        [_segment setWidth:(SCREEN_WIDTH-30)/4 forSegmentAtIndex:2];
+        [_segment setWidth:(SCREEN_WIDTH-30)/4 forSegmentAtIndex:3];
+        _segment.frame = CGRectMake(15, 0, SCREEN_WIDTH-30, 30);
+        [_segment addTarget:self action:@selector(segmentClick:) forControlEvents:UIControlEventValueChanged];
+       
+        // 设置UISegmentedControl选中的图片
+        [_segment setBackgroundImage:[UIImage imageNamed:@"segment_select"] forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
+        
+        // 正常的图片
+        [_segment setBackgroundImage:[UIImage imageNamed:@"segment_unselect"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+        
+        [_segment setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]} forState:UIControlStateSelected];
+        [_segment setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor grayColor]} forState:UIControlStateNormal];
+        [_segment setDividerImage:[UIImage imageNamed:@"white_bar"] forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+        
+        [gView addSubview:_segment];
+        return gView;
+    }else return nil;
+}
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == 0) {
+    if (indexPath.row == 0 && indexPath.section == 0) {
         
         PersonalFirstCell * cell1 = [tableView dequeueReusableCellWithIdentifier:kPersonalFirstCell];
-        
+        cell1.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell1;
         
-    }else{
+    }else if(indexPath.row == 1 && indexPath.section == 0){
         PersonalSecondCell * cell2 = [tableView dequeueReusableCellWithIdentifier:kPersonalSecondCell];
-        
+        cell2.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell2;
+    }else {
+        //底部
+        PersonalBottomCell * cell13= [tableView dequeueReusableCellWithIdentifier:kPersonalBottomCell];
+        cell13.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cell13;
     }
+        
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
-    return 2;
+   
+    if (section == 0) {
+        return 2;
+    }else return 1;
+    
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    if (indexPath.row == 0) {
-        return 200;
-    }else return 280;
+    if (indexPath.row == 0 && indexPath.section == 0) {
+        return 90;
+    }else if(indexPath.row == 1 && indexPath.section == 0){
+        
+        return 210;
+    }else{
+        if (isFirstSegClick==NO) {
+            return bottomCellHeight/2;
+        }else return bottomCellHeight;
+    }
     
 }
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    
+    return 30;
+}
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
 
+    return 2;
+}
 
 -(UITableView *)tableView{
 
@@ -81,6 +166,16 @@
         _tableView.backgroundColor = [UIColor clearColor];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        [_tableView registerNib:[UINib nibWithNibName:kPersonalFirstCell bundle:nil] forCellReuseIdentifier:kPersonalFirstCell];
+        [_tableView registerNib:[UINib nibWithNibName:kPersonalSecondCell bundle:nil] forCellReuseIdentifier:kPersonalSecondCell];
+        
+        [_tableView registerNib:[UINib nibWithNibName:kPersonalBottomCell bundle:nil] forCellReuseIdentifier:kPersonalBottomCell];
+        
+        PersonalHeadView * headView = [[PersonalHeadView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 125)];
+        [_tableView setTableHeaderView:headView];
+        bottomCellHeight = 500;
+        isFirstSegClick = YES;
     }
     return _tableView;
 }
