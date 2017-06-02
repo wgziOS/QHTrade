@@ -19,9 +19,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.view addSubview:self.mainView];
+}
+-(void)updateViewConstraints{
+
+    WS(weakself)
+    [self.mainView mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.edges.equalTo(weakSelf.view);
+    }];
+    [super updateViewConstraints];
+}
+-(void)bindViewModel{
+
 
 }
-
 -(PersonalMainView *)mainView{
 
     if (!_mainView) {
