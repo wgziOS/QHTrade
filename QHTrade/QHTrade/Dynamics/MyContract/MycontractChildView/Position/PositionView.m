@@ -44,7 +44,6 @@
         @strongify(self);
         make.left.top.equalTo(self.scroll);
         make.size.mas_offset(CGSizeMake(414, SCREEN_HEIGHT-419));
-        
     }];
    
 }
