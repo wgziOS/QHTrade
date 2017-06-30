@@ -18,36 +18,36 @@
 		B203B3EA1F00EBFE002581F6 /* SettingDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B203B3E81F00EBFE002581F6 /* SettingDefaultCell.xib */; };
 		B203B3EE1F00EC2C002581F6 /* SettingSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B203B3EC1F00EC2C002581F6 /* SettingSwitchCell.m */; };
 		B203B3EF1F00EC2C002581F6 /* SettingSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B203B3ED1F00EC2C002581F6 /* SettingSwitchCell.xib */; };
-		B21501481EEA3C160052B4BF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21501461EEA3C160052B4BF /* LoginViewController.m */; };
-		B21501491EEA3C160052B4BF /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21501471EEA3C160052B4BF /* LoginViewController.xib */; };
-		B21501511EEA67940052B4BF /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = B21501501EEA67940052B4BF /* LoginView.m */; };
-		B21501541EEA67AD0052B4BF /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B21501531EEA67AD0052B4BF /* LoginViewModel.m */; };
-		B21501571EEA67FC0052B4BF /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B21501561EEA67FC0052B4BF /* LoginModel.m */; };
 		B21BEC431F04891700354274 /* ChangeNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC421F04891700354274 /* ChangeNextViewController.m */; };
 		B21BEC461F04893200354274 /* ChangeNextMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC451F04893200354274 /* ChangeNextMainView.m */; };
 		B21BEC491F04894500354274 /* ChangeNextViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC481F04894500354274 /* ChangeNextViewModel.m */; };
 		B21BEC4E1F049AD100354274 /* ChangeNickNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC4C1F049AD100354274 /* ChangeNickNameViewController.m */; };
 		B21BEC4F1F049AD100354274 /* ChangeNickNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21BEC4D1F049AD100354274 /* ChangeNickNameViewController.xib */; };
-		B21BEC531F04A02700354274 /* ForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC511F04A02700354274 /* ForgetPasswordViewController.m */; };
-		B21BEC541F04A02700354274 /* ForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21BEC521F04A02700354274 /* ForgetPasswordViewController.xib */; };
-		B21BEC581F04A21300354274 /* ForgetInputCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC561F04A21300354274 /* ForgetInputCodeViewController.m */; };
-		B21BEC591F04A21300354274 /* ForgetInputCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21BEC571F04A21300354274 /* ForgetInputCodeViewController.xib */; };
-		B21BEC5D1F04A23E00354274 /* ForgetInputNewPWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC5B1F04A23E00354274 /* ForgetInputNewPWViewController.m */; };
-		B21BEC5E1F04A23E00354274 /* ForgetInputNewPWViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21BEC5C1F04A23E00354274 /* ForgetInputNewPWViewController.xib */; };
 		B21BEC621F04AB0C00354274 /* MyVisitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC611F04AB0C00354274 /* MyVisitorViewController.m */; };
 		B21BEC661F04AD8F00354274 /* FocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC651F04AD8F00354274 /* FocusViewController.m */; };
 		B21BEC6B1F04F58600354274 /* PersonalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC6A1F04F58600354274 /* PersonalModel.m */; };
-		B24EB06E1EF9FE4200D46807 /* RegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B24EB06D1EF9FE4200D46807 /* RegisterView.m */; };
-		B24EB0711EF9FE5600D46807 /* RegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B24EB0701EF9FE5600D46807 /* RegisterModel.m */; };
-		B24EB0741EF9FE6D00D46807 /* RegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B24EB0731EF9FE6D00D46807 /* RegisterViewModel.m */; };
+		B2339C481F05F39500B336BB /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2339C3F1F05F39500B336BB /* LoginViewModel.m */; };
+		B2339C491F05F39500B336BB /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2339C411F05F39500B336BB /* LoginViewController.xib */; };
+		B2339C4A1F05F39500B336BB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2339C421F05F39500B336BB /* LoginViewController.m */; };
+		B2339C4B1F05F39500B336BB /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2339C441F05F39500B336BB /* LoginView.m */; };
+		B2339C4C1F05F39500B336BB /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2339C461F05F39500B336BB /* LoginModel.m */; };
+		B2339C521F05F3B300B336BB /* ForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2339C4D1F05F3B300B336BB /* ForgetPasswordViewController.xib */; };
+		B2339C531F05F3B300B336BB /* ForgetInputNewPWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2339C4E1F05F3B300B336BB /* ForgetInputNewPWViewController.m */; };
+		B2339C541F05F3B300B336BB /* ForgetInputNewPWViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2339C4F1F05F3B300B336BB /* ForgetInputNewPWViewController.xib */; };
+		B2339C551F05F3B300B336BB /* ForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2339C511F05F3B300B336BB /* ForgetPasswordViewController.m */; };
+		B2339C5F1F05F3E000B336BB /* RegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2339C561F05F3E000B336BB /* RegisterViewModel.m */; };
+		B2339C601F05F3E000B336BB /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2339C581F05F3E000B336BB /* RegisterViewController.xib */; };
+		B2339C611F05F3E000B336BB /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2339C591F05F3E000B336BB /* RegisterViewController.m */; };
+		B2339C621F05F3E000B336BB /* RegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2339C5B1F05F3E000B336BB /* RegisterView.m */; };
+		B2339C631F05F3E000B336BB /* RegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2339C5D1F05F3E000B336BB /* RegisterModel.m */; };
+		B2339C681F05F41500B336BB /* ForgetInputCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2339C641F05F41500B336BB /* ForgetInputCodeViewController.m */; };
+		B2339C691F05F41500B336BB /* ForgetInputCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2339C651F05F41500B336BB /* ForgetInputCodeViewController.xib */; };
 		B2A215031EDEA9E900B19A4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A215021EDEA9E900B19A4A /* main.m */; };
 		B2A215061EDEA9E900B19A4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A215051EDEA9E900B19A4A /* AppDelegate.m */; };
 		B2A2150E1EDEA9E900B19A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2A2150D1EDEA9E900B19A4A /* Assets.xcassets */; };
 		B2A215111EDEA9E900B19A4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A2150F1EDEA9E900B19A4A /* LaunchScreen.storyboard */; };
 		B2A2151C1EDEA9E900B19A4A /* QHTradeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2151B1EDEA9E900B19A4A /* QHTradeTests.m */; };
 		B2A215271EDEA9E900B19A4A /* QHTradeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A215261EDEA9E900B19A4A /* QHTradeUITests.m */; };
-		B2B4B8D91EF91B7D0005AFF1 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4B8D71EF91B7D0005AFF1 /* RegisterViewController.m */; };
-		B2B4B8DA1EF91B7D0005AFF1 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2B4B8D81EF91B7D0005AFF1 /* RegisterViewController.xib */; };
 		B2BE01151EE93D260012AD3E /* LineChartDescribe.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BE00F41EE93D260012AD3E /* LineChartDescribe.m */; };
 		B2BE01161EE93D260012AD3E /* PersonalBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BE00F51EE93D260012AD3E /* PersonalBottomCell.m */; };
 		B2BE01171EE93D260012AD3E /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BE00F61EE93D260012AD3E /* PersonalViewController.m */; };
@@ -141,15 +141,6 @@
 		B203B3EB1F00EC2C002581F6 /* SettingSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingSwitchCell.h; sourceTree = "<group>"; };
 		B203B3EC1F00EC2C002581F6 /* SettingSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingSwitchCell.m; sourceTree = "<group>"; };
 		B203B3ED1F00EC2C002581F6 /* SettingSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingSwitchCell.xib; sourceTree = "<group>"; };
-		B21501451EEA3C160052B4BF /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = QHTrade/LoginOrRegister/LoginViewController.h; sourceTree = SOURCE_ROOT; };
-		B21501461EEA3C160052B4BF /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = QHTrade/LoginOrRegister/LoginViewController.m; sourceTree = SOURCE_ROOT; };
-		B21501471EEA3C160052B4BF /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = QHTrade/LoginOrRegister/LoginViewController.xib; sourceTree = SOURCE_ROOT; };
-		B215014F1EEA67940052B4BF /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginView.h; path = QHTrade/LoginOrRegister/LoginView.h; sourceTree = SOURCE_ROOT; };
-		B21501501EEA67940052B4BF /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginView.m; path = QHTrade/LoginOrRegister/LoginView.m; sourceTree = SOURCE_ROOT; };
-		B21501521EEA67AD0052B4BF /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewModel.h; path = QHTrade/LoginOrRegister/LoginViewModel.h; sourceTree = SOURCE_ROOT; };
-		B21501531EEA67AD0052B4BF /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewModel.m; path = QHTrade/LoginOrRegister/LoginViewModel.m; sourceTree = SOURCE_ROOT; };
-		B21501551EEA67FC0052B4BF /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginModel.h; path = QHTrade/LoginOrRegister/LoginModel.h; sourceTree = SOURCE_ROOT; };
-		B21501561EEA67FC0052B4BF /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginModel.m; path = QHTrade/LoginOrRegister/LoginModel.m; sourceTree = SOURCE_ROOT; };
 		B21BEC411F04891700354274 /* ChangeNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeNextViewController.h; sourceTree = "<group>"; };
 		B21BEC421F04891700354274 /* ChangeNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeNextViewController.m; sourceTree = "<group>"; };
 		B21BEC441F04893200354274 /* ChangeNextMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeNextMainView.h; sourceTree = "<group>"; };
@@ -159,27 +150,39 @@
 		B21BEC4B1F049AD100354274 /* ChangeNickNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeNickNameViewController.h; sourceTree = "<group>"; };
 		B21BEC4C1F049AD100354274 /* ChangeNickNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeNickNameViewController.m; sourceTree = "<group>"; };
 		B21BEC4D1F049AD100354274 /* ChangeNickNameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeNickNameViewController.xib; sourceTree = "<group>"; };
-		B21BEC501F04A02700354274 /* ForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordViewController.h; sourceTree = SOURCE_ROOT; };
-		B21BEC511F04A02700354274 /* ForgetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordViewController.m; sourceTree = SOURCE_ROOT; };
-		B21BEC521F04A02700354274 /* ForgetPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgetPasswordViewController.xib; sourceTree = SOURCE_ROOT; };
-		B21BEC551F04A21300354274 /* ForgetInputCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetInputCodeViewController.h; sourceTree = SOURCE_ROOT; };
-		B21BEC561F04A21300354274 /* ForgetInputCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetInputCodeViewController.m; sourceTree = SOURCE_ROOT; };
-		B21BEC571F04A21300354274 /* ForgetInputCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgetInputCodeViewController.xib; sourceTree = SOURCE_ROOT; };
-		B21BEC5A1F04A23E00354274 /* ForgetInputNewPWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetInputNewPWViewController.h; sourceTree = SOURCE_ROOT; };
-		B21BEC5B1F04A23E00354274 /* ForgetInputNewPWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetInputNewPWViewController.m; sourceTree = SOURCE_ROOT; };
-		B21BEC5C1F04A23E00354274 /* ForgetInputNewPWViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgetInputNewPWViewController.xib; sourceTree = SOURCE_ROOT; };
 		B21BEC601F04AB0C00354274 /* MyVisitorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyVisitorViewController.h; sourceTree = "<group>"; };
 		B21BEC611F04AB0C00354274 /* MyVisitorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyVisitorViewController.m; sourceTree = "<group>"; };
 		B21BEC641F04AD8F00354274 /* FocusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FocusViewController.h; sourceTree = "<group>"; };
 		B21BEC651F04AD8F00354274 /* FocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FocusViewController.m; sourceTree = "<group>"; };
 		B21BEC691F04F58600354274 /* PersonalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalModel.h; sourceTree = "<group>"; };
 		B21BEC6A1F04F58600354274 /* PersonalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalModel.m; sourceTree = "<group>"; };
-		B24EB06C1EF9FE4200D46807 /* RegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterView.h; sourceTree = SOURCE_ROOT; };
-		B24EB06D1EF9FE4200D46807 /* RegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterView.m; sourceTree = SOURCE_ROOT; };
-		B24EB06F1EF9FE5600D46807 /* RegisterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterModel.h; sourceTree = SOURCE_ROOT; };
-		B24EB0701EF9FE5600D46807 /* RegisterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterModel.m; sourceTree = SOURCE_ROOT; };
-		B24EB0721EF9FE6D00D46807 /* RegisterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewModel.h; sourceTree = SOURCE_ROOT; };
-		B24EB0731EF9FE6D00D46807 /* RegisterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewModel.m; sourceTree = SOURCE_ROOT; };
+		B2339C3F1F05F39500B336BB /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		B2339C401F05F39500B336BB /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		B2339C411F05F39500B336BB /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		B2339C421F05F39500B336BB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B2339C431F05F39500B336BB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B2339C441F05F39500B336BB /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		B2339C451F05F39500B336BB /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		B2339C461F05F39500B336BB /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		B2339C471F05F39500B336BB /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		B2339C4D1F05F3B300B336BB /* ForgetPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgetPasswordViewController.xib; sourceTree = "<group>"; };
+		B2339C4E1F05F3B300B336BB /* ForgetInputNewPWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetInputNewPWViewController.m; sourceTree = "<group>"; };
+		B2339C4F1F05F3B300B336BB /* ForgetInputNewPWViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgetInputNewPWViewController.xib; sourceTree = "<group>"; };
+		B2339C501F05F3B300B336BB /* ForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordViewController.h; sourceTree = "<group>"; };
+		B2339C511F05F3B300B336BB /* ForgetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordViewController.m; sourceTree = "<group>"; };
+		B2339C561F05F3E000B336BB /* RegisterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewModel.m; sourceTree = "<group>"; };
+		B2339C571F05F3E000B336BB /* RegisterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewModel.h; sourceTree = "<group>"; };
+		B2339C581F05F3E000B336BB /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		B2339C591F05F3E000B336BB /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		B2339C5A1F05F3E000B336BB /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		B2339C5B1F05F3E000B336BB /* RegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterView.m; sourceTree = "<group>"; };
+		B2339C5C1F05F3E000B336BB /* RegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterView.h; sourceTree = "<group>"; };
+		B2339C5D1F05F3E000B336BB /* RegisterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterModel.m; sourceTree = "<group>"; };
+		B2339C5E1F05F3E000B336BB /* RegisterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterModel.h; sourceTree = "<group>"; };
+		B2339C641F05F41500B336BB /* ForgetInputCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetInputCodeViewController.m; sourceTree = "<group>"; };
+		B2339C651F05F41500B336BB /* ForgetInputCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgetInputCodeViewController.xib; sourceTree = "<group>"; };
+		B2339C661F05F41500B336BB /* ForgetInputNewPWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetInputNewPWViewController.h; sourceTree = "<group>"; };
+		B2339C671F05F41500B336BB /* ForgetInputCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetInputCodeViewController.h; sourceTree = "<group>"; };
 		B2A214FE1EDEA9E900B19A4A /* QHTrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QHTrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A215021EDEA9E900B19A4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2A215041EDEA9E900B19A4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -193,9 +196,6 @@
 		B2A215221EDEA9E900B19A4A /* QHTradeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QHTradeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A215261EDEA9E900B19A4A /* QHTradeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QHTradeUITests.m; sourceTree = "<group>"; };
 		B2A215281EDEA9E900B19A4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2B4B8D61EF91B7D0005AFF1 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = SOURCE_ROOT; };
-		B2B4B8D71EF91B7D0005AFF1 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = SOURCE_ROOT; };
-		B2B4B8D81EF91B7D0005AFF1 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = SOURCE_ROOT; };
 		B2BE00F41EE93D260012AD3E /* LineChartDescribe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChartDescribe.m; sourceTree = "<group>"; };
 		B2BE00F51EE93D260012AD3E /* PersonalBottomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalBottomCell.m; sourceTree = "<group>"; };
 		B2BE00F61EE93D260012AD3E /* PersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
@@ -391,68 +391,10 @@
 			name = ViewModel;
 			sourceTree = "<group>";
 		};
-		B21501441EEA3AEA0052B4BF /* LoginOrRegister */ = {
-			isa = PBXGroup;
-			children = (
-				B21795AB1EEBA09200447DBC /* ForgetPassWord */,
-				B215014B1EEA47FA0052B4BF /* Register */,
-				B215014A1EEA47F20052B4BF /* Login */,
-			);
-			name = LoginOrRegister;
-			path = PersonalCenter/LoginOrRegister;
-			sourceTree = "<group>";
-		};
-		B215014A1EEA47F20052B4BF /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				B21501451EEA3C160052B4BF /* LoginViewController.h */,
-				B21501461EEA3C160052B4BF /* LoginViewController.m */,
-				B21501471EEA3C160052B4BF /* LoginViewController.xib */,
-				B215014F1EEA67940052B4BF /* LoginView.h */,
-				B21501501EEA67940052B4BF /* LoginView.m */,
-				B21501521EEA67AD0052B4BF /* LoginViewModel.h */,
-				B21501531EEA67AD0052B4BF /* LoginViewModel.m */,
-				B21501551EEA67FC0052B4BF /* LoginModel.h */,
-				B21501561EEA67FC0052B4BF /* LoginModel.m */,
-			);
-			name = Login;
-			sourceTree = "<group>";
-		};
-		B215014B1EEA47FA0052B4BF /* Register */ = {
-			isa = PBXGroup;
-			children = (
-				B2B4B8D61EF91B7D0005AFF1 /* RegisterViewController.h */,
-				B2B4B8D71EF91B7D0005AFF1 /* RegisterViewController.m */,
-				B2B4B8D81EF91B7D0005AFF1 /* RegisterViewController.xib */,
-				B24EB06C1EF9FE4200D46807 /* RegisterView.h */,
-				B24EB06D1EF9FE4200D46807 /* RegisterView.m */,
-				B24EB0721EF9FE6D00D46807 /* RegisterViewModel.h */,
-				B24EB0731EF9FE6D00D46807 /* RegisterViewModel.m */,
-				B24EB06F1EF9FE5600D46807 /* RegisterModel.h */,
-				B24EB0701EF9FE5600D46807 /* RegisterModel.m */,
-			);
-			name = Register;
-			sourceTree = "<group>";
-		};
-		B21795AB1EEBA09200447DBC /* ForgetPassWord */ = {
-			isa = PBXGroup;
-			children = (
-				B21BEC501F04A02700354274 /* ForgetPasswordViewController.h */,
-				B21BEC511F04A02700354274 /* ForgetPasswordViewController.m */,
-				B21BEC521F04A02700354274 /* ForgetPasswordViewController.xib */,
-				B21BEC551F04A21300354274 /* ForgetInputCodeViewController.h */,
-				B21BEC561F04A21300354274 /* ForgetInputCodeViewController.m */,
-				B21BEC571F04A21300354274 /* ForgetInputCodeViewController.xib */,
-				B21BEC5A1F04A23E00354274 /* ForgetInputNewPWViewController.h */,
-				B21BEC5B1F04A23E00354274 /* ForgetInputNewPWViewController.m */,
-				B21BEC5C1F04A23E00354274 /* ForgetInputNewPWViewController.xib */,
-			);
-			name = ForgetPassWord;
-			sourceTree = "<group>";
-		};
 		B21BD2C11EDFB9E500BAD836 /* PersonalCenter */ = {
 			isa = PBXGroup;
 			children = (
+				B2339C2C1F05E97100B336BB /* TradeAccountBind */,
 				B2BE00F31EE93CE30012AD3E /* Personal */,
 				B2BE012E1EE943D30012AD3E /* Setting */,
 				B2CCA98E1F02519A002BA562 /* AccountSet */,
@@ -526,6 +468,71 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		B2339C2C1F05E97100B336BB /* TradeAccountBind */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TradeAccountBind;
+			sourceTree = "<group>";
+		};
+		B2339C2D1F05F2DF00B336BB /* LoginOrRegister */ = {
+			isa = PBXGroup;
+			children = (
+				B2339C3C1F05F35900B336BB /* Forget */,
+				B2339C3D1F05F35900B336BB /* Login */,
+				B2339C3E1F05F35900B336BB /* Register */,
+			);
+			path = LoginOrRegister;
+			sourceTree = "<group>";
+		};
+		B2339C3C1F05F35900B336BB /* Forget */ = {
+			isa = PBXGroup;
+			children = (
+				B2339C661F05F41500B336BB /* ForgetInputNewPWViewController.h */,
+				B2339C4E1F05F3B300B336BB /* ForgetInputNewPWViewController.m */,
+				B2339C4F1F05F3B300B336BB /* ForgetInputNewPWViewController.xib */,
+				B2339C501F05F3B300B336BB /* ForgetPasswordViewController.h */,
+				B2339C511F05F3B300B336BB /* ForgetPasswordViewController.m */,
+				B2339C4D1F05F3B300B336BB /* ForgetPasswordViewController.xib */,
+				B2339C671F05F41500B336BB /* ForgetInputCodeViewController.h */,
+				B2339C641F05F41500B336BB /* ForgetInputCodeViewController.m */,
+				B2339C651F05F41500B336BB /* ForgetInputCodeViewController.xib */,
+			);
+			path = Forget;
+			sourceTree = "<group>";
+		};
+		B2339C3D1F05F35900B336BB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B2339C3F1F05F39500B336BB /* LoginViewModel.m */,
+				B2339C401F05F39500B336BB /* LoginViewModel.h */,
+				B2339C411F05F39500B336BB /* LoginViewController.xib */,
+				B2339C421F05F39500B336BB /* LoginViewController.m */,
+				B2339C431F05F39500B336BB /* LoginViewController.h */,
+				B2339C441F05F39500B336BB /* LoginView.m */,
+				B2339C451F05F39500B336BB /* LoginView.h */,
+				B2339C461F05F39500B336BB /* LoginModel.m */,
+				B2339C471F05F39500B336BB /* LoginModel.h */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B2339C3E1F05F35900B336BB /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				B2339C571F05F3E000B336BB /* RegisterViewModel.h */,
+				B2339C561F05F3E000B336BB /* RegisterViewModel.m */,
+				B2339C5A1F05F3E000B336BB /* RegisterViewController.h */,
+				B2339C591F05F3E000B336BB /* RegisterViewController.m */,
+				B2339C581F05F3E000B336BB /* RegisterViewController.xib */,
+				B2339C5C1F05F3E000B336BB /* RegisterView.h */,
+				B2339C5B1F05F3E000B336BB /* RegisterView.m */,
+				B2339C5E1F05F3E000B336BB /* RegisterModel.h */,
+				B2339C5D1F05F3E000B336BB /* RegisterModel.m */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		B2A214F51EDEA9E900B19A4A = {
 			isa = PBXGroup;
 			children = (
@@ -559,7 +566,7 @@
 				CEF330E51EDF9AC20032F0EF /* Find */,
 				CEF330E71EDF9AC20032F0EF /* RankingList */,
 				CEF330E81EDF9AC20032F0EF /* Transaction */,
-				B21501441EEA3AEA0052B4BF /* LoginOrRegister */,
+				B2339C2D1F05F2DF00B336BB /* LoginOrRegister */,
 				B21BD2C11EDFB9E500BAD836 /* PersonalCenter */,
 				B2A215041EDEA9E900B19A4A /* AppDelegate.h */,
 				B2A215051EDEA9E900B19A4A /* AppDelegate.m */,
@@ -1033,16 +1040,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B21BEC591F04A21300354274 /* ForgetInputCodeViewController.xib in Resources */,
 				B2BE01281EE93D260012AD3E /* white_bar.png in Resources */,
 				B2BE01331EE943F30012AD3E /* SettingViewController.xib in Resources */,
-				B21501491EEA3C160052B4BF /* LoginViewController.xib in Resources */,
+				B2339C601F05F3E000B336BB /* RegisterViewController.xib in Resources */,
+				B2339C521F05F3B300B336BB /* ForgetPasswordViewController.xib in Resources */,
 				B2A215111EDEA9E900B19A4A /* LaunchScreen.storyboard in Resources */,
 				B2D972171F037D3100A04798 /* AccountSetSexCell.xib in Resources */,
 				B2BE01221EE93D260012AD3E /* PersonalSecondCell.xib in Resources */,
+				B2339C691F05F41500B336BB /* ForgetInputCodeViewController.xib in Resources */,
+				B2339C541F05F3B300B336BB /* ForgetInputNewPWViewController.xib in Resources */,
 				B21BEC4F1F049AD100354274 /* ChangeNickNameViewController.xib in Resources */,
 				B203B3E51F00EBE2002581F6 /* SettingPhoneCell.xib in Resources */,
 				B203B3EF1F00EC2C002581F6 /* SettingSwitchCell.xib in Resources */,
+				B2339C491F05F39500B336BB /* LoginViewController.xib in Resources */,
 				B2BE011A1EE93D260012AD3E /* PersonalBottomCell.xib in Resources */,
 				B203B3EA1F00EBFE002581F6 /* SettingDefaultCell.xib in Resources */,
 				B203B3E01F00EBC8002581F6 /* SettingHeadImgCell.xib in Resources */,
@@ -1050,11 +1060,8 @@
 				B2BE011C1EE93D260012AD3E /* PersonalCollectionCell.xib in Resources */,
 				B2BE011E1EE93D260012AD3E /* PersonalFirstCell.xib in Resources */,
 				B2BE01231EE93D260012AD3E /* PersonalViewController.xib in Resources */,
-				B21BEC541F04A02700354274 /* ForgetPasswordViewController.xib in Resources */,
-				B21BEC5E1F04A23E00354274 /* ForgetInputNewPWViewController.xib in Resources */,
 				B2BE01271EE93D260012AD3E /* TradeRecordsCell.xib in Resources */,
 				B2CCA98D1F024703002BA562 /* AboutUSViewController.xib in Resources */,
-				B2B4B8DA1EF91B7D0005AFF1 /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1129,20 +1136,19 @@
 			files = (
 				B21BEC461F04893200354274 /* ChangeNextMainView.m in Sources */,
 				B2D972211F03988F00A04798 /* ChangePhoneMainView.m in Sources */,
-				B21501481EEA3C160052B4BF /* LoginViewController.m in Sources */,
-				B21BEC581F04A21300354274 /* ForgetInputCodeViewController.m in Sources */,
 				B2BE01161EE93D260012AD3E /* PersonalBottomCell.m in Sources */,
+				B2339C611F05F3E000B336BB /* RegisterViewController.m in Sources */,
 				B21BEC4E1F049AD100354274 /* ChangeNickNameViewController.m in Sources */,
-				B21501541EEA67AD0052B4BF /* LoginViewModel.m in Sources */,
+				B2339C531F05F3B300B336BB /* ForgetInputNewPWViewController.m in Sources */,
 				B21BEC431F04891700354274 /* ChangeNextViewController.m in Sources */,
 				B2CCA9971F02534C002BA562 /* AccountSetMainView.m in Sources */,
 				CEF331031EDF9CC50032F0EF /* BaseTableViewCell.m in Sources */,
 				CEF3312A1EDFD9CA0032F0EF /* DynamicsViewController.m in Sources */,
+				B2339C481F05F39500B336BB /* LoginViewModel.m in Sources */,
 				B2BE011B1EE93D260012AD3E /* PersonalCollectionCell.m in Sources */,
 				B2BE01171EE93D260012AD3E /* PersonalViewController.m in Sources */,
 				B2BE01251EE93D260012AD3E /* QHBarChart.m in Sources */,
 				B2BE011D1EE93D260012AD3E /* PersonalFirstCell.m in Sources */,
-				B21501571EEA67FC0052B4BF /* LoginModel.m in Sources */,
 				CEF331221EDFB3D50032F0EF /* UserInformation.m in Sources */,
 				CEF331381EE00A5D0032F0EF /* DynamicsView.m in Sources */,
 				B203B3DF1F00EBC8002581F6 /* SettingHeadImgCell.m in Sources */,
@@ -1150,6 +1156,7 @@
 				CEF3311C1EDFAE330032F0EF /* QHRequestModel.m in Sources */,
 				CEF331051EDF9CC50032F0EF /* BaseViewModel.m in Sources */,
 				CEF331321EDFDF080032F0EF /* DiscoverViewController.m in Sources */,
+				B2339C4C1F05F39500B336BB /* LoginModel.m in Sources */,
 				CEF330EE1EDF9B720032F0EF /* UIImage+Extension.m in Sources */,
 				CEF3313E1EE00BE40032F0EF /* DynamicsModel.m in Sources */,
 				B2A215061EDEA9E900B19A4A /* AppDelegate.m in Sources */,
@@ -1157,15 +1164,13 @@
 				B203B3D71F00E41A002581F6 /* SettingMainView.m in Sources */,
 				CEF331061EDF9CC50032F0EF /* NavigationBaseController.m in Sources */,
 				B21BEC6B1F04F58600354274 /* PersonalModel.m in Sources */,
-				B24EB0711EF9FE5600D46807 /* RegisterModel.m in Sources */,
 				CEF331081EDF9CC50032F0EF /* ViewBaseController.m in Sources */,
 				B2CCA9911F0251C2002BA562 /* AccountSetViewController.m in Sources */,
-				B24EB0741EF9FE6D00D46807 /* RegisterViewModel.m in Sources */,
 				B21BEC621F04AB0C00354274 /* MyVisitorViewController.m in Sources */,
-				B21BEC531F04A02700354274 /* ForgetPasswordViewController.m in Sources */,
+				B2339C621F05F3E000B336BB /* RegisterView.m in Sources */,
+				B2339C551F05F3B300B336BB /* ForgetPasswordViewController.m in Sources */,
 				B2BE01191EE93D260012AD3E /* BarChart.m in Sources */,
 				B203B3D11F00D752002581F6 /* PromptView.m in Sources */,
-				B2B4B8D91EF91B7D0005AFF1 /* RegisterViewController.m in Sources */,
 				B203B3E41F00EBE2002581F6 /* SettingPhoneCell.m in Sources */,
 				CEF330F11EDF9BC60032F0EF /* UIView+Extension.m in Sources */,
 				B2CCA98C1F024703002BA562 /* AboutUSViewController.m in Sources */,
@@ -1175,12 +1180,14 @@
 				B2BE01321EE943F30012AD3E /* SettingViewController.m in Sources */,
 				B2BE011F1EE93D260012AD3E /* PersonalHeadView.m in Sources */,
 				B2CCA99A1F025364002BA562 /* AccountSetViewModel.m in Sources */,
-				B21BEC5D1F04A23E00354274 /* ForgetInputNewPWViewController.m in Sources */,
 				B21BEC661F04AD8F00354274 /* FocusViewController.m in Sources */,
+				B2339C5F1F05F3E000B336BB /* RegisterViewModel.m in Sources */,
 				CEF3311F1EDFB1E70032F0EF /* QHRequest+Api.m in Sources */,
 				B203B3E91F00EBFE002581F6 /* SettingDefaultCell.m in Sources */,
 				CEF3312E1EDFDBCB0032F0EF /* QHTabBar.m in Sources */,
 				B2BE01151EE93D260012AD3E /* LineChartDescribe.m in Sources */,
+				B2339C4A1F05F39500B336BB /* LoginViewController.m in Sources */,
+				B2339C681F05F41500B336BB /* ForgetInputCodeViewController.m in Sources */,
 				B2D972161F037D3100A04798 /* AccountSetSexCell.m in Sources */,
 				B203B3DB1F00E4AD002581F6 /* SettingViewModel.m in Sources */,
 				CEF7D5681EE1460E000A869E /* DynamicsNavigationCenterView.m in Sources */,
@@ -1188,14 +1195,14 @@
 				B203B3EE1F00EC2C002581F6 /* SettingSwitchCell.m in Sources */,
 				B2D972241F0398B600A04798 /* ChangePhoneViewModel.m in Sources */,
 				B2D972121F037BC800A04798 /* ChooseSexView.m in Sources */,
+				B2339C631F05F3E000B336BB /* RegisterModel.m in Sources */,
 				B2BE01241EE93D260012AD3E /* PersonalViewModel.m in Sources */,
 				B2BE01181EE93D260012AD3E /* QHLineChartView.m in Sources */,
 				B2BE01261EE93D260012AD3E /* TradeRecordsCell.m in Sources */,
-				B21501511EEA67940052B4BF /* LoginView.m in Sources */,
 				CEF331041EDF9CC50032F0EF /* BaseView.m in Sources */,
 				CEF3313B1EE00BA60032F0EF /* DynamicsViewModel.m in Sources */,
 				CEF331191EDFAC750032F0EF /* QHRequest.m in Sources */,
-				B24EB06E1EF9FE4200D46807 /* RegisterView.m in Sources */,
+				B2339C4B1F05F39500B336BB /* LoginView.m in Sources */,
 				B2D9721B1F03974100A04798 /* ChangePhoneViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
