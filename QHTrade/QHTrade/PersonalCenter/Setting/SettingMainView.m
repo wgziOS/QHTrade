@@ -42,7 +42,7 @@
 }
 -(void)updateConstraints{
 
-    WS(weakself)
+    WS(weakSelf)
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(weakSelf);
     }];
@@ -68,7 +68,7 @@
     SettingPhoneCell * phoneCell = [tableView dequeueReusableCellWithIdentifier:kSettingPhoneCell];
     SettingDefaultCell * defaultCell = [tableView dequeueReusableCellWithIdentifier:kSettingDefaultCell];
     SettingSwitchCell * switchCell = [tableView dequeueReusableCellWithIdentifier:kSettingSwitchCell];
-    WS(weakself)
+    WS(weakSelf)
     if (indexPath.section == 0) {
         switch (indexPath.row) {
             case 0:

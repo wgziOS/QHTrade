@@ -56,7 +56,7 @@
     [self updateConstraintsIfNeeded];
 }
 -(void)updateConstraints{
-    WS(weakself)
+    WS(weakSelf)
     
     [self.topLabel mas_makeConstraints:^(MASConstraintMaker *make) {
        

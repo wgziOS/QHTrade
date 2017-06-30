@@ -27,5 +27,7 @@
 #import "QHRequest+Api.h"
 #import "MBProgressHUD+NJ.h"
 #import "UserInformation.h"
+#import "UIImage+Extension.h"
+#import "UIView+Extension.h"
 
 #endif /* PrefixHeader_pch */

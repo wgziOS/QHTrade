@@ -55,7 +55,7 @@
 -(void)updateConstraints{
 
     
-    WS(weakself)
+    WS(weakSelf)
 
     [self.signImageView mas_makeConstraints:^(MASConstraintMaker *make) {
       

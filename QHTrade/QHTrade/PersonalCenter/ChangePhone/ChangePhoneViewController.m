@@ -27,7 +27,7 @@
 }
 -(void)updateViewConstraints{
 
-    WS(weakself)
+    WS(weakSelf)
     [self.mainView mas_makeConstraints:^(MASConstraintMaker *make) {
        
         make.edges.equalTo(weakSelf.view);

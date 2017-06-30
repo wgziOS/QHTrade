@@ -72,7 +72,7 @@
     
     self.yearLabel.text = @"30岁";
     
-    WS(weakself)
+    WS(weakSelf)
     [self.headImgView mas_makeConstraints:^(MASConstraintMaker *make) {
        
         make.top.equalTo(weakSelf).with.offset(15);
