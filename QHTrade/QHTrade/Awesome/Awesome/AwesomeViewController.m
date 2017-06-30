@@ -1,34 +1,31 @@
 //
-//  DiscoverViewController.m
+//  AwesomeViewController.m
 //  QHTrade
 //
-//  Created by user on 2017/6/1.
+//  Created by user on 2017/6/30.
 //  Copyright © 2017年 qihuo.RDTrade.com. All rights reserved.
 //
 
-#import "DiscoverViewController.h"
-#import "LoginViewController.h"
+#import "AwesomeViewController.h"
 
-@interface DiscoverViewController ()
+@interface AwesomeViewController ()
 
 @end
 
-@implementation DiscoverViewController
+@implementation AwesomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    LoginViewController *LVC = [[LoginViewController alloc]init];
-    [self.navigationController pushViewController:LVC animated:YES];
 }
--(UIBarButtonItem *)leftButton{
-    return nil;
-}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(UIBarButtonItem *)leftButton{
+    return nil;
+}
 /*
 #pragma mark - Navigation
 

@@ -10,7 +10,9 @@
 #import "NavigationBaseController.h"
 #import "DynamicsViewController.h"
 #import "PersonalViewController.h"
-#import "DiscoverViewController.h"
+#import "AwesomeViewController.h"
+#import "HomeViewController.h"
+#import "GroupViewController.h"
 #import "QHTabBar.h"
 
 
@@ -38,11 +40,18 @@
     UITabBarItem *item = [UITabBarItem appearance];
     [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
     [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
-//
-    [self setupChildVc:[[DiscoverViewController alloc] init] title:@"发现" image:@"tabbar_discover" selectedImage:@"tabbar_discover_select"];
-    // 添加子控制器
+
+    /*
+     * 添加子导航栏控制器
+     */
+    [self setupChildVc:[[HomeViewController alloc] init] title:@"首页" image:@"tabbar_discover" selectedImage:@"tabbar_discover_select"];
+    
+    [self setupChildVc:[[AwesomeViewController alloc] init] title:@"牛人" image:@"tabbar_discover" selectedImage:@"tabbar_discover_select"];
+    
+    [self setupChildVc:[[GroupViewController alloc] init] title:@"圈子" image:@"tabbar_discover" selectedImage:@"tabbar_discover_select"];
+    
     [self setupChildVc:[[DynamicsViewController alloc] init] title:@"交易" image:@"tabar_dynamic" selectedImage:@"tabar_dynamic_select"];
-    // 添加子控制器
+ 
     [self setupChildVc:[[PersonalViewController alloc] init] title:@"个人中心" image:@"tabbar_personal" selectedImage:@"tabbar_personal_select"];
 
 
