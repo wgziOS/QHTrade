@@ -37,7 +37,7 @@
     self.operationManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/plain", @"text/json", @"text/javascript",@"text/html", nil];
     
     
-    NSString *userId = [ [NSUserDefaults standardUserDefaults] objectForKey:@"user_id"];
+    NSString *userId = [ [NSUserDefaults standardUserDefaults] objectForKey:@"userId"];
     NSString *token =  [ [NSUserDefaults standardUserDefaults] objectForKey:@"token"];
     NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     NSString *version_no = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
@@ -46,8 +46,9 @@
     
     self.operationManager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
     if ([self isValidateString:userId]==YES&&[self isValidateString:token]==YES) {
-        [self.operationManager.requestSerializer setValue:userId forHTTPHeaderField:@"user_id"];
-        [self.operationManager.requestSerializer setValue:token  forHTTPHeaderField:@"token"];
+//        [self.operationManager.requestSerializer setValue:userId forHTTPHeaderField:@"user_id"];
+//        [self.operationManager.requestSerializer setValue:token  forHTTPHeaderField:@"token"];
+        [self.operationManager.requestSerializer setValue:[NSString stringWithFormat:@"%@_%@",userId,token]  forHTTPHeaderField:@"userId_token"];
     }
     [self.operationManager.requestSerializer setValue:uuid forHTTPHeaderField:@"uuid"];
     [self.operationManager.requestSerializer setValue:@"2" forHTTPHeaderField:@"platform"];
@@ -96,6 +97,25 @@
     self.operationManager.requestSerializer.timeoutInterval = 10.f;
     self.operationManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/plain", @"text/json", @"text/javascript",@"text/html", nil];
     
+    NSString *userId = [ [NSUserDefaults standardUserDefaults] objectForKey:@"userId"];
+    NSString *token =  [ [NSUserDefaults standardUserDefaults] objectForKey:@"token"];
+    NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    NSString *version_no = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+    NSString *uuid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    
+    
+    self.operationManager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
+    if ([self isValidateString:userId]==YES&&[self isValidateString:token]==YES) {
+        //        [self.operationManager.requestSerializer setValue:userId forHTTPHeaderField:@"user_id"];
+        //        [self.operationManager.requestSerializer setValue:token  forHTTPHeaderField:@"token"];
+        [self.operationManager.requestSerializer setValue:[NSString stringWithFormat:@"%@_%@",userId,token]  forHTTPHeaderField:@"userId_token"];
+        
+    }
+    [self.operationManager.requestSerializer setValue:uuid forHTTPHeaderField:@"uuid"];
+    [self.operationManager.requestSerializer setValue:@"2" forHTTPHeaderField:@"platform"];
+    [self.operationManager.requestSerializer setValue:version_no forHTTPHeaderField:@"version_no"];
+    [self.operationManager.requestSerializer setValue:version forHTTPHeaderField:@"version"];
+    
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     
     [self.operationManager GET:URLString
@@ -132,7 +152,7 @@
     self.operationManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/plain", @"text/json", @"text/javascript",@"text/html", nil];
     
     
-    NSString *userId = [ [NSUserDefaults standardUserDefaults] objectForKey:@"user_id"];
+    NSString *userId = [ [NSUserDefaults standardUserDefaults] objectForKey:@"userId"];
     NSString *token =  [ [NSUserDefaults standardUserDefaults] objectForKey:@"token"];
     NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     NSString *version_no = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
@@ -141,8 +161,10 @@
     
     self.operationManager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
     if ([self isValidateString:userId]==YES&&[self isValidateString:token]==YES) {
-        [self.operationManager.requestSerializer setValue:userId forHTTPHeaderField:@"user_id"];
-        [self.operationManager.requestSerializer setValue:token  forHTTPHeaderField:@"token"];
+//        [self.operationManager.requestSerializer setValue:userId forHTTPHeaderField:@"user_id"];
+//        [self.operationManager.requestSerializer setValue:token  forHTTPHeaderField:@"token"];
+        [self.operationManager.requestSerializer setValue:[NSString stringWithFormat:@"%@_%@",userId,token]  forHTTPHeaderField:@"userId_token"];
+
     }
     [self.operationManager.requestSerializer setValue:uuid forHTTPHeaderField:@"uuid"];
     [self.operationManager.requestSerializer setValue:@"2" forHTTPHeaderField:@"platform"];

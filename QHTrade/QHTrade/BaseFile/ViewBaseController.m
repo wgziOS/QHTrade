@@ -34,6 +34,10 @@
 
 - (void) setUpNavigationBar
 {
+
+    
+   
+    
     self.navigationController.navigationBar.shadowImage = [UIImage new];
     
     self.navigationItem.leftBarButtonItem = [self leftButton];//设置导航栏左边按钮
@@ -44,12 +48,19 @@
         self.edgesForExtendedLayout = UIRectEdgeNone;
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
+//    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+//    gradientLayer.colors = @[(__bridge id)RGB(202, 165, 108).CGColor, (__bridge id)RGB(173, 130, 66).CGColor];
+//    gradientLayer.locations = @[@0.1, @1.0];
+//    gradientLayer.startPoint = CGPointMake(0, 0);
+//    gradientLayer.endPoint = CGPointMake(1.0, 0);
+//    gradientLayer.frame = CGRectMake(0, -20, SCREEN_WIDTH, 64);
+//    [self.navigationController.navigationBar.layer addSublayer:gradientLayer];
 }
 
 - (UIBarButtonItem *)leftButton
 {
     UIButton* btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
-    [btn setImage:[UIImage imageNamed:@"backBtn"] forState:UIControlStateNormal];//设置左边按钮的图片
+    [btn setImage:[UIImage imageNamed:@"navigation_back_icon"] forState:UIControlStateNormal];//设置左边按钮的图片
     [btn addTarget:self action:@selector(actionOnTouchBackButton:) forControlEvents:UIControlEventTouchUpInside];//设置按钮的点击事件
     return [[UIBarButtonItem alloc] initWithCustomView:btn];
     
