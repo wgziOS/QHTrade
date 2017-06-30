@@ -28,7 +28,7 @@
 }
 -(void)updateViewConstraints{
 
-    WS(weakself)
+    WS(weakSelf)
     [self.mainView mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.edges.equalTo(weakSelf.view);
@@ -55,7 +55,7 @@
 }
 -(void)bindViewModel{
     
-    WS(weakself)
+    WS(weakSelf)
     
     [[weakSelf.viewModel.cellClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(NSMutableDictionary* x) {
         

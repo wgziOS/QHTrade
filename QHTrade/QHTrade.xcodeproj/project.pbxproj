@@ -82,6 +82,46 @@
 		B2D972211F03988F00A04798 /* ChangePhoneMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D972201F03988F00A04798 /* ChangePhoneMainView.m */; };
 		B2D972241F0398B600A04798 /* ChangePhoneViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D972231F0398B600A04798 /* ChangePhoneViewModel.m */; };
 		B73AFA0A506780FED210E1D0 /* Pods_QHTrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972BB4CEA1349E67DFAA5B40 /* Pods_QHTrade.framework */; };
+		CE30CA151F05F93F00778172 /* CFFEXHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9BB1F05F93F00778172 /* CFFEXHeadView.m */; };
+		CE30CA161F05F93F00778172 /* CFFEXView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9BD1F05F93F00778172 /* CFFEXView.m */; };
+		CE30CA171F05F93F00778172 /* CFFEXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9BF1F05F93F00778172 /* CFFEXViewController.m */; };
+		CE30CA181F05F93F00778172 /* CFFEXViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9C11F05F93F00778172 /* CFFEXViewModel.m */; };
+		CE30CA191F05F93F00778172 /* DCEHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9C41F05F93F00778172 /* DCEHeadView.m */; };
+		CE30CA1A1F05F93F00778172 /* DCEView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9C61F05F93F00778172 /* DCEView.m */; };
+		CE30CA1B1F05F93F00778172 /* DCEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9C81F05F93F00778172 /* DCEViewController.m */; };
+		CE30CA1C1F05F93F00778172 /* DCEViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9CA1F05F93F00778172 /* DCEViewModel.m */; };
+		CE30CA1D1F05F93F00778172 /* DynamicsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9CD1F05F93F00778172 /* DynamicsModel.m */; };
+		CE30CA1E1F05F93F00778172 /* DynamicsNavigationCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9CF1F05F93F00778172 /* DynamicsNavigationCenterView.m */; };
+		CE30CA1F1F05F93F00778172 /* DynamicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9D11F05F93F00778172 /* DynamicsView.m */; };
+		CE30CA201F05F93F00778172 /* DynamicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9D31F05F93F00778172 /* DynamicsViewController.m */; };
+		CE30CA211F05F93F00778172 /* DynamicsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9D51F05F93F00778172 /* DynamicsViewModel.m */; };
+		CE30CA221F05F93F00778172 /* MainContractHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9D91F05F93F00778172 /* MainContractHeadView.m */; };
+		CE30CA231F05F93F00778172 /* MainContractView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9DB1F05F93F00778172 /* MainContractView.m */; };
+		CE30CA241F05F93F00778172 /* MainContractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9DD1F05F93F00778172 /* MainContractViewController.m */; };
+		CE30CA251F05F93F00778172 /* MainContractViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9DF1F05F93F00778172 /* MainContractViewModel.m */; };
+		CE30CA261F05F93F00778172 /* HangOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9E41F05F93F00778172 /* HangOrderTableViewCell.m */; };
+		CE30CA271F05F93F00778172 /* HangOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9E61F05F93F00778172 /* HangOrderView.m */; };
+		CE30CA281F05F93F00778172 /* PositionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9E91F05F93F00778172 /* PositionModel.m */; };
+		CE30CA291F05F93F00778172 /* PositionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9EB1F05F93F00778172 /* PositionTableViewCell.m */; };
+		CE30CA2A1F05F93F00778172 /* PositionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9ED1F05F93F00778172 /* PositionView.m */; };
+		CE30CA2B1F05F93F00778172 /* MyContractCollectionCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9EF1F05F93F00778172 /* MyContractCollectionCellView.m */; };
+		CE30CA2C1F05F93F00778172 /* MyContractHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9F11F05F93F00778172 /* MyContractHeadView.m */; };
+		CE30CA2D1F05F93F00778172 /* MycontractSegmentcontrolView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9F31F05F93F00778172 /* MycontractSegmentcontrolView.m */; };
+		CE30CA2E1F05F93F00778172 /* MyContractView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9F51F05F93F00778172 /* MyContractView.m */; };
+		CE30CA2F1F05F93F00778172 /* MyContractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9F71F05F93F00778172 /* MyContractViewController.m */; };
+		CE30CA301F05F93F00778172 /* MyContractViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9F91F05F93F00778172 /* MyContractViewModel.m */; };
+		CE30CA311F05F93F00778172 /* OptionalContractHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9FC1F05F93F00778172 /* OptionalContractHeadView.m */; };
+		CE30CA321F05F93F00778172 /* OptionalContractView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9FE1F05F93F00778172 /* OptionalContractView.m */; };
+		CE30CA331F05F93F00778172 /* OptionalContractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30CA001F05F93F00778172 /* OptionalContractViewController.m */; };
+		CE30CA341F05F93F00778172 /* OptionalContractViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30CA021F05F93F00778172 /* OptionalContractViewModel.m */; };
+		CE30CA351F05F93F00778172 /* SHFEHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30CA051F05F93F00778172 /* SHFEHeadView.m */; };
+		CE30CA361F05F93F00778172 /* SHFEView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30CA071F05F93F00778172 /* SHFEView.m */; };
+		CE30CA371F05F93F00778172 /* SHFEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30CA091F05F93F00778172 /* SHFEViewController.m */; };
+		CE30CA381F05F93F00778172 /* SHFEViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30CA0B1F05F93F00778172 /* SHFEViewModel.m */; };
+		CE30CA391F05F93F00778172 /* ZZCEHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30CA0E1F05F93F00778172 /* ZZCEHeadView.m */; };
+		CE30CA3A1F05F93F00778172 /* ZZCEView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30CA101F05F93F00778172 /* ZZCEView.m */; };
+		CE30CA3B1F05F93F00778172 /* ZZCEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30CA121F05F93F00778172 /* ZZCEViewController.m */; };
+		CE30CA3C1F05F93F00778172 /* ZZCEViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30CA141F05F93F00778172 /* ZZCEViewModel.m */; };
 		CEF330EE1EDF9B720032F0EF /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF330ED1EDF9B720032F0EF /* UIImage+Extension.m */; };
 		CEF330F11EDF9BC60032F0EF /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF330F01EDF9BC60032F0EF /* UIView+Extension.m */; };
 		CEF331031EDF9CC50032F0EF /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF330F41EDF9CC50032F0EF /* BaseTableViewCell.m */; };
@@ -95,13 +135,8 @@
 		CEF3311C1EDFAE330032F0EF /* QHRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3311B1EDFAE330032F0EF /* QHRequestModel.m */; };
 		CEF3311F1EDFB1E70032F0EF /* QHRequest+Api.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3311E1EDFB1E70032F0EF /* QHRequest+Api.m */; };
 		CEF331221EDFB3D50032F0EF /* UserInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF331211EDFB3D50032F0EF /* UserInformation.m */; };
-		CEF3312A1EDFD9CA0032F0EF /* DynamicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF331291EDFD9CA0032F0EF /* DynamicsViewController.m */; };
 		CEF3312E1EDFDBCB0032F0EF /* QHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3312D1EDFDBCB0032F0EF /* QHTabBar.m */; };
 		CEF331321EDFDF080032F0EF /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF331311EDFDF080032F0EF /* DiscoverViewController.m */; };
-		CEF331381EE00A5D0032F0EF /* DynamicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF331371EE00A5D0032F0EF /* DynamicsView.m */; };
-		CEF3313B1EE00BA60032F0EF /* DynamicsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3313A1EE00BA60032F0EF /* DynamicsViewModel.m */; };
-		CEF3313E1EE00BE40032F0EF /* DynamicsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3313D1EE00BE40032F0EF /* DynamicsModel.m */; };
-		CEF7D5681EE1460E000A869E /* DynamicsNavigationCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7D5671EE1460E000A869E /* DynamicsNavigationCenterView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -252,6 +287,86 @@
 		B2D972201F03988F00A04798 /* ChangePhoneMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePhoneMainView.m; sourceTree = "<group>"; };
 		B2D972221F0398B600A04798 /* ChangePhoneViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePhoneViewModel.h; sourceTree = "<group>"; };
 		B2D972231F0398B600A04798 /* ChangePhoneViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePhoneViewModel.m; sourceTree = "<group>"; };
+		CE30C9BA1F05F93F00778172 /* CFFEXHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFFEXHeadView.h; sourceTree = "<group>"; };
+		CE30C9BB1F05F93F00778172 /* CFFEXHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFFEXHeadView.m; sourceTree = "<group>"; };
+		CE30C9BC1F05F93F00778172 /* CFFEXView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFFEXView.h; sourceTree = "<group>"; };
+		CE30C9BD1F05F93F00778172 /* CFFEXView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFFEXView.m; sourceTree = "<group>"; };
+		CE30C9BE1F05F93F00778172 /* CFFEXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFFEXViewController.h; sourceTree = "<group>"; };
+		CE30C9BF1F05F93F00778172 /* CFFEXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFFEXViewController.m; sourceTree = "<group>"; };
+		CE30C9C01F05F93F00778172 /* CFFEXViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFFEXViewModel.h; sourceTree = "<group>"; };
+		CE30C9C11F05F93F00778172 /* CFFEXViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFFEXViewModel.m; sourceTree = "<group>"; };
+		CE30C9C31F05F93F00778172 /* DCEHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCEHeadView.h; sourceTree = "<group>"; };
+		CE30C9C41F05F93F00778172 /* DCEHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCEHeadView.m; sourceTree = "<group>"; };
+		CE30C9C51F05F93F00778172 /* DCEView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCEView.h; sourceTree = "<group>"; };
+		CE30C9C61F05F93F00778172 /* DCEView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCEView.m; sourceTree = "<group>"; };
+		CE30C9C71F05F93F00778172 /* DCEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCEViewController.h; sourceTree = "<group>"; };
+		CE30C9C81F05F93F00778172 /* DCEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCEViewController.m; sourceTree = "<group>"; };
+		CE30C9C91F05F93F00778172 /* DCEViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCEViewModel.h; sourceTree = "<group>"; };
+		CE30C9CA1F05F93F00778172 /* DCEViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCEViewModel.m; sourceTree = "<group>"; };
+		CE30C9CC1F05F93F00778172 /* DynamicsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsModel.h; sourceTree = "<group>"; };
+		CE30C9CD1F05F93F00778172 /* DynamicsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsModel.m; sourceTree = "<group>"; };
+		CE30C9CE1F05F93F00778172 /* DynamicsNavigationCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsNavigationCenterView.h; sourceTree = "<group>"; };
+		CE30C9CF1F05F93F00778172 /* DynamicsNavigationCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsNavigationCenterView.m; sourceTree = "<group>"; };
+		CE30C9D01F05F93F00778172 /* DynamicsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsView.h; sourceTree = "<group>"; };
+		CE30C9D11F05F93F00778172 /* DynamicsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsView.m; sourceTree = "<group>"; };
+		CE30C9D21F05F93F00778172 /* DynamicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsViewController.h; sourceTree = "<group>"; };
+		CE30C9D31F05F93F00778172 /* DynamicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsViewController.m; sourceTree = "<group>"; };
+		CE30C9D41F05F93F00778172 /* DynamicsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsViewModel.h; sourceTree = "<group>"; };
+		CE30C9D51F05F93F00778172 /* DynamicsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsViewModel.m; sourceTree = "<group>"; };
+		CE30C9D81F05F93F00778172 /* MainContractHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainContractHeadView.h; sourceTree = "<group>"; };
+		CE30C9D91F05F93F00778172 /* MainContractHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainContractHeadView.m; sourceTree = "<group>"; };
+		CE30C9DA1F05F93F00778172 /* MainContractView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainContractView.h; sourceTree = "<group>"; };
+		CE30C9DB1F05F93F00778172 /* MainContractView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainContractView.m; sourceTree = "<group>"; };
+		CE30C9DC1F05F93F00778172 /* MainContractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainContractViewController.h; sourceTree = "<group>"; };
+		CE30C9DD1F05F93F00778172 /* MainContractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainContractViewController.m; sourceTree = "<group>"; };
+		CE30C9DE1F05F93F00778172 /* MainContractViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainContractViewModel.h; sourceTree = "<group>"; };
+		CE30C9DF1F05F93F00778172 /* MainContractViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainContractViewModel.m; sourceTree = "<group>"; };
+		CE30C9E31F05F93F00778172 /* HangOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangOrderTableViewCell.h; sourceTree = "<group>"; };
+		CE30C9E41F05F93F00778172 /* HangOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangOrderTableViewCell.m; sourceTree = "<group>"; };
+		CE30C9E51F05F93F00778172 /* HangOrderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangOrderView.h; sourceTree = "<group>"; };
+		CE30C9E61F05F93F00778172 /* HangOrderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangOrderView.m; sourceTree = "<group>"; };
+		CE30C9E81F05F93F00778172 /* PositionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionModel.h; sourceTree = "<group>"; };
+		CE30C9E91F05F93F00778172 /* PositionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionModel.m; sourceTree = "<group>"; };
+		CE30C9EA1F05F93F00778172 /* PositionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionTableViewCell.h; sourceTree = "<group>"; };
+		CE30C9EB1F05F93F00778172 /* PositionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionTableViewCell.m; sourceTree = "<group>"; };
+		CE30C9EC1F05F93F00778172 /* PositionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionView.h; sourceTree = "<group>"; };
+		CE30C9ED1F05F93F00778172 /* PositionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionView.m; sourceTree = "<group>"; };
+		CE30C9EE1F05F93F00778172 /* MyContractCollectionCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyContractCollectionCellView.h; sourceTree = "<group>"; };
+		CE30C9EF1F05F93F00778172 /* MyContractCollectionCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyContractCollectionCellView.m; sourceTree = "<group>"; };
+		CE30C9F01F05F93F00778172 /* MyContractHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyContractHeadView.h; sourceTree = "<group>"; };
+		CE30C9F11F05F93F00778172 /* MyContractHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyContractHeadView.m; sourceTree = "<group>"; };
+		CE30C9F21F05F93F00778172 /* MycontractSegmentcontrolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MycontractSegmentcontrolView.h; sourceTree = "<group>"; };
+		CE30C9F31F05F93F00778172 /* MycontractSegmentcontrolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MycontractSegmentcontrolView.m; sourceTree = "<group>"; };
+		CE30C9F41F05F93F00778172 /* MyContractView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyContractView.h; sourceTree = "<group>"; };
+		CE30C9F51F05F93F00778172 /* MyContractView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyContractView.m; sourceTree = "<group>"; };
+		CE30C9F61F05F93F00778172 /* MyContractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyContractViewController.h; sourceTree = "<group>"; };
+		CE30C9F71F05F93F00778172 /* MyContractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyContractViewController.m; sourceTree = "<group>"; };
+		CE30C9F81F05F93F00778172 /* MyContractViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyContractViewModel.h; sourceTree = "<group>"; };
+		CE30C9F91F05F93F00778172 /* MyContractViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyContractViewModel.m; sourceTree = "<group>"; };
+		CE30C9FB1F05F93F00778172 /* OptionalContractHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionalContractHeadView.h; sourceTree = "<group>"; };
+		CE30C9FC1F05F93F00778172 /* OptionalContractHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionalContractHeadView.m; sourceTree = "<group>"; };
+		CE30C9FD1F05F93F00778172 /* OptionalContractView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionalContractView.h; sourceTree = "<group>"; };
+		CE30C9FE1F05F93F00778172 /* OptionalContractView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionalContractView.m; sourceTree = "<group>"; };
+		CE30C9FF1F05F93F00778172 /* OptionalContractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionalContractViewController.h; sourceTree = "<group>"; };
+		CE30CA001F05F93F00778172 /* OptionalContractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionalContractViewController.m; sourceTree = "<group>"; };
+		CE30CA011F05F93F00778172 /* OptionalContractViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionalContractViewModel.h; sourceTree = "<group>"; };
+		CE30CA021F05F93F00778172 /* OptionalContractViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionalContractViewModel.m; sourceTree = "<group>"; };
+		CE30CA041F05F93F00778172 /* SHFEHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHFEHeadView.h; sourceTree = "<group>"; };
+		CE30CA051F05F93F00778172 /* SHFEHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHFEHeadView.m; sourceTree = "<group>"; };
+		CE30CA061F05F93F00778172 /* SHFEView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHFEView.h; sourceTree = "<group>"; };
+		CE30CA071F05F93F00778172 /* SHFEView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHFEView.m; sourceTree = "<group>"; };
+		CE30CA081F05F93F00778172 /* SHFEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHFEViewController.h; sourceTree = "<group>"; };
+		CE30CA091F05F93F00778172 /* SHFEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHFEViewController.m; sourceTree = "<group>"; };
+		CE30CA0A1F05F93F00778172 /* SHFEViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHFEViewModel.h; sourceTree = "<group>"; };
+		CE30CA0B1F05F93F00778172 /* SHFEViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHFEViewModel.m; sourceTree = "<group>"; };
+		CE30CA0D1F05F93F00778172 /* ZZCEHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCEHeadView.h; sourceTree = "<group>"; };
+		CE30CA0E1F05F93F00778172 /* ZZCEHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCEHeadView.m; sourceTree = "<group>"; };
+		CE30CA0F1F05F93F00778172 /* ZZCEView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCEView.h; sourceTree = "<group>"; };
+		CE30CA101F05F93F00778172 /* ZZCEView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCEView.m; sourceTree = "<group>"; };
+		CE30CA111F05F93F00778172 /* ZZCEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCEViewController.h; sourceTree = "<group>"; };
+		CE30CA121F05F93F00778172 /* ZZCEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCEViewController.m; sourceTree = "<group>"; };
+		CE30CA131F05F93F00778172 /* ZZCEViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCEViewModel.h; sourceTree = "<group>"; };
+		CE30CA141F05F93F00778172 /* ZZCEViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCEViewModel.m; sourceTree = "<group>"; };
 		CEF330EC1EDF9B720032F0EF /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		CEF330ED1EDF9B720032F0EF /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		CEF330EF1EDF9BC60032F0EF /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -284,20 +399,10 @@
 		CEF3311E1EDFB1E70032F0EF /* QHRequest+Api.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QHRequest+Api.m"; sourceTree = "<group>"; };
 		CEF331201EDFB3D50032F0EF /* UserInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInformation.h; sourceTree = "<group>"; };
 		CEF331211EDFB3D50032F0EF /* UserInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInformation.m; sourceTree = "<group>"; };
-		CEF331281EDFD9CA0032F0EF /* DynamicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsViewController.h; sourceTree = "<group>"; };
-		CEF331291EDFD9CA0032F0EF /* DynamicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsViewController.m; sourceTree = "<group>"; };
 		CEF3312C1EDFDBCB0032F0EF /* QHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHTabBar.h; sourceTree = "<group>"; };
 		CEF3312D1EDFDBCB0032F0EF /* QHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHTabBar.m; sourceTree = "<group>"; };
 		CEF331301EDFDF080032F0EF /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
 		CEF331311EDFDF080032F0EF /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
-		CEF331361EE00A5D0032F0EF /* DynamicsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsView.h; sourceTree = "<group>"; };
-		CEF331371EE00A5D0032F0EF /* DynamicsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsView.m; sourceTree = "<group>"; };
-		CEF331391EE00BA60032F0EF /* DynamicsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsViewModel.h; sourceTree = "<group>"; };
-		CEF3313A1EE00BA60032F0EF /* DynamicsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsViewModel.m; sourceTree = "<group>"; };
-		CEF3313C1EE00BE40032F0EF /* DynamicsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsModel.h; sourceTree = "<group>"; };
-		CEF3313D1EE00BE40032F0EF /* DynamicsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsModel.m; sourceTree = "<group>"; };
-		CEF7D5661EE1460E000A869E /* DynamicsNavigationCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsNavigationCenterView.h; sourceTree = "<group>"; };
-		CEF7D5671EE1460E000A869E /* DynamicsNavigationCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsNavigationCenterView.m; sourceTree = "<group>"; };
 		DB23E11BA4D680FD0F61CE42 /* Pods-QHTrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QHTrade.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QHTrade/Pods-QHTrade.debug.xcconfig"; sourceTree = "<group>"; };
 		E3D3E11B3D85ACEA2AE90524 /* Pods-QHTrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QHTrade.release.xcconfig"; path = "Pods/Target Support Files/Pods-QHTrade/Pods-QHTrade.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -778,10 +883,185 @@
 			name = ViewModel;
 			sourceTree = "<group>";
 		};
+		CE30C9B91F05F93F00778172 /* CFFEX */ = {
+			isa = PBXGroup;
+			children = (
+				CE30C9BA1F05F93F00778172 /* CFFEXHeadView.h */,
+				CE30C9BB1F05F93F00778172 /* CFFEXHeadView.m */,
+				CE30C9BC1F05F93F00778172 /* CFFEXView.h */,
+				CE30C9BD1F05F93F00778172 /* CFFEXView.m */,
+				CE30C9BE1F05F93F00778172 /* CFFEXViewController.h */,
+				CE30C9BF1F05F93F00778172 /* CFFEXViewController.m */,
+				CE30C9C01F05F93F00778172 /* CFFEXViewModel.h */,
+				CE30C9C11F05F93F00778172 /* CFFEXViewModel.m */,
+			);
+			path = CFFEX;
+			sourceTree = "<group>";
+		};
+		CE30C9C21F05F93F00778172 /* DCE */ = {
+			isa = PBXGroup;
+			children = (
+				CE30C9C31F05F93F00778172 /* DCEHeadView.h */,
+				CE30C9C41F05F93F00778172 /* DCEHeadView.m */,
+				CE30C9C51F05F93F00778172 /* DCEView.h */,
+				CE30C9C61F05F93F00778172 /* DCEView.m */,
+				CE30C9C71F05F93F00778172 /* DCEViewController.h */,
+				CE30C9C81F05F93F00778172 /* DCEViewController.m */,
+				CE30C9C91F05F93F00778172 /* DCEViewModel.h */,
+				CE30C9CA1F05F93F00778172 /* DCEViewModel.m */,
+			);
+			path = DCE;
+			sourceTree = "<group>";
+		};
+		CE30C9CB1F05F93F00778172 /* DynamicsFather */ = {
+			isa = PBXGroup;
+			children = (
+				CE30C9CC1F05F93F00778172 /* DynamicsModel.h */,
+				CE30C9CD1F05F93F00778172 /* DynamicsModel.m */,
+				CE30C9CE1F05F93F00778172 /* DynamicsNavigationCenterView.h */,
+				CE30C9CF1F05F93F00778172 /* DynamicsNavigationCenterView.m */,
+				CE30C9D01F05F93F00778172 /* DynamicsView.h */,
+				CE30C9D11F05F93F00778172 /* DynamicsView.m */,
+				CE30C9D21F05F93F00778172 /* DynamicsViewController.h */,
+				CE30C9D31F05F93F00778172 /* DynamicsViewController.m */,
+				CE30C9D41F05F93F00778172 /* DynamicsViewModel.h */,
+				CE30C9D51F05F93F00778172 /* DynamicsViewModel.m */,
+			);
+			path = DynamicsFather;
+			sourceTree = "<group>";
+		};
+		CE30C9D61F05F93F00778172 /* KLine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = KLine;
+			sourceTree = "<group>";
+		};
+		CE30C9D71F05F93F00778172 /* MainContract */ = {
+			isa = PBXGroup;
+			children = (
+				CE30C9D81F05F93F00778172 /* MainContractHeadView.h */,
+				CE30C9D91F05F93F00778172 /* MainContractHeadView.m */,
+				CE30C9DA1F05F93F00778172 /* MainContractView.h */,
+				CE30C9DB1F05F93F00778172 /* MainContractView.m */,
+				CE30C9DC1F05F93F00778172 /* MainContractViewController.h */,
+				CE30C9DD1F05F93F00778172 /* MainContractViewController.m */,
+				CE30C9DE1F05F93F00778172 /* MainContractViewModel.h */,
+				CE30C9DF1F05F93F00778172 /* MainContractViewModel.m */,
+			);
+			path = MainContract;
+			sourceTree = "<group>";
+		};
+		CE30C9E01F05F93F00778172 /* MyContract */ = {
+			isa = PBXGroup;
+			children = (
+				CE30C9E11F05F93F00778172 /* MycontractChildView */,
+				CE30C9EE1F05F93F00778172 /* MyContractCollectionCellView.h */,
+				CE30C9EF1F05F93F00778172 /* MyContractCollectionCellView.m */,
+				CE30C9F01F05F93F00778172 /* MyContractHeadView.h */,
+				CE30C9F11F05F93F00778172 /* MyContractHeadView.m */,
+				CE30C9F21F05F93F00778172 /* MycontractSegmentcontrolView.h */,
+				CE30C9F31F05F93F00778172 /* MycontractSegmentcontrolView.m */,
+				CE30C9F41F05F93F00778172 /* MyContractView.h */,
+				CE30C9F51F05F93F00778172 /* MyContractView.m */,
+				CE30C9F61F05F93F00778172 /* MyContractViewController.h */,
+				CE30C9F71F05F93F00778172 /* MyContractViewController.m */,
+				CE30C9F81F05F93F00778172 /* MyContractViewModel.h */,
+				CE30C9F91F05F93F00778172 /* MyContractViewModel.m */,
+			);
+			path = MyContract;
+			sourceTree = "<group>";
+		};
+		CE30C9E11F05F93F00778172 /* MycontractChildView */ = {
+			isa = PBXGroup;
+			children = (
+				CE30C9E21F05F93F00778172 /* HangOrder */,
+				CE30C9E71F05F93F00778172 /* Position */,
+			);
+			path = MycontractChildView;
+			sourceTree = "<group>";
+		};
+		CE30C9E21F05F93F00778172 /* HangOrder */ = {
+			isa = PBXGroup;
+			children = (
+				CE30C9E31F05F93F00778172 /* HangOrderTableViewCell.h */,
+				CE30C9E41F05F93F00778172 /* HangOrderTableViewCell.m */,
+				CE30C9E51F05F93F00778172 /* HangOrderView.h */,
+				CE30C9E61F05F93F00778172 /* HangOrderView.m */,
+			);
+			path = HangOrder;
+			sourceTree = "<group>";
+		};
+		CE30C9E71F05F93F00778172 /* Position */ = {
+			isa = PBXGroup;
+			children = (
+				CE30C9E81F05F93F00778172 /* PositionModel.h */,
+				CE30C9E91F05F93F00778172 /* PositionModel.m */,
+				CE30C9EA1F05F93F00778172 /* PositionTableViewCell.h */,
+				CE30C9EB1F05F93F00778172 /* PositionTableViewCell.m */,
+				CE30C9EC1F05F93F00778172 /* PositionView.h */,
+				CE30C9ED1F05F93F00778172 /* PositionView.m */,
+			);
+			path = Position;
+			sourceTree = "<group>";
+		};
+		CE30C9FA1F05F93F00778172 /* OptionalContract */ = {
+			isa = PBXGroup;
+			children = (
+				CE30C9FB1F05F93F00778172 /* OptionalContractHeadView.h */,
+				CE30C9FC1F05F93F00778172 /* OptionalContractHeadView.m */,
+				CE30C9FD1F05F93F00778172 /* OptionalContractView.h */,
+				CE30C9FE1F05F93F00778172 /* OptionalContractView.m */,
+				CE30C9FF1F05F93F00778172 /* OptionalContractViewController.h */,
+				CE30CA001F05F93F00778172 /* OptionalContractViewController.m */,
+				CE30CA011F05F93F00778172 /* OptionalContractViewModel.h */,
+				CE30CA021F05F93F00778172 /* OptionalContractViewModel.m */,
+			);
+			path = OptionalContract;
+			sourceTree = "<group>";
+		};
+		CE30CA031F05F93F00778172 /* SHFE */ = {
+			isa = PBXGroup;
+			children = (
+				CE30CA041F05F93F00778172 /* SHFEHeadView.h */,
+				CE30CA051F05F93F00778172 /* SHFEHeadView.m */,
+				CE30CA061F05F93F00778172 /* SHFEView.h */,
+				CE30CA071F05F93F00778172 /* SHFEView.m */,
+				CE30CA081F05F93F00778172 /* SHFEViewController.h */,
+				CE30CA091F05F93F00778172 /* SHFEViewController.m */,
+				CE30CA0A1F05F93F00778172 /* SHFEViewModel.h */,
+				CE30CA0B1F05F93F00778172 /* SHFEViewModel.m */,
+			);
+			path = SHFE;
+			sourceTree = "<group>";
+		};
+		CE30CA0C1F05F93F00778172 /* ZZCE */ = {
+			isa = PBXGroup;
+			children = (
+				CE30CA0D1F05F93F00778172 /* ZZCEHeadView.h */,
+				CE30CA0E1F05F93F00778172 /* ZZCEHeadView.m */,
+				CE30CA0F1F05F93F00778172 /* ZZCEView.h */,
+				CE30CA101F05F93F00778172 /* ZZCEView.m */,
+				CE30CA111F05F93F00778172 /* ZZCEViewController.h */,
+				CE30CA121F05F93F00778172 /* ZZCEViewController.m */,
+				CE30CA131F05F93F00778172 /* ZZCEViewModel.h */,
+				CE30CA141F05F93F00778172 /* ZZCEViewModel.m */,
+			);
+			path = ZZCE;
+			sourceTree = "<group>";
+		};
 		CEF330E41EDF9AC20032F0EF /* Dynamics */ = {
 			isa = PBXGroup;
 			children = (
-				CEF331271EDFD9B40032F0EF /* Dynamics */,
+				CE30C9B91F05F93F00778172 /* CFFEX */,
+				CE30C9C21F05F93F00778172 /* DCE */,
+				CE30C9CB1F05F93F00778172 /* DynamicsFather */,
+				CE30C9D61F05F93F00778172 /* KLine */,
+				CE30C9D71F05F93F00778172 /* MainContract */,
+				CE30C9E01F05F93F00778172 /* MyContract */,
+				CE30C9FA1F05F93F00778172 /* OptionalContract */,
+				CE30CA031F05F93F00778172 /* SHFE */,
+				CE30CA0C1F05F93F00778172 /* ZZCE */,
 			);
 			path = Dynamics;
 			sourceTree = "<group>";
@@ -870,26 +1150,6 @@
 			path = BaseFile;
 			sourceTree = "<group>";
 		};
-		CEF331271EDFD9B40032F0EF /* Dynamics */ = {
-			isa = PBXGroup;
-			children = (
-				CEF331341EE00A170032F0EF /* Model */,
-				CEF331331EE00A0F0032F0EF /* View */,
-				CEF331351EE00A240032F0EF /* ViewModel */,
-				CEF3312B1EDFD9D00032F0EF /* VC */,
-			);
-			path = Dynamics;
-			sourceTree = "<group>";
-		};
-		CEF3312B1EDFD9D00032F0EF /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				CEF331281EDFD9CA0032F0EF /* DynamicsViewController.h */,
-				CEF331291EDFD9CA0032F0EF /* DynamicsViewController.m */,
-			);
-			name = VC;
-			sourceTree = "<group>";
-		};
 		CEF3312F1EDFDEF80032F0EF /* Find */ = {
 			isa = PBXGroup;
 			children = (
@@ -897,35 +1157,6 @@
 				CEF331311EDFDF080032F0EF /* DiscoverViewController.m */,
 			);
 			path = Find;
-			sourceTree = "<group>";
-		};
-		CEF331331EE00A0F0032F0EF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				CEF331361EE00A5D0032F0EF /* DynamicsView.h */,
-				CEF331371EE00A5D0032F0EF /* DynamicsView.m */,
-				CEF7D5661EE1460E000A869E /* DynamicsNavigationCenterView.h */,
-				CEF7D5671EE1460E000A869E /* DynamicsNavigationCenterView.m */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		CEF331341EE00A170032F0EF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				CEF3313C1EE00BE40032F0EF /* DynamicsModel.h */,
-				CEF3313D1EE00BE40032F0EF /* DynamicsModel.m */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		CEF331351EE00A240032F0EF /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				CEF331391EE00BA60032F0EF /* DynamicsViewModel.h */,
-				CEF3313A1EE00BA60032F0EF /* DynamicsViewModel.m */,
-			);
-			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -998,7 +1229,7 @@
 				TargetAttributes = {
 					B2A214FD1EDEA9E900B19A4A = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = RG8JYDVCLT;
+						DevelopmentTeam = KXB9LY2JET;
 						ProvisioningStyle = Automatic;
 					};
 					B2A215161EDEA9E900B19A4A = {
@@ -1141,28 +1372,35 @@
 				B21BEC4E1F049AD100354274 /* ChangeNickNameViewController.m in Sources */,
 				B2339C531F05F3B300B336BB /* ForgetInputNewPWViewController.m in Sources */,
 				B21BEC431F04891700354274 /* ChangeNextViewController.m in Sources */,
+				CE30CA2A1F05F93F00778172 /* PositionView.m in Sources */,
 				B2CCA9971F02534C002BA562 /* AccountSetMainView.m in Sources */,
 				CEF331031EDF9CC50032F0EF /* BaseTableViewCell.m in Sources */,
-				CEF3312A1EDFD9CA0032F0EF /* DynamicsViewController.m in Sources */,
+				CE30CA3B1F05F93F00778172 /* ZZCEViewController.m in Sources */,
 				B2339C481F05F39500B336BB /* LoginViewModel.m in Sources */,
 				B2BE011B1EE93D260012AD3E /* PersonalCollectionCell.m in Sources */,
+				CE30CA361F05F93F00778172 /* SHFEView.m in Sources */,
 				B2BE01171EE93D260012AD3E /* PersonalViewController.m in Sources */,
 				B2BE01251EE93D260012AD3E /* QHBarChart.m in Sources */,
+				CE30CA181F05F93F00778172 /* CFFEXViewModel.m in Sources */,
 				B2BE011D1EE93D260012AD3E /* PersonalFirstCell.m in Sources */,
 				CEF331221EDFB3D50032F0EF /* UserInformation.m in Sources */,
-				CEF331381EE00A5D0032F0EF /* DynamicsView.m in Sources */,
 				B203B3DF1F00EBC8002581F6 /* SettingHeadImgCell.m in Sources */,
 				B2BE01201EE93D260012AD3E /* PersonalMainView.m in Sources */,
 				CEF3311C1EDFAE330032F0EF /* QHRequestModel.m in Sources */,
 				CEF331051EDF9CC50032F0EF /* BaseViewModel.m in Sources */,
 				CEF331321EDFDF080032F0EF /* DiscoverViewController.m in Sources */,
 				B2339C4C1F05F39500B336BB /* LoginModel.m in Sources */,
+				CE30CA3A1F05F93F00778172 /* ZZCEView.m in Sources */,
+				CE30CA1E1F05F93F00778172 /* DynamicsNavigationCenterView.m in Sources */,
 				CEF330EE1EDF9B720032F0EF /* UIImage+Extension.m in Sources */,
-				CEF3313E1EE00BE40032F0EF /* DynamicsModel.m in Sources */,
 				B2A215061EDEA9E900B19A4A /* AppDelegate.m in Sources */,
 				B2BE01211EE93D260012AD3E /* PersonalSecondCell.m in Sources */,
+				CE30CA3C1F05F93F00778172 /* ZZCEViewModel.m in Sources */,
+				CE30CA1C1F05F93F00778172 /* DCEViewModel.m in Sources */,
+				CE30CA271F05F93F00778172 /* HangOrderView.m in Sources */,
 				B203B3D71F00E41A002581F6 /* SettingMainView.m in Sources */,
 				CEF331061EDF9CC50032F0EF /* NavigationBaseController.m in Sources */,
+				CE30CA191F05F93F00778172 /* DCEHeadView.m in Sources */,
 				B21BEC6B1F04F58600354274 /* PersonalModel.m in Sources */,
 				CEF331081EDF9CC50032F0EF /* ViewBaseController.m in Sources */,
 				B2CCA9911F0251C2002BA562 /* AccountSetViewController.m in Sources */,
@@ -1170,39 +1408,67 @@
 				B2339C621F05F3E000B336BB /* RegisterView.m in Sources */,
 				B2339C551F05F3B300B336BB /* ForgetPasswordViewController.m in Sources */,
 				B2BE01191EE93D260012AD3E /* BarChart.m in Sources */,
+				CE30CA371F05F93F00778172 /* SHFEViewController.m in Sources */,
 				B203B3D11F00D752002581F6 /* PromptView.m in Sources */,
+				CE30CA391F05F93F00778172 /* ZZCEHeadView.m in Sources */,
+				CE30CA2C1F05F93F00778172 /* MyContractHeadView.m in Sources */,
 				B203B3E41F00EBE2002581F6 /* SettingPhoneCell.m in Sources */,
+				CE30CA171F05F93F00778172 /* CFFEXViewController.m in Sources */,
+				CE30CA1F1F05F93F00778172 /* DynamicsView.m in Sources */,
 				CEF330F11EDF9BC60032F0EF /* UIView+Extension.m in Sources */,
+				CE30CA2B1F05F93F00778172 /* MyContractCollectionCellView.m in Sources */,
+				CE30CA1A1F05F93F00778172 /* DCEView.m in Sources */,
 				B2CCA98C1F024703002BA562 /* AboutUSViewController.m in Sources */,
 				CEF331071EDF9CC50032F0EF /* TabBarBaseController.m in Sources */,
 				CEF331131EDFA4AA0032F0EF /* MBProgressHUD+NJ.m in Sources */,
+				CE30CA321F05F93F00778172 /* OptionalContractView.m in Sources */,
 				B21BEC491F04894500354274 /* ChangeNextViewModel.m in Sources */,
 				B2BE01321EE943F30012AD3E /* SettingViewController.m in Sources */,
+				CE30CA211F05F93F00778172 /* DynamicsViewModel.m in Sources */,
+				CE30CA381F05F93F00778172 /* SHFEViewModel.m in Sources */,
 				B2BE011F1EE93D260012AD3E /* PersonalHeadView.m in Sources */,
 				B2CCA99A1F025364002BA562 /* AccountSetViewModel.m in Sources */,
+				CE30CA351F05F93F00778172 /* SHFEHeadView.m in Sources */,
 				B21BEC661F04AD8F00354274 /* FocusViewController.m in Sources */,
 				B2339C5F1F05F3E000B336BB /* RegisterViewModel.m in Sources */,
 				CEF3311F1EDFB1E70032F0EF /* QHRequest+Api.m in Sources */,
+				CE30CA281F05F93F00778172 /* PositionModel.m in Sources */,
 				B203B3E91F00EBFE002581F6 /* SettingDefaultCell.m in Sources */,
 				CEF3312E1EDFDBCB0032F0EF /* QHTabBar.m in Sources */,
 				B2BE01151EE93D260012AD3E /* LineChartDescribe.m in Sources */,
+				CE30CA161F05F93F00778172 /* CFFEXView.m in Sources */,
+				CE30CA2E1F05F93F00778172 /* MyContractView.m in Sources */,
+				CE30CA2F1F05F93F00778172 /* MyContractViewController.m in Sources */,
 				B2339C4A1F05F39500B336BB /* LoginViewController.m in Sources */,
+				CE30CA2D1F05F93F00778172 /* MycontractSegmentcontrolView.m in Sources */,
 				B2339C681F05F41500B336BB /* ForgetInputCodeViewController.m in Sources */,
+				CE30CA221F05F93F00778172 /* MainContractHeadView.m in Sources */,
+				CE30CA151F05F93F00778172 /* CFFEXHeadView.m in Sources */,
+				CE30CA311F05F93F00778172 /* OptionalContractHeadView.m in Sources */,
+				CE30CA1B1F05F93F00778172 /* DCEViewController.m in Sources */,
 				B2D972161F037D3100A04798 /* AccountSetSexCell.m in Sources */,
+				CE30CA241F05F93F00778172 /* MainContractViewController.m in Sources */,
 				B203B3DB1F00E4AD002581F6 /* SettingViewModel.m in Sources */,
-				CEF7D5681EE1460E000A869E /* DynamicsNavigationCenterView.m in Sources */,
 				B2A215031EDEA9E900B19A4A /* main.m in Sources */,
+				CE30CA301F05F93F00778172 /* MyContractViewModel.m in Sources */,
 				B203B3EE1F00EC2C002581F6 /* SettingSwitchCell.m in Sources */,
 				B2D972241F0398B600A04798 /* ChangePhoneViewModel.m in Sources */,
 				B2D972121F037BC800A04798 /* ChooseSexView.m in Sources */,
 				B2339C631F05F3E000B336BB /* RegisterModel.m in Sources */,
 				B2BE01241EE93D260012AD3E /* PersonalViewModel.m in Sources */,
 				B2BE01181EE93D260012AD3E /* QHLineChartView.m in Sources */,
+				CE30CA201F05F93F00778172 /* DynamicsViewController.m in Sources */,
 				B2BE01261EE93D260012AD3E /* TradeRecordsCell.m in Sources */,
 				CEF331041EDF9CC50032F0EF /* BaseView.m in Sources */,
-				CEF3313B1EE00BA60032F0EF /* DynamicsViewModel.m in Sources */,
+				CE30CA291F05F93F00778172 /* PositionTableViewCell.m in Sources */,
+				CE30CA231F05F93F00778172 /* MainContractView.m in Sources */,
+				CE30CA341F05F93F00778172 /* OptionalContractViewModel.m in Sources */,
+				CE30CA251F05F93F00778172 /* MainContractViewModel.m in Sources */,
 				CEF331191EDFAC750032F0EF /* QHRequest.m in Sources */,
+				CE30CA1D1F05F93F00778172 /* DynamicsModel.m in Sources */,
+				CE30CA331F05F93F00778172 /* OptionalContractViewController.m in Sources */,
 				B2339C4B1F05F39500B336BB /* LoginView.m in Sources */,
+				CE30CA261F05F93F00778172 /* HangOrderTableViewCell.m in Sources */,
 				B2D9721B1F03974100A04798 /* ChangePhoneViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1345,7 +1611,7 @@
 			baseConfigurationReference = DB23E11BA4D680FD0F61CE42 /* Pods-QHTrade.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RG8JYDVCLT;
+				DEVELOPMENT_TEAM = KXB9LY2JET;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = QHTrade/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1361,7 +1627,7 @@
 			baseConfigurationReference = E3D3E11B3D85ACEA2AE90524 /* Pods-QHTrade.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RG8JYDVCLT;
+				DEVELOPMENT_TEAM = KXB9LY2JET;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = QHTrade/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

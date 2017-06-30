@@ -21,7 +21,7 @@
 #define getLeft(v)          (v.frame.size.width + v.frame.origin.x)
 #define getTop(v)           (v.frame.size.height + v.frame.origin.y)
 
-#define WS(weakself)   __weak __typeof(&*self) weakSelf = self;
+#define WS(weakSelf)   __weak __typeof(&*self) weakSelf = self;
 
 #define NavigationBarHeight 64
 

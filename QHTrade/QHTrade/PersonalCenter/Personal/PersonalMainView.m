@@ -34,7 +34,7 @@
 }
 -(void)bindViewModel{
 
-    WS(weakself)
+    WS(weakSelf)
     [self.viewModel.userInfoCommand execute:nil];
     
     [self.viewModel.refreshUI subscribeNext:^(PersonalModel * model) {
@@ -61,7 +61,7 @@
 
 -(void)updateConstraints{
 
-    WS(weakself)
+    WS(weakSelf)
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(weakSelf);
     }];
