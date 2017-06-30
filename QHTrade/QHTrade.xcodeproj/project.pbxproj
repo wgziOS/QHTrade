@@ -312,6 +312,65 @@
 		CED8FB8C1F04AFDB00ADF408 /* HangOrderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangOrderView.m; sourceTree = "<group>"; };
 		CED8FB911F04B00700ADF408 /* HangOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangOrderTableViewCell.h; sourceTree = "<group>"; };
 		CED8FB921F04B00700ADF408 /* HangOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangOrderTableViewCell.m; sourceTree = "<group>"; };
+		B2B4B8D61EF91B7D0005AFF1 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = SOURCE_ROOT; };
+		B2B4B8D71EF91B7D0005AFF1 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = SOURCE_ROOT; };
+		B2B4B8D81EF91B7D0005AFF1 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = SOURCE_ROOT; };
+		B2BE00F41EE93D260012AD3E /* LineChartDescribe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChartDescribe.m; sourceTree = "<group>"; };
+		B2BE00F51EE93D260012AD3E /* PersonalBottomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalBottomCell.m; sourceTree = "<group>"; };
+		B2BE00F61EE93D260012AD3E /* PersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
+		B2BE00F71EE93D260012AD3E /* QHLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHLineChartView.m; sourceTree = "<group>"; };
+		B2BE00F81EE93D260012AD3E /* LineChartDescribe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineChartDescribe.h; sourceTree = "<group>"; };
+		B2BE00F91EE93D260012AD3E /* QHLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHLineChartView.h; sourceTree = "<group>"; };
+		B2BE00FA1EE93D260012AD3E /* BarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarChart.h; sourceTree = "<group>"; };
+		B2BE00FB1EE93D260012AD3E /* BarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarChart.m; sourceTree = "<group>"; };
+		B2BE00FC1EE93D260012AD3E /* PersonalBottomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalBottomCell.h; sourceTree = "<group>"; };
+		B2BE00FD1EE93D260012AD3E /* PersonalBottomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalBottomCell.xib; sourceTree = "<group>"; };
+		B2BE00FE1EE93D260012AD3E /* PersonalCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCollectionCell.h; sourceTree = "<group>"; };
+		B2BE00FF1EE93D260012AD3E /* PersonalCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCollectionCell.m; sourceTree = "<group>"; };
+		B2BE01001EE93D260012AD3E /* PersonalCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalCollectionCell.xib; sourceTree = "<group>"; };
+		B2BE01011EE93D260012AD3E /* PersonalFirstCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalFirstCell.h; sourceTree = "<group>"; };
+		B2BE01021EE93D260012AD3E /* PersonalFirstCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalFirstCell.m; sourceTree = "<group>"; };
+		B2BE01031EE93D260012AD3E /* PersonalFirstCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalFirstCell.xib; sourceTree = "<group>"; };
+		B2BE01041EE93D260012AD3E /* PersonalHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalHeadView.h; sourceTree = "<group>"; };
+		B2BE01051EE93D260012AD3E /* PersonalHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalHeadView.m; sourceTree = "<group>"; };
+		B2BE01061EE93D260012AD3E /* PersonalMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalMainView.h; sourceTree = "<group>"; };
+		B2BE01071EE93D260012AD3E /* PersonalMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalMainView.m; sourceTree = "<group>"; };
+		B2BE01081EE93D260012AD3E /* PersonalSecondCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalSecondCell.h; sourceTree = "<group>"; };
+		B2BE01091EE93D260012AD3E /* PersonalSecondCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalSecondCell.m; sourceTree = "<group>"; };
+		B2BE010A1EE93D260012AD3E /* PersonalSecondCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalSecondCell.xib; sourceTree = "<group>"; };
+		B2BE010B1EE93D260012AD3E /* PersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
+		B2BE010C1EE93D260012AD3E /* PersonalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalViewController.xib; sourceTree = "<group>"; };
+		B2BE010D1EE93D260012AD3E /* PersonalViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalViewModel.h; sourceTree = "<group>"; };
+		B2BE010E1EE93D260012AD3E /* PersonalViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalViewModel.m; sourceTree = "<group>"; };
+		B2BE010F1EE93D260012AD3E /* QHBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHBarChart.h; sourceTree = "<group>"; };
+		B2BE01101EE93D260012AD3E /* QHBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHBarChart.m; sourceTree = "<group>"; };
+		B2BE01111EE93D260012AD3E /* TradeRecordsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeRecordsCell.h; sourceTree = "<group>"; };
+		B2BE01121EE93D260012AD3E /* TradeRecordsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeRecordsCell.m; sourceTree = "<group>"; };
+		B2BE01131EE93D260012AD3E /* TradeRecordsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradeRecordsCell.xib; sourceTree = "<group>"; };
+		B2BE01141EE93D260012AD3E /* white_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_bar.png; sourceTree = "<group>"; };
+		B2BE012F1EE943F30012AD3E /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		B2BE01301EE943F30012AD3E /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		B2BE01311EE943F30012AD3E /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		B2CCA9891F024703002BA562 /* AboutUSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUSViewController.h; sourceTree = "<group>"; };
+		B2CCA98A1F024703002BA562 /* AboutUSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUSViewController.m; sourceTree = "<group>"; };
+		B2CCA98B1F024703002BA562 /* AboutUSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutUSViewController.xib; sourceTree = "<group>"; };
+		B2CCA98F1F0251C2002BA562 /* AccountSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSetViewController.h; sourceTree = "<group>"; };
+		B2CCA9901F0251C2002BA562 /* AccountSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSetViewController.m; sourceTree = "<group>"; };
+		B2CCA9951F02534C002BA562 /* AccountSetMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSetMainView.h; sourceTree = "<group>"; };
+		B2CCA9961F02534C002BA562 /* AccountSetMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSetMainView.m; sourceTree = "<group>"; };
+		B2CCA9981F025364002BA562 /* AccountSetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSetViewModel.h; sourceTree = "<group>"; };
+		B2CCA9991F025364002BA562 /* AccountSetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSetViewModel.m; sourceTree = "<group>"; };
+		B2D972101F037BC800A04798 /* ChooseSexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseSexView.h; sourceTree = "<group>"; };
+		B2D972111F037BC800A04798 /* ChooseSexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseSexView.m; sourceTree = "<group>"; };
+		B2D972131F037D3100A04798 /* AccountSetSexCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSetSexCell.h; sourceTree = "<group>"; };
+		B2D972141F037D3100A04798 /* AccountSetSexCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSetSexCell.m; sourceTree = "<group>"; };
+		B2D972151F037D3100A04798 /* AccountSetSexCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountSetSexCell.xib; sourceTree = "<group>"; };
+		B2D972191F03974100A04798 /* ChangePhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePhoneViewController.h; sourceTree = "<group>"; };
+		B2D9721A1F03974100A04798 /* ChangePhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePhoneViewController.m; sourceTree = "<group>"; };
+		B2D9721F1F03988F00A04798 /* ChangePhoneMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePhoneMainView.h; sourceTree = "<group>"; };
+		B2D972201F03988F00A04798 /* ChangePhoneMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePhoneMainView.m; sourceTree = "<group>"; };
+		B2D972221F0398B600A04798 /* ChangePhoneViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePhoneViewModel.h; sourceTree = "<group>"; };
+		B2D972231F0398B600A04798 /* ChangePhoneViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePhoneViewModel.m; sourceTree = "<group>"; };
 		CEF330EC1EDF9B720032F0EF /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		CEF330ED1EDF9B720032F0EF /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		CEF330EF1EDF9BC60032F0EF /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -712,125 +771,6 @@
 				B2BE01101EE93D260012AD3E /* QHBarChart.m */,
 			);
 			name = QHBarChartView;
-			sourceTree = "<group>";
-		};
-		B2BE012D1EE93F480012AD3E /* QHLineChartView */ = {
-			isa = PBXGroup;
-			children = (
-				B2BE00F81EE93D260012AD3E /* LineChartDescribe.h */,
-				B2BE00F41EE93D260012AD3E /* LineChartDescribe.m */,
-				B2BE00F91EE93D260012AD3E /* QHLineChartView.h */,
-				B2BE00F71EE93D260012AD3E /* QHLineChartView.m */,
-			);
-			name = QHLineChartView;
-			sourceTree = "<group>";
-		};
-		B2BE012E1EE943D30012AD3E /* Setting */ = {
-			isa = PBXGroup;
-			children = (
-				B203B3D81F00E41F002581F6 /* ViewModel */,
-				B203B3D31F00DFCF002581F6 /* View */,
-				B203B3D21F00DFC8002581F6 /* ViewController */,
-				B2BE012F1EE943F30012AD3E /* SettingViewController.h */,
-				B2BE01301EE943F30012AD3E /* SettingViewController.m */,
-				B2BE01311EE943F30012AD3E /* SettingViewController.xib */,
-			);
-			path = Setting;
-			sourceTree = "<group>";
-		};
-		B2CCA9881F0246E0002BA562 /* AboutUS */ = {
-			isa = PBXGroup;
-			children = (
-				B2CCA9891F024703002BA562 /* AboutUSViewController.h */,
-				B2CCA98A1F024703002BA562 /* AboutUSViewController.m */,
-				B2CCA98B1F024703002BA562 /* AboutUSViewController.xib */,
-			);
-			path = AboutUS;
-			sourceTree = "<group>";
-		};
-		B2CCA98E1F02519A002BA562 /* AccountSet */ = {
-			isa = PBXGroup;
-			children = (
-				B2CCA9941F0251DF002BA562 /* ViewModel */,
-				B2CCA9931F0251DA002BA562 /* View */,
-				B2CCA9921F0251CA002BA562 /* ViewController */,
-			);
-			path = AccountSet;
-			sourceTree = "<group>";
-		};
-		B2CCA9921F0251CA002BA562 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				B2CCA98F1F0251C2002BA562 /* AccountSetViewController.h */,
-				B2CCA9901F0251C2002BA562 /* AccountSetViewController.m */,
-			);
-			name = ViewController;
-			sourceTree = "<group>";
-		};
-		B2CCA9931F0251DA002BA562 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B2CCA9951F02534C002BA562 /* AccountSetMainView.h */,
-				B2CCA9961F02534C002BA562 /* AccountSetMainView.m */,
-				B2D972101F037BC800A04798 /* ChooseSexView.h */,
-				B2D972111F037BC800A04798 /* ChooseSexView.m */,
-				B2D972131F037D3100A04798 /* AccountSetSexCell.h */,
-				B2D972141F037D3100A04798 /* AccountSetSexCell.m */,
-				B2D972151F037D3100A04798 /* AccountSetSexCell.xib */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		B2CCA9941F0251DF002BA562 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				B2CCA9981F025364002BA562 /* AccountSetViewModel.h */,
-				B2CCA9991F025364002BA562 /* AccountSetViewModel.m */,
-			);
-			name = ViewModel;
-			sourceTree = "<group>";
-		};
-		B2D972181F0396F700A04798 /* ChangePhone */ = {
-			isa = PBXGroup;
-			children = (
-				B2D9721E1F03984500A04798 /* ViewModel */,
-				B2D9721D1F03975100A04798 /* View */,
-				B2D9721C1F03974600A04798 /* ViewController */,
-			);
-			path = ChangePhone;
-			sourceTree = "<group>";
-		};
-		B2D9721C1F03974600A04798 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				B2D972191F03974100A04798 /* ChangePhoneViewController.h */,
-				B2D9721A1F03974100A04798 /* ChangePhoneViewController.m */,
-				B21BEC411F04891700354274 /* ChangeNextViewController.h */,
-				B21BEC421F04891700354274 /* ChangeNextViewController.m */,
-			);
-			name = ViewController;
-			sourceTree = "<group>";
-		};
-		B2D9721D1F03975100A04798 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B2D9721F1F03988F00A04798 /* ChangePhoneMainView.h */,
-				B2D972201F03988F00A04798 /* ChangePhoneMainView.m */,
-				B21BEC441F04893200354274 /* ChangeNextMainView.h */,
-				B21BEC451F04893200354274 /* ChangeNextMainView.m */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		B2D9721E1F03984500A04798 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				B2D972221F0398B600A04798 /* ChangePhoneViewModel.h */,
-				B2D972231F0398B600A04798 /* ChangePhoneViewModel.m */,
-				B21BEC471F04894500354274 /* ChangeNextViewModel.h */,
-				B21BEC481F04894500354274 /* ChangeNextViewModel.m */,
-			);
-			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		CE07A15B1F025C77006BC645 /* MycontractChildView */ = {
