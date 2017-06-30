@@ -68,7 +68,7 @@
     
     // 包装一个导航控制器, 添加导航控制器为tabbarcontroller的子控制器
     NavigationBaseController *nav = [[NavigationBaseController alloc] initWithRootViewController:vc];
-    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"icon_navigationbar_backgroundImage"] forBarMetrics:UIBarMetricsDefault];
+    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigation_image"] forBarMetrics:UIBarMetricsDefault];
     
     
     [nav.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],

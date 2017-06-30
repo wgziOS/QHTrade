@@ -10,7 +10,7 @@
 
 @interface QHRequestModel : NSObject
 @property(nonatomic,copy)NSString *Code;
-@property(nonatomic,strong)id Data;
-@property(nonatomic,copy)NSString *Message;
-@property(nonatomic,copy)NSString *State;
+@property(nonatomic,strong)id content;
+@property(nonatomic,copy)NSString *message;
+@property(nonatomic,copy)NSString *status;
 @end

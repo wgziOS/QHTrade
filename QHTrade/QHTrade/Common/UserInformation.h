@@ -9,5 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface UserInformation : NSObject
++(UserInformation*)getInformation;
+//转bsae64方法
++ (NSString *)transBase64WithImage:(UIImage *)image;
 
+-(void)PostUserInformationDataWithUserId:(NSString *)userid andtoken:(NSString*)token andPhoneNumber:(NSString *)phoneNumber;
+-(NSMutableDictionary *)getUserInformationData;
+-(void)cleanUserInfo;
 @end

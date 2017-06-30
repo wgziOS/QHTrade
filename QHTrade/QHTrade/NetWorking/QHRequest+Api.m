@@ -60,14 +60,19 @@
     __block QHRequestModel *model=nil;
     __block NSError *blockError = nil;
     
-    [[QHRequest request] POST:request_Url
-                   parameters:data_dic
-                      success:^(QHRequest *request, id response) {
-                          model = [QHRequestModel mj_objectWithKeyValues:response];
-                      }
-                      failure:^(QHRequest *request, NSError *error) {
-                          blockError = error;
-                      }];
+    [[QHRequest request] GET:request_Url parameters:data_dic success:^(QHRequest *request, id response) {
+        model = [QHRequestModel mj_objectWithKeyValues:response];
+    } failure:^(QHRequest *request, NSError *error) {
+        blockError = error;
+    }];
+//    [[QHRequest request] POST:request_Url
+//                   parameters:data_dic
+//                      success:^(QHRequest *request, id response) {
+//                          model = [QHRequestModel mj_objectWithKeyValues:response];
+//                      }
+//                      failure:^(QHRequest *request, NSError *error) {
+//                          blockError = error;
+//                      }];
     if (!blockError) {
         *error = blockError;
     }

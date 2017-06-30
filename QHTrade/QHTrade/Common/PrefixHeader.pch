@@ -22,4 +22,10 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <IQKeyboardManager/IQKeyboardManager.h>
 
+#import "QHRequest.h"
+#import "QHRequestModel.h"
+#import "QHRequest+Api.h"
+#import "MBProgressHUD+NJ.h"
+#import "UserInformation.h"
+
 #endif /* PrefixHeader_pch */
