@@ -14,7 +14,7 @@
     [super awakeFromNib];
 
     
-    WS(weakself)
+    WS(weakSelf)
     [self.rightSwitch mas_makeConstraints:^(MASConstraintMaker *make) {
        
         make.centerY.equalTo(weakSelf.contentView);

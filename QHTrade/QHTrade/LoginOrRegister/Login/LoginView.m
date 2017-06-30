@@ -60,7 +60,7 @@
     [self updateConstraintsIfNeeded];
 }
 -(void)updateConstraints{
-    WS(weakself)
+    WS(weakSelf)
     
     [self.logoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
        

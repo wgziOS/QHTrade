@@ -103,7 +103,7 @@
 
 -(void)updateViewConstraints{
     
-    WS(weakself)
+    WS(weakSelf)
     [self.loginView mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.edges.equalTo(weakSelf.view);

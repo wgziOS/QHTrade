@@ -83,7 +83,7 @@
     
 }
 -(void)bindViewModel{
-    WS(weakself)
+    WS(weakSelf)
     [[self.viewModel.getCodeSubject takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
         NSLog(@"点击了获取验证码");
         [weakSelf getCode];
@@ -92,7 +92,7 @@
 }
 -(void)getCode{
     
-    WS(weakself)
+    WS(weakSelf)
     NSMutableDictionary * dic = [NSMutableDictionary dictionary];
     [dic setObject:self.mainView.phoneNumTextfield.text forKey:@"mobile"];
     [dic setObject:@"0" forKey:@"check_type"];
@@ -131,7 +131,7 @@
 }
 -(void)updateViewConstraints{
 
-    WS(weakself)
+    WS(weakSelf)
     [self.mainView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(weakSelf.view);
     }];

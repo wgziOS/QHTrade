@@ -35,7 +35,7 @@
 
 -(void)updateViewConstraints{
 
-    WS(weakself)
+    WS(weakSelf)
     [self.mainView mas_makeConstraints:^(MASConstraintMaker *make) {
        
         make.edges.equalTo(weakSelf.view);
@@ -45,7 +45,7 @@
 
 -(void)bindViewModel{
 
-    WS(weakself)
+    WS(weakSelf)
     [[self.viewModel.headImgClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
         NSLog(@"头像点击");
         SettingViewController * SVC = [[SettingViewController alloc]init];
