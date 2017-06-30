@@ -18,10 +18,12 @@
 @property(nonatomic,strong)UIView *headView;
 @property(nonatomic,strong)NSArray *titleArray;
 @property(nonatomic,strong)PositionModel *model;
+@property(nonatomic,strong)MyContractViewModel *viewModel;
 @end
 
 @implementation PositionView
 -(instancetype)initWithViewModel:(id<BaseViewModelProtocol>)viewModel{
+    self.viewModel = (MyContractViewModel*)viewModel;
     return [super initWithViewModel:viewModel];
 }
 -(void)setupViews{
