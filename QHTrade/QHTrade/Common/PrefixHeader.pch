@@ -22,4 +22,8 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <IQKeyboardManager/IQKeyboardManager.h>
 
+
+#import "UIImage+Extension.h"
+#import "UIView+Extension.h"
+
 #endif /* PrefixHeader_pch */

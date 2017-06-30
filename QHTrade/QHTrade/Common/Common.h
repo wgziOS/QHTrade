@@ -36,7 +36,7 @@
 
 #define DEFAULT_COLOR RGB(255, 165, 33)
 
-#define DEFAULT_BG_COLOR [UIColor colorWithRed:244.0/255.0 green:244.0/255.0 blue:244.0/255.0 alpha:1]
+#define DEFAULT_BG_COLOR RGB(255, 255, 255)
 
 
 

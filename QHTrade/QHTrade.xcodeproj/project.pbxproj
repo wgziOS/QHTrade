@@ -31,6 +31,40 @@
 		B2F205E01EDFFEC800FA4D52 /* PersonalSecondCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F205DA1EDFFEC800FA4D52 /* PersonalSecondCell.m */; };
 		B2F205E11EDFFEC800FA4D52 /* PersonalSecondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F205DB1EDFFEC800FA4D52 /* PersonalSecondCell.xib */; };
 		B73AFA0A506780FED210E1D0 /* Pods_QHTrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972BB4CEA1349E67DFAA5B40 /* Pods_QHTrade.framework */; };
+		CE07A1571F01F42A006BC645 /* MyContractCollectionCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE07A1561F01F42A006BC645 /* MyContractCollectionCellView.m */; };
+		CE1912EB1EE7F2B50049FE1E /* MainContractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1912EA1EE7F2B50049FE1E /* MainContractViewController.m */; };
+		CE1912EF1EE7F2CA0049FE1E /* SHFEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1912EE1EE7F2CA0049FE1E /* SHFEViewController.m */; };
+		CE1912F21EE7F2D30049FE1E /* DCEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1912F11EE7F2D30049FE1E /* DCEViewController.m */; };
+		CE1912F51EE7F2E30049FE1E /* ZZCEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1912F41EE7F2E30049FE1E /* ZZCEViewController.m */; };
+		CE1912F81EE7F2F60049FE1E /* CFFEXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1912F71EE7F2F60049FE1E /* CFFEXViewController.m */; };
+		CE1912FD1EE7F7070049FE1E /* OptionalContractView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1912FC1EE7F7070049FE1E /* OptionalContractView.m */; };
+		CE1913001EE7F82B0049FE1E /* OptionalContractHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1912FF1EE7F82B0049FE1E /* OptionalContractHeadView.m */; };
+		CE1913071EE7F8750049FE1E /* MainContractView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1913061EE7F8750049FE1E /* MainContractView.m */; };
+		CE19130A1EE7F8880049FE1E /* MainContractHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1913091EE7F8880049FE1E /* MainContractHeadView.m */; };
+		CE19130D1EE7F8A30049FE1E /* MainContractViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE19130C1EE7F8A30049FE1E /* MainContractViewModel.m */; };
+		CE1913101EE7F8BD0049FE1E /* SHFEViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE19130F1EE7F8BD0049FE1E /* SHFEViewModel.m */; };
+		CE1913131EE7F8D30049FE1E /* SHFEView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1913121EE7F8D30049FE1E /* SHFEView.m */; };
+		CE1913161EE7F8DD0049FE1E /* SHFEHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1913151EE7F8DD0049FE1E /* SHFEHeadView.m */; };
+		CE1913201EE7F93D0049FE1E /* DCEView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE19131F1EE7F93D0049FE1E /* DCEView.m */; };
+		CE1913231EE7F9490049FE1E /* DCEHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1913221EE7F9490049FE1E /* DCEHeadView.m */; };
+		CE1913261EE7F9550049FE1E /* DCEViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1913251EE7F9550049FE1E /* DCEViewModel.m */; };
+		CE1913291EE7F9670049FE1E /* ZZCEViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1913281EE7F9670049FE1E /* ZZCEViewModel.m */; };
+		CE19132C1EE7F97B0049FE1E /* ZZCEView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE19132B1EE7F97B0049FE1E /* ZZCEView.m */; };
+		CE19132F1EE7F9860049FE1E /* ZZCEHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE19132E1EE7F9860049FE1E /* ZZCEHeadView.m */; };
+		CE1913321EE7F9BA0049FE1E /* CFFEXHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1913311EE7F9BA0049FE1E /* CFFEXHeadView.m */; };
+		CE1913351EE7F9CD0049FE1E /* CFFEXView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1913341EE7F9CD0049FE1E /* CFFEXView.m */; };
+		CE1913381EE7F9E00049FE1E /* CFFEXViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1913371EE7F9E00049FE1E /* CFFEXViewModel.m */; };
+		CE29DE2F1EE559F200F1BD15 /* OptionalContractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29DE2E1EE559F200F1BD15 /* OptionalContractViewController.m */; };
+		CE29DE381EE55DB200F1BD15 /* OptionalContractViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29DE371EE55DB200F1BD15 /* OptionalContractViewModel.m */; };
+		CE2B389C1EE790DB00A85EB6 /* MyContractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2B389B1EE790DB00A85EB6 /* MyContractViewController.m */; };
+		CE2B38A01EE791FA00A85EB6 /* MyContractViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2B389F1EE791FA00A85EB6 /* MyContractViewModel.m */; };
+		CE2B38A41EE7A43500A85EB6 /* MyContractView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2B38A31EE7A43500A85EB6 /* MyContractView.m */; };
+		CED00E011F01542B00791B47 /* MycontractSegmentcontrolView.m in Sources */ = {isa = PBXBuildFile; fileRef = CED00E001F01542B00791B47 /* MycontractSegmentcontrolView.m */; };
+		CED8FB871F04AD3B00ADF408 /* PositionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CED8FB821F04AD3B00ADF408 /* PositionModel.m */; };
+		CED8FB881F04AD3B00ADF408 /* PositionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CED8FB841F04AD3B00ADF408 /* PositionTableViewCell.m */; };
+		CED8FB891F04AD3B00ADF408 /* PositionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CED8FB861F04AD3B00ADF408 /* PositionView.m */; };
+		CED8FB8D1F04AFDB00ADF408 /* HangOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CED8FB8C1F04AFDB00ADF408 /* HangOrderView.m */; };
+		CED8FB931F04B00700ADF408 /* HangOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CED8FB921F04B00700ADF408 /* HangOrderTableViewCell.m */; };
 		CEF330EE1EDF9B720032F0EF /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF330ED1EDF9B720032F0EF /* UIImage+Extension.m */; };
 		CEF330F11EDF9BC60032F0EF /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF330F01EDF9BC60032F0EF /* UIView+Extension.m */; };
 		CEF331031EDF9CC50032F0EF /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF330F41EDF9CC50032F0EF /* BaseTableViewCell.m */; };
@@ -51,6 +85,7 @@
 		CEF3313B1EE00BA60032F0EF /* DynamicsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3313A1EE00BA60032F0EF /* DynamicsViewModel.m */; };
 		CEF3313E1EE00BE40032F0EF /* DynamicsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3313D1EE00BE40032F0EF /* DynamicsModel.m */; };
 		CEF7D5681EE1460E000A869E /* DynamicsNavigationCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7D5671EE1460E000A869E /* DynamicsNavigationCenterView.m */; };
+		CEFA70711EFA1FAC0046AF84 /* MyContractHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA70701EFA1FAC0046AF84 /* MyContractHeadView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +149,74 @@
 		B2F205D91EDFFEC800FA4D52 /* PersonalSecondCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalSecondCell.h; sourceTree = "<group>"; };
 		B2F205DA1EDFFEC800FA4D52 /* PersonalSecondCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalSecondCell.m; sourceTree = "<group>"; };
 		B2F205DB1EDFFEC800FA4D52 /* PersonalSecondCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalSecondCell.xib; sourceTree = "<group>"; };
+		CE07A1551F01F42A006BC645 /* MyContractCollectionCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyContractCollectionCellView.h; sourceTree = "<group>"; };
+		CE07A1561F01F42A006BC645 /* MyContractCollectionCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyContractCollectionCellView.m; sourceTree = "<group>"; };
+		CE1912E91EE7F2B50049FE1E /* MainContractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainContractViewController.h; sourceTree = "<group>"; };
+		CE1912EA1EE7F2B50049FE1E /* MainContractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainContractViewController.m; sourceTree = "<group>"; };
+		CE1912ED1EE7F2CA0049FE1E /* SHFEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHFEViewController.h; sourceTree = "<group>"; };
+		CE1912EE1EE7F2CA0049FE1E /* SHFEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHFEViewController.m; sourceTree = "<group>"; };
+		CE1912F01EE7F2D30049FE1E /* DCEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCEViewController.h; sourceTree = "<group>"; };
+		CE1912F11EE7F2D30049FE1E /* DCEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCEViewController.m; sourceTree = "<group>"; };
+		CE1912F31EE7F2E30049FE1E /* ZZCEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCEViewController.h; sourceTree = "<group>"; };
+		CE1912F41EE7F2E30049FE1E /* ZZCEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCEViewController.m; sourceTree = "<group>"; };
+		CE1912F61EE7F2F60049FE1E /* CFFEXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFFEXViewController.h; sourceTree = "<group>"; };
+		CE1912F71EE7F2F60049FE1E /* CFFEXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFFEXViewController.m; sourceTree = "<group>"; };
+		CE1912FB1EE7F7070049FE1E /* OptionalContractView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionalContractView.h; sourceTree = "<group>"; };
+		CE1912FC1EE7F7070049FE1E /* OptionalContractView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionalContractView.m; sourceTree = "<group>"; };
+		CE1912FE1EE7F82B0049FE1E /* OptionalContractHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionalContractHeadView.h; sourceTree = "<group>"; };
+		CE1912FF1EE7F82B0049FE1E /* OptionalContractHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionalContractHeadView.m; sourceTree = "<group>"; };
+		CE1913051EE7F8750049FE1E /* MainContractView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainContractView.h; sourceTree = "<group>"; };
+		CE1913061EE7F8750049FE1E /* MainContractView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainContractView.m; sourceTree = "<group>"; };
+		CE1913081EE7F8880049FE1E /* MainContractHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainContractHeadView.h; sourceTree = "<group>"; };
+		CE1913091EE7F8880049FE1E /* MainContractHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainContractHeadView.m; sourceTree = "<group>"; };
+		CE19130B1EE7F8A30049FE1E /* MainContractViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainContractViewModel.h; sourceTree = "<group>"; };
+		CE19130C1EE7F8A30049FE1E /* MainContractViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainContractViewModel.m; sourceTree = "<group>"; };
+		CE19130E1EE7F8BD0049FE1E /* SHFEViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHFEViewModel.h; sourceTree = "<group>"; };
+		CE19130F1EE7F8BD0049FE1E /* SHFEViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHFEViewModel.m; sourceTree = "<group>"; };
+		CE1913111EE7F8D30049FE1E /* SHFEView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHFEView.h; sourceTree = "<group>"; };
+		CE1913121EE7F8D30049FE1E /* SHFEView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHFEView.m; sourceTree = "<group>"; };
+		CE1913141EE7F8DD0049FE1E /* SHFEHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHFEHeadView.h; sourceTree = "<group>"; };
+		CE1913151EE7F8DD0049FE1E /* SHFEHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHFEHeadView.m; sourceTree = "<group>"; };
+		CE19131E1EE7F93D0049FE1E /* DCEView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCEView.h; sourceTree = "<group>"; };
+		CE19131F1EE7F93D0049FE1E /* DCEView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCEView.m; sourceTree = "<group>"; };
+		CE1913211EE7F9490049FE1E /* DCEHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCEHeadView.h; sourceTree = "<group>"; };
+		CE1913221EE7F9490049FE1E /* DCEHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCEHeadView.m; sourceTree = "<group>"; };
+		CE1913241EE7F9550049FE1E /* DCEViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCEViewModel.h; sourceTree = "<group>"; };
+		CE1913251EE7F9550049FE1E /* DCEViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCEViewModel.m; sourceTree = "<group>"; };
+		CE1913271EE7F9670049FE1E /* ZZCEViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCEViewModel.h; sourceTree = "<group>"; };
+		CE1913281EE7F9670049FE1E /* ZZCEViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCEViewModel.m; sourceTree = "<group>"; };
+		CE19132A1EE7F97B0049FE1E /* ZZCEView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCEView.h; sourceTree = "<group>"; };
+		CE19132B1EE7F97B0049FE1E /* ZZCEView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCEView.m; sourceTree = "<group>"; };
+		CE19132D1EE7F9860049FE1E /* ZZCEHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCEHeadView.h; sourceTree = "<group>"; };
+		CE19132E1EE7F9860049FE1E /* ZZCEHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCEHeadView.m; sourceTree = "<group>"; };
+		CE1913301EE7F9BA0049FE1E /* CFFEXHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFFEXHeadView.h; sourceTree = "<group>"; };
+		CE1913311EE7F9BA0049FE1E /* CFFEXHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFFEXHeadView.m; sourceTree = "<group>"; };
+		CE1913331EE7F9CD0049FE1E /* CFFEXView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFFEXView.h; sourceTree = "<group>"; };
+		CE1913341EE7F9CD0049FE1E /* CFFEXView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFFEXView.m; sourceTree = "<group>"; };
+		CE1913361EE7F9E00049FE1E /* CFFEXViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFFEXViewModel.h; sourceTree = "<group>"; };
+		CE1913371EE7F9E00049FE1E /* CFFEXViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFFEXViewModel.m; sourceTree = "<group>"; };
+		CE29DE2D1EE559F200F1BD15 /* OptionalContractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionalContractViewController.h; sourceTree = "<group>"; };
+		CE29DE2E1EE559F200F1BD15 /* OptionalContractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionalContractViewController.m; sourceTree = "<group>"; };
+		CE29DE361EE55DB200F1BD15 /* OptionalContractViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionalContractViewModel.h; sourceTree = "<group>"; };
+		CE29DE371EE55DB200F1BD15 /* OptionalContractViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionalContractViewModel.m; sourceTree = "<group>"; };
+		CE2B389A1EE790DB00A85EB6 /* MyContractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyContractViewController.h; sourceTree = "<group>"; };
+		CE2B389B1EE790DB00A85EB6 /* MyContractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyContractViewController.m; sourceTree = "<group>"; };
+		CE2B389E1EE791FA00A85EB6 /* MyContractViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyContractViewModel.h; sourceTree = "<group>"; };
+		CE2B389F1EE791FA00A85EB6 /* MyContractViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyContractViewModel.m; sourceTree = "<group>"; };
+		CE2B38A21EE7A43500A85EB6 /* MyContractView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyContractView.h; sourceTree = "<group>"; };
+		CE2B38A31EE7A43500A85EB6 /* MyContractView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyContractView.m; sourceTree = "<group>"; };
+		CED00DFF1F01542B00791B47 /* MycontractSegmentcontrolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MycontractSegmentcontrolView.h; sourceTree = "<group>"; };
+		CED00E001F01542B00791B47 /* MycontractSegmentcontrolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MycontractSegmentcontrolView.m; sourceTree = "<group>"; };
+		CED8FB811F04AD3B00ADF408 /* PositionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionModel.h; sourceTree = "<group>"; };
+		CED8FB821F04AD3B00ADF408 /* PositionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionModel.m; sourceTree = "<group>"; };
+		CED8FB831F04AD3B00ADF408 /* PositionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionTableViewCell.h; sourceTree = "<group>"; };
+		CED8FB841F04AD3B00ADF408 /* PositionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionTableViewCell.m; sourceTree = "<group>"; };
+		CED8FB851F04AD3B00ADF408 /* PositionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionView.h; sourceTree = "<group>"; };
+		CED8FB861F04AD3B00ADF408 /* PositionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionView.m; sourceTree = "<group>"; };
+		CED8FB8B1F04AFDB00ADF408 /* HangOrderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangOrderView.h; sourceTree = "<group>"; };
+		CED8FB8C1F04AFDB00ADF408 /* HangOrderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangOrderView.m; sourceTree = "<group>"; };
+		CED8FB911F04B00700ADF408 /* HangOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangOrderTableViewCell.h; sourceTree = "<group>"; };
+		CED8FB921F04B00700ADF408 /* HangOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangOrderTableViewCell.m; sourceTree = "<group>"; };
 		CEF330EC1EDF9B720032F0EF /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		CEF330ED1EDF9B720032F0EF /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		CEF330EF1EDF9BC60032F0EF /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -160,6 +263,8 @@
 		CEF3313D1EE00BE40032F0EF /* DynamicsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsModel.m; sourceTree = "<group>"; };
 		CEF7D5661EE1460E000A869E /* DynamicsNavigationCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsNavigationCenterView.h; sourceTree = "<group>"; };
 		CEF7D5671EE1460E000A869E /* DynamicsNavigationCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsNavigationCenterView.m; sourceTree = "<group>"; };
+		CEFA706F1EFA1FAC0046AF84 /* MyContractHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyContractHeadView.h; sourceTree = "<group>"; };
+		CEFA70701EFA1FAC0046AF84 /* MyContractHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyContractHeadView.m; sourceTree = "<group>"; };
 		DB23E11BA4D680FD0F61CE42 /* Pods-QHTrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QHTrade.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QHTrade/Pods-QHTrade.debug.xcconfig"; sourceTree = "<group>"; };
 		E3D3E11B3D85ACEA2AE90524 /* Pods-QHTrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QHTrade.release.xcconfig"; path = "Pods/Target Support Files/Pods-QHTrade/Pods-QHTrade.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -337,9 +442,335 @@
 			name = BarChartView;
 			sourceTree = "<group>";
 		};
+		CE07A15B1F025C77006BC645 /* MycontractChildView */ = {
+			isa = PBXGroup;
+			children = (
+				CED8FB8A1F04AF6F00ADF408 /* HangOrder */,
+				CED8FB801F04AD3B00ADF408 /* Position */,
+			);
+			path = MycontractChildView;
+			sourceTree = "<group>";
+		};
+		CE1912EC1EE7F2BB0049FE1E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE19130E1EE7F8BD0049FE1E /* SHFEViewModel.h */,
+				CE19130F1EE7F8BD0049FE1E /* SHFEViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE1912F91EE7F6DE0049FE1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE1912FB1EE7F7070049FE1E /* OptionalContractView.h */,
+				CE1912FC1EE7F7070049FE1E /* OptionalContractView.m */,
+				CE1912FE1EE7F82B0049FE1E /* OptionalContractHeadView.h */,
+				CE1912FF1EE7F82B0049FE1E /* OptionalContractHeadView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CE1913011EE7F83B0049FE1E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE19130B1EE7F8A30049FE1E /* MainContractViewModel.h */,
+				CE19130C1EE7F8A30049FE1E /* MainContractViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE1913021EE7F8450049FE1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE1913051EE7F8750049FE1E /* MainContractView.h */,
+				CE1913061EE7F8750049FE1E /* MainContractView.m */,
+				CE1913081EE7F8880049FE1E /* MainContractHeadView.h */,
+				CE1913091EE7F8880049FE1E /* MainContractHeadView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CE1913031EE7F8540049FE1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE1913111EE7F8D30049FE1E /* SHFEView.h */,
+				CE1913121EE7F8D30049FE1E /* SHFEView.m */,
+				CE1913141EE7F8DD0049FE1E /* SHFEHeadView.h */,
+				CE1913151EE7F8DD0049FE1E /* SHFEHeadView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CE1913171EE7F8E40049FE1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE19131E1EE7F93D0049FE1E /* DCEView.h */,
+				CE19131F1EE7F93D0049FE1E /* DCEView.m */,
+				CE1913211EE7F9490049FE1E /* DCEHeadView.h */,
+				CE1913221EE7F9490049FE1E /* DCEHeadView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CE1913181EE7F8E90049FE1E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE1913241EE7F9550049FE1E /* DCEViewModel.h */,
+				CE1913251EE7F9550049FE1E /* DCEViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE19131A1EE7F9020049FE1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE19132A1EE7F97B0049FE1E /* ZZCEView.h */,
+				CE19132B1EE7F97B0049FE1E /* ZZCEView.m */,
+				CE19132D1EE7F9860049FE1E /* ZZCEHeadView.h */,
+				CE19132E1EE7F9860049FE1E /* ZZCEHeadView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CE19131B1EE7F90D0049FE1E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE1913271EE7F9670049FE1E /* ZZCEViewModel.h */,
+				CE1913281EE7F9670049FE1E /* ZZCEViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE19131C1EE7F9260049FE1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE1913301EE7F9BA0049FE1E /* CFFEXHeadView.h */,
+				CE1913311EE7F9BA0049FE1E /* CFFEXHeadView.m */,
+				CE1913331EE7F9CD0049FE1E /* CFFEXView.h */,
+				CE1913341EE7F9CD0049FE1E /* CFFEXView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CE19131D1EE7F92A0049FE1E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE1913361EE7F9E00049FE1E /* CFFEXViewModel.h */,
+				CE1913371EE7F9E00049FE1E /* CFFEXViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE29DE061EE5435C00F1BD15 /* CFFEX */ = {
+			isa = PBXGroup;
+			children = (
+				CE19131C1EE7F9260049FE1E /* View */,
+				CE19131D1EE7F92A0049FE1E /* ViewModel */,
+				CE29DE131EE5438E00F1BD15 /* VC */,
+			);
+			path = CFFEX;
+			sourceTree = "<group>";
+		};
+		CE29DE071EE5435C00F1BD15 /* DCE */ = {
+			isa = PBXGroup;
+			children = (
+				CE1913171EE7F8E40049FE1E /* View */,
+				CE1913181EE7F8E90049FE1E /* ViewModel */,
+				CE29DE121EE5438900F1BD15 /* Vc */,
+			);
+			path = DCE;
+			sourceTree = "<group>";
+		};
+		CE29DE081EE5435C00F1BD15 /* MainContract */ = {
+			isa = PBXGroup;
+			children = (
+				CE1913021EE7F8450049FE1E /* View */,
+				CE1913011EE7F83B0049FE1E /* ViewModel */,
+				CE29DE0D1EE5436E00F1BD15 /* VC */,
+			);
+			path = MainContract;
+			sourceTree = "<group>";
+		};
+		CE29DE091EE5435C00F1BD15 /* MyContract */ = {
+			isa = PBXGroup;
+			children = (
+				CE07A15B1F025C77006BC645 /* MycontractChildView */,
+				CE2B38A11EE7A42100A85EB6 /* View */,
+				CE2B389D1EE790DF00A85EB6 /* ViewModel */,
+				CE29DE0E1EE5437400F1BD15 /* VC */,
+			);
+			path = MyContract;
+			sourceTree = "<group>";
+		};
+		CE29DE0A1EE5435C00F1BD15 /* OptionalContract */ = {
+			isa = PBXGroup;
+			children = (
+				CE1912F91EE7F6DE0049FE1E /* View */,
+				CE29DE391EE55DBB00F1BD15 /* ViewModel */,
+				CE29DE111EE5438500F1BD15 /* VC */,
+			);
+			path = OptionalContract;
+			sourceTree = "<group>";
+		};
+		CE29DE0B1EE5435C00F1BD15 /* SHFE */ = {
+			isa = PBXGroup;
+			children = (
+				CE1913031EE7F8540049FE1E /* View */,
+				CE1912EC1EE7F2BB0049FE1E /* ViewModel */,
+				CE29DE101EE5437F00F1BD15 /* VC */,
+			);
+			path = SHFE;
+			sourceTree = "<group>";
+		};
+		CE29DE0C1EE5435C00F1BD15 /* ZZCE */ = {
+			isa = PBXGroup;
+			children = (
+				CE19131B1EE7F90D0049FE1E /* ViewModel */,
+				CE19131A1EE7F9020049FE1E /* View */,
+				CE29DE0F1EE5437A00F1BD15 /* VC */,
+			);
+			path = ZZCE;
+			sourceTree = "<group>";
+		};
+		CE29DE0D1EE5436E00F1BD15 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				CE1912E91EE7F2B50049FE1E /* MainContractViewController.h */,
+				CE1912EA1EE7F2B50049FE1E /* MainContractViewController.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		CE29DE0E1EE5437400F1BD15 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				CE2B389A1EE790DB00A85EB6 /* MyContractViewController.h */,
+				CE2B389B1EE790DB00A85EB6 /* MyContractViewController.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		CE29DE0F1EE5437A00F1BD15 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				CE1912F31EE7F2E30049FE1E /* ZZCEViewController.h */,
+				CE1912F41EE7F2E30049FE1E /* ZZCEViewController.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		CE29DE101EE5437F00F1BD15 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				CE1912ED1EE7F2CA0049FE1E /* SHFEViewController.h */,
+				CE1912EE1EE7F2CA0049FE1E /* SHFEViewController.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		CE29DE111EE5438500F1BD15 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				CE29DE2D1EE559F200F1BD15 /* OptionalContractViewController.h */,
+				CE29DE2E1EE559F200F1BD15 /* OptionalContractViewController.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		CE29DE121EE5438900F1BD15 /* Vc */ = {
+			isa = PBXGroup;
+			children = (
+				CE1912F01EE7F2D30049FE1E /* DCEViewController.h */,
+				CE1912F11EE7F2D30049FE1E /* DCEViewController.m */,
+			);
+			name = Vc;
+			sourceTree = "<group>";
+		};
+		CE29DE131EE5438E00F1BD15 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				CE1912F61EE7F2F60049FE1E /* CFFEXViewController.h */,
+				CE1912F71EE7F2F60049FE1E /* CFFEXViewController.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		CE29DE391EE55DBB00F1BD15 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE29DE361EE55DB200F1BD15 /* OptionalContractViewModel.h */,
+				CE29DE371EE55DB200F1BD15 /* OptionalContractViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE2B389D1EE790DF00A85EB6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE2B389E1EE791FA00A85EB6 /* MyContractViewModel.h */,
+				CE2B389F1EE791FA00A85EB6 /* MyContractViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE2B38A11EE7A42100A85EB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE2B38A21EE7A43500A85EB6 /* MyContractView.h */,
+				CE2B38A31EE7A43500A85EB6 /* MyContractView.m */,
+				CEFA706F1EFA1FAC0046AF84 /* MyContractHeadView.h */,
+				CEFA70701EFA1FAC0046AF84 /* MyContractHeadView.m */,
+				CED00DFF1F01542B00791B47 /* MycontractSegmentcontrolView.h */,
+				CED00E001F01542B00791B47 /* MycontractSegmentcontrolView.m */,
+				CE07A1551F01F42A006BC645 /* MyContractCollectionCellView.h */,
+				CE07A1561F01F42A006BC645 /* MyContractCollectionCellView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CE3076AD1EEA34E80098F388 /* KLine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = KLine;
+			sourceTree = "<group>";
+		};
+		CED8FB801F04AD3B00ADF408 /* Position */ = {
+			isa = PBXGroup;
+			children = (
+				CED8FB811F04AD3B00ADF408 /* PositionModel.h */,
+				CED8FB821F04AD3B00ADF408 /* PositionModel.m */,
+				CED8FB831F04AD3B00ADF408 /* PositionTableViewCell.h */,
+				CED8FB841F04AD3B00ADF408 /* PositionTableViewCell.m */,
+				CED8FB851F04AD3B00ADF408 /* PositionView.h */,
+				CED8FB861F04AD3B00ADF408 /* PositionView.m */,
+			);
+			path = Position;
+			sourceTree = "<group>";
+		};
+		CED8FB8A1F04AF6F00ADF408 /* HangOrder */ = {
+			isa = PBXGroup;
+			children = (
+				CED8FB8B1F04AFDB00ADF408 /* HangOrderView.h */,
+				CED8FB8C1F04AFDB00ADF408 /* HangOrderView.m */,
+				CED8FB911F04B00700ADF408 /* HangOrderTableViewCell.h */,
+				CED8FB921F04B00700ADF408 /* HangOrderTableViewCell.m */,
+			);
+			path = HangOrder;
+			sourceTree = "<group>";
+		};
 		CEF330E41EDF9AC20032F0EF /* Dynamics */ = {
 			isa = PBXGroup;
 			children = (
+				CE3076AD1EEA34E80098F388 /* KLine */,
+				CE29DE091EE5435C00F1BD15 /* MyContract */,
+				CE29DE0A1EE5435C00F1BD15 /* OptionalContract */,
+				CE29DE081EE5435C00F1BD15 /* MainContract */,
+				CE29DE0B1EE5435C00F1BD15 /* SHFE */,
+				CE29DE071EE5435C00F1BD15 /* DCE */,
+				CE29DE0C1EE5435C00F1BD15 /* ZZCE */,
+				CE29DE061EE5435C00F1BD15 /* CFFEX */,
 				CEF331271EDFD9B40032F0EF /* Dynamics */,
 			);
 			path = Dynamics;
@@ -557,7 +988,7 @@
 				TargetAttributes = {
 					B2A214FD1EDEA9E900B19A4A = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = RG8JYDVCLT;
+						DevelopmentTeam = 5GT7M52QLG;
 						ProvisioningStyle = Automatic;
 					};
 					B2A215161EDEA9E900B19A4A = {
@@ -679,8 +1110,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED8FB8D1F04AFDB00ADF408 /* HangOrderView.m in Sources */,
 				B217837A1EE192710079FC9E /* BarChartView.m in Sources */,
+				CE19132C1EE7F97B0049FE1E /* ZZCEView.m in Sources */,
 				B21783791EE192650079FC9E /* QHChartView.m in Sources */,
+				CE1912F51EE7F2E30049FE1E /* ZZCEViewController.m in Sources */,
 				B21783771EE191910079FC9E /* PersonalHeadView.m in Sources */,
 				B21783871EE1959B0079FC9E /* TradeRecordsCell.m in Sources */,
 				CEF331031EDF9CC50032F0EF /* BaseTableViewCell.m in Sources */,
@@ -690,27 +1124,59 @@
 				CEF331221EDFB3D50032F0EF /* UserInformation.m in Sources */,
 				B21783831EE195460079FC9E /* PersonalBottomCell.m in Sources */,
 				CEF331381EE00A5D0032F0EF /* DynamicsView.m in Sources */,
+				CE2B38A01EE791FA00A85EB6 /* MyContractViewModel.m in Sources */,
 				CEF3311C1EDFAE330032F0EF /* QHRequestModel.m in Sources */,
+				CE1912FD1EE7F7070049FE1E /* OptionalContractView.m in Sources */,
+				CED00E011F01542B00791B47 /* MycontractSegmentcontrolView.m in Sources */,
+				CED8FB881F04AD3B00ADF408 /* PositionTableViewCell.m in Sources */,
+				CE1913261EE7F9550049FE1E /* DCEViewModel.m in Sources */,
 				B2F205DE1EDFFEC800FA4D52 /* PersonalFirstCell.m in Sources */,
 				CEF331051EDF9CC50032F0EF /* BaseViewModel.m in Sources */,
+				CE07A1571F01F42A006BC645 /* MyContractCollectionCellView.m in Sources */,
+				CE29DE2F1EE559F200F1BD15 /* OptionalContractViewController.m in Sources */,
+				CE1913231EE7F9490049FE1E /* DCEHeadView.m in Sources */,
 				CEF331321EDFDF080032F0EF /* DiscoverViewController.m in Sources */,
+				CED8FB891F04AD3B00ADF408 /* PositionView.m in Sources */,
 				CEF330EE1EDF9B720032F0EF /* UIImage+Extension.m in Sources */,
 				CEF3313E1EE00BE40032F0EF /* DynamicsModel.m in Sources */,
 				B2A215061EDEA9E900B19A4A /* AppDelegate.m in Sources */,
 				CEF331061EDF9CC50032F0EF /* NavigationBaseController.m in Sources */,
 				CEF331081EDF9CC50032F0EF /* ViewBaseController.m in Sources */,
+				CE1913101EE7F8BD0049FE1E /* SHFEViewModel.m in Sources */,
+				CEFA70711EFA1FAC0046AF84 /* MyContractHeadView.m in Sources */,
+				CE1912EF1EE7F2CA0049FE1E /* SHFEViewController.m in Sources */,
 				CEF330F11EDF9BC60032F0EF /* UIView+Extension.m in Sources */,
 				CEF331071EDF9CC50032F0EF /* TabBarBaseController.m in Sources */,
+				CE19132F1EE7F9860049FE1E /* ZZCEHeadView.m in Sources */,
+				CE1913381EE7F9E00049FE1E /* CFFEXViewModel.m in Sources */,
 				B2F205E01EDFFEC800FA4D52 /* PersonalSecondCell.m in Sources */,
+				CE1913291EE7F9670049FE1E /* ZZCEViewModel.m in Sources */,
+				CE1912F21EE7F2D30049FE1E /* DCEViewController.m in Sources */,
+				CE1913161EE7F8DD0049FE1E /* SHFEHeadView.m in Sources */,
 				CEF331131EDFA4AA0032F0EF /* MBProgressHUD+NJ.m in Sources */,
+				CE1912F81EE7F2F60049FE1E /* CFFEXViewController.m in Sources */,
+				CE1913071EE7F8750049FE1E /* MainContractView.m in Sources */,
 				CEF3311F1EDFB1E70032F0EF /* QHRequest+Api.m in Sources */,
 				CEF3312E1EDFDBCB0032F0EF /* QHTabBar.m in Sources */,
+				CE2B389C1EE790DB00A85EB6 /* MyContractViewController.m in Sources */,
 				CEF7D5681EE1460E000A869E /* DynamicsNavigationCenterView.m in Sources */,
+				CE1913321EE7F9BA0049FE1E /* CFFEXHeadView.m in Sources */,
+				CED8FB871F04AD3B00ADF408 /* PositionModel.m in Sources */,
+				CE19130A1EE7F8880049FE1E /* MainContractHeadView.m in Sources */,
+				CE1913201EE7F93D0049FE1E /* DCEView.m in Sources */,
 				B2A215031EDEA9E900B19A4A /* main.m in Sources */,
+				CE1913001EE7F82B0049FE1E /* OptionalContractHeadView.m in Sources */,
 				CEF331041EDF9CC50032F0EF /* BaseView.m in Sources */,
 				CEF3313B1EE00BA60032F0EF /* DynamicsViewModel.m in Sources */,
+				CE19130D1EE7F8A30049FE1E /* MainContractViewModel.m in Sources */,
+				CE2B38A41EE7A43500A85EB6 /* MyContractView.m in Sources */,
+				CED8FB931F04B00700ADF408 /* HangOrderTableViewCell.m in Sources */,
+				CE1913131EE7F8D30049FE1E /* SHFEView.m in Sources */,
 				B21BD2CB1EDFB9F500BAD836 /* PersonalViewController.m in Sources */,
+				CE1912EB1EE7F2B50049FE1E /* MainContractViewController.m in Sources */,
 				B21BD2C91EDFB9F500BAD836 /* PersonalViewModel.m in Sources */,
+				CE1913351EE7F9CD0049FE1E /* CFFEXView.m in Sources */,
+				CE29DE381EE55DB200F1BD15 /* OptionalContractViewModel.m in Sources */,
 				CEF331191EDFAC750032F0EF /* QHRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -853,13 +1319,15 @@
 			baseConfigurationReference = DB23E11BA4D680FD0F61CE42 /* Pods-QHTrade.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RG8JYDVCLT;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5GT7M52QLG;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = QHTrade/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mr.L;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -869,13 +1337,15 @@
 			baseConfigurationReference = E3D3E11B3D85ACEA2AE90524 /* Pods-QHTrade.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RG8JYDVCLT;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5GT7M52QLG;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = QHTrade/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mr.L;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
