@@ -7,6 +7,7 @@
 //
 
 #import "DiscoverViewController.h"
+#import "LoginViewController.h"
 
 @interface DiscoverViewController ()
 
@@ -17,8 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    LoginViewController *LVC = [[LoginViewController alloc]init];
+    [self.navigationController pushViewController:LVC animated:YES];
 }
-
+-(UIBarButtonItem *)leftButton{
+    return nil;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
