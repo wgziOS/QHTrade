@@ -12,7 +12,7 @@
 
 -(void)initialize{
 
-    WS(weakself)
+//    WS(weakself)
     
     [self.userInfoCommand.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
        
