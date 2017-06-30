@@ -15,7 +15,7 @@
 {
     self = [super init];
     if (self) {
-        
+        [self setBackgroundColor:DEFAULT_BG_COLOR];
         [self setupViews];
         [self bindViewModel];
     }
