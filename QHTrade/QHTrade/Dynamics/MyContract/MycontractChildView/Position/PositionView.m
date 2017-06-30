@@ -45,7 +45,6 @@
         make.left.top.equalTo(self.scroll);
         make.size.mas_offset(CGSizeMake(414, SCREEN_HEIGHT-419));
     }];
-   
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 30;
