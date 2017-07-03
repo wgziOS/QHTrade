@@ -63,7 +63,6 @@
 -(NSArray *)titleArray{
     if (!_titleArray) {
         _titleArray = [[NSArray alloc] initWithObjects:@"持仓",@"挂单",@"委托",@"成交", nil];
-        
     }
     return _titleArray;
 }

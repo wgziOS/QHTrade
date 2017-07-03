@@ -14,4 +14,7 @@
 
 + (instancetype)imageWithStretchableName:(NSString *)imageName;
 
++(UIImage*)createImageWithColor:(UIColor*) color;
+
+
 @end
