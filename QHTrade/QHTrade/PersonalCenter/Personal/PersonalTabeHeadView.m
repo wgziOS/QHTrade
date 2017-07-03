@@ -39,6 +39,8 @@
     [self addSubview:self.setButton];
     [self addSubview:self.lineView];
     
+//    WS(weakSelf)
+    
     
 
 }
@@ -51,6 +53,19 @@
  @property (nonatomic,strong) UIButton *setButton;
  @property (nonatomic,strong) UIView *lineView;
 */
+-(void)setBtnClick:(id)sender{
+    
+}
+-(UIButton *)setButton{
+    
+    if (!_setButton) {
+        _setButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_setButton setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+        [_setButton addTarget:self action:@selector(setBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _setButton;
+}
+
 -(UIButton *)diamondButton{
     
     if (!_diamondButton) {

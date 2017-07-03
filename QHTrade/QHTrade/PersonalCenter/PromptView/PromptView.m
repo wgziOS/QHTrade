@@ -27,6 +27,43 @@ static CGFloat kTransitionDuration = 0.3;
     }
     return self;
 }
+-(id)initWithTitle:(NSString *)title SubTitle:(NSString *)subTitle
+      LeftBtnTitle:(NSString *)leftBtnTitle RightBtnTitle:(NSString *)rightBtnTitle{
+    
+    self = [super init];
+    if (self) {
+        self.sting = subTitle;
+        
+        
+        
+        UILabel * label1 = [[UILabel alloc]initWithFrame:CGRectMake(MyEditorWidth / 2 - 50, 20, 100, 25)];
+        label1.text = title;
+        label1.font = [UIFont systemFontOfSize:18];
+        label1.textColor = RGB(69, 68, 68);
+        label1.textAlignment = NSTextAlignmentCenter;
+        [self addSubview:label1];
+        
+        
+        UILabel * label2 = [[UILabel alloc]initWithFrame:CGRectMake(20, 45, MyEditorWidth-40, self.textHeight+10)];
+        label2.textColor = RGB(51, 51, 51);
+        label2.numberOfLines = 0;
+        label2.text = subTitle;
+        
+        
+        label2.font = [UIFont systemFontOfSize:15];
+        label2.textAlignment = NSTextAlignmentCenter;
+        [self addSubview:label2];
+        
+        [self.closeButton setTitle:leftBtnTitle forState:UIControlStateNormal];
+        [self.goonBtn setTitle:rightBtnTitle forState:UIControlStateNormal];
+        
+        [self addSubview:self.closeButton];
+        [self addSubview:self.goonBtn];
+        
+    }
+    
+    return self;
+}
 
 -(id)initWithTitleString:(NSString *)titleString SubTitleString:(NSString *)subTitleString{
     
@@ -34,7 +71,6 @@ static CGFloat kTransitionDuration = 0.3;
     if (self) {
         self.sting = subTitleString;
 
-        
         
         UILabel * label1 = [[UILabel alloc]initWithFrame:CGRectMake(MyEditorWidth / 2 - 50, 20, 100, 25)];
         label1.text = titleString;
@@ -71,7 +107,7 @@ static CGFloat kTransitionDuration = 0.3;
         [_closeButton setBackgroundColor:[UIColor colorWithRed:226.0/255.0 green:226.0/255.0 blue:226.0/255.0 alpha:1.0f]];
         [_closeButton setTitle:@"取消" forState:UIControlStateNormal];
 //        [_closeButton setTitleColor:GRAYCOLOR2 forState:UIControlStateNormal];
-        [_closeButton setFrame:CGRectMake(0, MyEditorHeight-60, 180, 40)];
+        [_closeButton setFrame:CGRectMake(0, MyEditorHeight-50,  MyEditorWidth/2, 50)];
     }
     return _closeButton;
 }
@@ -79,15 +115,21 @@ static CGFloat kTransitionDuration = 0.3;
     if (!_goonBtn) {
         _goonBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_goonBtn addTarget:self action:@selector(goonAction:) forControlEvents:UIControlEventTouchUpInside];
-        [_goonBtn setBackgroundImage:[UIImage imageNamed:@"personal_yellow_btn"] forState:UIControlStateNormal];
+//        [_goonBtn setBackgroundImage:[UIImage imageNamed:@"personal_yellow_btn"] forState:UIControlStateNormal];//188 148 84
+        [_goonBtn setBackgroundColor:RGB(188, 148, 84)];
         [_goonBtn setTitle:@"确定" forState:UIControlStateNormal];
         [_goonBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-//        [_goonBtn setFrame:CGRectMake(MyEditorWidth/2, MyEditorHeight-50, MyEditorWidth/2, 50)];
-        [_goonBtn setFrame:CGRectMake(MyEditorWidth/2-90, MyEditorHeight-60, 180, 40)];
+        [_goonBtn setFrame:CGRectMake(MyEditorWidth/2, MyEditorHeight-50, MyEditorWidth/2, 50)];
+//        [_goonBtn setFrame:CGRectMake(MyEditorWidth/2-90, MyEditorHeight-60, 180, 40)];
     }
     return _goonBtn;
 }
 -(void)closeBtnClick:(id)sender{
+    
+    if (self.closeBlock) {
+        self.closeBlock();
+    }
+    
     [self dismissAlert];
 }
 #pragma mark - 继续按钮

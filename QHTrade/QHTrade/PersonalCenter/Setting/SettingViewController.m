@@ -68,48 +68,30 @@
                     break;
                 case 2://更换密码
                 {
+                    if (!self.mainView.isHaveAccount) {
+                        
+                        NSLog(@"去绑定账户");
+                        showMassage(@"去绑定账户")
+                        
+                    }else NSLog(@"已经绑定账户");
                     
                 }
                     break;
-                case 3://委托确认
+                case 3://接收通知
                 {
                     
                 }
                     break;
-                case 4://接收通知
-                {
-                    
-                }
-                    break;
-                    
+                
                 default:
                     break;
             }
-        }else{
-            NSLog(@"1-%@",row);
             
-            switch ([row intValue]) {
-                case 0://意见反馈
-                {
-                    
-                }
-                    break;
-                case 1://检查更新
-                {
-                    
-                }
-                    break;
-                case 2://关于我们
-                {
-                    AboutUSViewController * AVC = [[AboutUSViewController alloc]init];
-                    [self.navigationController pushViewController:AVC animated:YES];
+        }else{
+            
+            AboutUSViewController * AVC = [[AboutUSViewController alloc]init];
+            [self.navigationController pushViewController:AVC animated:YES];
 
-                }
-                    break;
-                    
-                default:
-                    break;
-            }
         }
     }];
 

@@ -10,5 +10,5 @@
 
 @interface SettingMainView : BaseView
 @property (nonatomic,strong) UITableView *tableView;
-
+@property (nonatomic,assign) BOOL isHaveAccount;//是否绑定交易账户
 @end
