@@ -15,9 +15,13 @@
 #import "SettingViewController.h"
 #import "MyVisitorViewController.h"
 #import "FocusViewController.h"
+
+#import "PersonalMasterView.h"
+
 @interface PersonalViewController ()
 @property (nonatomic,strong)PersonalMainView * mainView;
 @property (nonatomic,strong)PersonalViewModel * viewModel;
+@property (nonatomic,strong)PersonalMasterView * masterView;
 @end
 
 @implementation PersonalViewController
@@ -25,9 +29,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.view addSubview:self.mainView];
+    [self.view addSubview:self.masterView];
+//    [self.view addSubview:self.mainView];
+
     
-  
     
 }
 
@@ -36,8 +41,11 @@
 -(void)updateViewConstraints{
 
     WS(weakSelf)
-    [self.mainView mas_makeConstraints:^(MASConstraintMaker *make) {
-       
+//    [self.mainView mas_makeConstraints:^(MASConstraintMaker *make) {
+//       
+//        make.edges.equalTo(weakSelf.view);
+//    }];
+    [self.masterView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(weakSelf.view);
     }];
     [super updateViewConstraints];
@@ -107,9 +115,16 @@
 
     LoginViewController * LVC = [[LoginViewController alloc]init];
     [self.navigationController pushViewController:LVC animated:YES];
-//    SettingViewController * SEVC = [[SettingViewController alloc]init];
-//    [self.navigationController pushViewController:SEVC animated:YES];
+
     
+}
+
+-(PersonalMasterView *)masterView{
+
+    if (!_masterView) {
+        _masterView = [[PersonalMasterView alloc]initWithViewModel:self.viewModel];
+    }
+    return _masterView;
 }
 -(PersonalMainView *)mainView{
 
