@@ -42,6 +42,8 @@
 		B2339C631F05F3E000B336BB /* RegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2339C5D1F05F3E000B336BB /* RegisterModel.m */; };
 		B2339C681F05F41500B336BB /* ForgetInputCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2339C641F05F41500B336BB /* ForgetInputCodeViewController.m */; };
 		B2339C691F05F41500B336BB /* ForgetInputCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2339C651F05F41500B336BB /* ForgetInputCodeViewController.xib */; };
+		B2339C6C1F06161600B336BB /* PersonalMasterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2339C6B1F06161600B336BB /* PersonalMasterView.m */; };
+		B236BBE91F0A0EFA00D8671D /* PersonalTabeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = B236BBE81F0A0EFA00D8671D /* PersonalTabeHeadView.m */; };
 		B2A215031EDEA9E900B19A4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A215021EDEA9E900B19A4A /* main.m */; };
 		B2A215061EDEA9E900B19A4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A215051EDEA9E900B19A4A /* AppDelegate.m */; };
 		B2A2150E1EDEA9E900B19A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2A2150D1EDEA9E900B19A4A /* Assets.xcassets */; };
@@ -228,6 +230,10 @@
 		B2339C651F05F41500B336BB /* ForgetInputCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgetInputCodeViewController.xib; sourceTree = "<group>"; };
 		B2339C661F05F41500B336BB /* ForgetInputNewPWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetInputNewPWViewController.h; sourceTree = "<group>"; };
 		B2339C671F05F41500B336BB /* ForgetInputCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetInputCodeViewController.h; sourceTree = "<group>"; };
+		B2339C6A1F06161600B336BB /* PersonalMasterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalMasterView.h; sourceTree = "<group>"; };
+		B2339C6B1F06161600B336BB /* PersonalMasterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalMasterView.m; sourceTree = "<group>"; };
+		B236BBE71F0A0EFA00D8671D /* PersonalTabeHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalTabeHeadView.h; sourceTree = "<group>"; };
+		B236BBE81F0A0EFA00D8671D /* PersonalTabeHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalTabeHeadView.m; sourceTree = "<group>"; };
 		B2A214FE1EDEA9E900B19A4A /* QHTrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QHTrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A215021EDEA9E900B19A4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2A215041EDEA9E900B19A4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -668,6 +674,15 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		B236BBE61F0A0E8C00D8671D /* OldView */ = {
+			isa = PBXGroup;
+			children = (
+				B2BE01061EE93D260012AD3E /* PersonalMainView.h */,
+				B2BE01071EE93D260012AD3E /* PersonalMainView.m */,
+			);
+			name = OldView;
+			sourceTree = "<group>";
+		};
 		B2A214F51EDEA9E900B19A4A = {
 			isa = PBXGroup;
 			children = (
@@ -764,10 +779,13 @@
 		B2BE012A1EE93DE50012AD3E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B2BE01061EE93D260012AD3E /* PersonalMainView.h */,
-				B2BE01071EE93D260012AD3E /* PersonalMainView.m */,
+				B2339C6A1F06161600B336BB /* PersonalMasterView.h */,
+				B2339C6B1F06161600B336BB /* PersonalMasterView.m */,
+				B236BBE71F0A0EFA00D8671D /* PersonalTabeHeadView.h */,
+				B236BBE81F0A0EFA00D8671D /* PersonalTabeHeadView.m */,
 				B2BE01041EE93D260012AD3E /* PersonalHeadView.h */,
 				B2BE01051EE93D260012AD3E /* PersonalHeadView.m */,
+				B236BBE61F0A0E8C00D8671D /* OldView */,
 				B21BEC671F04CF7E00354274 /* Cell */,
 				B2BE012D1EE93F480012AD3E /* QHLineChartView */,
 				B2BE012C1EE93F360012AD3E /* QHBarChartView */,
@@ -1367,7 +1385,7 @@
 				TargetAttributes = {
 					B2A214FD1EDEA9E900B19A4A = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = KXB9LY2JET;
+						DevelopmentTeam = RG8JYDVCLT;
 						ProvisioningStyle = Automatic;
 					};
 					B2A215161EDEA9E900B19A4A = {
@@ -1600,6 +1618,7 @@
 				B2D972241F0398B600A04798 /* ChangePhoneViewModel.m in Sources */,
 				B2D972121F037BC800A04798 /* ChooseSexView.m in Sources */,
 				B2339C631F05F3E000B336BB /* RegisterModel.m in Sources */,
+				B236BBE91F0A0EFA00D8671D /* PersonalTabeHeadView.m in Sources */,
 				B2BE01241EE93D260012AD3E /* PersonalViewModel.m in Sources */,
 				B2BE01181EE93D260012AD3E /* QHLineChartView.m in Sources */,
 				CE30CA201F05F93F00778172 /* DynamicsViewController.m in Sources */,
@@ -1609,6 +1628,7 @@
 				CE30CA291F05F93F00778172 /* PositionTableViewCell.m in Sources */,
 				CE30CA231F05F93F00778172 /* MainContractView.m in Sources */,
 				CE30CA341F05F93F00778172 /* OptionalContractViewModel.m in Sources */,
+				B2339C6C1F06161600B336BB /* PersonalMasterView.m in Sources */,
 				CE30CA251F05F93F00778172 /* MainContractViewModel.m in Sources */,
 				CEF331191EDFAC750032F0EF /* QHRequest.m in Sources */,
 				CE30CA1D1F05F93F00778172 /* DynamicsModel.m in Sources */,
@@ -1759,13 +1779,15 @@
 			baseConfigurationReference = DB23E11BA4D680FD0F61CE42 /* Pods-QHTrade.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KXB9LY2JET;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RG8JYDVCLT;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = QHTrade/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mr.L;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1775,13 +1797,15 @@
 			baseConfigurationReference = E3D3E11B3D85ACEA2AE90524 /* Pods-QHTrade.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KXB9LY2JET;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RG8JYDVCLT;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = QHTrade/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mr.L;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

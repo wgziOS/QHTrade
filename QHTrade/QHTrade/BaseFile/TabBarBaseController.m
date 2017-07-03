@@ -31,10 +31,10 @@
    
     // 通过appearance统一设置所有UITabBarItem的文字属性
     // 后面带有UI_APPEARANCE_SELECTOR的方法, 都可以通过appearance对象来统一设置
-    NSDictionary *attrs =@{NSFontAttributeName:[UIFont systemFontOfSize:12],NSForegroundColorAttributeName:RGB(127, 127, 127),};
+    NSDictionary *attrs =@{NSFontAttributeName:[UIFont systemFontOfSize:12],NSForegroundColorAttributeName:RGB(153, 153, 153),};
 
     
-    NSDictionary *selectedAttrs = @{NSFontAttributeName:[UIFont systemFontOfSize:12],NSForegroundColorAttributeName:RGB(197, 160, 101)};
+    NSDictionary *selectedAttrs = @{NSFontAttributeName:[UIFont systemFontOfSize:12],NSForegroundColorAttributeName:RGB(255, 98, 1)};
     
     
     UITabBarItem *item = [UITabBarItem appearance];
@@ -44,15 +44,15 @@
     /*
      * 添加子导航栏控制器
      */
-    [self setupChildVc:[[HomeViewController alloc] init] title:@"首页" image:@"tabbar_discover" selectedImage:@"tabbar_discover_select"];
+    [self setupChildVc:[[HomeViewController alloc] init] title:@"首页" image:@"tabbar_home" selectedImage:@"tabbar_home_select"];
     
-    [self setupChildVc:[[AwesomeViewController alloc] init] title:@"牛人" image:@"tabbar_discover" selectedImage:@"tabbar_discover_select"];
+    [self setupChildVc:[[AwesomeViewController alloc] init] title:@"牛人" image:@"tabbar_talent" selectedImage:@"tabbar_talent_select"];
     
-    [self setupChildVc:[[GroupViewController alloc] init] title:@"圈子" image:@"tabbar_discover" selectedImage:@"tabbar_discover_select"];
+    [self setupChildVc:[[GroupViewController alloc] init] title:@"圈子" image:@"tabbar_circle" selectedImage:@"tabbar_circle_select"];
     
-    [self setupChildVc:[[DynamicsViewController alloc] init] title:@"交易" image:@"tabar_dynamic" selectedImage:@"tabar_dynamic_select"];
+//    [self setupChildVc:[[DynamicsViewController alloc] init] title:@"交易" image:@"tabbar_circle" selectedImage:@"tabbar_circle_select"];
  
-    [self setupChildVc:[[PersonalViewController alloc] init] title:@"个人中心" image:@"tabbar_personal" selectedImage:@"tabbar_personal_select"];
+    [self setupChildVc:[[PersonalViewController alloc] init] title:@"个人中心" image:@"tabbar_person" selectedImage:@"tabbar_person_select"];
 
 
     
