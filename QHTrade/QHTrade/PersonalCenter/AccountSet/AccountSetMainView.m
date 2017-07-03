@@ -77,7 +77,7 @@
     SettingDefaultCell * defaultCell = [tableView dequeueReusableCellWithIdentifier:kSettingDefaultCell];
 
     
-    if (indexPath.section == 0) {
+    
         switch (indexPath.row) {
             case 0:
             {
@@ -107,70 +107,36 @@
                 return defaultCell;
             }
                 break;
-            case 4:
-            {   defaultCell.rightLabel.text = @"";
-                defaultCell.leftLabel.text = self.titleArray[indexPath.row];
-                return defaultCell;
-            }
-                break;
+
                 
             default:
                 break;
         }
-    }else {
-        
-        switch (indexPath.row) {
-            case 0:
-            {//textfield
-                defaultCell.rightLabel.text = @"";
-                defaultCell.leftLabel.text = self.titleArray[indexPath.row+5];
-                return defaultCell;
-            }
-                break;
-            case 1:
-            {
-                defaultCell.rightLabel.text = @"";
-                defaultCell.leftLabel.text = self.titleArray[indexPath.row+5];
-                return defaultCell;
-            }
-                break;
-            case 2:
-            {
-                defaultCell.rightLabel.text = @"";
-                defaultCell.leftLabel.text = self.titleArray[indexPath.row+5];
-                return defaultCell;
-            }
-                break;
-                
-            default:
-                break;
-        }
-        
-    }
+    
     return defaultCell;
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
-    return 2;
+    return 1;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    switch (section) {
-        case 0:
-        {
-            return 5;
-        }
-            break;
-        case 1:
-        {
-            return 3;
-        }
-            break;
-            
-        default:
-            break;
-    }
-    return 8;
+//    switch (section) {
+//        case 0:
+//        {
+//            return 5;
+//        }
+//            break;
+//        case 1:
+//        {
+//            return 0;
+//        }
+//            break;
+//            
+//        default:
+//            break;
+//    }
+    return 4;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     

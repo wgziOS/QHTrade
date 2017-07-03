@@ -15,13 +15,13 @@
             <rect key="frame" x="0.0" y="0.0" width="326" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="326" height="49.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="326" height="50"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yk4-4e-gSK">
-                        <rect key="frame" x="15" y="14" width="70" height="20"/>
+                        <rect key="frame" x="15" y="14" width="120" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="70" id="5I2-Fb-6yU"/>
+                            <constraint firstAttribute="width" constant="120" id="5I2-Fb-6yU"/>
                             <constraint firstAttribute="height" constant="20" id="NpI-Yp-vdJ"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -59,6 +59,13 @@
                             <constraint firstAttribute="height" constant="2" id="y4q-rC-oXz"/>
                         </constraints>
                     </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personal_right_arr" translatesAutoresizingMaskIntoConstraints="NO" id="C5b-oQ-2i3">
+                        <rect key="frame" x="302" y="16" width="9" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="9" id="RXr-KO-ofd"/>
+                            <constraint firstAttribute="height" constant="16" id="xjJ-qn-vc8"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="GoW-Zu-D6f" secondAttribute="trailing" constant="15" id="6kL-Ti-iDI"/>
@@ -66,6 +73,8 @@
                     <constraint firstItem="yk4-4e-gSK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Gkc-mF-vCU"/>
                     <constraint firstAttribute="bottom" secondItem="ipo-vx-IMa" secondAttribute="bottom" id="MyU-FR-2yJ"/>
                     <constraint firstItem="yk4-4e-gSK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VNv-Dy-eyO"/>
+                    <constraint firstItem="C5b-oQ-2i3" firstAttribute="centerY" secondItem="yk4-4e-gSK" secondAttribute="centerY" id="ZaR-mi-JPc"/>
+                    <constraint firstAttribute="trailing" secondItem="C5b-oQ-2i3" secondAttribute="trailing" constant="15" id="cax-F6-t89"/>
                     <constraint firstItem="ipo-vx-IMa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="f3U-DZ-u4S"/>
                     <constraint firstItem="GoW-Zu-D6f" firstAttribute="leading" secondItem="zNV-Mg-QRH" secondAttribute="trailing" constant="5" id="gdO-lx-Syz"/>
                     <constraint firstItem="GoW-Zu-D6f" firstAttribute="centerY" secondItem="yk4-4e-gSK" secondAttribute="centerY" id="xJH-TW-2fj"/>
@@ -74,10 +83,15 @@
             </tableViewCellContentView>
             <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
+                <outlet property="arrowImg" destination="C5b-oQ-2i3" id="8zX-kB-bX8"/>
                 <outlet property="changeBtn" destination="GoW-Zu-D6f" id="1l0-h4-ZVD"/>
+                <outlet property="leftLabel" destination="yk4-4e-gSK" id="nqC-Xg-Xpm"/>
                 <outlet property="phoneNumLabel" destination="zNV-Mg-QRH" id="iup-3N-XNU"/>
             </connections>
-            <point key="canvasLocation" x="-217" y="-53"/>
+            <point key="canvasLocation" x="-530" y="-86"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="personal_right_arr" width="8" height="15"/>
+    </resources>
 </document>

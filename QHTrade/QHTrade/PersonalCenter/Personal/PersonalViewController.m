@@ -65,7 +65,7 @@
         PromptView * Pview = [[PromptView alloc]initWithTitleString:@"温馨提示" SubTitleString:@"每日登录和补充完善个人资料可获得钻石哦！"];
         [Pview show];
         Pview.goonBlock = ^(){
-        
+           
         };
         
     }];
@@ -99,7 +99,14 @@
 //左按钮
 -(UIBarButtonItem *)rightButton{
     
-    return nil;
+    UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
+    [btn addTarget:self action:@selector(leftButtonCilck:) forControlEvents:UIControlEventTouchUpInside];
+    [btn setImage:[UIImage imageNamed:@"message_icon"] forState:UIControlStateNormal];
+    
+    return [[UIBarButtonItem alloc]initWithCustomView:btn];
+}
+-(void)leftButtonCilck:(id)sender{
+    
 }
 //右按钮
 -(UIBarButtonItem *)leftButton{

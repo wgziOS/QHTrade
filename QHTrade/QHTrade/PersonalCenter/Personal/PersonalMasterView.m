@@ -32,7 +32,7 @@
     WS(weakSelf)
     
     topViewHeight = 60;
-    [self.topView mas_updateConstraints:^(MASConstraintMaker *make) {
+    [self.topView mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.equalTo(weakSelf);
         make.left.equalTo(weakSelf);
@@ -69,7 +69,7 @@
 
 
     //隐藏topView
-    WS(weakSelf)
+//    WS(weakSelf)
     [self updateConstraints];
 //    [self.tableView mas_updateConstraints:^(MASConstraintMaker *make) {
 //        make.top.equalTo(weakSelf.mas_top);
@@ -77,7 +77,7 @@
     topViewHeight = 0;
     [self.topView mas_updateConstraints:^(MASConstraintMaker *make) {
         
-        make.height.mas_equalTo(topViewHeight);
+        make.height.mas_equalTo(0);
     }];
 
     [self setNeedsUpdateConstraints];

@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 static NSString * const kSettingPhoneCell  = @"SettingPhoneCell";
 @interface SettingPhoneCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *arrowImg;
+@property (weak, nonatomic) IBOutlet UILabel *leftLabel;
 @property (weak, nonatomic) IBOutlet UILabel *phoneNumLabel;
 @property (weak, nonatomic) IBOutlet UIButton *changeBtn;
 @property (nonatomic,strong) void (^changeBlock)();

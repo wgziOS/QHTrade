@@ -17,7 +17,12 @@
 @property (nonatomic, strong) UIButton * closeButton;
 @property (nonatomic, strong) UIButton * goonBtn;
 @property (nonatomic, strong) UIView  * backImageView;
-@property(nonatomic,strong) void (^goonBlock)();
+
+@property(nonatomic,copy) void (^goonBlock)();
+@property (nonatomic,copy) void (^closeBlock)();
+
+-(id)initWithTitle:(NSString *)title SubTitle:(NSString *)subTitle
+      LeftBtnTitle:(NSString *)leftBtnTitle RightBtnTitle:(NSString *)rightBtnTitle;
 
 -(id)initWithTitleString:(NSString *)titleString SubTitleString:(NSString *)subTitleString;
 

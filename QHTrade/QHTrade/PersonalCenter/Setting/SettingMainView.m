@@ -12,6 +12,7 @@
 #import "SettingPhoneCell.h"
 #import "SettingDefaultCell.h"
 #import "SettingSwitchCell.h"
+#import "PromptView.h"
 
 @interface SettingMainView ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)SettingViewModel * viewModel;
@@ -80,6 +81,7 @@
             case 1:
             {
                 [phoneCell addPhoneNumStr:@"15160718888"];
+                phoneCell.arrowImg.hidden = YES;
                 phoneCell.changeBlock = ^(){
                     NSLog(@"更换");
                     [weakSelf.viewModel.changePhoneClick sendNext:nil];
@@ -89,63 +91,84 @@
                 break;
             case 2:
             {
-                defaultCell.leftLabel.text = @"更换密码";
-                defaultCell.rightLabel.text = @"";
-                return defaultCell;
+                self.isHaveAccount = YES;
+                
+                __weak typeof(phoneCell) weakCell = phoneCell;
+                phoneCell.leftLabel.text = @"交易账户";
+                phoneCell.phoneNumLabel.text = @"987654321";
+                [phoneCell.changeBtn setTitle:@"删除" forState:UIControlStateNormal];
+                
+                phoneCell.arrowImg.hidden = YES;
+                
+                phoneCell.changeBlock = ^(){
+                    //循环引用
+                    __strong typeof(phoneCell) strongCell = weakCell;
+                    
+                    if ([strongCell.changeBtn.titleLabel.text isEqualToString:@"删除"]) {
+                        NSLog(@"删除->弹框");
+                        PromptView * Pview = [[PromptView alloc]initWithTitle:@"提示" SubTitle:@"删除交易账户后，您的持仓需自行处理，且此交易账户的跟单将视为您主动取消，由此造成的损失需由您本人承担。确定要解除吗？" LeftBtnTitle:@"不解除" RightBtnTitle:@"解除"];
+                        [Pview show];
+                    
+                        Pview.closeBlock = ^(){//不解除
+                            
+                        };
+                        Pview.goonBlock = ^(){//解除
+                            self.isHaveAccount = NO;
+                            strongCell.arrowImg.hidden = NO;
+                            strongCell.phoneNumLabel.text = @"未绑定";
+                            strongCell.leftLabel.text = @"绑定交易账户";
+                            strongCell.changeBtn.hidden = YES;
+                            
+                        };
+                        
+                    }
+                
+                };
+                
+                return phoneCell;
             }
                 break;
             case 3:
             {
-                
-                switchCell.leftLabel.text = @"委托确认";
-                switchCell.switchBlock = ^(NSString * str){
-                    NSLog(@"…%@",str);
-                };
-                return switchCell;
-            }
-                break;
-            case 4:
-            {
+                __weak typeof(switchCell) weakCell = switchCell;
                 
                 switchCell.leftLabel.text = @"接收通知";
                 switchCell.switchBlock = ^(NSString * str){
                     NSLog(@"…%@",str);
+                    if ([str isEqualToString:@"isOff"]) {//switch关闭时弹出
+                        
+                        PromptView * Pview = [[PromptView alloc]initWithTitle:@"提示" SubTitle:@"接收通知建议开启，关闭通知消息将会错过重要的跟单信息。你确定不接收通知吗？" LeftBtnTitle:@"不接收通知" RightBtnTitle:@"接收通知"];
+                        [Pview show];
+                        
+                        Pview.closeBlock = ^(){
+                            //坚持不接受通知
+                            NSLog(@"不接受");
+                        };
+                        
+                        Pview.goonBlock = ^(){
+                            //弹出框上选择 接收通知
+                            NSLog(@"接受通知");
+                            __strong typeof(switchCell) strongCell = weakCell;
+                            [strongCell.rightSwitch setOn:YES];
+                            
+                        };
+                    }else {//switch打开
+                        
+                        NSLog(@"接收通知");
+                    }
                 };
                 return switchCell;
             }
                 break;
+           
                 
             default:
                 break;
         }
     }else {
         
-        switch (indexPath.row) {
-            case 0:
-            {
-                defaultCell.leftLabel.text = @"意见反馈";
-                defaultCell.rightLabel.text = @"";
-                return defaultCell;
-            }
-                break;
-            case 1:
-            {
-                defaultCell.leftLabel.text = @"检查更新";
-                defaultCell.rightLabel.text = @"最新版本";
-                return defaultCell;
-            }
-                break;
-            case 2:
-            {
-                defaultCell.leftLabel.text = @"关于我们";
-                defaultCell.rightLabel.text = @"";
-                return defaultCell;
-            }
-                break;
-                
-            default:
-                break;
-        }
+        defaultCell.leftLabel.text = @"关于我们";
+        defaultCell.rightLabel.text = @"";
  
     }
     return defaultCell;
@@ -159,12 +182,12 @@
     switch (section) {
         case 0:
         {
-            return 5;
+            return 4;
         }
             break;
         case 1:
         {
-            return 3;
+            return 1;
         }
             break;
             
