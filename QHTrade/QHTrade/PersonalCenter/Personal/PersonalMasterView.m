@@ -8,7 +8,7 @@
 
 #import "PersonalMasterView.h"
 #import "PersonalViewModel.h"
-#import "PersonalFirstCell.h"
+#import "PersonalSecondCell.h"
 
 @interface PersonalMasterView()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -122,15 +122,15 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    PersonalFirstCell *cell = [tableView dequeueReusableCellWithIdentifier:kPersonalFirstCell];
+    PersonalSecondCell *cell = [tableView dequeueReusableCellWithIdentifier:kPersonalSecondCell];
     return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 150;
+    return 210;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
-    return 10;
+    return 3;
 }
 
 -(UIButton *)topLogButton{
@@ -207,7 +207,7 @@
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         
-        [_tableView registerNib:[UINib nibWithNibName:kPersonalFirstCell bundle:nil] forCellReuseIdentifier:kPersonalFirstCell];
+        [_tableView registerNib:[UINib nibWithNibName:kPersonalSecondCell bundle:nil] forCellReuseIdentifier:kPersonalSecondCell];
         [_tableView.tableHeaderView setFrame:CGRectMake(0, 0, SCREEN_WIDTH, 125)];
     
     }

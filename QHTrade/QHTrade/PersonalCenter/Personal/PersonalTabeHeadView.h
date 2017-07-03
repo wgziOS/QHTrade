@@ -7,14 +7,15 @@
 //
 
 #import "BaseView.h"
-
+#import "PersonalViewModel.h"
 @interface PersonalTabeHeadView : BaseView
 
 @property (nonatomic,strong) UIImageView *headImgView;
 @property (nonatomic,strong) UILabel *nickNameLabel;
 @property (nonatomic,strong) UILabel *IdLabel;
 @property (nonatomic,strong) UIImageView *sexImgView;
-@property (nonatomic,strong) UIImageView *diamondImgView;
+@property (nonatomic,strong) UIButton *diamondButton;
 @property (nonatomic,strong) UIButton *setButton;
 @property (nonatomic,strong) UIView *lineView;
+@property (nonatomic,strong) PersonalViewModel *viewModel;
 @end

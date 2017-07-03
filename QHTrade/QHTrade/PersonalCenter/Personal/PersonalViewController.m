@@ -113,8 +113,8 @@
 //去设置
 -(void)rightButtonCilck:(id)sender{
 
-    LoginViewController * LVC = [[LoginViewController alloc]init];
-    [self.navigationController pushViewController:LVC animated:YES];
+    SettingViewController * SVC = [[SettingViewController alloc]init];
+    [self.navigationController pushViewController:SVC animated:YES];
 
     
 }
