@@ -23,9 +23,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 -(UIBarButtonItem *)leftButton{
     return nil;
 }
+
 /*
 #pragma mark - Navigation
 
