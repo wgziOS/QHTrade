@@ -124,6 +124,9 @@
 		CE30CA3A1F05F93F00778172 /* ZZCEView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30CA101F05F93F00778172 /* ZZCEView.m */; };
 		CE30CA3B1F05F93F00778172 /* ZZCEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30CA121F05F93F00778172 /* ZZCEViewController.m */; };
 		CE30CA3C1F05F93F00778172 /* ZZCEViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30CA141F05F93F00778172 /* ZZCEViewModel.m */; };
+		CE30CA4A1F06164700778172 /* AwesomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30CA491F06164700778172 /* AwesomeViewController.m */; };
+		CE30CA4F1F06176A00778172 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30CA4E1F06176A00778172 /* HomeViewController.m */; };
+		CE30CA541F06180500778172 /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30CA531F06180500778172 /* GroupViewController.m */; };
 		CEF330EE1EDF9B720032F0EF /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF330ED1EDF9B720032F0EF /* UIImage+Extension.m */; };
 		CEF330F11EDF9BC60032F0EF /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF330F01EDF9BC60032F0EF /* UIView+Extension.m */; };
 		CEF331031EDF9CC50032F0EF /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF330F41EDF9CC50032F0EF /* BaseTableViewCell.m */; };
@@ -138,7 +141,6 @@
 		CEF3311F1EDFB1E70032F0EF /* QHRequest+Api.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3311E1EDFB1E70032F0EF /* QHRequest+Api.m */; };
 		CEF331221EDFB3D50032F0EF /* UserInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF331211EDFB3D50032F0EF /* UserInformation.m */; };
 		CEF3312E1EDFDBCB0032F0EF /* QHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3312D1EDFDBCB0032F0EF /* QHTabBar.m */; };
-		CEF331321EDFDF080032F0EF /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF331311EDFDF080032F0EF /* DiscoverViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -373,6 +375,12 @@
 		CE30CA121F05F93F00778172 /* ZZCEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCEViewController.m; sourceTree = "<group>"; };
 		CE30CA131F05F93F00778172 /* ZZCEViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCEViewModel.h; sourceTree = "<group>"; };
 		CE30CA141F05F93F00778172 /* ZZCEViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCEViewModel.m; sourceTree = "<group>"; };
+		CE30CA481F06164700778172 /* AwesomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeViewController.h; sourceTree = "<group>"; };
+		CE30CA491F06164700778172 /* AwesomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeViewController.m; sourceTree = "<group>"; };
+		CE30CA4D1F06176A00778172 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		CE30CA4E1F06176A00778172 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		CE30CA521F06180500778172 /* GroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupViewController.h; sourceTree = "<group>"; };
+		CE30CA531F06180500778172 /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupViewController.m; sourceTree = "<group>"; };
 		CEF330EC1EDF9B720032F0EF /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		CEF330ED1EDF9B720032F0EF /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		CEF330EF1EDF9BC60032F0EF /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -407,8 +415,6 @@
 		CEF331211EDFB3D50032F0EF /* UserInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInformation.m; sourceTree = "<group>"; };
 		CEF3312C1EDFDBCB0032F0EF /* QHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHTabBar.h; sourceTree = "<group>"; };
 		CEF3312D1EDFDBCB0032F0EF /* QHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHTabBar.m; sourceTree = "<group>"; };
-		CEF331301EDFDF080032F0EF /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
-		CEF331311EDFDF080032F0EF /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
 		DB23E11BA4D680FD0F61CE42 /* Pods-QHTrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QHTrade.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QHTrade/Pods-QHTrade.debug.xcconfig"; sourceTree = "<group>"; };
 		E3D3E11B3D85ACEA2AE90524 /* Pods-QHTrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QHTrade.release.xcconfig"; path = "Pods/Target Support Files/Pods-QHTrade/Pods-QHTrade.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -683,9 +689,10 @@
 				CEF330E91EDF9B010032F0EF /* Common */,
 				CEF330EA1EDF9B010032F0EF /* NetWorking */,
 				CEF330E41EDF9AC20032F0EF /* Dynamics */,
-				CEF330E51EDF9AC20032F0EF /* Find */,
+				CE30CA501F0617F500778172 /* Group */,
+				CE30CA461F06162B00778172 /* Awesome */,
+				CE30CA4B1F06175100778172 /* Home */,
 				CEF330E71EDF9AC20032F0EF /* RankingList */,
-				CEF330E81EDF9AC20032F0EF /* Transaction */,
 				B2339C2D1F05F2DF00B336BB /* LoginOrRegister */,
 				B21BD2C11EDFB9E500BAD836 /* PersonalCenter */,
 				B2A215041EDEA9E900B19A4A /* AppDelegate.h */,
@@ -1068,6 +1075,57 @@
 			path = ZZCE;
 			sourceTree = "<group>";
 		};
+		CE30CA461F06162B00778172 /* Awesome */ = {
+			isa = PBXGroup;
+			children = (
+				CE30CA471F06162B00778172 /* Awesome */,
+			);
+			path = Awesome;
+			sourceTree = "<group>";
+		};
+		CE30CA471F06162B00778172 /* Awesome */ = {
+			isa = PBXGroup;
+			children = (
+				CE30CA481F06164700778172 /* AwesomeViewController.h */,
+				CE30CA491F06164700778172 /* AwesomeViewController.m */,
+			);
+			path = Awesome;
+			sourceTree = "<group>";
+		};
+		CE30CA4B1F06175100778172 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CE30CA4C1F06175F00778172 /* Home */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CE30CA4C1F06175F00778172 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CE30CA4D1F06176A00778172 /* HomeViewController.h */,
+				CE30CA4E1F06176A00778172 /* HomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CE30CA501F0617F500778172 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				CE30CA511F0617F500778172 /* Group */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		CE30CA511F0617F500778172 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				CE30CA521F06180500778172 /* GroupViewController.h */,
+				CE30CA531F06180500778172 /* GroupViewController.m */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
 		CEF330E41EDF9AC20032F0EF /* Dynamics */ = {
 			isa = PBXGroup;
 			children = (
@@ -1084,26 +1142,11 @@
 			path = Dynamics;
 			sourceTree = "<group>";
 		};
-		CEF330E51EDF9AC20032F0EF /* Find */ = {
-			isa = PBXGroup;
-			children = (
-				CEF3312F1EDFDEF80032F0EF /* Find */,
-			);
-			path = Find;
-			sourceTree = "<group>";
-		};
 		CEF330E71EDF9AC20032F0EF /* RankingList */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = RankingList;
-			sourceTree = "<group>";
-		};
-		CEF330E81EDF9AC20032F0EF /* Transaction */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Transaction;
 			sourceTree = "<group>";
 		};
 		CEF330E91EDF9B010032F0EF /* Common */ = {
@@ -1166,15 +1209,6 @@
 				CEF3312D1EDFDBCB0032F0EF /* QHTabBar.m */,
 			);
 			path = BaseFile;
-			sourceTree = "<group>";
-		};
-		CEF3312F1EDFDEF80032F0EF /* Find */ = {
-			isa = PBXGroup;
-			children = (
-				CEF331301EDFDF080032F0EF /* DiscoverViewController.h */,
-				CEF331311EDFDF080032F0EF /* DiscoverViewController.m */,
-			);
-			path = Find;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1395,6 +1429,7 @@
 				CEF331031EDF9CC50032F0EF /* BaseTableViewCell.m in Sources */,
 				CE30CA3B1F05F93F00778172 /* ZZCEViewController.m in Sources */,
 				B2339C481F05F39500B336BB /* LoginViewModel.m in Sources */,
+				CE30CA541F06180500778172 /* GroupViewController.m in Sources */,
 				B2BE011B1EE93D260012AD3E /* PersonalCollectionCell.m in Sources */,
 				CE30CA361F05F93F00778172 /* SHFEView.m in Sources */,
 				B2BE01171EE93D260012AD3E /* PersonalViewController.m in Sources */,
@@ -1406,7 +1441,6 @@
 				B2BE01201EE93D260012AD3E /* PersonalMainView.m in Sources */,
 				CEF3311C1EDFAE330032F0EF /* QHRequestModel.m in Sources */,
 				CEF331051EDF9CC50032F0EF /* BaseViewModel.m in Sources */,
-				CEF331321EDFDF080032F0EF /* DiscoverViewController.m in Sources */,
 				B2339C4C1F05F39500B336BB /* LoginModel.m in Sources */,
 				CE30CA3A1F05F93F00778172 /* ZZCEView.m in Sources */,
 				CE30CA1E1F05F93F00778172 /* DynamicsNavigationCenterView.m in Sources */,
@@ -1458,6 +1492,7 @@
 				CE30CA2E1F05F93F00778172 /* MyContractView.m in Sources */,
 				CE30CA2F1F05F93F00778172 /* MyContractViewController.m in Sources */,
 				B2339C4A1F05F39500B336BB /* LoginViewController.m in Sources */,
+				CE30CA4A1F06164700778172 /* AwesomeViewController.m in Sources */,
 				CE30CA2D1F05F93F00778172 /* MycontractSegmentcontrolView.m in Sources */,
 				B2339C681F05F41500B336BB /* ForgetInputCodeViewController.m in Sources */,
 				CE30CA221F05F93F00778172 /* MainContractHeadView.m in Sources */,
@@ -1490,6 +1525,7 @@
 				B2339C4B1F05F39500B336BB /* LoginView.m in Sources */,
 				CE30CA261F05F93F00778172 /* HangOrderTableViewCell.m in Sources */,
 				B2D9721B1F03974100A04798 /* ChangePhoneViewController.m in Sources */,
+				CE30CA4F1F06176A00778172 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
