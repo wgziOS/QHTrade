@@ -13,7 +13,7 @@ static NSString * const kSettingPhoneCell  = @"SettingPhoneCell";
 @property (weak, nonatomic) IBOutlet UILabel *leftLabel;
 @property (weak, nonatomic) IBOutlet UILabel *phoneNumLabel;
 @property (weak, nonatomic) IBOutlet UIButton *changeBtn;
-@property (nonatomic,strong) void (^changeBlock)();
+@property (nonatomic,copy) void (^changeBlock)();
 @property (nonatomic,strong) NSString *phoneNumStr;
 -(void)addPhoneNumStr:(NSString *)phoneNumStr;
 @end

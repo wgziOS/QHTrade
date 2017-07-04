@@ -26,6 +26,8 @@
 		B21BEC621F04AB0C00354274 /* MyVisitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC611F04AB0C00354274 /* MyVisitorViewController.m */; };
 		B21BEC661F04AD8F00354274 /* FocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC651F04AD8F00354274 /* FocusViewController.m */; };
 		B21BEC6B1F04F58600354274 /* PersonalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC6A1F04F58600354274 /* PersonalModel.m */; };
+		B21E72D11F0B591C0081CF1A /* PersonalButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B21E72CF1F0B591C0081CF1A /* PersonalButtonCell.m */; };
+		B21E72D21F0B591C0081CF1A /* PersonalButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21E72D01F0B591C0081CF1A /* PersonalButtonCell.xib */; };
 		B2339C481F05F39500B336BB /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2339C3F1F05F39500B336BB /* LoginViewModel.m */; };
 		B2339C491F05F39500B336BB /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2339C411F05F39500B336BB /* LoginViewController.xib */; };
 		B2339C4A1F05F39500B336BB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2339C421F05F39500B336BB /* LoginViewController.m */; };
@@ -44,6 +46,7 @@
 		B2339C691F05F41500B336BB /* ForgetInputCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2339C651F05F41500B336BB /* ForgetInputCodeViewController.xib */; };
 		B2339C6C1F06161600B336BB /* PersonalMasterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2339C6B1F06161600B336BB /* PersonalMasterView.m */; };
 		B236BBE91F0A0EFA00D8671D /* PersonalTabeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = B236BBE81F0A0EFA00D8671D /* PersonalTabeHeadView.m */; };
+		B2749B991F0B7FE000E48C52 /* PersonalTableFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2749B981F0B7FE000E48C52 /* PersonalTableFootView.m */; };
 		B2A215031EDEA9E900B19A4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A215021EDEA9E900B19A4A /* main.m */; };
 		B2A215061EDEA9E900B19A4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A215051EDEA9E900B19A4A /* AppDelegate.m */; };
 		B2A2150E1EDEA9E900B19A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2A2150D1EDEA9E900B19A4A /* Assets.xcassets */; };
@@ -69,7 +72,6 @@
 		B2BE01251EE93D260012AD3E /* QHBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BE01101EE93D260012AD3E /* QHBarChart.m */; };
 		B2BE01261EE93D260012AD3E /* TradeRecordsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BE01121EE93D260012AD3E /* TradeRecordsCell.m */; };
 		B2BE01271EE93D260012AD3E /* TradeRecordsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2BE01131EE93D260012AD3E /* TradeRecordsCell.xib */; };
-		B2BE01281EE93D260012AD3E /* white_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE01141EE93D260012AD3E /* white_bar.png */; };
 		B2BE01321EE943F30012AD3E /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BE01301EE943F30012AD3E /* SettingViewController.m */; };
 		B2BE01331EE943F30012AD3E /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2BE01311EE943F30012AD3E /* SettingViewController.xib */; };
 		B2CCA98C1F024703002BA562 /* AboutUSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CCA98A1F024703002BA562 /* AboutUSViewController.m */; };
@@ -203,6 +205,9 @@
 		B21BEC651F04AD8F00354274 /* FocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FocusViewController.m; sourceTree = "<group>"; };
 		B21BEC691F04F58600354274 /* PersonalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalModel.h; sourceTree = "<group>"; };
 		B21BEC6A1F04F58600354274 /* PersonalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalModel.m; sourceTree = "<group>"; };
+		B21E72CE1F0B591C0081CF1A /* PersonalButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalButtonCell.h; sourceTree = "<group>"; };
+		B21E72CF1F0B591C0081CF1A /* PersonalButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalButtonCell.m; sourceTree = "<group>"; };
+		B21E72D01F0B591C0081CF1A /* PersonalButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalButtonCell.xib; sourceTree = "<group>"; };
 		B2339C3F1F05F39500B336BB /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		B2339C401F05F39500B336BB /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
 		B2339C411F05F39500B336BB /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -234,6 +239,8 @@
 		B2339C6B1F06161600B336BB /* PersonalMasterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalMasterView.m; sourceTree = "<group>"; };
 		B236BBE71F0A0EFA00D8671D /* PersonalTabeHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalTabeHeadView.h; sourceTree = "<group>"; };
 		B236BBE81F0A0EFA00D8671D /* PersonalTabeHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalTabeHeadView.m; sourceTree = "<group>"; };
+		B2749B971F0B7FE000E48C52 /* PersonalTableFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalTableFootView.h; sourceTree = "<group>"; };
+		B2749B981F0B7FE000E48C52 /* PersonalTableFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalTableFootView.m; sourceTree = "<group>"; };
 		B2A214FE1EDEA9E900B19A4A /* QHTrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QHTrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A215021EDEA9E900B19A4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2A215041EDEA9E900B19A4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -279,7 +286,6 @@
 		B2BE01111EE93D260012AD3E /* TradeRecordsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeRecordsCell.h; sourceTree = "<group>"; };
 		B2BE01121EE93D260012AD3E /* TradeRecordsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeRecordsCell.m; sourceTree = "<group>"; };
 		B2BE01131EE93D260012AD3E /* TradeRecordsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradeRecordsCell.xib; sourceTree = "<group>"; };
-		B2BE01141EE93D260012AD3E /* white_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_bar.png; sourceTree = "<group>"; };
 		B2BE012F1EE943F30012AD3E /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		B2BE01301EE943F30012AD3E /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		B2BE01311EE943F30012AD3E /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
@@ -580,22 +586,24 @@
 		B21BEC671F04CF7E00354274 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				B2BE01111EE93D260012AD3E /* TradeRecordsCell.h */,
-				B2BE01121EE93D260012AD3E /* TradeRecordsCell.m */,
-				B2BE01131EE93D260012AD3E /* TradeRecordsCell.xib */,
-				B2BE01141EE93D260012AD3E /* white_bar.png */,
-				B2BE01011EE93D260012AD3E /* PersonalFirstCell.h */,
-				B2BE01021EE93D260012AD3E /* PersonalFirstCell.m */,
-				B2BE01031EE93D260012AD3E /* PersonalFirstCell.xib */,
+				B2BE00FC1EE93D260012AD3E /* PersonalBottomCell.h */,
+				B2BE00F51EE93D260012AD3E /* PersonalBottomCell.m */,
+				B2BE00FD1EE93D260012AD3E /* PersonalBottomCell.xib */,
+				B21E72CE1F0B591C0081CF1A /* PersonalButtonCell.h */,
+				B21E72CF1F0B591C0081CF1A /* PersonalButtonCell.m */,
+				B21E72D01F0B591C0081CF1A /* PersonalButtonCell.xib */,
 				B2BE01081EE93D260012AD3E /* PersonalSecondCell.h */,
 				B2BE01091EE93D260012AD3E /* PersonalSecondCell.m */,
 				B2BE010A1EE93D260012AD3E /* PersonalSecondCell.xib */,
 				B2BE00FE1EE93D260012AD3E /* PersonalCollectionCell.h */,
 				B2BE00FF1EE93D260012AD3E /* PersonalCollectionCell.m */,
 				B2BE01001EE93D260012AD3E /* PersonalCollectionCell.xib */,
-				B2BE00FC1EE93D260012AD3E /* PersonalBottomCell.h */,
-				B2BE00F51EE93D260012AD3E /* PersonalBottomCell.m */,
-				B2BE00FD1EE93D260012AD3E /* PersonalBottomCell.xib */,
+				B2BE01111EE93D260012AD3E /* TradeRecordsCell.h */,
+				B2BE01121EE93D260012AD3E /* TradeRecordsCell.m */,
+				B2BE01131EE93D260012AD3E /* TradeRecordsCell.xib */,
+				B2BE01011EE93D260012AD3E /* PersonalFirstCell.h */,
+				B2BE01021EE93D260012AD3E /* PersonalFirstCell.m */,
+				B2BE01031EE93D260012AD3E /* PersonalFirstCell.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -679,6 +687,8 @@
 			children = (
 				B2BE01061EE93D260012AD3E /* PersonalMainView.h */,
 				B2BE01071EE93D260012AD3E /* PersonalMainView.m */,
+				B2BE01041EE93D260012AD3E /* PersonalHeadView.h */,
+				B2BE01051EE93D260012AD3E /* PersonalHeadView.m */,
 			);
 			name = OldView;
 			sourceTree = "<group>";
@@ -783,8 +793,8 @@
 				B2339C6B1F06161600B336BB /* PersonalMasterView.m */,
 				B236BBE71F0A0EFA00D8671D /* PersonalTabeHeadView.h */,
 				B236BBE81F0A0EFA00D8671D /* PersonalTabeHeadView.m */,
-				B2BE01041EE93D260012AD3E /* PersonalHeadView.h */,
-				B2BE01051EE93D260012AD3E /* PersonalHeadView.m */,
+				B2749B971F0B7FE000E48C52 /* PersonalTableFootView.h */,
+				B2749B981F0B7FE000E48C52 /* PersonalTableFootView.m */,
 				B236BBE61F0A0E8C00D8671D /* OldView */,
 				B21BEC671F04CF7E00354274 /* Cell */,
 				B2BE012D1EE93F480012AD3E /* QHLineChartView */,
@@ -1385,7 +1395,7 @@
 				TargetAttributes = {
 					B2A214FD1EDEA9E900B19A4A = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = RG8JYDVCLT;
+						DevelopmentTeam = 94797U4S54;
 						ProvisioningStyle = Automatic;
 					};
 					B2A215161EDEA9E900B19A4A = {
@@ -1427,7 +1437,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2BE01281EE93D260012AD3E /* white_bar.png in Resources */,
 				B2BE01331EE943F30012AD3E /* SettingViewController.xib in Resources */,
 				B2339C601F05F3E000B336BB /* RegisterViewController.xib in Resources */,
 				B2339C521F05F3B300B336BB /* ForgetPasswordViewController.xib in Resources */,
@@ -1437,6 +1446,7 @@
 				B2339C691F05F41500B336BB /* ForgetInputCodeViewController.xib in Resources */,
 				B2339C541F05F3B300B336BB /* ForgetInputNewPWViewController.xib in Resources */,
 				B21BEC4F1F049AD100354274 /* ChangeNickNameViewController.xib in Resources */,
+				B21E72D21F0B591C0081CF1A /* PersonalButtonCell.xib in Resources */,
 				B203B3E51F00EBE2002581F6 /* SettingPhoneCell.xib in Resources */,
 				B203B3EF1F00EC2C002581F6 /* SettingSwitchCell.xib in Resources */,
 				B2339C491F05F39500B336BB /* LoginViewController.xib in Resources */,
@@ -1602,6 +1612,7 @@
 				CE30CA2E1F05F93F00778172 /* MyContractView.m in Sources */,
 				CE30CA2F1F05F93F00778172 /* MyContractViewController.m in Sources */,
 				B2339C4A1F05F39500B336BB /* LoginViewController.m in Sources */,
+				B21E72D11F0B591C0081CF1A /* PersonalButtonCell.m in Sources */,
 				CE30CA4A1F06164700778172 /* AwesomeViewController.m in Sources */,
 				CE30CA2D1F05F93F00778172 /* MycontractSegmentcontrolView.m in Sources */,
 				B2339C681F05F41500B336BB /* ForgetInputCodeViewController.m in Sources */,
@@ -1614,6 +1625,7 @@
 				B203B3DB1F00E4AD002581F6 /* SettingViewModel.m in Sources */,
 				B2A215031EDEA9E900B19A4A /* main.m in Sources */,
 				CE30CA301F05F93F00778172 /* MyContractViewModel.m in Sources */,
+				B2749B991F0B7FE000E48C52 /* PersonalTableFootView.m in Sources */,
 				B203B3EE1F00EC2C002581F6 /* SettingSwitchCell.m in Sources */,
 				B2D972241F0398B600A04798 /* ChangePhoneViewModel.m in Sources */,
 				B2D972121F037BC800A04798 /* ChooseSexView.m in Sources */,
@@ -1780,7 +1792,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = RG8JYDVCLT;
+				DEVELOPMENT_TEAM = 94797U4S54;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = QHTrade/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1798,7 +1810,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = RG8JYDVCLT;
+				DEVELOPMENT_TEAM = 94797U4S54;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = QHTrade/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
