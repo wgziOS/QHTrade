@@ -7,11 +7,13 @@
 //
 
 #import "AwesomeViewController.h"
-#import "AwesomeView.h"
-#import "AwesomeViewModel.h"
 #import "RookieView.h"
+#import "AwesomeView.h"
 #import "CanFollowView.h"
+#import "AwesomeViewModel.h"
 #import "FollowEarningsTopView.h"
+#import "AwesomeDetailsViewController.h"
+#import "FollowEarningsDetailsViewController.h"
 
 
 @interface AwesomeViewController ()
@@ -78,6 +80,26 @@
     
     
 }
+
+-(void)bindViewModel{
+    WS(weakSelf)
+    [[self.viewModel.followEarningsCellClick takeUntil:self.rac_willDeallocSignal ] subscribeNext:^(id  _Nullable x) {
+        FollowEarningsDetailsViewController *followEarningsDetails = [[FollowEarningsDetailsViewController alloc] init];
+        [weakSelf.navigationController pushViewController:followEarningsDetails animated:YES];
+    }];
+    [[self.viewModel.awesomeFollowCellClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
+        AwesomeDetailsViewController *awesomeDetails = [[AwesomeDetailsViewController alloc] init];
+        [weakSelf.navigationController pushViewController:awesomeDetails animated:YES];
+    }];
+    [[self.viewModel.rookieCellClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
+        AwesomeDetailsViewController *awesomeDetails = [[AwesomeDetailsViewController alloc] init];
+        [weakSelf.navigationController pushViewController:awesomeDetails animated:YES];
+    }];
+    [[self.viewModel.canFollowCellClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
+        AwesomeDetailsViewController *awesomeDetails = [[AwesomeDetailsViewController alloc] init];
+        [weakSelf.navigationController pushViewController:awesomeDetails animated:YES];
+    }];
+}
 -(UIView *)centerView{
     return self.segmentedControl;
 }
@@ -106,12 +128,12 @@
         case 2:
             [self.childView removeFromSuperview];
             [self.view addSubview:self.followEarningsTopView];
-            self.childView = self.rookieView;
+            self.childView = self.followEarningsTopView;
             break;
         case 3:
             [self.childView removeFromSuperview];
             [self.view addSubview:self.canFollowView];
-            self.childView = self.rookieView;
+            self.childView = self.canFollowView;
             break;
             
         default:

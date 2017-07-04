@@ -69,7 +69,7 @@
 
 
     //隐藏topView
-    WS(weakSelf)
+//    WS(weakSelf)
     [self updateConstraints];
 //    [self.tableView mas_updateConstraints:^(MASConstraintMaker *make) {
 //        make.top.equalTo(weakSelf.mas_top);
