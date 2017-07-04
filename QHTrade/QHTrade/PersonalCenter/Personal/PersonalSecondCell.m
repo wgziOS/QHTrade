@@ -21,7 +21,7 @@
 
     UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc]init];
     
-    [flowLayout setItemSize:CGSizeMake((SCREEN_WIDTH-34)/3, 60-4)];
+    [flowLayout setItemSize:CGSizeMake((SCREEN_WIDTH-34)/3, 60)];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
     
     
@@ -51,7 +51,7 @@
 }
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 9;
+    return 6;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
 

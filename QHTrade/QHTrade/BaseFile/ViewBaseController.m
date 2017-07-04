@@ -39,7 +39,7 @@
    
     
     self.navigationController.navigationBar.shadowImage = [UIImage new];
-    
+
     self.navigationItem.leftBarButtonItem = [self leftButton];//设置导航栏左边按钮
     self.navigationItem.rightBarButtonItem = [self rightButton];//设置导航栏右边按钮
     self.navigationItem.titleView = [self centerView];//设置titel
