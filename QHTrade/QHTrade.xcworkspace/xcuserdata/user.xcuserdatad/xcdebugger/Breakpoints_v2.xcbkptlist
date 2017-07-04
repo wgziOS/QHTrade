@@ -16,49 +16,129 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "QHTrade/Awesome/Awesome/RookieView.m"
-            timestampString = "520754924.609287"
+            filePath = "QHTrade/Awesome/Awesome/AwesomeViewController.m"
+            timestampString = "520824845.891431"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "-updateViewConstraints"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QHTrade/Awesome/Awesome/AwesomeViewController.m"
+            timestampString = "520824845.891431"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "-updateViewConstraints"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QHTrade/Awesome/Awesome/FollowEarningsTopView.m"
+            timestampString = "520761729.097478"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "-updateConstraints"
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[RookieView updateConstraints]"
+                  symbolName = "-[FollowEarningsTopView updateConstraints]"
                   moduleName = "QHTrade"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/user/Desktop/QHTrade/QHTrade/QHTrade/Awesome/Awesome/RookieView.m"
-                  timestampString = "520755690.082626"
+                  urlString = "file:///Users/user/Desktop/QHTrade/QHTrade/QHTrade/Awesome/Awesome/FollowEarningsTopView.m"
+                  timestampString = "520762251.754649"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "58">
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "84">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__31-[RookieView updateConstraints]_block_invoke"
+                  symbolName = "__42-[FollowEarningsTopView updateConstraints]_block_invoke"
                   moduleName = "QHTrade"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/user/Desktop/QHTrade/QHTrade/QHTrade/Awesome/Awesome/RookieView.m"
-                  timestampString = "520755690.085625"
+                  urlString = "file:///Users/user/Desktop/QHTrade/QHTrade/QHTrade/Awesome/Awesome/FollowEarningsTopView.m"
+                  timestampString = "520762251.756285"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "16">
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "44">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QHTrade/Awesome/Awesome/FollowEarningsTopView.m"
+            timestampString = "520761729.097478"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "-setupViews"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QHTrade/Awesome/Awesome/AwesomeViewController.m"
+            timestampString = "520824845.891431"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "-bindViewModel"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QHTrade/Awesome/Awesome/AwesomeTableViewCell.m"
+            timestampString = "520824514.065118"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "-followEarningsClick:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

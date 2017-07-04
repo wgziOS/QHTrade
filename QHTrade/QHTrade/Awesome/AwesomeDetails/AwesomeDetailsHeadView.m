@@ -1,21 +1,21 @@
 //
-//  AwesomeTableViewCell.m
+//  AwesomeDetailsHeadView.m
 //  QHTrade
 //
-//  Created by user on 2017/6/30.
+//  Created by user on 2017/7/4.
 //  Copyright © 2017年 qihuo.RDTrade.com. All rights reserved.
 //
 
-#import "AwesomeTableViewCell.h"
+#import "AwesomeDetailsHeadView.h"
 
-@interface AwesomeTableViewCell()
+@interface AwesomeDetailsHeadView()
 @property(nonatomic,strong)UIImageView *icon;//头像
 @property(nonatomic,strong)UILabel *awesomeName;//牛人名称
 @property(nonatomic,strong)UIImageView *subscribeIcon;//订阅数图标
 @property(nonatomic,strong)UILabel *subscribeNum;//订阅数
 @property(nonatomic,strong)UILabel *minimumTrading;//最小交易值
-@property(nonatomic,strong)UIButton *documentary;//跟单按钮
-@property(nonatomic,strong)UIView *line;//分割线
+@property(nonatomic,strong)UIButton *praise;//点赞按钮
+@property(nonatomic,strong)UILabel *praiseAcount;//点赞数量
 @property(nonatomic,strong)UIImageView *tradingData;//交易数据
 @property(nonatomic,strong)UIImageView *tradersPlan;//操盘计划
 @property(nonatomic,strong)UILabel *earningsRate;//收益率
@@ -24,145 +24,138 @@
 @property(nonatomic,strong)UILabel *startTime;//开始时间
 @property(nonatomic,strong)UILabel *endTime;//结束时间
 @property(nonatomic,strong)UILabel *completed;//已完成
-@property(nonatomic,strong)UIView *downLine;//分割线
-
 @end
 
 
-@implementation AwesomeTableViewCell
-
-
+@implementation AwesomeDetailsHeadView
 -(void)setupViews{
+    [self setBackgroundColor:[UIColor whiteColor]];
+    [self addSubview:self.icon];
+    [self addSubview:self.awesomeName];
+    [self addSubview:self.subscribeIcon];
+    [self addSubview:self.subscribeNum];
+    [self addSubview:self.minimumTrading];
+    [self addSubview:self.praise];
+    [self addSubview:self.praiseAcount];
+    [self addSubview:self.tradingData];
+    [self addSubview:self.tradersPlan];
+    [self addSubview:self.earningsRate];
+    [self addSubview:self.todayEarningsRate];
+    [self addSubview:self.positionsUsage];
+    [self addSubview:self.startTime];
+    [self addSubview:self.endTime];
+    [self addSubview:self.completed];
     
-    [self.contentView setBackgroundColor:[UIColor whiteColor]];
-    [self setBackgroundColor:[UIColor clearColor]];
-    
-    [self.contentView addSubview:self.icon];
-    [self.contentView addSubview:self.awesomeName];
-    [self.contentView addSubview:self.subscribeIcon];
-    [self.contentView addSubview:self.subscribeNum];
-    [self.contentView addSubview:self.minimumTrading];
-    [self.contentView addSubview:self.documentary];
-    [self.contentView addSubview:self.line];
-    [self.contentView addSubview:self.tradingData];
-    [self.contentView addSubview:self.tradersPlan];
-    [self.contentView addSubview:self.earningsRate];
-    [self.contentView addSubview:self.todayEarningsRate];
-    [self.contentView addSubview:self.positionsUsage];
-    [self.contentView addSubview:self.startTime];
-    [self.contentView addSubview:self.endTime];
-    [self.contentView addSubview:self.completed];
-    [self.contentView addSubview:self.downLine];
-
     [self setNeedsUpdateConstraints];
     [self updateConstraintsIfNeeded];
 }
-
 -(void)updateConstraints{
     [super updateConstraints];
     @weakify(self)
     [self.icon mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
-        make.left.equalTo(self.contentView).with.offset(10);
-        make.top.equalTo(self.contentView).with.offset(10);
+        make.left.equalTo(self).with.offset(10);
+        make.top.equalTo(self).with.offset(10);
         make.size.mas_offset(CGSizeMake(30, 30));
     }];
+    
     [self.awesomeName mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
-        make.top.equalTo(self.contentView).with.offset(10);
+        make.top.equalTo(self).with.offset(10);
         make.left.equalTo(self.icon.mas_right).with.offset(17);
         make.size.mas_offset(CGSizeMake(70, 14));
     }];
+    
     [self.subscribeIcon mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
         make.left.equalTo(self.awesomeName.mas_right).with.offset(5);
-        make.top.equalTo(self.contentView).with.offset(10);
+        make.top.equalTo(self).with.offset(10);
         make.size.mas_offset(CGSizeMake(8, 12));
     }];
+    
     [self.subscribeNum mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
         make.left.equalTo(self.subscribeIcon.mas_right).with.offset(3);
-        make.top.equalTo(self.contentView).with.offset(10);
+        make.top.equalTo(self).with.offset(10);
         make.size.mas_offset(CGSizeMake(30, 12));
     }];
-    [self.documentary mas_makeConstraints:^(MASConstraintMaker *make) {
+    
+    [self.praise mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
-        make.right.equalTo(self.mas_right).with.offset(-10);
-        make.top.equalTo(self.contentView).with.offset(12);
-        make.size.mas_offset(CGSizeMake(50, 25));
+        make.right.equalTo(self.mas_right).with.offset(-20);
+        make.top.equalTo(self).with.offset(10);
+        make.size.mas_offset(CGSizeMake(15, 16));
     }];
+    [self.praiseAcount mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self)
+        make.right.equalTo(self.praise.mas_left).with.offset(-7);
+        make.top.equalTo(self).with.offset(12);
+        make.size.mas_offset(CGSizeMake(180, 15));
+    }];
+    
     [self.minimumTrading mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
         make.top.equalTo(self.awesomeName.mas_bottom).with.offset(3);
         make.left.equalTo(self.icon.mas_right).with.offset(17);
         make.size.mas_offset(CGSizeMake(125, 15));
     }];
-    [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
-        @strongify(self)
-        make.top.equalTo(self.icon.mas_bottom).with.offset(10);
-        make.centerX.equalTo(self);
-        make.size.mas_offset(CGSizeMake(SCREEN_WIDTH, 0.5));
-    }];
+    
     [self.tradingData mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
-        make.left.equalTo(self.contentView).with.offset(10);
-        make.top.equalTo(self.line.mas_bottom).with.offset(10);
+        make.left.equalTo(self).with.offset(12);
+        make.top.equalTo(self.minimumTrading.mas_bottom).with.offset(10);
         make.size.mas_offset(CGSizeMake(26, 25));
     }];
-
+    
     [self.earningsRate mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
-        make.left.equalTo(self.contentView).with.offset(SCREEN_WIDTH*0.25);
-        make.top.equalTo(self.line.mas_bottom).with.offset(8);
+        make.left.equalTo(self).with.offset(SCREEN_WIDTH*0.25);
+        make.top.equalTo(self.minimumTrading.mas_bottom).with.offset(8);
         make.size.mas_offset(CGSizeMake(50, 32));
     }];
-
+    
     [self.todayEarningsRate mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
-        make.left.equalTo(self.contentView).with.offset(SCREEN_WIDTH*0.5);
-        make.top.equalTo(self.line.mas_bottom).with.offset(8);
+        make.left.equalTo(self).with.offset(SCREEN_WIDTH*0.5);
+        make.top.equalTo(self.minimumTrading.mas_bottom).with.offset(8);
         make.size.mas_offset(CGSizeMake(55, 32));
     }];
-
+    
     [self.positionsUsage mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
-        make.left.equalTo(self.contentView).with.offset(SCREEN_WIDTH*0.75);
-        make.top.equalTo(self.line.mas_bottom).with.offset(8);
+        make.left.equalTo(self).with.offset(SCREEN_WIDTH*0.75);
+        make.top.equalTo(self.minimumTrading.mas_bottom).with.offset(8);
         make.size.mas_offset(CGSizeMake(55, 32));
     }];
-
+    
     [self.tradersPlan mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
-        make.left.equalTo(self.contentView).with.offset(10);
+        make.left.equalTo(self).with.offset(12);
         make.top.equalTo(self.tradingData.mas_bottom).with.offset(20);
         make.size.mas_offset(CGSizeMake(26, 25));
     }];
-
+    
     [self.startTime mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
-        make.left.equalTo(self.contentView).with.offset(SCREEN_WIDTH*0.25);
+        make.left.equalTo(self).with.offset(SCREEN_WIDTH*0.25);
         make.top.equalTo(self.tradingData.mas_bottom).with.offset(18);
         make.size.mas_offset(CGSizeMake(50, 32));
-    }];
-    [self.endTime mas_makeConstraints:^(MASConstraintMaker *make) {
-        @strongify(self)
-        make.left.equalTo(self.contentView).with.offset(SCREEN_WIDTH*0.5);
-        make.top.equalTo(self.tradingData.mas_bottom).with.offset(18);
-        make.size.mas_offset(CGSizeMake(50, 32));
-    }];
-    [self.completed mas_makeConstraints:^(MASConstraintMaker *make) {
-        @strongify(self)
-        make.left.equalTo(self.contentView).with.offset(SCREEN_WIDTH*0.75);
-        make.top.equalTo(self.tradingData.mas_bottom).with.offset(18);
-        make.size.mas_offset(CGSizeMake(50, 32));
-    }];
-    [self.downLine mas_makeConstraints:^(MASConstraintMaker *make) {
-        @strongify(self)
-        make.centerX.equalTo(self.contentView);
-        make.top.equalTo(self.tradersPlan.mas_bottom).with.offset(10);
-        make.size.mas_offset(CGSizeMake(SCREEN_WIDTH, 10));
     }];
     
+    [self.endTime mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self)
+        make.left.equalTo(self).with.offset(SCREEN_WIDTH*0.5);
+        make.top.equalTo(self.tradingData.mas_bottom).with.offset(18);
+        make.size.mas_offset(CGSizeMake(50, 32));
+    }];
+    
+    [self.completed mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self)
+        make.left.equalTo(self).with.offset(SCREEN_WIDTH*0.75);
+        make.top.equalTo(self.tradingData.mas_bottom).with.offset(18);
+        make.size.mas_offset(CGSizeMake(50, 32));
+    }];
+
 }
 
 -(NSAttributedString*)labelAddAttributedStringWith:(NSString*)text withRange:(NSRange)range{
@@ -174,12 +167,6 @@
     [attributedString addAttribute:NSForegroundColorAttributeName value:RGB(156, 157, 158) range:range];
     [attributedString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:10] range:range];
     return attributedString;
-}
-
--(void)followEarningsClick:(UIButton*)sender{
-    
-    NSString *string = [NSString stringWithFormat:@"%ld",self.tag];
-    [self.viewModel.awesomeFollowCellClick sendNext:string];
 }
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -235,27 +222,30 @@
     return _minimumTrading;
 }
 
--(UIButton *)documentary{
-    if (!_documentary) {
-        _documentary = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_documentary setBackgroundColor:RGB(250, 99, 32)];
-        [_documentary setTitle:@"跟单" forState:UIControlStateNormal];
-        [_documentary setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        _documentary.layer.masksToBounds = YES;
-        _documentary.layer.cornerRadius = 3;
-        [_documentary addTarget:self action:@selector(followEarningsClick:) forControlEvents:UIControlEventTouchUpInside];
-        [_documentary.titleLabel setFont:[UIFont systemFontOfSize:14]];
+-(UIButton *)praise{
+    if (!_praise) {
+        _praise = [UIButton buttonWithType:UIButtonTypeCustom];
+        
+        [_praise setImage:[UIImage imageNamed:@"Awesome_praise_nomal"]
+                 forState:UIControlStateNormal];
+        [_praise setImage:[UIImage imageNamed:@"Awesome_praise_selected"]
+                 forState:UIControlStateSelected];
+        //        [_praise addTarget:self action:@selector(followEarningsClick:) forControlEvents:UIControlEventTouchUpInside];
     }
-    return _documentary;
+    return _praise;
+}
+-(UILabel *)praiseAcount{
+    if (!_praiseAcount) {
+        _praiseAcount = [[UILabel alloc] init];
+        _praiseAcount.font = [UIFont systemFontOfSize:12];
+        _praiseAcount.text = @"150赞";
+        _praiseAcount.textColor = RGB(67, 68, 69);
+        _praiseAcount.textAlignment = NSTextAlignmentRight;
+        
+    }
+    return _praiseAcount;
 }
 
--(UIView *)line{
-    if (!_line) {
-        _line = [[UIView alloc] init];
-        _line.backgroundColor = RGB(205, 207, 205);
-    }
-    return _line;
-}
 -(UIImageView *)tradingData{
     if (!_tradingData) {
         _tradingData = [[UIImageView alloc] init];
@@ -269,7 +259,7 @@
     if (!_tradersPlan) {
         _tradersPlan = [[UIImageView alloc] init];
         _tradersPlan.image = [UIImage imageNamed:@"Awesome_tradersPlan_icon"];
-
+        
     }
     return _tradersPlan;
 }
@@ -328,12 +318,5 @@
         _completed.attributedText =[self labelAddAttributedStringWith:@"已完成\n8天" withRange:NSMakeRange(0, 3)];
     }
     return _completed;
-}
--(UIView *)downLine{
-    if (!_downLine) {
-        _downLine = [[UIView alloc] init];
-        _downLine.backgroundColor = RGB(232, 233, 234);
-    }
-    return _downLine;
 }
 @end
