@@ -14,7 +14,8 @@
 #import "FollowEarningsTopView.h"
 #import "AwesomeDetailsViewController.h"
 #import "FollowEarningsDetailsViewController.h"
-
+#import "SegmentedControlView.h"
+#import "FollowEarningChooseViewController.h"
 
 @interface AwesomeViewController ()
 @property(nonatomic,strong)RookieView *rookieView;
@@ -22,7 +23,7 @@
 @property(nonatomic,strong)FollowEarningsTopView *followEarningsTopView;
 @property(nonatomic,strong)CanFollowView *canFollowView;
 @property(nonatomic,strong)AwesomeViewModel *viewModel;
-@property(nonatomic,strong)UIView *segmentedControl;
+@property(nonatomic,strong)SegmentedControlView *segmentedControl;
 @property(nonatomic,strong)NSMutableArray *btnArray;
 @property(nonatomic,assign)int oldIndex;
 @property(nonatomic,weak)BaseView *childView;
@@ -87,9 +88,13 @@
         FollowEarningsDetailsViewController *followEarningsDetails = [[FollowEarningsDetailsViewController alloc] init];
         [weakSelf.navigationController pushViewController:followEarningsDetails animated:YES];
     }];
-    [[self.viewModel.awesomeFollowCellClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
+    [[self.viewModel.awesomeCellClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
         AwesomeDetailsViewController *awesomeDetails = [[AwesomeDetailsViewController alloc] init];
         [weakSelf.navigationController pushViewController:awesomeDetails animated:YES];
+    }];
+    [[self.viewModel.awesomeFollowActionClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
+        FollowEarningChooseViewController *followEarningChoose = [[FollowEarningChooseViewController alloc] init];
+        [weakSelf.navigationController pushViewController:followEarningChoose animated:YES];
     }];
     [[self.viewModel.rookieCellClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
         AwesomeDetailsViewController *awesomeDetails = [[AwesomeDetailsViewController alloc] init];
@@ -101,20 +106,15 @@
     }];
 }
 -(UIView *)centerView{
+    self.segmentedControl.frame= CGRectMake(0, 0, 280 ,30);
     return self.segmentedControl;
 }
 -(UIBarButtonItem *)leftButton{
     return nil;
 }
--(void)segmentedControlClick:(UIButton*)button{
-    UIButton *oldSelectedBtn = self.btnArray[self.oldIndex];
-    oldSelectedBtn.selected = NO;
-    button.selected = YES;
+-(void)segmentedControlClick:(int)index{
     
-    self.oldIndex = (int)button.tag;
-    
-    
-    switch (self.oldIndex) {
+    switch (index) {
         case 0:
             [self.childView removeFromSuperview];
             [self.view addSubview:self.awesomeView];
@@ -139,6 +139,7 @@
         default:
             break;
     }
+    self.oldIndex = index;
 }
 /*
 #pragma mark - Navigation
@@ -151,31 +152,30 @@
 */
 
 
+
 -(UIView *)segmentedControl{
     if (!_segmentedControl) {
-        _segmentedControl = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 280, 30)];
+        _segmentedControl = [[SegmentedControlView alloc] initWithSize:CGSizeMake(280, 30)
+                                                           defultTitle:RGB(151, 150, 150)
+                                                         selectedTitle:[UIColor whiteColor]
+                                                              defultBg:[UIColor whiteColor]
+                                                            selectedBg:RGB(236, 93, 30)
+                                                              withFont:13
+                                                       borderWithColor:RGB(150, 150, 150)
+                                                            itemsArray:[NSArray arrayWithObjects:@"牛人榜",@"新人榜",@"跟单收益榜",@"可跟单榜", nil]
+                             ];
         _segmentedControl.layer.masksToBounds = YES;
         _segmentedControl.layer.cornerRadius = 15;
-        _segmentedControl.backgroundColor = RGB(150, 150, 150);
-        NSArray *titleArray = [NSArray arrayWithObjects:@"牛人榜",@"新人榜",@"跟单收益榜",@"可跟单榜", nil];
-        for (int i = 0; i < 4; i++) {
-            UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-            button.tag = i ;
-            button.backgroundColor = [UIColor whiteColor];
-            [button setBackgroundImage:[UIImage createImageWithColor:RGB(236, 93, 30)] forState:UIControlStateSelected];
-            [button.titleLabel setFont:[UIFont systemFontOfSize:13]];
-            [button setTitle:titleArray[i] forState:UIControlStateNormal];
-            [button setTitleColor:RGB(151, 150, 150) forState:UIControlStateNormal];
-            [button setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
-            [button addTarget:self action:@selector(segmentedControlClick:) forControlEvents:UIControlEventTouchUpInside];
-            [button setFrame:CGRectMake(i*70.5, 0, 70, 30)];
-            [self.btnArray addObject:button];
-            [_segmentedControl addSubview:button];
-            if (i==0)button.selected = YES;
-        }
+        @weakify(self)
+        _segmentedControl.itemClick = ^(int index) {
+            @strongify(self)
+            [self segmentedControlClick:index];
+        };
+        
     }
     return _segmentedControl;
 }
+
 -(int)oldIndex{
     if (!_oldIndex) {
         _oldIndex = 0;
@@ -183,13 +183,6 @@
     return _oldIndex;
 }
 
-
--(NSMutableArray *)btnArray{
-    if (!_btnArray) {
-        _btnArray = [[NSMutableArray alloc] init];
-    }
-    return _btnArray;
-}
 -(AwesomeView *)awesomeView{
     if (!_awesomeView) {
         _awesomeView = [[AwesomeView alloc] initWithViewModel:self.viewModel];

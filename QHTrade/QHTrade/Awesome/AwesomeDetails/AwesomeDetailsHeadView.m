@@ -54,7 +54,7 @@
     @weakify(self)
     [self.icon mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
-        make.left.equalTo(self).with.offset(10);
+        make.left.equalTo(self).with.offset(16);
         make.top.equalTo(self).with.offset(10);
         make.size.mas_offset(CGSizeMake(30, 30));
     }];
@@ -102,7 +102,7 @@
     
     [self.tradingData mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
-        make.left.equalTo(self).with.offset(12);
+        make.left.equalTo(self).with.offset(16);
         make.top.equalTo(self.minimumTrading.mas_bottom).with.offset(10);
         make.size.mas_offset(CGSizeMake(26, 25));
     }];
@@ -130,7 +130,7 @@
     
     [self.tradersPlan mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
-        make.left.equalTo(self).with.offset(12);
+        make.left.equalTo(self).with.offset(16);
         make.top.equalTo(self.tradingData.mas_bottom).with.offset(20);
         make.size.mas_offset(CGSizeMake(26, 25));
     }];
@@ -162,9 +162,9 @@
     NSMutableParagraphStyle *paragraph = [[NSMutableParagraphStyle alloc] init];
     paragraph.alignment = NSTextAlignmentCenter;
     paragraph.lineSpacing = 2; // 行距
-    NSDictionary *attributedDic = @{NSFontAttributeName:[UIFont systemFontOfSize:15],NSForegroundColorAttributeName:RGB(87, 88, 89),NSParagraphStyleAttributeName:paragraph};
+    NSDictionary *attributedDic = @{NSFontAttributeName:[UIFont systemFontOfSize:15],NSForegroundColorAttributeName:[UIColor blackColor],NSParagraphStyleAttributeName:paragraph};
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text attributes:attributedDic];
-    [attributedString addAttribute:NSForegroundColorAttributeName value:RGB(156, 157, 158) range:range];
+    [attributedString addAttribute:NSForegroundColorAttributeName value:RGB(50, 51, 52) range:range];
     [attributedString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:10] range:range];
     return attributedString;
 }
@@ -189,7 +189,6 @@
     if (!_awesomeName) {
         _awesomeName = [[UILabel alloc] init];
         _awesomeName.text = @"我是牛人";
-        _awesomeName.textColor = RGB(117, 118, 119);
         _awesomeName.font = [UIFont systemFontOfSize:15];
     }
     return _awesomeName;
@@ -217,7 +216,7 @@
         _minimumTrading = [[UILabel alloc] init];
         _minimumTrading.text = @"最低交易金:50000,00";
         _minimumTrading.font = [UIFont systemFontOfSize:12];
-        _minimumTrading.textColor = RGB(138, 139, 140);
+        _minimumTrading.textColor = RGB(66, 67, 68);
     }
     return _minimumTrading;
 }
@@ -230,7 +229,9 @@
                  forState:UIControlStateNormal];
         [_praise setImage:[UIImage imageNamed:@"Awesome_praise_selected"]
                  forState:UIControlStateSelected];
-        //        [_praise addTarget:self action:@selector(followEarningsClick:) forControlEvents:UIControlEventTouchUpInside];
+        [[_praise rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+            _praise.selected = YES;
+        }];
     }
     return _praise;
 }

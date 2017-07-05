@@ -14,7 +14,7 @@
 @property(nonatomic,strong)UIImageView *subscribeIcon;//订阅数图标
 @property(nonatomic,strong)UILabel *subscribeNum;//订阅数
 @property(nonatomic,strong)UILabel *minimumTrading;//最小交易值
-@property(nonatomic,strong)UIButton *documentary;//跟单按钮
+@property(nonatomic,strong)UIButton *followAction;//跟单按钮
 @property(nonatomic,strong)UIView *line;//分割线
 @property(nonatomic,strong)UIImageView *tradingData;//交易数据
 @property(nonatomic,strong)UIImageView *tradersPlan;//操盘计划
@@ -42,7 +42,7 @@
     [self.contentView addSubview:self.subscribeIcon];
     [self.contentView addSubview:self.subscribeNum];
     [self.contentView addSubview:self.minimumTrading];
-    [self.contentView addSubview:self.documentary];
+    [self.contentView addSubview:self.followAction];
     [self.contentView addSubview:self.line];
     [self.contentView addSubview:self.tradingData];
     [self.contentView addSubview:self.tradersPlan];
@@ -85,7 +85,7 @@
         make.top.equalTo(self.contentView).with.offset(10);
         make.size.mas_offset(CGSizeMake(30, 12));
     }];
-    [self.documentary mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.followAction mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
         make.right.equalTo(self.mas_right).with.offset(-10);
         make.top.equalTo(self.contentView).with.offset(12);
@@ -177,10 +177,10 @@
 }
 
 -(void)followEarningsClick:(UIButton*)sender{
-    
     NSString *string = [NSString stringWithFormat:@"%ld",self.tag];
-    [self.viewModel.awesomeFollowCellClick sendNext:string];
+    [self.viewModel.awesomeFollowActionClick sendNext:string];
 }
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -235,18 +235,18 @@
     return _minimumTrading;
 }
 
--(UIButton *)documentary{
-    if (!_documentary) {
-        _documentary = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_documentary setBackgroundColor:RGB(250, 99, 32)];
-        [_documentary setTitle:@"跟单" forState:UIControlStateNormal];
-        [_documentary setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        _documentary.layer.masksToBounds = YES;
-        _documentary.layer.cornerRadius = 3;
-        [_documentary addTarget:self action:@selector(followEarningsClick:) forControlEvents:UIControlEventTouchUpInside];
-        [_documentary.titleLabel setFont:[UIFont systemFontOfSize:14]];
+-(UIButton *)followAction{
+    if (!_followAction) {
+        _followAction = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_followAction setBackgroundColor:RGB(250, 99, 32)];
+        [_followAction setTitle:@"跟单" forState:UIControlStateNormal];
+        [_followAction setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _followAction.layer.masksToBounds = YES;
+        _followAction.layer.cornerRadius = 3;
+        [_followAction addTarget:self action:@selector(followEarningsClick:) forControlEvents:UIControlEventTouchUpInside];
+        [_followAction.titleLabel setFont:[UIFont systemFontOfSize:14]];
     }
-    return _documentary;
+    return _followAction;
 }
 
 -(UIView *)line{

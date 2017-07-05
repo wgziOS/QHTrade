@@ -20,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self setTitle:@"跟单选择"];
 }
 -(void)addChildView{
     [self.view addSubview:self.followEarningChooseView];
