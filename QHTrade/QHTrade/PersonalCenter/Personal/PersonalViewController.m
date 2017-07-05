@@ -25,11 +25,14 @@
 @end
 
 @implementation PersonalViewController
+-(void)viewWillAppear:(BOOL)animated{
 
+    }
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self.view addSubview:self.masterView];
+
 //    [self.view addSubview:self.mainView];
 
     
@@ -54,10 +57,51 @@
 -(void)bindViewModel{
 
     WS(weakSelf)
-    [[self.viewModel.headImgClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
-        NSLog(@"头像点击");
+    
+    [[self.viewModel.middleCellClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(NSString * x) {
+       
+        switch ([x integerValue]) {
+            case 1:
+            {
+                
+                showMassage(@"跟单管理")
+            }
+                break;
+            case 2:
+            {
+                showMassage(@"牛人信号")
+            }
+                break;
+            case 3:
+            {
+                showMassage(@"数据统计")
+            }
+                break;
+            case 4:
+            {
+                showMassage(@"数据报表")
+            }
+                break;
+                
+            default:
+                break;
+        }
+        
+    }];
+    
+    [[self.viewModel.setBtnClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
+        
         SettingViewController * SVC = [[SettingViewController alloc]init];
         [self.navigationController pushViewController:SVC animated:YES];
+    }];
+    
+    
+    [[self.viewModel.diamondBtnClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
+        showMassage(@"点击了钻石")
+    }];
+    
+    [[self.viewModel.headImgClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
+        NSLog(@"头像点击");
     }];
     
     [[self.viewModel.questionClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {

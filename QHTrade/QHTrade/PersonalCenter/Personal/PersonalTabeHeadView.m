@@ -37,31 +37,81 @@
     [self addSubview:self.sexImgView];
     [self addSubview:self.diamondButton];
     [self addSubview:self.setButton];
-    [self addSubview:self.lineView];
+//    [self addSubview:self.lineView];
     
-//    WS(weakSelf)
+    WS(weakSelf)
     
+    [self.headImgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.centerY.equalTo(weakSelf);
+        make.left.equalTo(weakSelf).with.offset(16);
+        make.size.mas_equalTo(CGSizeMake(30, 30));
+    }];
     
-
+    [self.nickNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.top.equalTo(weakSelf).with.offset(5);
+        make.left.equalTo(weakSelf.headImgView.mas_right).with.offset(15);
+        make.size.mas_equalTo(CGSizeMake(80, 18));
+    }];
+    
+    [self.sexImgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.centerY.equalTo(weakSelf.nickNameLabel);
+        make.left.equalTo(weakSelf.nickNameLabel.mas_right).with.offset(10);
+        make.size.mas_equalTo(CGSizeMake(11, 11));
+    }];
+    
+    [self.IdLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.top.equalTo(weakSelf.nickNameLabel.mas_bottom).with.offset(3);
+        make.left.equalTo(weakSelf.headImgView.mas_right).with.offset(15);
+        make.size.mas_equalTo(CGSizeMake(60, 20));
+    }];
+    
+    [self.diamondButton mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(weakSelf.nickNameLabel.mas_bottom).with.offset(0);
+        make.centerY.equalTo(weakSelf.IdLabel);
+        make.left.equalTo(weakSelf.IdLabel.mas_right).with.offset(8);
+        make.size.mas_equalTo(CGSizeMake(100, 20));
+    }];
+    
+    [self.setButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.centerY.equalTo(weakSelf);
+        make.right.equalTo(weakSelf).with.offset(-16);
+        make.size.mas_equalTo(CGSizeMake(22, 22));
+    }];
 }
-/*
- @property (nonatomic,strong) UIImageView *headImgView;
- @property (nonatomic,strong) UILabel *nickNameLabel;
- @property (nonatomic,strong) UILabel *IdLabel;
- @property (nonatomic,strong) UIImageView *sexImgView;
- @property (nonatomic,strong) UIButton *diamondButton;
- @property (nonatomic,strong) UIButton *setButton;
- @property (nonatomic,strong) UIView *lineView;
-*/
--(void)setBtnClick:(id)sender{
+
+
+-(UIView *)lineView{
     
+    if (!_lineView) {
+        _lineView = [[UIView alloc]init];
+        _lineView.backgroundColor = [UIColor redColor];
+    }
+    return _lineView;
+}
+-(UILabel *)IdLabel{
+
+    if (!_IdLabel) {
+        _IdLabel = [[UILabel alloc]init];
+        _IdLabel.font = [UIFont systemFontOfSize:12.0f];
+        _IdLabel.textColor = RGB(68, 68, 68);
+        _IdLabel.text = @"ID:000";
+    }
+    return _IdLabel;
 }
 -(UIButton *)setButton{
     
     if (!_setButton) {
         _setButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_setButton setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
-        [_setButton addTarget:self action:@selector(setBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+        [_setButton setBackgroundImage:[UIImage imageNamed:@"personal_shezhi"] forState:UIControlStateNormal];
+        
+        [[_setButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+            [self.viewModel.setBtnClick sendNext:nil];
+        }];
     }
     return _setButton;
 }
@@ -70,8 +120,14 @@
     
     if (!_diamondButton) {
         _diamondButton = [UIButton buttonWithType:UIButtonTypeCustom];
-//        _diamondImgView.image = [UIImage imageNamed:@"personal_diamond_icon"];
-        
+        [_diamondButton setImage:[UIImage imageNamed:@"personal_zuanshi"] forState:UIControlStateNormal];
+        [_diamondButton setTitle:@"0000" forState:UIControlStateNormal];
+        _diamondButton.titleLabel.font = [UIFont systemFontOfSize:12.0f];
+        [_diamondButton setTitleColor:RGB(68, 68, 68) forState:UIControlStateNormal];
+
+        [[_diamondButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+            [self.viewModel.diamondBtnClick sendNext:nil];
+        }];
     }
     return _diamondButton;
 }
@@ -97,9 +153,10 @@
 
     if (!_headImgView) {
         _headImgView = [[UIImageView alloc]init];
-        _headImgView.layer.cornerRadius = 30;
-        _headImgView.layer.masksToBounds = YES;
         _headImgView.image = [UIImage imageNamed:@"login_biglogo"];
+        _headImgView.layer.cornerRadius = 15;
+        _headImgView.layer.masksToBounds = YES;
+        
 //        _headImgView.userInteractionEnabled = YES;
 //        UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]init];
 //        [[tap rac_gestureSignal] subscribeNext:^(__kindof UIGestureRecognizer * _Nullable x) {

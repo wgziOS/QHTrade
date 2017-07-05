@@ -68,7 +68,35 @@
     }
     return _userInfoCommand;
 }
+-(RACSubject *)middleCellClick{
 
+    if (!_middleCellClick) {
+        _middleCellClick = [RACSubject subject];
+    }
+    return _middleCellClick;
+}
+-(RACSubject *)tradeAccountLoginBtnClick{
+
+    if (!_tradeAccountLoginBtnClick) {
+        _tradeAccountLoginBtnClick = [RACSubject subject];
+    }
+    return _tradeAccountLoginBtnClick;
+}
+-(RACSubject *)diamondBtnClick{
+
+    if (!_diamondBtnClick) {
+        _diamondBtnClick = [RACSubject subject];
+    }
+    return _diamondBtnClick;
+
+}
+-(RACSubject *)setBtnClick{
+
+    if (!_setBtnClick) {
+        _setBtnClick = [RACSubject subject];
+    }
+    return _setBtnClick;
+}
 -(RACSubject *)focusClick{
 
     if (!_focusClick) {
