@@ -10,4 +10,6 @@
 
 @interface AwesomeDetailsViewModel : BaseViewModel
 
+@property(nonatomic,strong)NSMutableArray *tradingSignalsArray;
+@property(nonatomic,strong)RACSubject *tradersInstructionsOpenSubject;//操作说明展开
 @end

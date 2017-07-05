@@ -47,11 +47,11 @@
     }
     return _awesomeCellClick;
 }
--(RACSubject *)awesomeFollowCellClick{
-    if (!_awesomeFollowCellClick) {
-        _awesomeFollowCellClick = [RACSubject subject];
+-(RACSubject *)awesomeFollowActionClick{
+    if (!_awesomeFollowActionClick) {
+        _awesomeFollowActionClick = [RACSubject subject];
     }
-    return _awesomeFollowCellClick;
+    return _awesomeFollowActionClick;
 }
 -(RACSubject *)rookieCellClick{
     if (!_rookieCellClick) {

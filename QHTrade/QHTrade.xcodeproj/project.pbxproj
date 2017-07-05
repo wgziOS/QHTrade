@@ -166,6 +166,16 @@
 		CEF3311F1EDFB1E70032F0EF /* QHRequest+Api.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3311E1EDFB1E70032F0EF /* QHRequest+Api.m */; };
 		CEF331221EDFB3D50032F0EF /* UserInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF331211EDFB3D50032F0EF /* UserInformation.m */; };
 		CEF3312E1EDFDBCB0032F0EF /* QHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3312D1EDFDBCB0032F0EF /* QHTabBar.m */; };
+		CEF378AD1F0B634700C32D0D /* TradersInstructionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378AC1F0B634700C32D0D /* TradersInstructionsView.m */; };
+		CEF378B01F0B831F00C32D0D /* TradingInformationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378AF1F0B831F00C32D0D /* TradingInformationView.m */; };
+		CEF378B31F0B8DC700C32D0D /* SegmentedControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378B21F0B8DC700C32D0D /* SegmentedControlView.m */; };
+		CEF378B61F0C6CDE00C32D0D /* MyWarehouseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378B51F0C6CDE00C32D0D /* MyWarehouseView.m */; };
+		CEF378B91F0C6D3100C32D0D /* TradingSignalsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378B81F0C6D3100C32D0D /* TradingSignalsView.m */; };
+		CEF378BC1F0C719600C32D0D /* TradingSignalsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378BB1F0C719600C32D0D /* TradingSignalsCell.m */; };
+		CEF378BF1F0C85FF00C32D0D /* MyWarehouseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378BE1F0C85FF00C32D0D /* MyWarehouseCell.m */; };
+		CEF378C21F0C876500C32D0D /* MyWarehouseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378C11F0C876500C32D0D /* MyWarehouseModel.m */; };
+		CEF378C51F0C87B600C32D0D /* TradingSignalsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378C41F0C87B600C32D0D /* TradingSignalsModel.m */; };
+		CEF378C81F0CBDC600C32D0D /* EarningsSumView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378C71F0CBDC600C32D0D /* EarningsSumView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -490,6 +500,26 @@
 		CEF331211EDFB3D50032F0EF /* UserInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInformation.m; sourceTree = "<group>"; };
 		CEF3312C1EDFDBCB0032F0EF /* QHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHTabBar.h; sourceTree = "<group>"; };
 		CEF3312D1EDFDBCB0032F0EF /* QHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHTabBar.m; sourceTree = "<group>"; };
+		CEF378AB1F0B634700C32D0D /* TradersInstructionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradersInstructionsView.h; sourceTree = "<group>"; };
+		CEF378AC1F0B634700C32D0D /* TradersInstructionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradersInstructionsView.m; sourceTree = "<group>"; };
+		CEF378AE1F0B831F00C32D0D /* TradingInformationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradingInformationView.h; sourceTree = "<group>"; };
+		CEF378AF1F0B831F00C32D0D /* TradingInformationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradingInformationView.m; sourceTree = "<group>"; };
+		CEF378B11F0B8DC700C32D0D /* SegmentedControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedControlView.h; sourceTree = "<group>"; };
+		CEF378B21F0B8DC700C32D0D /* SegmentedControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedControlView.m; sourceTree = "<group>"; };
+		CEF378B41F0C6CDE00C32D0D /* MyWarehouseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWarehouseView.h; sourceTree = "<group>"; };
+		CEF378B51F0C6CDE00C32D0D /* MyWarehouseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWarehouseView.m; sourceTree = "<group>"; };
+		CEF378B71F0C6D3100C32D0D /* TradingSignalsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradingSignalsView.h; sourceTree = "<group>"; };
+		CEF378B81F0C6D3100C32D0D /* TradingSignalsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradingSignalsView.m; sourceTree = "<group>"; };
+		CEF378BA1F0C719600C32D0D /* TradingSignalsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradingSignalsCell.h; sourceTree = "<group>"; };
+		CEF378BB1F0C719600C32D0D /* TradingSignalsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradingSignalsCell.m; sourceTree = "<group>"; };
+		CEF378BD1F0C85FF00C32D0D /* MyWarehouseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWarehouseCell.h; sourceTree = "<group>"; };
+		CEF378BE1F0C85FF00C32D0D /* MyWarehouseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWarehouseCell.m; sourceTree = "<group>"; };
+		CEF378C01F0C876500C32D0D /* MyWarehouseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWarehouseModel.h; sourceTree = "<group>"; };
+		CEF378C11F0C876500C32D0D /* MyWarehouseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWarehouseModel.m; sourceTree = "<group>"; };
+		CEF378C31F0C87B600C32D0D /* TradingSignalsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradingSignalsModel.h; sourceTree = "<group>"; };
+		CEF378C41F0C87B600C32D0D /* TradingSignalsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradingSignalsModel.m; sourceTree = "<group>"; };
+		CEF378C61F0CBDC600C32D0D /* EarningsSumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarningsSumView.h; sourceTree = "<group>"; };
+		CEF378C71F0CBDC600C32D0D /* EarningsSumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarningsSumView.m; sourceTree = "<group>"; };
 		DB23E11BA4D680FD0F61CE42 /* Pods-QHTrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QHTrade.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QHTrade/Pods-QHTrade.debug.xcconfig"; sourceTree = "<group>"; };
 		E3D3E11B3D85ACEA2AE90524 /* Pods-QHTrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QHTrade.release.xcconfig"; path = "Pods/Target Support Files/Pods-QHTrade/Pods-QHTrade.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1411,6 +1441,10 @@
 			children = (
 				CEE2D5411F0A5B44005AC8DA /* AwesomeDetailsModel.h */,
 				CEE2D5421F0A5B44005AC8DA /* AwesomeDetailsModel.m */,
+				CEF378C01F0C876500C32D0D /* MyWarehouseModel.h */,
+				CEF378C11F0C876500C32D0D /* MyWarehouseModel.m */,
+				CEF378C31F0C87B600C32D0D /* TradingSignalsModel.h */,
+				CEF378C41F0C87B600C32D0D /* TradingSignalsModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1422,6 +1456,20 @@
 				CEE2D53F1F0A5B26005AC8DA /* AwesomeDetailsView.m */,
 				CEDD816D1F0B3DDC00B81EDB /* AwesomeDetailsHeadView.h */,
 				CEDD816E1F0B3DDC00B81EDB /* AwesomeDetailsHeadView.m */,
+				CEF378AB1F0B634700C32D0D /* TradersInstructionsView.h */,
+				CEF378AC1F0B634700C32D0D /* TradersInstructionsView.m */,
+				CEF378AE1F0B831F00C32D0D /* TradingInformationView.h */,
+				CEF378AF1F0B831F00C32D0D /* TradingInformationView.m */,
+				CEF378B41F0C6CDE00C32D0D /* MyWarehouseView.h */,
+				CEF378B51F0C6CDE00C32D0D /* MyWarehouseView.m */,
+				CEF378BD1F0C85FF00C32D0D /* MyWarehouseCell.h */,
+				CEF378BE1F0C85FF00C32D0D /* MyWarehouseCell.m */,
+				CEF378B71F0C6D3100C32D0D /* TradingSignalsView.h */,
+				CEF378B81F0C6D3100C32D0D /* TradingSignalsView.m */,
+				CEF378BA1F0C719600C32D0D /* TradingSignalsCell.h */,
+				CEF378BB1F0C719600C32D0D /* TradingSignalsCell.m */,
+				CEF378C61F0CBDC600C32D0D /* EarningsSumView.h */,
+				CEF378C71F0CBDC600C32D0D /* EarningsSumView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1465,6 +1513,8 @@
 				CEF3310A1EDFA1EB0032F0EF /* PrefixHeader.pch */,
 				CEF331201EDFB3D50032F0EF /* UserInformation.h */,
 				CEF331211EDFB3D50032F0EF /* UserInformation.m */,
+				CEF378B11F0B8DC700C32D0D /* SegmentedControlView.h */,
+				CEF378B21F0B8DC700C32D0D /* SegmentedControlView.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1590,6 +1640,7 @@
 				TargetAttributes = {
 					B2A214FD1EDEA9E900B19A4A = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = KXB9LY2JET;
 						DevelopmentTeam = 94797U4S54;
 						ProvisioningStyle = Automatic;
 					};
@@ -1735,6 +1786,7 @@
 				CEE2D5431F0A5B44005AC8DA /* AwesomeDetailsModel.m in Sources */,
 				B21BEC431F04891700354274 /* ChangeNextViewController.m in Sources */,
 				CE30CA2A1F05F93F00778172 /* PositionView.m in Sources */,
+				CEF378B01F0B831F00C32D0D /* TradingInformationView.m in Sources */,
 				B2CCA9971F02534C002BA562 /* AccountSetMainView.m in Sources */,
 				CEF331031EDF9CC50032F0EF /* BaseTableViewCell.m in Sources */,
 				CE30CA3B1F05F93F00778172 /* ZZCEViewController.m in Sources */,
@@ -1755,6 +1807,7 @@
 				B2339C4C1F05F39500B336BB /* LoginModel.m in Sources */,
 				CE30CA3A1F05F93F00778172 /* ZZCEView.m in Sources */,
 				CE30CA621F061E6600778172 /* AwesomeView.m in Sources */,
+				CEF378C51F0C87B600C32D0D /* TradingSignalsModel.m in Sources */,
 				CE30CA1E1F05F93F00778172 /* DynamicsNavigationCenterView.m in Sources */,
 				CEF330EE1EDF9B720032F0EF /* UIImage+Extension.m in Sources */,
 				B2A215061EDEA9E900B19A4A /* AppDelegate.m in Sources */,
@@ -1762,8 +1815,10 @@
 				CE30CA3C1F05F93F00778172 /* ZZCEViewModel.m in Sources */,
 				CE30CA1C1F05F93F00778172 /* DCEViewModel.m in Sources */,
 				CE30CA271F05F93F00778172 /* HangOrderView.m in Sources */,
+				CEF378B31F0B8DC700C32D0D /* SegmentedControlView.m in Sources */,
 				B203B3D71F00E41A002581F6 /* SettingMainView.m in Sources */,
 				CEE2D5401F0A5B26005AC8DA /* AwesomeDetailsView.m in Sources */,
+				CEF378B61F0C6CDE00C32D0D /* MyWarehouseView.m in Sources */,
 				CEF331061EDF9CC50032F0EF /* NavigationBaseController.m in Sources */,
 				CE30CA191F05F93F00778172 /* DCEHeadView.m in Sources */,
 				B21BEC6B1F04F58600354274 /* PersonalModel.m in Sources */,
@@ -1780,7 +1835,9 @@
 				CE30CA391F05F93F00778172 /* ZZCEHeadView.m in Sources */,
 				CE30CA2C1F05F93F00778172 /* MyContractHeadView.m in Sources */,
 				B203B3E41F00EBE2002581F6 /* SettingPhoneCell.m in Sources */,
+				CEF378AD1F0B634700C32D0D /* TradersInstructionsView.m in Sources */,
 				CEDD816C1F0A8EA300B81EDB /* FollowEarningChooseCell.m in Sources */,
+				CEF378BC1F0C719600C32D0D /* TradingSignalsCell.m in Sources */,
 				CE30CA171F05F93F00778172 /* CFFEXViewController.m in Sources */,
 				CE30CA1F1F05F93F00778172 /* DynamicsView.m in Sources */,
 				CE30CA651F061E7B00778172 /* AwesomeModel.m in Sources */,
@@ -1790,6 +1847,7 @@
 				CEE2D5261F0A3920005AC8DA /* FollowEarningsDetailsView.m in Sources */,
 				B2CCA98C1F024703002BA562 /* AboutUSViewController.m in Sources */,
 				CEDD81691F0A8A0000B81EDB /* FollowEarningChooseModel.m in Sources */,
+				CEF378BF1F0C85FF00C32D0D /* MyWarehouseCell.m in Sources */,
 				CEF331071EDF9CC50032F0EF /* TabBarBaseController.m in Sources */,
 				CEF331131EDFA4AA0032F0EF /* MBProgressHUD+NJ.m in Sources */,
 				CE30CA321F05F93F00778172 /* OptionalContractView.m in Sources */,
@@ -1811,10 +1869,12 @@
 				CEF3311F1EDFB1E70032F0EF /* QHRequest+Api.m in Sources */,
 				CE30CA281F05F93F00778172 /* PositionModel.m in Sources */,
 				B203B3E91F00EBFE002581F6 /* SettingDefaultCell.m in Sources */,
+				CEF378C21F0C876500C32D0D /* MyWarehouseModel.m in Sources */,
 				CEF3312E1EDFDBCB0032F0EF /* QHTabBar.m in Sources */,
 				B2BE01151EE93D260012AD3E /* LineChartDescribe.m in Sources */,
 				CE30CA161F05F93F00778172 /* CFFEXView.m in Sources */,
 				CEE2D50B1F0A105A005AC8DA /* RookieView.m in Sources */,
+				CEF378C81F0CBDC600C32D0D /* EarningsSumView.m in Sources */,
 				CE30CA2E1F05F93F00778172 /* MyContractView.m in Sources */,
 				CE30CA2F1F05F93F00778172 /* MyContractViewController.m in Sources */,
 				B2339C4A1F05F39500B336BB /* LoginViewController.m in Sources */,
@@ -1836,6 +1896,7 @@
 				B2749B991F0B7FE000E48C52 /* PersonalTableFootView.m in Sources */,
 				B203B3EE1F00EC2C002581F6 /* SettingSwitchCell.m in Sources */,
 				CEDD81631F0A89D600B81EDB /* FollowEarningChooseView.m in Sources */,
+				CEF378B91F0C6D3100C32D0D /* TradingSignalsView.m in Sources */,
 				B2D972241F0398B600A04798 /* ChangePhoneViewModel.m in Sources */,
 				B2D972121F037BC800A04798 /* ChooseSexView.m in Sources */,
 				B2339C631F05F3E000B336BB /* RegisterModel.m in Sources */,
@@ -2002,6 +2063,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = KXB9LY2JET;
 				DEVELOPMENT_TEAM = 94797U4S54;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = QHTrade/Info.plist;
@@ -2020,6 +2082,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = KXB9LY2JET;
 				DEVELOPMENT_TEAM = 94797U4S54;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = QHTrade/Info.plist;

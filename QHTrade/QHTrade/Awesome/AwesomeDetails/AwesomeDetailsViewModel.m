@@ -10,4 +10,17 @@
 
 @implementation AwesomeDetailsViewModel
 
+-(RACSubject *)tradersInstructionsOpenSubject{
+    if (!_tradersInstructionsOpenSubject) {
+        _tradersInstructionsOpenSubject = [RACSubject subject];
+    }
+    return _tradersInstructionsOpenSubject;
+}
+-(NSMutableArray *)tradingSignalsArray{
+    if (!_tradingSignalsArray) {
+        _tradingSignalsArray = [[NSMutableArray alloc] init];
+    }
+    return _tradingSignalsArray;
+}
 @end
+

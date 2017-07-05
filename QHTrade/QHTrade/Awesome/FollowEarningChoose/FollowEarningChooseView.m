@@ -23,7 +23,7 @@
     return [super initWithViewModel:viewModel];
 }
 -(void)setupViews{
-    
+    [self addSubview:self.table];
 }
 -(void)updateConstraints{
     [super updateConstraints];

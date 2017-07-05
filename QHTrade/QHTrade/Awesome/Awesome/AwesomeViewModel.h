@@ -16,5 +16,5 @@
 @property(nonatomic,strong)RACSubject *awesomeCellClick;//牛人cell点击
 @property(nonatomic,strong)RACSubject *rookieCellClick;//牛人cell点击
 @property(nonatomic,strong)RACSubject *canFollowCellClick;//牛人cell点击
-@property(nonatomic,strong)RACSubject *awesomeFollowCellClick;//跟单按钮点击
+@property(nonatomic,strong)RACSubject *awesomeFollowActionClick;//跟单按钮点击
 @end
