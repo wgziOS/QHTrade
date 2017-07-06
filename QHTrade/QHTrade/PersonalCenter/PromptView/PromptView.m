@@ -8,7 +8,7 @@
 
 #import "PromptView.h"
 static CGFloat kTransitionDuration = 0.3;
-#define MyEditorWidth 300.0f
+#define MyEditorWidth 310.0f
 #define MyEditorHeight 135.0f+self.textHeight
 @interface PromptView()
 
@@ -39,12 +39,12 @@ static CGFloat kTransitionDuration = 0.3;
         UILabel * label1 = [[UILabel alloc]initWithFrame:CGRectMake(MyEditorWidth / 2 - 50, 20, 100, 25)];
         label1.text = title;
         label1.font = [UIFont systemFontOfSize:18];
-        label1.textColor = RGB(69, 68, 68);
+        label1.textColor = RGB(0, 0, 0);
         label1.textAlignment = NSTextAlignmentCenter;
         [self addSubview:label1];
         
         
-        UILabel * label2 = [[UILabel alloc]initWithFrame:CGRectMake(20, 45, MyEditorWidth-40, self.textHeight+10)];
+        UILabel * label2 = [[UILabel alloc]initWithFrame:CGRectMake(10, 55, MyEditorWidth-20, self.textHeight+10)];
         label2.textColor = RGB(51, 51, 51);
         label2.numberOfLines = 0;
         label2.text = subTitle;
@@ -80,7 +80,7 @@ static CGFloat kTransitionDuration = 0.3;
         [self addSubview:label1];
         
      
-        UILabel * label2 = [[UILabel alloc]initWithFrame:CGRectMake(20, 45, MyEditorWidth-40, self.textHeight+10)];
+        UILabel * label2 = [[UILabel alloc]initWithFrame:CGRectMake(20, 65, MyEditorWidth-40, self.textHeight+10)];
         label2.textColor = RGB(51, 51, 51);
         label2.numberOfLines = 0;
         label2.text = subTitleString;
@@ -104,9 +104,9 @@ static CGFloat kTransitionDuration = 0.3;
     if (!_closeButton) {
         _closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_closeButton addTarget:self action:@selector(closeBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-        [_closeButton setBackgroundColor:[UIColor colorWithRed:226.0/255.0 green:226.0/255.0 blue:226.0/255.0 alpha:1.0f]];
+        [_closeButton setBackgroundColor:RGB(244, 244, 244)];
         [_closeButton setTitle:@"取消" forState:UIControlStateNormal];
-//        [_closeButton setTitleColor:GRAYCOLOR2 forState:UIControlStateNormal];
+        [_closeButton setTitleColor:RGB(34, 34, 34) forState:UIControlStateNormal];
         [_closeButton setFrame:CGRectMake(0, MyEditorHeight-50,  MyEditorWidth/2, 50)];
     }
     return _closeButton;
@@ -116,7 +116,7 @@ static CGFloat kTransitionDuration = 0.3;
         _goonBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_goonBtn addTarget:self action:@selector(goonAction:) forControlEvents:UIControlEventTouchUpInside];
 //        [_goonBtn setBackgroundImage:[UIImage imageNamed:@"personal_yellow_btn"] forState:UIControlStateNormal];//188 148 84
-        [_goonBtn setBackgroundColor:RGB(188, 148, 84)];
+        [_goonBtn setBackgroundColor:RGB(255, 98, 1)];
         [_goonBtn setTitle:@"确定" forState:UIControlStateNormal];
         [_goonBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_goonBtn setFrame:CGRectMake(MyEditorWidth/2, MyEditorHeight-50, MyEditorWidth/2, 50)];
@@ -150,7 +150,7 @@ static CGFloat kTransitionDuration = 0.3;
     UIViewController *topVC = [self appRootViewController];
     self.frame = CGRectMake(SCREEN_WIDTH/2-MyEditorWidth/2, SCREEN_HEIGHT/2-MyEditorHeight*0.5, MyEditorWidth, MyEditorHeight);
     self.backgroundColor = [UIColor whiteColor];
-    self.layer.cornerRadius = 5;
+    self.layer.cornerRadius = 15;
     self.layer.masksToBounds = YES;
     [topVC.view addSubview:self];
 }

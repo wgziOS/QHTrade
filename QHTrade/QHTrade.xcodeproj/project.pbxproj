@@ -53,6 +53,11 @@
 		B2A215111EDEA9E900B19A4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A2150F1EDEA9E900B19A4A /* LaunchScreen.storyboard */; };
 		B2A2151C1EDEA9E900B19A4A /* QHTradeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2151B1EDEA9E900B19A4A /* QHTradeTests.m */; };
 		B2A215271EDEA9E900B19A4A /* QHTradeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A215261EDEA9E900B19A4A /* QHTradeUITests.m */; };
+		B2ADBAD71F0C8C500009D3BC /* TradeStatisticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBAD61F0C8C500009D3BC /* TradeStatisticViewController.m */; };
+		B2ADBADA1F0C8C730009D3BC /* TradeStatisticMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBAD91F0C8C730009D3BC /* TradeStatisticMainView.m */; };
+		B2ADBADD1F0C8C830009D3BC /* TradeStatisticViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBADC1F0C8C830009D3BC /* TradeStatisticViewModel.m */; };
+		B2ADBAE11F0C8E340009D3BC /* TradestatisticsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBADF1F0C8E340009D3BC /* TradestatisticsCell.m */; };
+		B2ADBAE21F0C8E340009D3BC /* TradestatisticsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2ADBAE01F0C8E340009D3BC /* TradestatisticsCell.xib */; };
 		B2BE01151EE93D260012AD3E /* LineChartDescribe.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BE00F41EE93D260012AD3E /* LineChartDescribe.m */; };
 		B2BE01161EE93D260012AD3E /* PersonalBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BE00F51EE93D260012AD3E /* PersonalBottomCell.m */; };
 		B2BE01171EE93D260012AD3E /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BE00F61EE93D260012AD3E /* PersonalViewController.m */; };
@@ -254,6 +259,15 @@
 		B2A215221EDEA9E900B19A4A /* QHTradeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QHTradeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A215261EDEA9E900B19A4A /* QHTradeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QHTradeUITests.m; sourceTree = "<group>"; };
 		B2A215281EDEA9E900B19A4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2ADBAD51F0C8C500009D3BC /* TradeStatisticViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeStatisticViewController.h; sourceTree = "<group>"; };
+		B2ADBAD61F0C8C500009D3BC /* TradeStatisticViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeStatisticViewController.m; sourceTree = "<group>"; };
+		B2ADBAD81F0C8C730009D3BC /* TradeStatisticMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeStatisticMainView.h; sourceTree = "<group>"; };
+		B2ADBAD91F0C8C730009D3BC /* TradeStatisticMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeStatisticMainView.m; sourceTree = "<group>"; };
+		B2ADBADB1F0C8C830009D3BC /* TradeStatisticViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeStatisticViewModel.h; sourceTree = "<group>"; };
+		B2ADBADC1F0C8C830009D3BC /* TradeStatisticViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeStatisticViewModel.m; sourceTree = "<group>"; };
+		B2ADBADE1F0C8E340009D3BC /* TradestatisticsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradestatisticsCell.h; sourceTree = "<group>"; };
+		B2ADBADF1F0C8E340009D3BC /* TradestatisticsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradestatisticsCell.m; sourceTree = "<group>"; };
+		B2ADBAE01F0C8E340009D3BC /* TradestatisticsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradestatisticsCell.xib; sourceTree = "<group>"; };
 		B2BE00F41EE93D260012AD3E /* LineChartDescribe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChartDescribe.m; sourceTree = "<group>"; };
 		B2BE00F51EE93D260012AD3E /* PersonalBottomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalBottomCell.m; sourceTree = "<group>"; };
 		B2BE00F61EE93D260012AD3E /* PersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
@@ -504,6 +518,9 @@
 		B203B3D21F00DFC8002581F6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B2BE012F1EE943F30012AD3E /* SettingViewController.h */,
+				B2BE01301EE943F30012AD3E /* SettingViewController.m */,
+				B2BE01311EE943F30012AD3E /* SettingViewController.xib */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -548,6 +565,7 @@
 				B21BEC4A1F049AA100354274 /* ChangeNickname */,
 				B2D972181F0396F700A04798 /* ChangePhone */,
 				B2CCA9881F0246E0002BA562 /* AboutUS */,
+				B2ADBAD11F0C8BF30009D3BC /* TradeStatistic */,
 				B21BEC631F04AD7400354274 /* Focus */,
 				B21BEC5F1F04AA7C00354274 /* MyVisitor */,
 				B203B3CE1F00D741002581F6 /* PromptView */,
@@ -765,6 +783,46 @@
 			path = QHTradeUITests;
 			sourceTree = "<group>";
 		};
+		B2ADBAD11F0C8BF30009D3BC /* TradeStatistic */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADBAD31F0C8C150009D3BC /* ViewModel */,
+				B2ADBAD21F0C8C0F0009D3BC /* View */,
+				B2ADBAD41F0C8C1E0009D3BC /* ViewController */,
+			);
+			path = TradeStatistic;
+			sourceTree = "<group>";
+		};
+		B2ADBAD21F0C8C0F0009D3BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADBAD81F0C8C730009D3BC /* TradeStatisticMainView.h */,
+				B2ADBAD91F0C8C730009D3BC /* TradeStatisticMainView.m */,
+				B2ADBADE1F0C8E340009D3BC /* TradestatisticsCell.h */,
+				B2ADBADF1F0C8E340009D3BC /* TradestatisticsCell.m */,
+				B2ADBAE01F0C8E340009D3BC /* TradestatisticsCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B2ADBAD31F0C8C150009D3BC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADBADB1F0C8C830009D3BC /* TradeStatisticViewModel.h */,
+				B2ADBADC1F0C8C830009D3BC /* TradeStatisticViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2ADBAD41F0C8C1E0009D3BC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADBAD51F0C8C500009D3BC /* TradeStatisticViewController.h */,
+				B2ADBAD61F0C8C500009D3BC /* TradeStatisticViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		B2BE00F31EE93CE30012AD3E /* Personal */ = {
 			isa = PBXGroup;
 			children = (
@@ -840,9 +898,6 @@
 				B203B3D81F00E41F002581F6 /* ViewModel */,
 				B203B3D31F00DFCF002581F6 /* View */,
 				B203B3D21F00DFC8002581F6 /* ViewController */,
-				B2BE012F1EE943F30012AD3E /* SettingViewController.h */,
-				B2BE01301EE943F30012AD3E /* SettingViewController.m */,
-				B2BE01311EE943F30012AD3E /* SettingViewController.xib */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -1453,6 +1508,7 @@
 				B2BE011A1EE93D260012AD3E /* PersonalBottomCell.xib in Resources */,
 				B203B3EA1F00EBFE002581F6 /* SettingDefaultCell.xib in Resources */,
 				B203B3E01F00EBC8002581F6 /* SettingHeadImgCell.xib in Resources */,
+				B2ADBAE21F0C8E340009D3BC /* TradestatisticsCell.xib in Resources */,
 				B2A2150E1EDEA9E900B19A4A /* Assets.xcassets in Resources */,
 				B2BE011C1EE93D260012AD3E /* PersonalCollectionCell.xib in Resources */,
 				B2BE011E1EE93D260012AD3E /* PersonalFirstCell.xib in Resources */,
@@ -1541,6 +1597,7 @@
 				CE30CA2A1F05F93F00778172 /* PositionView.m in Sources */,
 				B2CCA9971F02534C002BA562 /* AccountSetMainView.m in Sources */,
 				CEF331031EDF9CC50032F0EF /* BaseTableViewCell.m in Sources */,
+				B2ADBAE11F0C8E340009D3BC /* TradestatisticsCell.m in Sources */,
 				CE30CA3B1F05F93F00778172 /* ZZCEViewController.m in Sources */,
 				B2339C481F05F39500B336BB /* LoginViewModel.m in Sources */,
 				CE30CA541F06180500778172 /* GroupViewController.m in Sources */,
@@ -1555,7 +1612,9 @@
 				B2BE01201EE93D260012AD3E /* PersonalMainView.m in Sources */,
 				CEF3311C1EDFAE330032F0EF /* QHRequestModel.m in Sources */,
 				CEF331051EDF9CC50032F0EF /* BaseViewModel.m in Sources */,
+				B2ADBAD71F0C8C500009D3BC /* TradeStatisticViewController.m in Sources */,
 				B2339C4C1F05F39500B336BB /* LoginModel.m in Sources */,
+				B2ADBADA1F0C8C730009D3BC /* TradeStatisticMainView.m in Sources */,
 				CE30CA3A1F05F93F00778172 /* ZZCEView.m in Sources */,
 				CE30CA621F061E6600778172 /* AwesomeView.m in Sources */,
 				CE30CA1E1F05F93F00778172 /* DynamicsNavigationCenterView.m in Sources */,
@@ -1591,6 +1650,7 @@
 				CEF331071EDF9CC50032F0EF /* TabBarBaseController.m in Sources */,
 				CEF331131EDFA4AA0032F0EF /* MBProgressHUD+NJ.m in Sources */,
 				CE30CA321F05F93F00778172 /* OptionalContractView.m in Sources */,
+				B2ADBADD1F0C8C830009D3BC /* TradeStatisticViewModel.m in Sources */,
 				B21BEC491F04894500354274 /* ChangeNextViewModel.m in Sources */,
 				B2BE01321EE943F30012AD3E /* SettingViewController.m in Sources */,
 				CE30CA211F05F93F00778172 /* DynamicsViewModel.m in Sources */,

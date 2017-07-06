@@ -52,7 +52,7 @@
        
         make.top.equalTo(weakSelf).with.offset(5);
         make.left.equalTo(weakSelf.headImgView.mas_right).with.offset(15);
-        make.size.mas_equalTo(CGSizeMake(80, 18));
+        make.size.mas_equalTo(CGSizeMake(60, 18));
     }];
     
     [self.sexImgView mas_makeConstraints:^(MASConstraintMaker *make) {

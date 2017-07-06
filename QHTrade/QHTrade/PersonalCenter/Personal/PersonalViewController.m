@@ -15,8 +15,9 @@
 #import "SettingViewController.h"
 #import "MyVisitorViewController.h"
 #import "FocusViewController.h"
-
 #import "PersonalMasterView.h"
+#import "TradeStatisticViewController.h"
+
 
 @interface PersonalViewController ()
 @property (nonatomic,strong)PersonalMainView * mainView;
@@ -35,7 +36,8 @@
 
 //    [self.view addSubview:self.mainView];
 
-    
+    LoginViewController * LVC = [[LoginViewController alloc]init];
+    [self.navigationController pushViewController:LVC animated:YES];
     
 }
 
@@ -74,7 +76,9 @@
                 break;
             case 3:
             {
-                showMassage(@"数据统计")
+//                showMassage(@"交易统计")
+                TradeStatisticViewController * TVC = [[TradeStatisticViewController alloc]init];
+                [weakSelf.navigationController pushViewController:TVC animated:YES];
             }
                 break;
             case 4:
@@ -92,7 +96,7 @@
     [[self.viewModel.setBtnClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
         
         SettingViewController * SVC = [[SettingViewController alloc]init];
-        [self.navigationController pushViewController:SVC animated:YES];
+        [weakSelf.navigationController pushViewController:SVC animated:YES];
     }];
     
     
@@ -155,19 +159,7 @@
 //右按钮
 -(UIBarButtonItem *)leftButton{
     
-    UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
-    [btn addTarget:self action:@selector(rightButtonCilck:) forControlEvents:UIControlEventTouchUpInside];
-    [btn setImage:[UIImage imageNamed:@"personal_diamond_icon"] forState:UIControlStateNormal];
-    
-    return [[UIBarButtonItem alloc]initWithCustomView:btn];
-}
-//去设置
--(void)rightButtonCilck:(id)sender{
-
-    SettingViewController * SVC = [[SettingViewController alloc]init];
-    [self.navigationController pushViewController:SVC animated:YES];
-
-    
+    return nil;
 }
 
 -(PersonalMasterView *)masterView{

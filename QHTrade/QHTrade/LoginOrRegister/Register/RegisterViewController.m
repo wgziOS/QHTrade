@@ -34,6 +34,7 @@
     RAC(self.viewModel, codeStr) = self.mainView.codeTextfield.rac_textSignal;
     RAC(self.viewModel, passWordStr) = self.mainView.passWordTextfield.rac_textSignal;
     
+    
     [self.mainView.phoneNumTextfield.rac_textSignal subscribeNext:^(NSString * _Nullable x) {
        
         if (x.length) {

@@ -20,4 +20,7 @@
 
 @property (nonatomic,strong) RACSubject *getCodeSubject;
 @property (nonatomic,strong) RACSubject *quickSubject;
+
+@property (nonatomic,strong) RACSubject *tickClickSubject;
+
 @end

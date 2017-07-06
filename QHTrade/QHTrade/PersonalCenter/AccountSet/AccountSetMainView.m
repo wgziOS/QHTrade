@@ -171,7 +171,7 @@
         [logout setTitle:@"退出当前账户" forState:UIControlStateNormal];
         [logout setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         logout.titleLabel.font = [UIFont systemFontOfSize:16.0f];
-        [logout setBackgroundImage:[UIImage imageNamed:@"btn_bg_image"] forState:UIControlStateNormal];
+        [logout setBackgroundImage:[UIImage imageNamed:@"btn_ablebg_image"] forState:UIControlStateNormal];
         [logout addTarget:self action:@selector(logoutBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [_footView addSubview:logout];
         
