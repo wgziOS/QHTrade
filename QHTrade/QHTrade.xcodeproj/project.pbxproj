@@ -138,10 +138,25 @@
 		CE30CA621F061E6600778172 /* AwesomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30CA611F061E6600778172 /* AwesomeView.m */; };
 		CE30CA651F061E7B00778172 /* AwesomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30CA641F061E7B00778172 /* AwesomeModel.m */; };
 		CE30CA681F06210500778172 /* AwesomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30CA671F06210500778172 /* AwesomeTableViewCell.m */; };
+		CEDD81601F0A89A800B81EDB /* FollowEarningChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDD815F1F0A89A800B81EDB /* FollowEarningChooseViewController.m */; };
+		CEDD81631F0A89D600B81EDB /* FollowEarningChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDD81621F0A89D600B81EDB /* FollowEarningChooseView.m */; };
+		CEDD81661F0A89EC00B81EDB /* FollowEarningChooseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDD81651F0A89EC00B81EDB /* FollowEarningChooseViewModel.m */; };
+		CEDD81691F0A8A0000B81EDB /* FollowEarningChooseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDD81681F0A8A0000B81EDB /* FollowEarningChooseModel.m */; };
+		CEDD816C1F0A8EA300B81EDB /* FollowEarningChooseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDD816B1F0A8EA300B81EDB /* FollowEarningChooseCell.m */; };
+		CEDD816F1F0B3DDC00B81EDB /* AwesomeDetailsHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDD816E1F0B3DDC00B81EDB /* AwesomeDetailsHeadView.m */; };
 		CEE2D50B1F0A105A005AC8DA /* RookieView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2D50A1F0A105A005AC8DA /* RookieView.m */; };
 		CEE2D5121F0A1C1B005AC8DA /* FollowEarningsTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2D5111F0A1C1B005AC8DA /* FollowEarningsTopView.m */; };
 		CEE2D5151F0A1CCA005AC8DA /* CanFollowView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2D5141F0A1CCA005AC8DA /* CanFollowView.m */; };
 		CEE2D5181F0A1F07005AC8DA /* FollowEarningsTopTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2D5171F0A1F07005AC8DA /* FollowEarningsTopTableCell.m */; };
+		CEE2D51B1F0A359F005AC8DA /* CanFollowTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2D51A1F0A359F005AC8DA /* CanFollowTableCell.m */; };
+		CEE2D5231F0A3907005AC8DA /* FollowEarningsDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2D5221F0A3907005AC8DA /* FollowEarningsDetailsViewController.m */; };
+		CEE2D5261F0A3920005AC8DA /* FollowEarningsDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2D5251F0A3920005AC8DA /* FollowEarningsDetailsView.m */; };
+		CEE2D5291F0A39C5005AC8DA /* FollowEarningsDetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2D5281F0A39C5005AC8DA /* FollowEarningsDetailsModel.m */; };
+		CEE2D52F1F0A3A3F005AC8DA /* FollowEarningsDetailsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2D52E1F0A3A3F005AC8DA /* FollowEarningsDetailsViewModel.m */; };
+		CEE2D5371F0A5A86005AC8DA /* AwesomeDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2D5361F0A5A86005AC8DA /* AwesomeDetailsViewController.m */; };
+		CEE2D53A1F0A5AAC005AC8DA /* AwesomeDetailsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2D5391F0A5AAC005AC8DA /* AwesomeDetailsViewModel.m */; };
+		CEE2D5401F0A5B26005AC8DA /* AwesomeDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2D53F1F0A5B26005AC8DA /* AwesomeDetailsView.m */; };
+		CEE2D5431F0A5B44005AC8DA /* AwesomeDetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2D5421F0A5B44005AC8DA /* AwesomeDetailsModel.m */; };
 		CEF330EE1EDF9B720032F0EF /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF330ED1EDF9B720032F0EF /* UIImage+Extension.m */; };
 		CEF330F11EDF9BC60032F0EF /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF330F01EDF9BC60032F0EF /* UIView+Extension.m */; };
 		CEF331031EDF9CC50032F0EF /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF330F41EDF9CC50032F0EF /* BaseTableViewCell.m */; };
@@ -156,6 +171,16 @@
 		CEF3311F1EDFB1E70032F0EF /* QHRequest+Api.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3311E1EDFB1E70032F0EF /* QHRequest+Api.m */; };
 		CEF331221EDFB3D50032F0EF /* UserInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF331211EDFB3D50032F0EF /* UserInformation.m */; };
 		CEF3312E1EDFDBCB0032F0EF /* QHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3312D1EDFDBCB0032F0EF /* QHTabBar.m */; };
+		CEF378AD1F0B634700C32D0D /* TradersInstructionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378AC1F0B634700C32D0D /* TradersInstructionsView.m */; };
+		CEF378B01F0B831F00C32D0D /* TradingInformationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378AF1F0B831F00C32D0D /* TradingInformationView.m */; };
+		CEF378B31F0B8DC700C32D0D /* SegmentedControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378B21F0B8DC700C32D0D /* SegmentedControlView.m */; };
+		CEF378B61F0C6CDE00C32D0D /* MyWarehouseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378B51F0C6CDE00C32D0D /* MyWarehouseView.m */; };
+		CEF378B91F0C6D3100C32D0D /* TradingSignalsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378B81F0C6D3100C32D0D /* TradingSignalsView.m */; };
+		CEF378BC1F0C719600C32D0D /* TradingSignalsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378BB1F0C719600C32D0D /* TradingSignalsCell.m */; };
+		CEF378BF1F0C85FF00C32D0D /* MyWarehouseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378BE1F0C85FF00C32D0D /* MyWarehouseCell.m */; };
+		CEF378C21F0C876500C32D0D /* MyWarehouseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378C11F0C876500C32D0D /* MyWarehouseModel.m */; };
+		CEF378C51F0C87B600C32D0D /* TradingSignalsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378C41F0C87B600C32D0D /* TradingSignalsModel.m */; };
+		CEF378C81F0CBDC600C32D0D /* EarningsSumView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378C71F0CBDC600C32D0D /* EarningsSumView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -417,6 +442,18 @@
 		CE30CA641F061E7B00778172 /* AwesomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeModel.m; sourceTree = "<group>"; };
 		CE30CA661F06210500778172 /* AwesomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeTableViewCell.h; sourceTree = "<group>"; };
 		CE30CA671F06210500778172 /* AwesomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeTableViewCell.m; sourceTree = "<group>"; };
+		CEDD815E1F0A89A800B81EDB /* FollowEarningChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowEarningChooseViewController.h; sourceTree = "<group>"; };
+		CEDD815F1F0A89A800B81EDB /* FollowEarningChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowEarningChooseViewController.m; sourceTree = "<group>"; };
+		CEDD81611F0A89D600B81EDB /* FollowEarningChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowEarningChooseView.h; sourceTree = "<group>"; };
+		CEDD81621F0A89D600B81EDB /* FollowEarningChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowEarningChooseView.m; sourceTree = "<group>"; };
+		CEDD81641F0A89EC00B81EDB /* FollowEarningChooseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowEarningChooseViewModel.h; sourceTree = "<group>"; };
+		CEDD81651F0A89EC00B81EDB /* FollowEarningChooseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowEarningChooseViewModel.m; sourceTree = "<group>"; };
+		CEDD81671F0A8A0000B81EDB /* FollowEarningChooseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowEarningChooseModel.h; sourceTree = "<group>"; };
+		CEDD81681F0A8A0000B81EDB /* FollowEarningChooseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowEarningChooseModel.m; sourceTree = "<group>"; };
+		CEDD816A1F0A8EA300B81EDB /* FollowEarningChooseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowEarningChooseCell.h; sourceTree = "<group>"; };
+		CEDD816B1F0A8EA300B81EDB /* FollowEarningChooseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowEarningChooseCell.m; sourceTree = "<group>"; };
+		CEDD816D1F0B3DDC00B81EDB /* AwesomeDetailsHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeDetailsHeadView.h; sourceTree = "<group>"; };
+		CEDD816E1F0B3DDC00B81EDB /* AwesomeDetailsHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeDetailsHeadView.m; sourceTree = "<group>"; };
 		CEE2D5091F0A105A005AC8DA /* RookieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RookieView.h; sourceTree = "<group>"; };
 		CEE2D50A1F0A105A005AC8DA /* RookieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RookieView.m; sourceTree = "<group>"; };
 		CEE2D5101F0A1C1B005AC8DA /* FollowEarningsTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowEarningsTopView.h; sourceTree = "<group>"; };
@@ -425,6 +462,24 @@
 		CEE2D5141F0A1CCA005AC8DA /* CanFollowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanFollowView.m; sourceTree = "<group>"; };
 		CEE2D5161F0A1F07005AC8DA /* FollowEarningsTopTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowEarningsTopTableCell.h; sourceTree = "<group>"; };
 		CEE2D5171F0A1F07005AC8DA /* FollowEarningsTopTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowEarningsTopTableCell.m; sourceTree = "<group>"; };
+		CEE2D5191F0A359F005AC8DA /* CanFollowTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanFollowTableCell.h; sourceTree = "<group>"; };
+		CEE2D51A1F0A359F005AC8DA /* CanFollowTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanFollowTableCell.m; sourceTree = "<group>"; };
+		CEE2D5211F0A3907005AC8DA /* FollowEarningsDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowEarningsDetailsViewController.h; sourceTree = "<group>"; };
+		CEE2D5221F0A3907005AC8DA /* FollowEarningsDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowEarningsDetailsViewController.m; sourceTree = "<group>"; };
+		CEE2D5241F0A3920005AC8DA /* FollowEarningsDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowEarningsDetailsView.h; sourceTree = "<group>"; };
+		CEE2D5251F0A3920005AC8DA /* FollowEarningsDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowEarningsDetailsView.m; sourceTree = "<group>"; };
+		CEE2D5271F0A39C5005AC8DA /* FollowEarningsDetailsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowEarningsDetailsModel.h; sourceTree = "<group>"; };
+		CEE2D5281F0A39C5005AC8DA /* FollowEarningsDetailsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowEarningsDetailsModel.m; sourceTree = "<group>"; };
+		CEE2D52D1F0A3A3F005AC8DA /* FollowEarningsDetailsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowEarningsDetailsViewModel.h; sourceTree = "<group>"; };
+		CEE2D52E1F0A3A3F005AC8DA /* FollowEarningsDetailsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowEarningsDetailsViewModel.m; sourceTree = "<group>"; };
+		CEE2D5351F0A5A86005AC8DA /* AwesomeDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeDetailsViewController.h; sourceTree = "<group>"; };
+		CEE2D5361F0A5A86005AC8DA /* AwesomeDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeDetailsViewController.m; sourceTree = "<group>"; };
+		CEE2D5381F0A5AAC005AC8DA /* AwesomeDetailsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeDetailsViewModel.h; sourceTree = "<group>"; };
+		CEE2D5391F0A5AAC005AC8DA /* AwesomeDetailsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeDetailsViewModel.m; sourceTree = "<group>"; };
+		CEE2D53E1F0A5B26005AC8DA /* AwesomeDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeDetailsView.h; sourceTree = "<group>"; };
+		CEE2D53F1F0A5B26005AC8DA /* AwesomeDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeDetailsView.m; sourceTree = "<group>"; };
+		CEE2D5411F0A5B44005AC8DA /* AwesomeDetailsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeDetailsModel.h; sourceTree = "<group>"; };
+		CEE2D5421F0A5B44005AC8DA /* AwesomeDetailsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeDetailsModel.m; sourceTree = "<group>"; };
 		CEF330EC1EDF9B720032F0EF /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		CEF330ED1EDF9B720032F0EF /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		CEF330EF1EDF9BC60032F0EF /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -459,6 +514,26 @@
 		CEF331211EDFB3D50032F0EF /* UserInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInformation.m; sourceTree = "<group>"; };
 		CEF3312C1EDFDBCB0032F0EF /* QHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHTabBar.h; sourceTree = "<group>"; };
 		CEF3312D1EDFDBCB0032F0EF /* QHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHTabBar.m; sourceTree = "<group>"; };
+		CEF378AB1F0B634700C32D0D /* TradersInstructionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradersInstructionsView.h; sourceTree = "<group>"; };
+		CEF378AC1F0B634700C32D0D /* TradersInstructionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradersInstructionsView.m; sourceTree = "<group>"; };
+		CEF378AE1F0B831F00C32D0D /* TradingInformationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradingInformationView.h; sourceTree = "<group>"; };
+		CEF378AF1F0B831F00C32D0D /* TradingInformationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradingInformationView.m; sourceTree = "<group>"; };
+		CEF378B11F0B8DC700C32D0D /* SegmentedControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedControlView.h; sourceTree = "<group>"; };
+		CEF378B21F0B8DC700C32D0D /* SegmentedControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedControlView.m; sourceTree = "<group>"; };
+		CEF378B41F0C6CDE00C32D0D /* MyWarehouseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWarehouseView.h; sourceTree = "<group>"; };
+		CEF378B51F0C6CDE00C32D0D /* MyWarehouseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWarehouseView.m; sourceTree = "<group>"; };
+		CEF378B71F0C6D3100C32D0D /* TradingSignalsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradingSignalsView.h; sourceTree = "<group>"; };
+		CEF378B81F0C6D3100C32D0D /* TradingSignalsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradingSignalsView.m; sourceTree = "<group>"; };
+		CEF378BA1F0C719600C32D0D /* TradingSignalsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradingSignalsCell.h; sourceTree = "<group>"; };
+		CEF378BB1F0C719600C32D0D /* TradingSignalsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradingSignalsCell.m; sourceTree = "<group>"; };
+		CEF378BD1F0C85FF00C32D0D /* MyWarehouseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWarehouseCell.h; sourceTree = "<group>"; };
+		CEF378BE1F0C85FF00C32D0D /* MyWarehouseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWarehouseCell.m; sourceTree = "<group>"; };
+		CEF378C01F0C876500C32D0D /* MyWarehouseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWarehouseModel.h; sourceTree = "<group>"; };
+		CEF378C11F0C876500C32D0D /* MyWarehouseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWarehouseModel.m; sourceTree = "<group>"; };
+		CEF378C31F0C87B600C32D0D /* TradingSignalsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradingSignalsModel.h; sourceTree = "<group>"; };
+		CEF378C41F0C87B600C32D0D /* TradingSignalsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradingSignalsModel.m; sourceTree = "<group>"; };
+		CEF378C61F0CBDC600C32D0D /* EarningsSumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarningsSumView.h; sourceTree = "<group>"; };
+		CEF378C71F0CBDC600C32D0D /* EarningsSumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarningsSumView.m; sourceTree = "<group>"; };
 		DB23E11BA4D680FD0F61CE42 /* Pods-QHTrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QHTrade.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QHTrade/Pods-QHTrade.debug.xcconfig"; sourceTree = "<group>"; };
 		E3D3E11B3D85ACEA2AE90524 /* Pods-QHTrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QHTrade.release.xcconfig"; path = "Pods/Target Support Files/Pods-QHTrade/Pods-QHTrade.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1167,6 +1242,9 @@
 		CE30CA461F06162B00778172 /* Awesome */ = {
 			isa = PBXGroup;
 			children = (
+				CEDD81581F0A894E00B81EDB /* FollowEarningChoose */,
+				CEE2D5301F0A3A6B005AC8DA /* AwesomeDetails */,
+				CEE2D51C1F0A38A5005AC8DA /* FollowEarningsDetails */,
 				CE30CA471F06162B00778172 /* Awesome */,
 			);
 			path = Awesome;
@@ -1282,6 +1360,8 @@
 				CEE2D5171F0A1F07005AC8DA /* FollowEarningsTopTableCell.m */,
 				CEE2D5131F0A1CCA005AC8DA /* CanFollowView.h */,
 				CEE2D5141F0A1CCA005AC8DA /* CanFollowView.m */,
+				CEE2D5191F0A359F005AC8DA /* CanFollowTableCell.h */,
+				CEE2D51A1F0A359F005AC8DA /* CanFollowTableCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1293,6 +1373,169 @@
 				CE30CA641F061E7B00778172 /* AwesomeModel.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		CEDD81581F0A894E00B81EDB /* FollowEarningChoose */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD815A1F0A895D00B81EDB /* Model */,
+				CEDD815C1F0A897500B81EDB /* View */,
+				CEDD815D1F0A897F00B81EDB /* ViewModel */,
+				CEDD81591F0A895500B81EDB /* VC */,
+			);
+			path = FollowEarningChoose;
+			sourceTree = "<group>";
+		};
+		CEDD81591F0A895500B81EDB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD815E1F0A89A800B81EDB /* FollowEarningChooseViewController.h */,
+				CEDD815F1F0A89A800B81EDB /* FollowEarningChooseViewController.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		CEDD815A1F0A895D00B81EDB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD81671F0A8A0000B81EDB /* FollowEarningChooseModel.h */,
+				CEDD81681F0A8A0000B81EDB /* FollowEarningChooseModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CEDD815C1F0A897500B81EDB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD81611F0A89D600B81EDB /* FollowEarningChooseView.h */,
+				CEDD81621F0A89D600B81EDB /* FollowEarningChooseView.m */,
+				CEDD816A1F0A8EA300B81EDB /* FollowEarningChooseCell.h */,
+				CEDD816B1F0A8EA300B81EDB /* FollowEarningChooseCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CEDD815D1F0A897F00B81EDB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD81641F0A89EC00B81EDB /* FollowEarningChooseViewModel.h */,
+				CEDD81651F0A89EC00B81EDB /* FollowEarningChooseViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEE2D51C1F0A38A5005AC8DA /* FollowEarningsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2D51F1F0A38C1005AC8DA /* Model */,
+				CEE2D51E1F0A38B5005AC8DA /* View */,
+				CEE2D5201F0A38CB005AC8DA /* ViewModel */,
+				CEE2D51D1F0A38AD005AC8DA /* VC */,
+			);
+			path = FollowEarningsDetails;
+			sourceTree = "<group>";
+		};
+		CEE2D51D1F0A38AD005AC8DA /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2D5211F0A3907005AC8DA /* FollowEarningsDetailsViewController.h */,
+				CEE2D5221F0A3907005AC8DA /* FollowEarningsDetailsViewController.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		CEE2D51E1F0A38B5005AC8DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2D5241F0A3920005AC8DA /* FollowEarningsDetailsView.h */,
+				CEE2D5251F0A3920005AC8DA /* FollowEarningsDetailsView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CEE2D51F1F0A38C1005AC8DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2D5271F0A39C5005AC8DA /* FollowEarningsDetailsModel.h */,
+				CEE2D5281F0A39C5005AC8DA /* FollowEarningsDetailsModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CEE2D5201F0A38CB005AC8DA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2D52D1F0A3A3F005AC8DA /* FollowEarningsDetailsViewModel.h */,
+				CEE2D52E1F0A3A3F005AC8DA /* FollowEarningsDetailsViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEE2D5301F0A3A6B005AC8DA /* AwesomeDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2D5321F0A3A77005AC8DA /* Model */,
+				CEE2D5331F0A3A7E005AC8DA /* View */,
+				CEE2D5341F0A3A86005AC8DA /* ViewModel */,
+				CEE2D5311F0A3A70005AC8DA /* Vc */,
+			);
+			path = AwesomeDetails;
+			sourceTree = "<group>";
+		};
+		CEE2D5311F0A3A70005AC8DA /* Vc */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2D5351F0A5A86005AC8DA /* AwesomeDetailsViewController.h */,
+				CEE2D5361F0A5A86005AC8DA /* AwesomeDetailsViewController.m */,
+			);
+			name = Vc;
+			sourceTree = "<group>";
+		};
+		CEE2D5321F0A3A77005AC8DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2D5411F0A5B44005AC8DA /* AwesomeDetailsModel.h */,
+				CEE2D5421F0A5B44005AC8DA /* AwesomeDetailsModel.m */,
+				CEF378C01F0C876500C32D0D /* MyWarehouseModel.h */,
+				CEF378C11F0C876500C32D0D /* MyWarehouseModel.m */,
+				CEF378C31F0C87B600C32D0D /* TradingSignalsModel.h */,
+				CEF378C41F0C87B600C32D0D /* TradingSignalsModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CEE2D5331F0A3A7E005AC8DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2D53E1F0A5B26005AC8DA /* AwesomeDetailsView.h */,
+				CEE2D53F1F0A5B26005AC8DA /* AwesomeDetailsView.m */,
+				CEDD816D1F0B3DDC00B81EDB /* AwesomeDetailsHeadView.h */,
+				CEDD816E1F0B3DDC00B81EDB /* AwesomeDetailsHeadView.m */,
+				CEF378AB1F0B634700C32D0D /* TradersInstructionsView.h */,
+				CEF378AC1F0B634700C32D0D /* TradersInstructionsView.m */,
+				CEF378AE1F0B831F00C32D0D /* TradingInformationView.h */,
+				CEF378AF1F0B831F00C32D0D /* TradingInformationView.m */,
+				CEF378B41F0C6CDE00C32D0D /* MyWarehouseView.h */,
+				CEF378B51F0C6CDE00C32D0D /* MyWarehouseView.m */,
+				CEF378BD1F0C85FF00C32D0D /* MyWarehouseCell.h */,
+				CEF378BE1F0C85FF00C32D0D /* MyWarehouseCell.m */,
+				CEF378B71F0C6D3100C32D0D /* TradingSignalsView.h */,
+				CEF378B81F0C6D3100C32D0D /* TradingSignalsView.m */,
+				CEF378BA1F0C719600C32D0D /* TradingSignalsCell.h */,
+				CEF378BB1F0C719600C32D0D /* TradingSignalsCell.m */,
+				CEF378C61F0CBDC600C32D0D /* EarningsSumView.h */,
+				CEF378C71F0CBDC600C32D0D /* EarningsSumView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CEE2D5341F0A3A86005AC8DA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2D5381F0A5AAC005AC8DA /* AwesomeDetailsViewModel.h */,
+				CEE2D5391F0A5AAC005AC8DA /* AwesomeDetailsViewModel.m */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		CEF330E41EDF9AC20032F0EF /* Dynamics */ = {
@@ -1325,6 +1568,8 @@
 				CEF3310A1EDFA1EB0032F0EF /* PrefixHeader.pch */,
 				CEF331201EDFB3D50032F0EF /* UserInformation.h */,
 				CEF331211EDFB3D50032F0EF /* UserInformation.m */,
+				CEF378B11F0B8DC700C32D0D /* SegmentedControlView.h */,
+				CEF378B21F0B8DC700C32D0D /* SegmentedControlView.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1450,6 +1695,7 @@
 				TargetAttributes = {
 					B2A214FD1EDEA9E900B19A4A = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = KXB9LY2JET;
 						DevelopmentTeam = 94797U4S54;
 						ProvisioningStyle = Automatic;
 					};
@@ -1593,8 +1839,10 @@
 				B2339C611F05F3E000B336BB /* RegisterViewController.m in Sources */,
 				B21BEC4E1F049AD100354274 /* ChangeNickNameViewController.m in Sources */,
 				B2339C531F05F3B300B336BB /* ForgetInputNewPWViewController.m in Sources */,
+				CEE2D5431F0A5B44005AC8DA /* AwesomeDetailsModel.m in Sources */,
 				B21BEC431F04891700354274 /* ChangeNextViewController.m in Sources */,
 				CE30CA2A1F05F93F00778172 /* PositionView.m in Sources */,
+				CEF378B01F0B831F00C32D0D /* TradingInformationView.m in Sources */,
 				B2CCA9971F02534C002BA562 /* AccountSetMainView.m in Sources */,
 				CEF331031EDF9CC50032F0EF /* BaseTableViewCell.m in Sources */,
 				B2ADBAE11F0C8E340009D3BC /* TradestatisticsCell.m in Sources */,
@@ -1607,6 +1855,7 @@
 				B2BE01251EE93D260012AD3E /* QHBarChart.m in Sources */,
 				CE30CA181F05F93F00778172 /* CFFEXViewModel.m in Sources */,
 				B2BE011D1EE93D260012AD3E /* PersonalFirstCell.m in Sources */,
+				CEDD81601F0A89A800B81EDB /* FollowEarningChooseViewController.m in Sources */,
 				CEF331221EDFB3D50032F0EF /* UserInformation.m in Sources */,
 				B203B3DF1F00EBC8002581F6 /* SettingHeadImgCell.m in Sources */,
 				B2BE01201EE93D260012AD3E /* PersonalMainView.m in Sources */,
@@ -1617,6 +1866,7 @@
 				B2ADBADA1F0C8C730009D3BC /* TradeStatisticMainView.m in Sources */,
 				CE30CA3A1F05F93F00778172 /* ZZCEView.m in Sources */,
 				CE30CA621F061E6600778172 /* AwesomeView.m in Sources */,
+				CEF378C51F0C87B600C32D0D /* TradingSignalsModel.m in Sources */,
 				CE30CA1E1F05F93F00778172 /* DynamicsNavigationCenterView.m in Sources */,
 				CEF330EE1EDF9B720032F0EF /* UIImage+Extension.m in Sources */,
 				B2A215061EDEA9E900B19A4A /* AppDelegate.m in Sources */,
@@ -1624,12 +1874,16 @@
 				CE30CA3C1F05F93F00778172 /* ZZCEViewModel.m in Sources */,
 				CE30CA1C1F05F93F00778172 /* DCEViewModel.m in Sources */,
 				CE30CA271F05F93F00778172 /* HangOrderView.m in Sources */,
+				CEF378B31F0B8DC700C32D0D /* SegmentedControlView.m in Sources */,
 				B203B3D71F00E41A002581F6 /* SettingMainView.m in Sources */,
+				CEE2D5401F0A5B26005AC8DA /* AwesomeDetailsView.m in Sources */,
+				CEF378B61F0C6CDE00C32D0D /* MyWarehouseView.m in Sources */,
 				CEF331061EDF9CC50032F0EF /* NavigationBaseController.m in Sources */,
 				CE30CA191F05F93F00778172 /* DCEHeadView.m in Sources */,
 				B21BEC6B1F04F58600354274 /* PersonalModel.m in Sources */,
 				CEF331081EDF9CC50032F0EF /* ViewBaseController.m in Sources */,
 				B2CCA9911F0251C2002BA562 /* AccountSetViewController.m in Sources */,
+				CEE2D5231F0A3907005AC8DA /* FollowEarningsDetailsViewController.m in Sources */,
 				B21BEC621F04AB0C00354274 /* MyVisitorViewController.m in Sources */,
 				B2339C621F05F3E000B336BB /* RegisterView.m in Sources */,
 				B2339C551F05F3B300B336BB /* ForgetPasswordViewController.m in Sources */,
@@ -1640,35 +1894,50 @@
 				CE30CA391F05F93F00778172 /* ZZCEHeadView.m in Sources */,
 				CE30CA2C1F05F93F00778172 /* MyContractHeadView.m in Sources */,
 				B203B3E41F00EBE2002581F6 /* SettingPhoneCell.m in Sources */,
+				CEF378AD1F0B634700C32D0D /* TradersInstructionsView.m in Sources */,
+				CEDD816C1F0A8EA300B81EDB /* FollowEarningChooseCell.m in Sources */,
+				CEF378BC1F0C719600C32D0D /* TradingSignalsCell.m in Sources */,
 				CE30CA171F05F93F00778172 /* CFFEXViewController.m in Sources */,
 				CE30CA1F1F05F93F00778172 /* DynamicsView.m in Sources */,
 				CE30CA651F061E7B00778172 /* AwesomeModel.m in Sources */,
 				CEF330F11EDF9BC60032F0EF /* UIView+Extension.m in Sources */,
 				CE30CA2B1F05F93F00778172 /* MyContractCollectionCellView.m in Sources */,
 				CE30CA1A1F05F93F00778172 /* DCEView.m in Sources */,
+				CEE2D5261F0A3920005AC8DA /* FollowEarningsDetailsView.m in Sources */,
 				B2CCA98C1F024703002BA562 /* AboutUSViewController.m in Sources */,
+				CEDD81691F0A8A0000B81EDB /* FollowEarningChooseModel.m in Sources */,
+				CEF378BF1F0C85FF00C32D0D /* MyWarehouseCell.m in Sources */,
 				CEF331071EDF9CC50032F0EF /* TabBarBaseController.m in Sources */,
 				CEF331131EDFA4AA0032F0EF /* MBProgressHUD+NJ.m in Sources */,
 				CE30CA321F05F93F00778172 /* OptionalContractView.m in Sources */,
+
 				B2ADBADD1F0C8C830009D3BC /* TradeStatisticViewModel.m in Sources */,
+
+				CEE2D5371F0A5A86005AC8DA /* AwesomeDetailsViewController.m in Sources */,
+				CEE2D52F1F0A3A3F005AC8DA /* FollowEarningsDetailsViewModel.m in Sources */,
+
 				B21BEC491F04894500354274 /* ChangeNextViewModel.m in Sources */,
 				B2BE01321EE943F30012AD3E /* SettingViewController.m in Sources */,
 				CE30CA211F05F93F00778172 /* DynamicsViewModel.m in Sources */,
 				CE30CA381F05F93F00778172 /* SHFEViewModel.m in Sources */,
 				B2BE011F1EE93D260012AD3E /* PersonalHeadView.m in Sources */,
 				B2CCA99A1F025364002BA562 /* AccountSetViewModel.m in Sources */,
+				CEDD816F1F0B3DDC00B81EDB /* AwesomeDetailsHeadView.m in Sources */,
 				CEE2D5121F0A1C1B005AC8DA /* FollowEarningsTopView.m in Sources */,
 				CE30CA351F05F93F00778172 /* SHFEHeadView.m in Sources */,
 				CEE2D5181F0A1F07005AC8DA /* FollowEarningsTopTableCell.m in Sources */,
 				B21BEC661F04AD8F00354274 /* FocusViewController.m in Sources */,
+				CEDD81661F0A89EC00B81EDB /* FollowEarningChooseViewModel.m in Sources */,
 				B2339C5F1F05F3E000B336BB /* RegisterViewModel.m in Sources */,
 				CEF3311F1EDFB1E70032F0EF /* QHRequest+Api.m in Sources */,
 				CE30CA281F05F93F00778172 /* PositionModel.m in Sources */,
 				B203B3E91F00EBFE002581F6 /* SettingDefaultCell.m in Sources */,
+				CEF378C21F0C876500C32D0D /* MyWarehouseModel.m in Sources */,
 				CEF3312E1EDFDBCB0032F0EF /* QHTabBar.m in Sources */,
 				B2BE01151EE93D260012AD3E /* LineChartDescribe.m in Sources */,
 				CE30CA161F05F93F00778172 /* CFFEXView.m in Sources */,
 				CEE2D50B1F0A105A005AC8DA /* RookieView.m in Sources */,
+				CEF378C81F0CBDC600C32D0D /* EarningsSumView.m in Sources */,
 				CE30CA2E1F05F93F00778172 /* MyContractView.m in Sources */,
 				CE30CA2F1F05F93F00778172 /* MyContractViewController.m in Sources */,
 				B2339C4A1F05F39500B336BB /* LoginViewController.m in Sources */,
@@ -1679,14 +1948,18 @@
 				CE30CA221F05F93F00778172 /* MainContractHeadView.m in Sources */,
 				CE30CA151F05F93F00778172 /* CFFEXHeadView.m in Sources */,
 				CE30CA311F05F93F00778172 /* OptionalContractHeadView.m in Sources */,
+				CEE2D5291F0A39C5005AC8DA /* FollowEarningsDetailsModel.m in Sources */,
 				CE30CA1B1F05F93F00778172 /* DCEViewController.m in Sources */,
 				B2D972161F037D3100A04798 /* AccountSetSexCell.m in Sources */,
 				CE30CA241F05F93F00778172 /* MainContractViewController.m in Sources */,
 				B203B3DB1F00E4AD002581F6 /* SettingViewModel.m in Sources */,
 				B2A215031EDEA9E900B19A4A /* main.m in Sources */,
+				CEE2D51B1F0A359F005AC8DA /* CanFollowTableCell.m in Sources */,
 				CE30CA301F05F93F00778172 /* MyContractViewModel.m in Sources */,
 				B2749B991F0B7FE000E48C52 /* PersonalTableFootView.m in Sources */,
 				B203B3EE1F00EC2C002581F6 /* SettingSwitchCell.m in Sources */,
+				CEDD81631F0A89D600B81EDB /* FollowEarningChooseView.m in Sources */,
+				CEF378B91F0C6D3100C32D0D /* TradingSignalsView.m in Sources */,
 				B2D972241F0398B600A04798 /* ChangePhoneViewModel.m in Sources */,
 				B2D972121F037BC800A04798 /* ChooseSexView.m in Sources */,
 				B2339C631F05F3E000B336BB /* RegisterModel.m in Sources */,
@@ -1710,6 +1983,7 @@
 				CE30CA261F05F93F00778172 /* HangOrderTableViewCell.m in Sources */,
 				B2D9721B1F03974100A04798 /* ChangePhoneViewController.m in Sources */,
 				CE30CA4F1F06176A00778172 /* HomeViewController.m in Sources */,
+				CEE2D53A1F0A5AAC005AC8DA /* AwesomeDetailsViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1852,6 +2126,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = KXB9LY2JET;
 				DEVELOPMENT_TEAM = 94797U4S54;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = QHTrade/Info.plist;
@@ -1870,6 +2145,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = KXB9LY2JET;
 				DEVELOPMENT_TEAM = 94797U4S54;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = QHTrade/Info.plist;

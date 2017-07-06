@@ -15,10 +15,54 @@
 
 
 
--(NSMutableArray *)dataArray{
-    if (!_dataArray) {
-        _dataArray = [[NSMutableArray alloc] init];
+-(NSMutableArray *)awesomeDataArray{
+    if (!_awesomeDataArray) {
+        _awesomeDataArray = [[NSMutableArray alloc] init];
     }
-    return _dataArray;
+    return _awesomeDataArray;
+}
+-(NSMutableArray *)canFollowDataArray{
+    if (!_canFollowDataArray) {
+        _canFollowDataArray = [[NSMutableArray alloc] init];
+    }
+    return _canFollowDataArray;
+}
+-(NSMutableArray *)rookieDataArray{
+    if (!_rookieDataArray) {
+        _rookieDataArray = [[NSMutableArray alloc] init];
+    }
+    return _rookieDataArray;
+}
+
+-(RACSubject *)followEarningsCellClick{
+    if (!_followEarningsCellClick) {
+        _followEarningsCellClick = [RACSubject subject];
+    }
+    return _followEarningsCellClick;
+}
+
+-(RACSubject *)awesomeCellClick{
+    if (!_awesomeCellClick) {
+        _awesomeCellClick = [RACSubject subject];
+    }
+    return _awesomeCellClick;
+}
+-(RACSubject *)awesomeFollowActionClick{
+    if (!_awesomeFollowActionClick) {
+        _awesomeFollowActionClick = [RACSubject subject];
+    }
+    return _awesomeFollowActionClick;
+}
+-(RACSubject *)rookieCellClick{
+    if (!_rookieCellClick) {
+        _rookieCellClick = [RACSubject subject];
+    }
+    return _rookieCellClick;
+}
+-(RACSubject *)canFollowCellClick{
+    if (!_canFollowCellClick) {
+        _canFollowCellClick = [RACSubject subject];
+    }
+    return _canFollowCellClick;
 }
 @end
