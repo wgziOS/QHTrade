@@ -14,8 +14,8 @@
 @property(nonatomic,strong)UIImageView *subscribeIcon;//订阅数图标
 @property(nonatomic,strong)UILabel *subscribeNum;//订阅数
 @property(nonatomic,strong)UILabel *minimumTrading;//最小交易值
-@property(nonatomic,strong)UIButton *documentary;//跟单按钮
-@property(nonatomic,strong)UIView *line;//订阅数
+@property(nonatomic,strong)UIButton *followAction;//跟单按钮
+@property(nonatomic,strong)UIView *line;//分割线
 @property(nonatomic,strong)UIImageView *tradingData;//交易数据
 @property(nonatomic,strong)UIImageView *tradersPlan;//操盘计划
 @property(nonatomic,strong)UILabel *earningsRate;//收益率
@@ -42,7 +42,7 @@
     [self.contentView addSubview:self.subscribeIcon];
     [self.contentView addSubview:self.subscribeNum];
     [self.contentView addSubview:self.minimumTrading];
-    [self.contentView addSubview:self.documentary];
+    [self.contentView addSubview:self.followAction];
     [self.contentView addSubview:self.line];
     [self.contentView addSubview:self.tradingData];
     [self.contentView addSubview:self.tradersPlan];
@@ -74,16 +74,19 @@
         make.size.mas_offset(CGSizeMake(70, 14));
     }];
     [self.subscribeIcon mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self)
         make.left.equalTo(self.awesomeName.mas_right).with.offset(5);
         make.top.equalTo(self.contentView).with.offset(10);
         make.size.mas_offset(CGSizeMake(8, 12));
     }];
     [self.subscribeNum mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self)
         make.left.equalTo(self.subscribeIcon.mas_right).with.offset(3);
         make.top.equalTo(self.contentView).with.offset(10);
         make.size.mas_offset(CGSizeMake(30, 12));
     }];
-    [self.documentary mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.followAction mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self)
         make.right.equalTo(self.mas_right).with.offset(-10);
         make.top.equalTo(self.contentView).with.offset(12);
         make.size.mas_offset(CGSizeMake(50, 25));
@@ -101,51 +104,60 @@
         make.size.mas_offset(CGSizeMake(SCREEN_WIDTH, 0.5));
     }];
     [self.tradingData mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self)
         make.left.equalTo(self.contentView).with.offset(10);
         make.top.equalTo(self.line.mas_bottom).with.offset(10);
         make.size.mas_offset(CGSizeMake(26, 25));
     }];
 
     [self.earningsRate mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self)
         make.left.equalTo(self.contentView).with.offset(SCREEN_WIDTH*0.25);
         make.top.equalTo(self.line.mas_bottom).with.offset(8);
         make.size.mas_offset(CGSizeMake(50, 32));
     }];
 
     [self.todayEarningsRate mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self)
         make.left.equalTo(self.contentView).with.offset(SCREEN_WIDTH*0.5);
         make.top.equalTo(self.line.mas_bottom).with.offset(8);
         make.size.mas_offset(CGSizeMake(55, 32));
     }];
 
     [self.positionsUsage mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self)
         make.left.equalTo(self.contentView).with.offset(SCREEN_WIDTH*0.75);
         make.top.equalTo(self.line.mas_bottom).with.offset(8);
         make.size.mas_offset(CGSizeMake(55, 32));
     }];
 
     [self.tradersPlan mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self)
         make.left.equalTo(self.contentView).with.offset(10);
         make.top.equalTo(self.tradingData.mas_bottom).with.offset(20);
         make.size.mas_offset(CGSizeMake(26, 25));
     }];
 
     [self.startTime mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self)
         make.left.equalTo(self.contentView).with.offset(SCREEN_WIDTH*0.25);
         make.top.equalTo(self.tradingData.mas_bottom).with.offset(18);
         make.size.mas_offset(CGSizeMake(50, 32));
     }];
     [self.endTime mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self)
         make.left.equalTo(self.contentView).with.offset(SCREEN_WIDTH*0.5);
         make.top.equalTo(self.tradingData.mas_bottom).with.offset(18);
         make.size.mas_offset(CGSizeMake(50, 32));
     }];
     [self.completed mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self)
         make.left.equalTo(self.contentView).with.offset(SCREEN_WIDTH*0.75);
         make.top.equalTo(self.tradingData.mas_bottom).with.offset(18);
         make.size.mas_offset(CGSizeMake(50, 32));
     }];
     [self.downLine mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self)
         make.centerX.equalTo(self.contentView);
         make.top.equalTo(self.tradersPlan.mas_bottom).with.offset(10);
         make.size.mas_offset(CGSizeMake(SCREEN_WIDTH, 10));
@@ -163,6 +175,12 @@
     [attributedString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:10] range:range];
     return attributedString;
 }
+
+-(void)followEarningsClick:(UIButton*)sender{
+    NSString *string = [NSString stringWithFormat:@"%ld",self.tag];
+    [self.viewModel.awesomeFollowActionClick sendNext:string];
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -217,18 +235,20 @@
     return _minimumTrading;
 }
 
--(UIButton *)documentary{
-    if (!_documentary) {
-        _documentary = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_documentary setBackgroundColor:RGB(250, 99, 32)];
-        [_documentary setTitle:@"跟单" forState:UIControlStateNormal];
-        [_documentary setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        _documentary.layer.masksToBounds = YES;
-        _documentary.layer.cornerRadius = 3;
-        [_documentary.titleLabel setFont:[UIFont systemFontOfSize:14]];
+-(UIButton *)followAction{
+    if (!_followAction) {
+        _followAction = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_followAction setBackgroundColor:RGB(250, 99, 32)];
+        [_followAction setTitle:@"跟单" forState:UIControlStateNormal];
+        [_followAction setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _followAction.layer.masksToBounds = YES;
+        _followAction.layer.cornerRadius = 3;
+        [_followAction addTarget:self action:@selector(followEarningsClick:) forControlEvents:UIControlEventTouchUpInside];
+        [_followAction.titleLabel setFont:[UIFont systemFontOfSize:14]];
     }
-    return _documentary;
+    return _followAction;
 }
+
 -(UIView *)line{
     if (!_line) {
         _line = [[UIView alloc] init];

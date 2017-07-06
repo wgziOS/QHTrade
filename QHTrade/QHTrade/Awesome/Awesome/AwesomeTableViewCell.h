@@ -8,8 +8,9 @@
 
 #import "BaseTableViewCell.h"
 #import "AwesomeModel.h"
+#import "AwesomeViewModel.h"
 
 @interface AwesomeTableViewCell : BaseTableViewCell
 @property(nonatomic,strong)AwesomeModel  *model;
-
+@property(nonatomic,strong)AwesomeViewModel *viewModel;
 @end

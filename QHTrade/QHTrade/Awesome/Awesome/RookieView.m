@@ -42,17 +42,20 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     int a = 1;
-    return a==1 ? 3:self.viewModel.dataArray.count;
+    return a==1 ? 3:self.viewModel.rookieDataArray.count;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 147;
+    return 150;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     AwesomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[NSString stringWithUTF8String:object_getClassName([AwesomeTableViewCell class])]];
-    
+    cell.tag = indexPath.row+5000;
+    cell.viewModel = self.viewModel;
     return cell;
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.viewModel.rookieCellClick sendNext:[NSString stringWithFormat:@"%ld",indexPath.row]];
+}
 /*
  // Only override drawRect: if you perform custom drawing.
  // An empty implementation adversely affects performance during animation.
