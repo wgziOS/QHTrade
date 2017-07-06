@@ -197,11 +197,14 @@
     return 8;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-
-    return 8;
+    if (section == 0) {
+        return 8;
+    }else return 0.1;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 8;
+    if (section == 0) {
+        return 4;
+    }else return 8;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     

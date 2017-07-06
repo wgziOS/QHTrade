@@ -45,7 +45,7 @@
         e.y = 0.875*h - (e.y - _min_Y)*0.8*h/(_max_Y - _min_Y);
         
         LineChartDescribe * describe = [[LineChartDescribe alloc]initWithtype:QHAnimationStrokeEnd inView:self];
-        [describe setStartTime:startTime andDuration:0.5f];
+        [describe setStartTime:startTime andDuration:0.65f];
         [describe addLineFrom:s toPoint:e color:[UIColor redColor]];
 //        startTime += 0.5f;
         
@@ -76,6 +76,9 @@
         NSString * string = _x_labels[i];
         UILabel * label= [[UILabel alloc]initWithFrame:CGRectMake(0.025*w+i*x_interval, 0, 0.2*w, 0.1*h)];
         label.backgroundColor = [UIColor clearColor];
+        if (i== 2) {
+            label.backgroundColor = [UIColor yellowColor];
+        }
         label.textAlignment = NSTextAlignmentCenter;
         label.font = [UIFont systemFontOfSize:w/28.0];
         label.text = string;
@@ -99,7 +102,6 @@
     
     UIView * view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0.1*w, h)];
     view.alpha = 0;
-//    view.backgroundColor = [UIColor redColor];
     
     for (int i = 0; i<_y_labels.count; i++) {
         
@@ -113,8 +115,11 @@
 //        [view addSubview:label];
         
         NSString * string = _y_labels[i];
-        UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0.833*h - y_interval*i, 0.08*w, h/12)];
+        UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0.833*h - y_interval*i + 5, 0.08*w, h/12)];
         label.backgroundColor = [UIColor clearColor];
+        if (i==2) {
+            label.backgroundColor = [UIColor redColor];
+        }
         label.textAlignment = NSTextAlignmentRight;
         label.font = [UIFont systemFontOfSize:w/28.0];
         label.text = string;

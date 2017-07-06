@@ -25,7 +25,7 @@
                             <constraint firstAttribute="height" constant="20" id="NpI-Yp-vdJ"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoW-Zu-D6f">
@@ -36,20 +36,20 @@
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <state key="normal" title="更换">
-                            <color key="titleColor" red="0.71764705882352942" green="0.55686274509803924" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleColor" red="1" green="0.38431372549019605" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
                         <connections>
                             <action selector="changeBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="pzZ-TX-0d2"/>
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345678901" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNV-Mg-QRH">
-                        <rect key="frame" x="156" y="14" width="105" height="20"/>
+                        <rect key="frame" x="161" y="14" width="105" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="ZPU-Zi-sRb"/>
                             <constraint firstAttribute="width" constant="105" id="c5X-FP-idG"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipo-vx-IMa">
@@ -76,7 +76,7 @@
                     <constraint firstItem="C5b-oQ-2i3" firstAttribute="centerY" secondItem="yk4-4e-gSK" secondAttribute="centerY" id="ZaR-mi-JPc"/>
                     <constraint firstAttribute="trailing" secondItem="C5b-oQ-2i3" secondAttribute="trailing" constant="15" id="cax-F6-t89"/>
                     <constraint firstItem="ipo-vx-IMa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="f3U-DZ-u4S"/>
-                    <constraint firstItem="GoW-Zu-D6f" firstAttribute="leading" secondItem="zNV-Mg-QRH" secondAttribute="trailing" constant="5" id="gdO-lx-Syz"/>
+                    <constraint firstItem="GoW-Zu-D6f" firstAttribute="leading" secondItem="zNV-Mg-QRH" secondAttribute="trailing" id="gdO-lx-Syz"/>
                     <constraint firstItem="GoW-Zu-D6f" firstAttribute="centerY" secondItem="yk4-4e-gSK" secondAttribute="centerY" id="xJH-TW-2fj"/>
                     <constraint firstAttribute="trailing" secondItem="ipo-vx-IMa" secondAttribute="trailing" id="xaV-Ud-WE7"/>
                 </constraints>

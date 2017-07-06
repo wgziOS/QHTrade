@@ -125,11 +125,14 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
     PersonalSecondCell *colectCell = [tableView dequeueReusableCellWithIdentifier:kPersonalSecondCell];
+    colectCell.selectionStyle = UITableViewCellSelectionStyleNone;
     PersonalButtonCell * btnCell = [tableView dequeueReusableCellWithIdentifier:kPersonalButtonCell];
+    btnCell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     switch (indexPath.row) {
         case 0:
         {
+            
             return colectCell;
         }
             break;

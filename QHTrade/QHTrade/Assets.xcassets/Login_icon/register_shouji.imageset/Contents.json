@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "btn_bg_image.png",
+      "filename" : "register_shouji.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "btn_bg_image@2x.png",
+      "filename" : "register_shouji@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "btn_bg_image@3x.png",
+      "filename" : "register_shouji@3x.png",
       "scale" : "3x"
     }
   ],

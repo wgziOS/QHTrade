@@ -42,7 +42,7 @@
                         <constraint firstAttribute="height" constant="40" id="ZYB-qm-AOy"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <state key="normal" title="确定" backgroundImage="btn_bg_image"/>
+                    <state key="normal" title="确定" backgroundImage="btn_ablebg_image"/>
                     <connections>
                         <action selector="commitBtnClick:" destination="-1" eventType="touchUpInside" id="jyP-ke-8nY"/>
                     </connections>
@@ -63,6 +63,6 @@
         </view>
     </objects>
     <resources>
-        <image name="btn_bg_image" width="355" height="40"/>
+        <image name="btn_ablebg_image" width="343" height="40"/>
     </resources>
 </document>

@@ -23,8 +23,9 @@
     }];
     [self.rightSwitch setOn:YES];
     
-    self.rightSwitch.onTintColor = RGB(53, 164, 250);
-
+    self.rightSwitch.onTintColor = RGB(255,98,1);
+//     RGB(230,230,230);
+    self.rightSwitch.tintColor = RGB(230,230,230);
     [self.rightSwitch addTarget:self action:@selector(switchChange:) forControlEvents:UIControlEventValueChanged];
 }
 

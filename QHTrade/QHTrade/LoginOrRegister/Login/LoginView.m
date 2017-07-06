@@ -143,7 +143,7 @@
         [_loginButton setTitle:@"登录" forState:UIControlStateNormal];
         [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         _loginButton.titleLabel.font = [UIFont systemFontOfSize:16.0f];
-        [_loginButton setBackgroundImage:[UIImage imageNamed:@"btn_bg_image"] forState:UIControlStateNormal];
+        [_loginButton setBackgroundImage:[UIImage imageNamed:@"btn_ablebg_image"] forState:UIControlStateNormal];
         [_loginButton setBackgroundImage:[UIImage imageNamed:@"btn_unable_bg_image"] forState:UIControlStateDisabled];
     
     }
