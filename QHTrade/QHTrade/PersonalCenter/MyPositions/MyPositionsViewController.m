@@ -1,23 +1,22 @@
 //
-//  FocusViewController.m
+//  MyPositionsViewController.m
 //  QHTrade
 //
-//  Created by 吴桂钊 on 2017/6/29.
+//  Created by 吴桂钊 on 2017/7/7.
 //  Copyright © 2017年 qihuo.RDTrade.com. All rights reserved.
 //
 
-#import "FocusViewController.h"
+#import "MyPositionsViewController.h"
 
-@interface FocusViewController ()
+@interface MyPositionsViewController ()
 
 @end
 
-@implementation FocusViewController
+@implementation MyPositionsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.title = @"关注";
+    self.title = @"我的持仓";
 }
 
 - (void)didReceiveMemoryWarning {

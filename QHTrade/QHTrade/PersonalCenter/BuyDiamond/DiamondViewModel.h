@@ -9,5 +9,5 @@
 #import "BaseViewModel.h"
 
 @interface DiamondViewModel : BaseViewModel
-
+@property (nonatomic,strong) RACSubject *commitBtnSubjet;
 @end

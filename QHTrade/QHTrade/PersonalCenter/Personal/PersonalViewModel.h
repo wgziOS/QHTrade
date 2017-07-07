@@ -14,7 +14,7 @@
 @property (nonatomic,strong) RACSubject *setBtnClick;//设置
 @property (nonatomic,strong) RACSubject *diamondBtnClick;//钻石
 @property (nonatomic,strong) RACSubject *middleCellClick;//中间btn点击
-
+@property (nonatomic,strong) RACSubject *positionsClick;//持仓点击
 
 @property (nonatomic,strong) RACSubject *headImgClick;//头像
 @property (nonatomic,strong) RACSubject *questionClick;//问号

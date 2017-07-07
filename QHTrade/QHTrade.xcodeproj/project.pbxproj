@@ -23,8 +23,6 @@
 		B21BEC491F04894500354274 /* ChangeNextViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC481F04894500354274 /* ChangeNextViewModel.m */; };
 		B21BEC4E1F049AD100354274 /* ChangeNickNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC4C1F049AD100354274 /* ChangeNickNameViewController.m */; };
 		B21BEC4F1F049AD100354274 /* ChangeNickNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21BEC4D1F049AD100354274 /* ChangeNickNameViewController.xib */; };
-		B21BEC621F04AB0C00354274 /* MyVisitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC611F04AB0C00354274 /* MyVisitorViewController.m */; };
-		B21BEC661F04AD8F00354274 /* FocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC651F04AD8F00354274 /* FocusViewController.m */; };
 		B21BEC6B1F04F58600354274 /* PersonalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC6A1F04F58600354274 /* PersonalModel.m */; };
 		B21E72D11F0B591C0081CF1A /* PersonalButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B21E72CF1F0B591C0081CF1A /* PersonalButtonCell.m */; };
 		B21E72D21F0B591C0081CF1A /* PersonalButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21E72D01F0B591C0081CF1A /* PersonalButtonCell.xib */; };
@@ -105,6 +103,11 @@
 		B2F64BE21F0F147C00BB8734 /* DiamondPayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F64BE01F0F147B00BB8734 /* DiamondPayCell.m */; };
 		B2F64BE31F0F147C00BB8734 /* DiamondPayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F64BE11F0F147B00BB8734 /* DiamondPayCell.xib */; };
 		B2F64BE61F0F149500BB8734 /* DiamondViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F64BE51F0F149500BB8734 /* DiamondViewModel.m */; };
+		B2F64BE91F0F2FD100BB8734 /* DiamondHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F64BE81F0F2FD100BB8734 /* DiamondHeadView.m */; };
+		B2F64BED1F0F37C400BB8734 /* DiamondCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F64BEB1F0F37C400BB8734 /* DiamondCollectionCell.m */; };
+		B2F64BEE1F0F37C400BB8734 /* DiamondCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F64BEC1F0F37C400BB8734 /* DiamondCollectionCell.xib */; };
+		B2F64BF31F0F733400BB8734 /* UIButton+BackgroundColorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F64BF21F0F733400BB8734 /* UIButton+BackgroundColorExtension.m */; };
+		B2F64BF71F0F7D0400BB8734 /* MyPositionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F64BF61F0F7D0400BB8734 /* MyPositionsViewController.m */; };
 		B73AFA0A506780FED210E1D0 /* Pods_QHTrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972BB4CEA1349E67DFAA5B40 /* Pods_QHTrade.framework */; };
 		CE30CA151F05F93F00778172 /* CFFEXHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9BB1F05F93F00778172 /* CFFEXHeadView.m */; };
 		CE30CA161F05F93F00778172 /* CFFEXView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9BD1F05F93F00778172 /* CFFEXView.m */; };
@@ -249,10 +252,6 @@
 		B21BEC4B1F049AD100354274 /* ChangeNickNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeNickNameViewController.h; sourceTree = "<group>"; };
 		B21BEC4C1F049AD100354274 /* ChangeNickNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeNickNameViewController.m; sourceTree = "<group>"; };
 		B21BEC4D1F049AD100354274 /* ChangeNickNameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeNickNameViewController.xib; sourceTree = "<group>"; };
-		B21BEC601F04AB0C00354274 /* MyVisitorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyVisitorViewController.h; sourceTree = "<group>"; };
-		B21BEC611F04AB0C00354274 /* MyVisitorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyVisitorViewController.m; sourceTree = "<group>"; };
-		B21BEC641F04AD8F00354274 /* FocusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FocusViewController.h; sourceTree = "<group>"; };
-		B21BEC651F04AD8F00354274 /* FocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FocusViewController.m; sourceTree = "<group>"; };
 		B21BEC691F04F58600354274 /* PersonalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalModel.h; sourceTree = "<group>"; };
 		B21BEC6A1F04F58600354274 /* PersonalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalModel.m; sourceTree = "<group>"; };
 		B21E72CE1F0B591C0081CF1A /* PersonalButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalButtonCell.h; sourceTree = "<group>"; };
@@ -394,6 +393,15 @@
 		B2F64BE11F0F147B00BB8734 /* DiamondPayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiamondPayCell.xib; sourceTree = "<group>"; };
 		B2F64BE41F0F149500BB8734 /* DiamondViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiamondViewModel.h; sourceTree = "<group>"; };
 		B2F64BE51F0F149500BB8734 /* DiamondViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiamondViewModel.m; sourceTree = "<group>"; };
+		B2F64BE71F0F2FD100BB8734 /* DiamondHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiamondHeadView.h; sourceTree = "<group>"; };
+		B2F64BE81F0F2FD100BB8734 /* DiamondHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiamondHeadView.m; sourceTree = "<group>"; };
+		B2F64BEA1F0F37C400BB8734 /* DiamondCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiamondCollectionCell.h; sourceTree = "<group>"; };
+		B2F64BEB1F0F37C400BB8734 /* DiamondCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiamondCollectionCell.m; sourceTree = "<group>"; };
+		B2F64BEC1F0F37C400BB8734 /* DiamondCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiamondCollectionCell.xib; sourceTree = "<group>"; };
+		B2F64BF11F0F733400BB8734 /* UIButton+BackgroundColorExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BackgroundColorExtension.h"; sourceTree = "<group>"; };
+		B2F64BF21F0F733400BB8734 /* UIButton+BackgroundColorExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BackgroundColorExtension.m"; sourceTree = "<group>"; };
+		B2F64BF51F0F7D0400BB8734 /* MyPositionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPositionsViewController.h; sourceTree = "<group>"; };
+		B2F64BF61F0F7D0400BB8734 /* MyPositionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPositionsViewController.m; sourceTree = "<group>"; };
 		CE30C9BA1F05F93F00778172 /* CFFEXHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFFEXHeadView.h; sourceTree = "<group>"; };
 		CE30C9BB1F05F93F00778172 /* CFFEXHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFFEXHeadView.m; sourceTree = "<group>"; };
 		CE30C9BC1F05F93F00778172 /* CFFEXView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFFEXView.h; sourceTree = "<group>"; };
@@ -689,17 +697,16 @@
 		B21BD2C11EDFB9E500BAD836 /* PersonalCenter */ = {
 			isa = PBXGroup;
 			children = (
+				B2BE00F31EE93CE30012AD3E /* Personal */,
+				B2F64BF41F0F7CA000BB8734 /* MyPositions */,
 				B2C703FB1F0DD1A50029EC4D /* BuyDiamond */,
 				B2339C2C1F05E97100B336BB /* TradeAccountBind */,
-				B2BE00F31EE93CE30012AD3E /* Personal */,
 				B2BE012E1EE943D30012AD3E /* Setting */,
 				B2CCA98E1F02519A002BA562 /* AccountSet */,
 				B21BEC4A1F049AA100354274 /* ChangeNickname */,
 				B2D972181F0396F700A04798 /* ChangePhone */,
 				B2CCA9881F0246E0002BA562 /* AboutUS */,
 				B2ADBAD11F0C8BF30009D3BC /* TradeStatistic */,
-				B21BEC631F04AD7400354274 /* Focus */,
-				B21BEC5F1F04AA7C00354274 /* MyVisitor */,
 				B203B3CE1F00D741002581F6 /* PromptView */,
 			);
 			path = PersonalCenter;
@@ -713,24 +720,6 @@
 				B21BEC4D1F049AD100354274 /* ChangeNickNameViewController.xib */,
 			);
 			path = ChangeNickname;
-			sourceTree = "<group>";
-		};
-		B21BEC5F1F04AA7C00354274 /* MyVisitor */ = {
-			isa = PBXGroup;
-			children = (
-				B21BEC601F04AB0C00354274 /* MyVisitorViewController.h */,
-				B21BEC611F04AB0C00354274 /* MyVisitorViewController.m */,
-			);
-			path = MyVisitor;
-			sourceTree = "<group>";
-		};
-		B21BEC631F04AD7400354274 /* Focus */ = {
-			isa = PBXGroup;
-			children = (
-				B21BEC641F04AD8F00354274 /* FocusViewController.h */,
-				B21BEC651F04AD8F00354274 /* FocusViewController.m */,
-			);
-			path = Focus;
 			sourceTree = "<group>";
 		};
 		B21BEC671F04CF7E00354274 /* Cell */ = {
@@ -1097,6 +1086,11 @@
 			children = (
 				B2F64BD61F0F141100BB8734 /* DiamondMainView.h */,
 				B2F64BD71F0F141100BB8734 /* DiamondMainView.m */,
+				B2F64BE71F0F2FD100BB8734 /* DiamondHeadView.h */,
+				B2F64BE81F0F2FD100BB8734 /* DiamondHeadView.m */,
+				B2F64BEA1F0F37C400BB8734 /* DiamondCollectionCell.h */,
+				B2F64BEB1F0F37C400BB8734 /* DiamondCollectionCell.m */,
+				B2F64BEC1F0F37C400BB8734 /* DiamondCollectionCell.xib */,
 				B2F64BDF1F0F147B00BB8734 /* DiamondPayCell.h */,
 				B2F64BE01F0F147B00BB8734 /* DiamondPayCell.m */,
 				B2F64BE11F0F147B00BB8734 /* DiamondPayCell.xib */,
@@ -1216,6 +1210,15 @@
 				B21BEC481F04894500354274 /* ChangeNextViewModel.m */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2F64BF41F0F7CA000BB8734 /* MyPositions */ = {
+			isa = PBXGroup;
+			children = (
+				B2F64BF51F0F7D0400BB8734 /* MyPositionsViewController.h */,
+				B2F64BF61F0F7D0400BB8734 /* MyPositionsViewController.m */,
+			);
+			path = MyPositions;
 			sourceTree = "<group>";
 		};
 		CE30C9B91F05F93F00778172 /* CFFEX */ = {
@@ -1752,6 +1755,8 @@
 				CEF378D31F0DFFF200C32D0D /* NSAttributedString+Extension.m */,
 				CEF378CF1F0DE0D900C32D0D /* UILabel+Extension.h */,
 				CEF378D01F0DE0D900C32D0D /* UILabel+Extension.m */,
+				B2F64BF11F0F733400BB8734 /* UIButton+BackgroundColorExtension.h */,
+				B2F64BF21F0F733400BB8734 /* UIButton+BackgroundColorExtension.m */,
 			);
 			path = Gategory;
 			sourceTree = "<group>";
@@ -1895,6 +1900,7 @@
 			files = (
 				B2BE01331EE943F30012AD3E /* SettingViewController.xib in Resources */,
 				B2339C601F05F3E000B336BB /* RegisterViewController.xib in Resources */,
+				B2F64BEE1F0F37C400BB8734 /* DiamondCollectionCell.xib in Resources */,
 				B2339C521F05F3B300B336BB /* ForgetPasswordViewController.xib in Resources */,
 				B2A215111EDEA9E900B19A4A /* LaunchScreen.storyboard in Resources */,
 				B2D972171F037D3100A04798 /* AccountSetSexCell.xib in Resources */,
@@ -1999,6 +2005,7 @@
 				B2339C611F05F3E000B336BB /* RegisterViewController.m in Sources */,
 				B21BEC4E1F049AD100354274 /* ChangeNickNameViewController.m in Sources */,
 				B2339C531F05F3B300B336BB /* ForgetInputNewPWViewController.m in Sources */,
+				B2F64BF31F0F733400BB8734 /* UIButton+BackgroundColorExtension.m in Sources */,
 				CEE2D5431F0A5B44005AC8DA /* AwesomeDetailsModel.m in Sources */,
 				B21BEC431F04891700354274 /* ChangeNextViewController.m in Sources */,
 				CE30CA2A1F05F93F00778172 /* PositionView.m in Sources */,
@@ -2030,6 +2037,7 @@
 				CE30CA3A1F05F93F00778172 /* ZZCEView.m in Sources */,
 				CEF378D41F0DFFF200C32D0D /* NSAttributedString+Extension.m in Sources */,
 				CE30CA621F061E6600778172 /* AwesomeView.m in Sources */,
+				B2F64BED1F0F37C400BB8734 /* DiamondCollectionCell.m in Sources */,
 				CEF378C51F0C87B600C32D0D /* TradingSignalsModel.m in Sources */,
 				CEF378CB1F0CDDE500C32D0D /* FollowEarningChooseHeadView.m in Sources */,
 				B2C704161F0DE1960029EC4D /* DiamondRecordCell.m in Sources */,
@@ -2052,7 +2060,6 @@
 				CEF331081EDF9CC50032F0EF /* ViewBaseController.m in Sources */,
 				B2CCA9911F0251C2002BA562 /* AccountSetViewController.m in Sources */,
 				CEE2D5231F0A3907005AC8DA /* FollowEarningsDetailsViewController.m in Sources */,
-				B21BEC621F04AB0C00354274 /* MyVisitorViewController.m in Sources */,
 				B2339C621F05F3E000B336BB /* RegisterView.m in Sources */,
 				B2339C551F05F3B300B336BB /* ForgetPasswordViewController.m in Sources */,
 				B2BE01191EE93D260012AD3E /* BarChart.m in Sources */,
@@ -2083,6 +2090,7 @@
 				B2ADBADD1F0C8C830009D3BC /* TradeStatisticViewModel.m in Sources */,
 				CEE2D5371F0A5A86005AC8DA /* AwesomeDetailsViewController.m in Sources */,
 				CEE2D52F1F0A3A3F005AC8DA /* FollowEarningsDetailsViewModel.m in Sources */,
+				B2F64BE91F0F2FD100BB8734 /* DiamondHeadView.m in Sources */,
 				B21BEC491F04894500354274 /* ChangeNextViewModel.m in Sources */,
 				B2BE01321EE943F30012AD3E /* SettingViewController.m in Sources */,
 				CE30CA211F05F93F00778172 /* DynamicsViewModel.m in Sources */,
@@ -2093,7 +2101,6 @@
 				CEE2D5121F0A1C1B005AC8DA /* FollowEarningsTopView.m in Sources */,
 				CE30CA351F05F93F00778172 /* SHFEHeadView.m in Sources */,
 				CEE2D5181F0A1F07005AC8DA /* FollowEarningsTopTableCell.m in Sources */,
-				B21BEC661F04AD8F00354274 /* FocusViewController.m in Sources */,
 				CEDD81661F0A89EC00B81EDB /* FollowEarningChooseViewModel.m in Sources */,
 				B2339C5F1F05F3E000B336BB /* RegisterViewModel.m in Sources */,
 				CEF3311F1EDFB1E70032F0EF /* QHRequest+Api.m in Sources */,
@@ -2136,6 +2143,7 @@
 				B236BBE91F0A0EFA00D8671D /* PersonalTabeHeadView.m in Sources */,
 				B2BE01241EE93D260012AD3E /* PersonalViewModel.m in Sources */,
 				B2BE01181EE93D260012AD3E /* QHLineChartView.m in Sources */,
+				B2F64BF71F0F7D0400BB8734 /* MyPositionsViewController.m in Sources */,
 				CE30CA201F05F93F00778172 /* DynamicsViewController.m in Sources */,
 				B2BE01261EE93D260012AD3E /* TradeRecordsCell.m in Sources */,
 				CEE2D5151F0A1CCA005AC8DA /* CanFollowView.m in Sources */,

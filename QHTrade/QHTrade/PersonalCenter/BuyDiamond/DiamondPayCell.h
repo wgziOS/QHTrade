@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+static NSString * const kDiamondPayCell = @"DiamondPayCell";
 @interface DiamondPayCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *payImgView;
 
 @end

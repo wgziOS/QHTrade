@@ -125,6 +125,8 @@
         _diamondButton.titleLabel.font = [UIFont systemFontOfSize:12.0f];
         [_diamondButton setTitleColor:RGB(68, 68, 68) forState:UIControlStateNormal];
 
+        [_diamondButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 5, 0, -5)];
+        
         [[_diamondButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
             [self.viewModel.diamondBtnClick sendNext:nil];
         }];
