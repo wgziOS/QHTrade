@@ -36,33 +36,16 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="253-fO-uHz">
-                    <rect key="frame" x="15" y="85" width="345" height="40"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="ZYB-qm-AOy"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <state key="normal" title="确定" backgroundImage="btn_bg_image"/>
-                    <connections>
-                        <action selector="commitBtnClick:" destination="-1" eventType="touchUpInside" id="jyP-ke-8nY"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="253-fO-uHz" firstAttribute="top" secondItem="Amd-Nn-MU8" secondAttribute="bottom" constant="30" id="H4V-4X-6kg"/>
-                <constraint firstItem="253-fO-uHz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Hn9-OB-Vi0"/>
                 <constraint firstItem="3SW-Rg-z3G" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="IYa-0g-CW3"/>
                 <constraint firstItem="Amd-Nn-MU8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="JLT-0W-fiE"/>
                 <constraint firstAttribute="trailing" secondItem="3SW-Rg-z3G" secondAttribute="trailing" id="PkK-up-pw5"/>
                 <constraint firstAttribute="trailing" secondItem="Amd-Nn-MU8" secondAttribute="trailing" constant="15" id="UMn-uZ-cQx"/>
-                <constraint firstAttribute="trailing" secondItem="253-fO-uHz" secondAttribute="trailing" constant="15" id="ghW-8O-ZPM"/>
                 <constraint firstItem="3SW-Rg-z3G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nul-v8-3re"/>
                 <constraint firstItem="Amd-Nn-MU8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="xBk-OJ-6Jb"/>
             </constraints>
         </view>
     </objects>
-    <resources>
-        <image name="btn_bg_image" width="355" height="40"/>
-    </resources>
 </document>

@@ -56,7 +56,7 @@
 - (UIBarButtonItem *)leftButton
 {
     UIButton* btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
-    [btn setImage:[UIImage imageNamed:@"navigation_back_icon"] forState:UIControlStateNormal];//设置左边按钮的图片
+    [btn setImage:[UIImage imageNamed:@"navigaion_fanhui"] forState:UIControlStateNormal];//设置左边按钮的图片
     [btn addTarget:self action:@selector(actionOnTouchBackButton:) forControlEvents:UIControlEventTouchUpInside];//设置按钮的点击事件
     return [[UIBarButtonItem alloc] initWithCustomView:btn];
     

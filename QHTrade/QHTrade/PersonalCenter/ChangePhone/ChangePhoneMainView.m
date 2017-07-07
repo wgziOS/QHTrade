@@ -132,7 +132,7 @@
         [_commitButton setTitle:@"提交验证" forState:UIControlStateNormal];
         [_commitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         _commitButton.titleLabel.font = [UIFont systemFontOfSize:16.0f];
-        [_commitButton setBackgroundImage:[UIImage imageNamed:@"btn_bg_image"] forState:UIControlStateNormal];
+        [_commitButton setBackgroundImage:[UIImage imageNamed:@"btn_ablebg_image"] forState:UIControlStateNormal];
         [_commitButton addTarget:self action:@selector(commitClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _commitButton;

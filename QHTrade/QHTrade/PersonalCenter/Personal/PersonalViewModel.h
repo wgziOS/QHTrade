@@ -22,4 +22,5 @@
 @property (nonatomic,strong) RACSubject *focusClick;
 @property (nonatomic,strong) RACCommand *userInfoCommand;
 @property (nonatomic,strong) RACSubject *refreshUI;//刷新信号
+
 @end

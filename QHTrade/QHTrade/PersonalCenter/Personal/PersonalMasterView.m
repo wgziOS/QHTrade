@@ -68,10 +68,10 @@
 //登录账户
 -(void)tradeAccountBtnClick{
 
-
+    
     //隐藏topView
 //    WS(weakSelf)
-    [self updateConstraints];
+//    [self updateConstraints];
 //    [self.tableView mas_updateConstraints:^(MASConstraintMaker *make) {
 //        make.top.equalTo(weakSelf.mas_top);
 //    }];
@@ -91,8 +91,7 @@
         self.topViewLabel1.hidden = YES;
 
     }];
-    //2秒后执行
-//    [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(topViewAppear) userInfo:nil repeats:NO];
+
     
 }
 -(void)topViewAppear{
@@ -125,11 +124,14 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
     PersonalSecondCell *colectCell = [tableView dequeueReusableCellWithIdentifier:kPersonalSecondCell];
+    colectCell.selectionStyle = UITableViewCellSelectionStyleNone;
     PersonalButtonCell * btnCell = [tableView dequeueReusableCellWithIdentifier:kPersonalButtonCell];
+    btnCell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     switch (indexPath.row) {
         case 0:
         {
+            
             return colectCell;
         }
             break;
