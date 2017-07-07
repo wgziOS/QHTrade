@@ -14,8 +14,23 @@
 
 @implementation DiamondMainView
 
+-(instancetype)initWithViewModel:(id<BaseViewModelProtocol>)viewModel{
+    self.viewModel = (DiamondViewModel *)viewModel;
+    return [super initWithViewModel:viewModel];
+}
 
+#pragma mark - table协议方法
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return nil;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 50;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
+    return 2;
+}
+#pragma mark - 尾视图
 -(UIView *)footView{
 
     if (!_footView) {
@@ -76,7 +91,7 @@
     }
     return _headView;
 }
-
+#pragma mark tableView 懒加载
 -(UITableView *)tableView{
 
     if (!_tableView) {
