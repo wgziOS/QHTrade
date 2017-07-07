@@ -13,8 +13,9 @@
 @property (nonatomic,strong) UITextField *phoneNumTextfield;
 @property (nonatomic,strong) UITextField *passWordTextfield;
 @property (nonatomic,strong) UIButton *forgetButton;
-@property (nonatomic,strong) UIImageView *smallLogoImgView;
-@property (nonatomic,strong) UIButton *quickLoginButton;
+@property (nonatomic,strong) UIImageView *phoneImgView;
+@property (nonatomic,strong) UIImageView *passwordImgView;
+
 @property (nonatomic,strong) UIButton *loginButton;
 @property (nonatomic,strong) UIView *line;
 @property (nonatomic,strong) UIView *line1;
