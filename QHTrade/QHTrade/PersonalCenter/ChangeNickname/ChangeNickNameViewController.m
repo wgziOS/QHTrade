@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title=@"更换用户名";
+    self.nickNameTextfield.placeholder = @"xxxx";
 }
 -(void)saveBtnClick:(id)sender{
 
@@ -27,9 +28,10 @@
 
     UIButton* btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 23)];
     [btn setTitle:@"保存" forState:UIControlStateNormal];
-    [btn setTitleColor:RGB(178, 136, 66) forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
     btn.titleLabel.font = [UIFont systemFontOfSize:15.0f];
-    [btn setBackgroundColor:[UIColor whiteColor]];
+    [btn setBackgroundColor:RGB(255,98,1)];
     btn.layer.cornerRadius = 4;
     btn.layer.masksToBounds = YES;
     

@@ -161,8 +161,8 @@
     [self.registerButton mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.equalTo(self.shengmingLabel.mas_bottom).with.offset(45);
-        make.left.equalTo(weakSelf).with.offset(10);
-        make.right.equalTo(weakSelf).with.offset(-10);
+        make.left.equalTo(weakSelf).with.offset(16);
+        make.right.equalTo(weakSelf).with.offset(-16);
         make.height.mas_equalTo(40);
     }];
     
@@ -176,16 +176,18 @@
     if (sender.selected) {
         
         NSLog(@"选中");
+        [self.viewModel.tickClickSubject sendNext:@"1"];
     }else{
         
         NSLog(@"未选中");
+        [self.viewModel.tickClickSubject sendNext:@"0"];
     }
 }
 -(UIButton *)tickButton{
 
     if (!_tickButton) {
         _tickButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        _tickButton.selected = YES;
+        _tickButton.selected = NO;
         [_tickButton setImage:[UIImage imageNamed:@"register_tickBtn"] forState:UIControlStateNormal];
         [_tickButton setImage:[UIImage imageNamed:@"register_tickBtn_xuan"] forState:UIControlStateSelected];
         [_tickButton addTarget:self action:@selector(tickBtnClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -329,14 +331,6 @@
     }
     return _passwordImgView;
 }
--(UIImageView *)codeImgView{
-    
-    if (!_codeImgView) {
-        _codeImgView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"register_yanzhengma"]];
-        
-    }
-    return _codeImgView;
-}
 -(UIImageView *)phoneImgView{
     
     if (!_phoneImgView) {
@@ -345,6 +339,15 @@
     }
     return _phoneImgView;
 }
+-(UIImageView *)codeImgView{
+    
+    if (!_codeImgView) {
+        _codeImgView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"register_yanzhengma"]];
+        
+    }
+    return _codeImgView;
+}
+
 -(UIImageView *)topImgView{
 
     if (!_topImgView) {

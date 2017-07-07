@@ -17,7 +17,8 @@
 #import "FocusViewController.h"
 #import "PersonalMasterView.h"
 #import "TradeStatisticViewController.h"
-
+#import "DiamondViewController.h"
+#import "TradeAccountViewController.h"
 
 @interface PersonalViewController ()
 @property (nonatomic,strong)PersonalMainView * mainView;
@@ -101,22 +102,15 @@
     
     
     [[self.viewModel.diamondBtnClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
-        showMassage(@"点击了钻石")
+//        showMassage(@"点击了钻石")
+        DiamondViewController * DVC = [[DiamondViewController alloc]init];
+        [weakSelf.navigationController pushViewController:DVC animated:YES];
     }];
     
     [[self.viewModel.headImgClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
         NSLog(@"头像点击");
     }];
     
-    [[self.viewModel.questionClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
-        NSLog(@"问号点击");
-        PromptView * Pview = [[PromptView alloc]initWithTitleString:@"温馨提示" SubTitleString:@"每日登录和补充完善个人资料可获得钻石哦！"];
-        [Pview show];
-        Pview.goonBlock = ^(){
-           
-        };
-        
-    }];
     
     [[self.viewModel.visitorsClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
         //
@@ -132,13 +126,13 @@
     }];
     
    
-//    [[self.viewModel.userInfoCommand executionSignals] subscribeNext:^(id  _Nullable x) {
-//        
-//        [x subscribeNext:^(id  _Nullable x) {
-//            NSLog(@"userinfo= %@",x);
-//        }];
-//    }];
-//    
+    [[self.viewModel.tradeAccountLoginBtnClick  takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
+        
+        TradeAccountViewController * TVC = [[TradeAccountViewController alloc]init];
+        [weakSelf.navigationController pushViewController:TVC animated:YES];
+        
+    }];
+    
     /*
 
      */
