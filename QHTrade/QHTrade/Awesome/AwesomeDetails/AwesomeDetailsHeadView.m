@@ -82,13 +82,13 @@
     
     [self.praise mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
-        make.right.equalTo(self.mas_right).with.offset(-20);
-        make.top.equalTo(self).with.offset(10);
-        make.size.mas_offset(CGSizeMake(15, 16));
+        make.right.equalTo(self.mas_right).with.offset(-13);
+        make.top.equalTo(self).with.offset(4);
+        make.size.mas_offset(CGSizeMake(30, 30));
     }];
     [self.praiseAcount mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
-        make.right.equalTo(self.praise.mas_left).with.offset(-7);
+        make.right.equalTo(self.praise.mas_left);
         make.top.equalTo(self).with.offset(12);
         make.size.mas_offset(CGSizeMake(180, 15));
     }];
@@ -158,16 +158,6 @@
 
 }
 
--(NSAttributedString*)labelAddAttributedStringWith:(NSString*)text withRange:(NSRange)range{
-    NSMutableParagraphStyle *paragraph = [[NSMutableParagraphStyle alloc] init];
-    paragraph.alignment = NSTextAlignmentCenter;
-    paragraph.lineSpacing = 2; // 行距
-    NSDictionary *attributedDic = @{NSFontAttributeName:[UIFont systemFontOfSize:15],NSForegroundColorAttributeName:[UIColor blackColor],NSParagraphStyleAttributeName:paragraph};
-    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text attributes:attributedDic];
-    [attributedString addAttribute:NSForegroundColorAttributeName value:RGB(50, 51, 52) range:range];
-    [attributedString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:10] range:range];
-    return attributedString;
-}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -269,7 +259,7 @@
     if (!_earningsRate) {
         _earningsRate = [[UILabel alloc] init];
         _earningsRate.numberOfLines = 0;
-        _earningsRate.attributedText = [self labelAddAttributedStringWith:@"收益率\n100%" withRange:NSMakeRange(0, 3)];
+        _earningsRate.attributedText = [NSAttributedString getAttributedStringWithString:@"收益率\n100%" littlefont:10 bigFont:15 defultTextColor:[UIColor blackColor] specialColor:RGB(50, 51, 52) range:NSMakeRange(0, 3)];
     }
     return _earningsRate ;
 }
@@ -278,7 +268,7 @@
     if (!_todayEarningsRate) {
         _todayEarningsRate = [[UILabel alloc] init];
         _todayEarningsRate.numberOfLines = 0;
-        _todayEarningsRate.attributedText =[self labelAddAttributedStringWith:@"今日收益率\n100%" withRange:NSMakeRange(0, 5)];
+        _todayEarningsRate.attributedText = [NSAttributedString getAttributedStringWithString:@"今日收益率\n100%" littlefont:10 bigFont:15 defultTextColor:[UIColor blackColor] specialColor:RGB(50, 51, 52) range:NSMakeRange(0, 5)];
         
     }
     return _todayEarningsRate ;
@@ -288,7 +278,7 @@
     if (!_positionsUsage) {
         _positionsUsage = [[UILabel alloc] init];
         _positionsUsage.numberOfLines = 0;
-        _positionsUsage.attributedText = [self labelAddAttributedStringWith:@"仓位使用率\n100%" withRange:NSMakeRange(0, 5)];
+        _positionsUsage.attributedText = [NSAttributedString getAttributedStringWithString:@"仓位使用率\n100%" littlefont:10 bigFont:15 defultTextColor:[UIColor blackColor] specialColor:RGB(50, 51, 52) range:NSMakeRange(0, 5)];
     }
     return _positionsUsage;
 }
@@ -297,7 +287,7 @@
     if (!_startTime) {
         _startTime = [[UILabel alloc] init];
         _startTime.numberOfLines = 0;
-        _startTime.attributedText = [self labelAddAttributedStringWith:@"开始时间\n06-20" withRange:NSMakeRange(0, 4)];
+        _startTime.attributedText = [NSAttributedString getAttributedStringWithString:@"开始时间\n06-20" littlefont:10 bigFont:15 defultTextColor:[UIColor blackColor] specialColor:RGB(50, 51, 52) range:NSMakeRange(0, 4)];
     }
     return _startTime;
 }
@@ -306,8 +296,7 @@
     if (!_endTime) {
         _endTime = [[UILabel alloc] init];
         _endTime.numberOfLines = 0;
-        _endTime.attributedText =[self labelAddAttributedStringWith:@"结束时间\n08-23" withRange:NSMakeRange(0, 4)];
-        
+        _endTime.attributedText = [NSAttributedString getAttributedStringWithString:@"结束时间\n08-23" littlefont:10 bigFont:15 defultTextColor:[UIColor blackColor] specialColor:RGB(50, 51, 52) range:NSMakeRange(0, 4)];
     }
     return _endTime;
 }
@@ -316,7 +305,7 @@
     if (!_completed) {
         _completed = [[UILabel alloc] init];
         _completed.numberOfLines = 0;
-        _completed.attributedText =[self labelAddAttributedStringWith:@"已完成\n8天" withRange:NSMakeRange(0, 3)];
+        _completed.attributedText = [NSAttributedString getAttributedStringWithString:@"已完成\n8天" littlefont:10 bigFont:15 defultTextColor:[UIColor blackColor] specialColor:RGB(50, 51, 52) range:NSMakeRange(0, 4)];
     }
     return _completed;
 }

@@ -10,7 +10,7 @@
 
 
 @interface ViewBaseController ()
-
+@property(nonatomic,strong)UIBarButtonItem *messageItems;
 @end
 
 @implementation ViewBaseController
@@ -20,7 +20,7 @@
     // Do any additional setup after loading the view.
     [self setUpNavigationBar];
     
-    
+
     self.view.backgroundColor= DEFAULT_BG_COLOR;
 }
 
@@ -34,11 +34,9 @@
 
 - (void) setUpNavigationBar
 {
-
-    
     self.navigationController.navigationBar.shadowImage = [UIImage new];
     self.navigationItem.leftBarButtonItem = [self leftButton];//设置导航栏左边按钮
-    self.navigationItem.rightBarButtonItem = [self rightButton];//设置导航栏右边按钮
+    self.navigationItem.rightBarButtonItem = self.navigationController.childViewControllers.count>1? [self rightButton]:self.messageItems;//设置导航栏右边按钮
     self.navigationItem.titleView = [self centerView];//设置titel
     if([[[UIDevice currentDevice]systemVersion]floatValue]>=7.0)
     {
@@ -52,6 +50,7 @@
 //    gradientLayer.endPoint = CGPointMake(1.0, 0);
 //    gradientLayer.frame = CGRectMake(0, -20, SCREEN_WIDTH, 64);
 //    [self.navigationController.navigationBar.layer addSublayer:gradientLayer];
+    
 }
 
 - (UIBarButtonItem *)leftButton
@@ -101,7 +100,6 @@
     [[vc rac_signalForSelector:@selector(viewWillAppear:)] subscribeNext:^(id x) {
         
         
-        
     }];
     
     return vc;
@@ -117,5 +115,15 @@
     
 }
 
-
+-(UIBarButtonItem *)messageItems{
+    if (!_messageItems) {
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [btn setImage:[UIImage imageNamed:@"NavigationBar_Message_Normal"] forState:UIControlStateNormal];
+        [btn setImage:[UIImage imageNamed:@"NavigationBar_Message_Selected"] forState:UIControlStateSelected];
+        btn.frame = CGRectMake(0, 0, 30, 30);
+        _messageItems = [[UIBarButtonItem alloc] initWithCustomView:btn];
+        
+    }
+    return _messageItems;
+}
 @end

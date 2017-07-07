@@ -9,7 +9,6 @@
 #import "NavigationBaseController.h"
 
 @interface NavigationBaseController ()
-
 @end
 
 @implementation NavigationBaseController
@@ -28,7 +27,6 @@
 //    gradientLayer.frame = CGRectMake(0, -20, SCREEN_WIDTH, 64);
 //    [self.navigationBar.layer addSublayer:gradientLayer];
     
-
 }
 
 
@@ -38,23 +36,11 @@
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     if (self.childViewControllers.count > 0) { // 如果push进来的不是第一个控制器
-//                UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-////                [button setTitle:@"返回" forState:UIControlStateNormal];
-//                [button setImage:[UIImage imageNamed:@"backBtn"] forState:UIControlStateNormal];
-//                [button setImage:[UIImage imageNamed:@"backBtn"] forState:UIControlStateHighlighted];
-////                button.frame.size = CGSizeMake(70, 30);
-//        
-//                button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-//        
-//                button.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
-////                [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-////                [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
-//                [button addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
-//                viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
-                // 隐藏tabbar
         viewController.hidesBottomBarWhenPushed = YES;
+    }else if(self.childViewControllers.count==0){
+
+//        self.navigationItem.rightBarButtonItem = self.messageItems;
     }
-    
     [super pushViewController:viewController animated:animated];
     
 }

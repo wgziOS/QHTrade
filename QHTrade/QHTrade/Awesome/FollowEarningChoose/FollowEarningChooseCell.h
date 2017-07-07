@@ -9,5 +9,7 @@
 #import "BaseTableViewCell.h"
 
 @interface FollowEarningChooseCell : BaseTableViewCell
-
+@property(nonatomic,copy)NSString *textBody;
+@property(nonatomic,copy)NSString *price;
+@property(nonatomic,copy)NSString *title;
 @end
