@@ -10,4 +10,14 @@
 
 @implementation DiamondViewModel
 
+
+
+
+-(RACSubject *)commitBtnSubjet{
+
+    if (!_commitBtnSubjet) {
+        _commitBtnSubjet = [RACSubject subject];
+    }
+    return _commitBtnSubjet;
+}
 @end

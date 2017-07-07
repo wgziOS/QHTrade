@@ -8,9 +8,9 @@
 
 #import "PersonalSecondCell.h"
 #import "PersonalCollectionCell.h"
-
+#import "PersonalMainView.h"
 @interface PersonalSecondCell()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
-
+@property (nonatomic,strong)PersonalViewModel * viewModel;
 @end
 
 
@@ -34,7 +34,26 @@
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     
+    
 }
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+    UIView *view = [super hitTest:point withEvent:event];
+    if ([view isKindOfClass:[UICollectionView class]]) {
+        return self;
+    }
+    return [super hitTest:point withEvent:event];
+}
+-(void)collectionViewClick{
+
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+
+    if (self.tapBlock) {
+        self.tapBlock();
+    }
+}
+
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
     return UIEdgeInsetsMake(1, 1, 1, 1);

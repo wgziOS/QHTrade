@@ -26,9 +26,7 @@
     self.viewModel = (PersonalViewModel *)viewModel;
     return [super initWithViewModel:viewModel];
 }
--(void)bindViewModel{
 
-}
 -(void)layoutSubviews{
     WS(weakSelf)
     
@@ -120,7 +118,16 @@
 
 
 }
+-(void)bindViewModel{
 
+
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    if (indexPath.row == 0) {
+        [self.viewModel.positionsClick sendNext:nil];
+    }
+}
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
     PersonalSecondCell *colectCell = [tableView dequeueReusableCellWithIdentifier:kPersonalSecondCell];
@@ -131,6 +138,10 @@
     switch (indexPath.row) {
         case 0:
         {
+            //点击cell里的collect
+            colectCell.tapBlock = ^{
+                [self.viewModel.positionsClick sendNext:nil];
+            };
             
             return colectCell;
         }

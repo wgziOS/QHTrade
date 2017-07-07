@@ -13,12 +13,11 @@
 #import "LoginViewController.h"
 #import "PromptView.h"
 #import "SettingViewController.h"
-#import "MyVisitorViewController.h"
-#import "FocusViewController.h"
 #import "PersonalMasterView.h"
 #import "TradeStatisticViewController.h"
 #import "DiamondViewController.h"
 #import "TradeAccountViewController.h"
+#import "MyPositionsViewController.h"
 
 @interface PersonalViewController ()
 @property (nonatomic,strong)PersonalMainView * mainView;
@@ -107,23 +106,7 @@
         [weakSelf.navigationController pushViewController:DVC animated:YES];
     }];
     
-    [[self.viewModel.headImgClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
-        NSLog(@"头像点击");
-    }];
-    
-    
-    [[self.viewModel.visitorsClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
-        //
-        NSLog(@"访客点击");
-        MyVisitorViewController * MVC = [[MyVisitorViewController alloc]init];
-        [weakSelf.navigationController pushViewController:MVC animated:YES];
-    }];
-    
-    [[self.viewModel.focusClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
-        NSLog(@"关注");
-        FocusViewController * FVC = [[FocusViewController alloc]init];
-        [weakSelf.navigationController pushViewController:FVC animated:YES];
-    }];
+
     
    
     [[self.viewModel.tradeAccountLoginBtnClick  takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
@@ -133,6 +116,12 @@
         
     }];
     
+    //持仓
+    [[self.viewModel.positionsClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
+       
+        MyPositionsViewController * MVC = [[MyPositionsViewController alloc]init];
+        [weakSelf.navigationController pushViewController:MVC animated:YES];
+    }];
     /*
 
      */
