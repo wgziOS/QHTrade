@@ -32,6 +32,7 @@
     [self.followEarningChooseView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(weakSelf.view);
     }];
+    
 }
 -(void)bindViewModel{
     

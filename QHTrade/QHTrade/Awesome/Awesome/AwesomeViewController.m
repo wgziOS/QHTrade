@@ -106,7 +106,7 @@
     }];
 }
 -(UIView *)centerView{
-    self.segmentedControl.frame= CGRectMake(0, 0, 280 ,30);
+    self.segmentedControl.frame = CGRectMake(0, 0, SCREEN_WIDTH*0.75,  30);
     return self.segmentedControl;
 }
 -(UIBarButtonItem *)leftButton{
@@ -155,17 +155,19 @@
 
 -(UIView *)segmentedControl{
     if (!_segmentedControl) {
-        _segmentedControl = [[SegmentedControlView alloc] initWithSize:CGSizeMake(280, 30)
+        _segmentedControl = [[SegmentedControlView alloc] initWithSize:CGSizeMake(SCREEN_WIDTH*0.75, 30)
                                                            defultTitle:RGB(151, 150, 150)
                                                          selectedTitle:[UIColor whiteColor]
                                                               defultBg:[UIColor whiteColor]
                                                             selectedBg:RGB(236, 93, 30)
                                                               withFont:13
-                                                       borderWithColor:RGB(150, 150, 150)
+                                                       borderWithColor:RGB(213, 214, 215)
                                                             itemsArray:[NSArray arrayWithObjects:@"牛人榜",@"新人榜",@"跟单收益榜",@"可跟单榜", nil]
                              ];
         _segmentedControl.layer.masksToBounds = YES;
         _segmentedControl.layer.cornerRadius = 15;
+        _segmentedControl.layer.borderWidth = 0.5f;
+        _segmentedControl.layer.borderColor = RGB(213, 214, 215).CGColor;
         @weakify(self)
         _segmentedControl.itemClick = ^(int index) {
             @strongify(self)

@@ -18,6 +18,7 @@
 
 @interface TabBarBaseController ()
 @property(nonatomic,assign)int oldIndex;
+
 @end
 
 @implementation TabBarBaseController
@@ -28,7 +29,6 @@
     self.delegate = self;
     [self setValue:[[QHTabBar alloc] init] forKeyPath:@"tabBar"];
     
-   
     // 通过appearance统一设置所有UITabBarItem的文字属性
     // 后面带有UI_APPEARANCE_SELECTOR的方法, 都可以通过appearance对象来统一设置
     NSDictionary *attrs =@{NSFontAttributeName:[UIFont systemFontOfSize:12],NSForegroundColorAttributeName:RGB(153, 153, 153),};
@@ -84,6 +84,8 @@
     [nav.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:RGB(51, 51, 51),
                                                 NSFontAttributeName:[UIFont boldSystemFontOfSize:18]
                                                 }];
+//    nav.navigationItem.rightBarButtonItem.customView = self.messageItems;
+
     [self addChildViewController:nav];
 }
 -(void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{

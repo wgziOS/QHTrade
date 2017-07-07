@@ -165,21 +165,7 @@
     
 }
 
--(NSAttributedString*)labelAddAttributedStringWith:(NSString*)text withRange:(NSRange)range{
-    NSMutableParagraphStyle *paragraph = [[NSMutableParagraphStyle alloc] init];
-    paragraph.alignment = NSTextAlignmentCenter;
-    paragraph.lineSpacing = 2; // 行距
-    NSDictionary *attributedDic = @{NSFontAttributeName:[UIFont systemFontOfSize:15],NSForegroundColorAttributeName:RGB(87, 88, 89),NSParagraphStyleAttributeName:paragraph};
-    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text attributes:attributedDic];
-    [attributedString addAttribute:NSForegroundColorAttributeName value:RGB(156, 157, 158) range:range];
-    [attributedString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:10] range:range];
-    return attributedString;
-}
 
--(void)followEarningsClick:(UIButton*)sender{
-    NSString *string = [NSString stringWithFormat:@"%ld",self.tag];
-    [self.viewModel.awesomeFollowActionClick sendNext:string];
-}
 
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -243,7 +229,9 @@
         [_followAction setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         _followAction.layer.masksToBounds = YES;
         _followAction.layer.cornerRadius = 3;
-        [_followAction addTarget:self action:@selector(followEarningsClick:) forControlEvents:UIControlEventTouchUpInside];
+        [[_followAction rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+            [self.viewModel.awesomeFollowActionClick sendNext:nil];
+        }];
         [_followAction.titleLabel setFont:[UIFont systemFontOfSize:14]];
     }
     return _followAction;
@@ -278,7 +266,8 @@
     if (!_earningsRate) {
         _earningsRate = [[UILabel alloc] init];
         _earningsRate.numberOfLines = 0;
-        _earningsRate.attributedText = [self labelAddAttributedStringWith:@"收益率\n100%" withRange:NSMakeRange(0, 3)];
+        _earningsRate.attributedText = [NSAttributedString getAttributedStringWithString:@"收益率\n100%" littlefont:10 bigFont:15 defultTextColor:RGB(87, 88, 89) specialColor:RGB(156, 157, 158) range:NSMakeRange(0, 3)];
+
     }
     return _earningsRate ;
 }
@@ -287,7 +276,7 @@
     if (!_todayEarningsRate) {
         _todayEarningsRate = [[UILabel alloc] init];
         _todayEarningsRate.numberOfLines = 0;
-        _todayEarningsRate.attributedText =[self labelAddAttributedStringWith:@"今日收益率\n100%" withRange:NSMakeRange(0, 5)];
+        _todayEarningsRate.attributedText = [NSAttributedString getAttributedStringWithString:@"今日收益率\n100%" littlefont:10 bigFont:15 defultTextColor:RGB(87, 88, 89) specialColor:RGB(156, 157, 158) range:NSMakeRange(0, 5)];
         
     }
     return _todayEarningsRate ;
@@ -297,7 +286,8 @@
     if (!_positionsUsage) {
         _positionsUsage = [[UILabel alloc] init];
         _positionsUsage.numberOfLines = 0;
-        _positionsUsage.attributedText = [self labelAddAttributedStringWith:@"仓位使用率\n100%" withRange:NSMakeRange(0, 5)];
+        _positionsUsage.attributedText =[NSAttributedString getAttributedStringWithString:@"仓位使用率\n100%" littlefont:10 bigFont:15 defultTextColor:RGB(87, 88, 89) specialColor:RGB(156, 157, 158) range:NSMakeRange(0, 5)];
+
     }
     return _positionsUsage;
 }
@@ -306,7 +296,8 @@
     if (!_startTime) {
         _startTime = [[UILabel alloc] init];
         _startTime.numberOfLines = 0;
-        _startTime.attributedText = [self labelAddAttributedStringWith:@"开始时间\n06-20" withRange:NSMakeRange(0, 4)];
+        _startTime.attributedText = [NSAttributedString getAttributedStringWithString:@"开始时间\n06-20" littlefont:10 bigFont:15 defultTextColor:RGB(87, 88, 89) specialColor:RGB(156, 157, 158) range:NSMakeRange(0, 4)];
+        
     }
     return _startTime;
 }
@@ -315,8 +306,7 @@
     if (!_endTime) {
         _endTime = [[UILabel alloc] init];
         _endTime.numberOfLines = 0;
-        _endTime.attributedText =[self labelAddAttributedStringWith:@"结束时间\n08-23" withRange:NSMakeRange(0, 4)];
-        
+        _endTime.attributedText = [NSAttributedString getAttributedStringWithString:@"结束时间\n08-23" littlefont:10 bigFont:15 defultTextColor:RGB(87, 88, 89) specialColor:RGB(156, 157, 158) range:NSMakeRange(0, 4)];
     }
     return _endTime;
 }
@@ -325,7 +315,7 @@
     if (!_completed) {
         _completed = [[UILabel alloc] init];
         _completed.numberOfLines = 0;
-        _completed.attributedText =[self labelAddAttributedStringWith:@"已完成\n8天" withRange:NSMakeRange(0, 3)];
+        _completed.attributedText = [NSAttributedString getAttributedStringWithString:@"已完成\n8天" littlefont:10 bigFont:15 defultTextColor:RGB(87, 88, 89) specialColor:RGB(156, 157, 158) range:NSMakeRange(0, 3)];
     }
     return _completed;
 }
