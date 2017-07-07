@@ -29,5 +29,6 @@
 #import "UserInformation.h"
 #import "UIImage+Extension.h"
 #import "UIView+Extension.h"
+#import "NSAttributedString+Extension.h"
 
 #endif /* PrefixHeader_pch */

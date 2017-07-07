@@ -71,8 +71,11 @@
     [button setBackgroundImage:[UIImage createImageWithColor:self.selectedBackgroundColor] forState:UIControlStateSelected];
     [button setTitle:title forState:UIControlStateNormal];
     button.layer.borderColor = self.borderColor.CGColor;
-    button.adjustsImageWhenHighlighted = NO;
     button.layer.borderWidth = 0.5f;
+    button.adjustsImageWhenHighlighted = NO;
+    button.titleLabel.numberOfLines = 0;
+    button.titleLabel.textAlignment = NSTextAlignmentCenter;
+    
     return button;
 }
 
@@ -91,7 +94,7 @@
         for (int i=0; i<self.titleArray.count; i++) {
             UIButton *button = [self buttonWithTitle:self.titleArray[i]];
             button.tag = i;
-            button.frame = CGRectMake(kWidth/kCount*i-0.25, 0, kWidth/kCount+0.5, kHeight);
+            button.frame = CGRectMake(kWidth/kCount*i-0.5, 0, kWidth/kCount+1, kHeight);
             button.selected = i == 0 ? YES:NO;
             
             [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];

@@ -49,8 +49,8 @@
     }];
     
     [self.switchButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(weakSelf.mas_right).with.offset(-3);
-        make.bottom.equalTo(weakSelf.mas_bottom);
+        make.right.equalTo(weakSelf.mas_right).with.offset(-1);
+        make.bottom.equalTo(weakSelf.mas_bottom).with.offset(-5);
         make.size.mas_offset(CGSizeMake(40, 20));
     }];
 }
