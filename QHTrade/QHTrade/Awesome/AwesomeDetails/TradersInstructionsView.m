@@ -44,7 +44,7 @@
     
     [self.textBody mas_updateConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(weakSelf).with.offset(16);
-        make.top.equalTo(weakSelf.prompt.mas_bottom).with.offset(5);
+        make.top.equalTo(weakSelf.prompt.mas_bottom).with.offset(4);
         make.size.mas_offset(CGSizeMake(SCREEN_WIDTH-32, weakSelf.textBodyHeight));
     }];
     
@@ -54,7 +54,10 @@
         make.size.mas_offset(CGSizeMake(40, 20));
     }];
 }
-
+-(void)bindViewModel{
+    [self.viewModel.earningsSumDataSubject subscribeNext:^(id  _Nullable x) {
+    }];
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -76,7 +79,7 @@
         _textBody = [[UILabel alloc] init];
         _textBody.textColor = RGB(67, 68, 69);
         _textBody.numberOfLines = 1;
-        _textBody.text = @"跟单后按照牛人的成交手数1比1跟单，若发生滑点情况，2秒内不能成交，撤单，以牛人成交价+1跳跟单，2秒内不能成交，撤单并再加2跳点后再报；再报后2秒内还不能成交，撤单，以再加2跳点再报，如还未成交则牛人该笔交易不跟单。半自动跟单需用户每日两次登录资金账户后，才会开始自动跟单，登录一次持续一个白盘或夜盘。";
+        _textBody.text = self.viewModel.tradersInstructionsString;
         _textBody.font = [UIFont systemFontOfSize:12];
 
     }
@@ -90,19 +93,20 @@
         WS(weakSelf)
         [[_switchButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x){
             _switchButton.selected = !_switchButton.selected;
-            
-            weakSelf.textBodyHeight = _switchButton.selected == YES ? 75:13;
-            weakSelf.textBody.numberOfLines =_switchButton.selected == YES ? 0: 1;
-            [weakSelf.viewModel.tradersInstructionsOpenSubject
-             sendNext:[NSString stringWithFormat:@"%d",_switchButton.selected]];
-            [self updateConstraints];
+            if (weakSelf.viewModel.tradersInstructionsHeight) {
+                weakSelf.textBodyHeight = _switchButton.selected == YES ? weakSelf.viewModel.tradersInstructionsHeight:15;
+                weakSelf.textBody.numberOfLines =_switchButton.selected == YES ? 0: 1;
+                [weakSelf.viewModel.tradersInstructionsOpenSubject
+                 sendNext:[NSString stringWithFormat:@"%d",_switchButton.selected]];
+                [self updateConstraints];
+            }
         }];
     }
     return _switchButton;
 }
 -(CGFloat)textBodyHeight{
     if (!_textBodyHeight) {
-        _textBodyHeight = 13;
+        _textBodyHeight = 15;
     }
     return _textBodyHeight;
 }

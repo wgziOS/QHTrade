@@ -25,8 +25,8 @@
 
 -(void)setupViews{
     [self setBackgroundColor:[UIColor whiteColor]];
-    [self addSubview:self.lineChartView];
     [self addSubview:self.title];
+    [self addSubview:self.lineChartView];
     [self setNeedsUpdateConstraints];
     [self updateConstraintsIfNeeded];
 }
@@ -38,9 +38,47 @@
         make.top.equalTo(weakSelf).with.offset(9);
         make.size.mas_offset(CGSizeMake(SCREEN_WIDTH, 13));
     }];
-//    [self.lineChartView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.equalTo(weakSelf);
-//    }];
+    [self.lineChartView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(weakSelf.title.mas_bottom);
+    }];
+}
+-(void)bindViewModel{
+    [self.viewModel.earningsSumDataSubject subscribeNext:^(id  _Nullable x) {
+        
+    }];
+}
+-(void)setData:(NSArray *)data{
+    NSArray *dataa = [NSArray arrayWithObjects:
+                     [NSValue valueWithCGPoint:CGPointMake(1, 10)],
+                     [NSValue valueWithCGPoint:CGPointMake(1.2, 60)],
+                     [NSValue valueWithCGPoint:CGPointMake(1.4, 52)],
+                     [NSValue valueWithCGPoint:CGPointMake(1.6, 22)],
+                     [NSValue valueWithCGPoint:CGPointMake(2, 65)],
+                     [NSValue valueWithCGPoint:CGPointMake(2.2, 34)],
+                     [NSValue valueWithCGPoint:CGPointMake(2.4, 55)],
+                     [NSValue valueWithCGPoint:CGPointMake(2.6, 78)],
+                     [NSValue valueWithCGPoint:CGPointMake(3, 98)],
+                     [NSValue valueWithCGPoint:CGPointMake(3.2, 99)],
+                     [NSValue valueWithCGPoint:CGPointMake(3.4, 100)],
+                     [NSValue valueWithCGPoint:CGPointMake(3.6, 101)],
+                     [NSValue valueWithCGPoint:CGPointMake(4, 88)],
+                     [NSValue valueWithCGPoint:CGPointMake(4.2, 55)],
+                     [NSValue valueWithCGPoint:CGPointMake(4.4, 32)],
+                     [NSValue valueWithCGPoint:CGPointMake(4.6, 41)],
+                     [NSValue valueWithCGPoint:CGPointMake(5, 50)],
+                     [NSValue valueWithCGPoint:CGPointMake(5.2, 21)],
+                     [NSValue valueWithCGPoint:CGPointMake(5.4, 67)],
+                     [NSValue valueWithCGPoint:CGPointMake(5.6, 75)],
+                     [NSValue valueWithCGPoint:CGPointMake(6, 59)],
+                     [NSValue valueWithCGPoint:CGPointMake(6.6, 90)],
+                     nil];
+    [self.lineChartView setMin_X:1];
+    [self.lineChartView setMax_X:6.6];
+    [self.lineChartView setMin_Y:0];
+    [self.lineChartView setMax_Y:120];
+    [self.lineChartView setData:dataa];
+    [self.lineChartView setX_labels:@[@"02/12",@"06/12",@"03/13",@"03/14",@"12/25",@"12/26"]];
+    [self.lineChartView setY_labels:@[@"0",@"10",@"20",@"30",@"40",@"50",@"60",@"70",@"80",@"90",@"100",@"110",@"120"]];
 }
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -51,39 +89,8 @@
 */
 -(QHLineChartView *)lineChartView{
     if (!_lineChartView) {
-        NSArray *data = [NSArray arrayWithObjects:
-                         
-                         [NSValue valueWithCGPoint:CGPointMake(1, 10)],
-                         [NSValue valueWithCGPoint:CGPointMake(1.2, 60)],
-                         [NSValue valueWithCGPoint:CGPointMake(1.4, 60)],
-                         [NSValue valueWithCGPoint:CGPointMake(1.6, 60)],
-                         [NSValue valueWithCGPoint:CGPointMake(2, 120)],
-                         [NSValue valueWithCGPoint:CGPointMake(2.2, 120)],
-                         [NSValue valueWithCGPoint:CGPointMake(2.4, 120)],
-                         [NSValue valueWithCGPoint:CGPointMake(2.6, 120)],
-                         [NSValue valueWithCGPoint:CGPointMake(3, 60)],
-                         [NSValue valueWithCGPoint:CGPointMake(3.2, 60)],
-                         [NSValue valueWithCGPoint:CGPointMake(3.4, 60)],
-                         [NSValue valueWithCGPoint:CGPointMake(3.6, 20)],
-                         [NSValue valueWithCGPoint:CGPointMake(4, 20)],
-                         [NSValue valueWithCGPoint:CGPointMake(4.2, 60)],
-                         [NSValue valueWithCGPoint:CGPointMake(4.4, 60)],
-                         [NSValue valueWithCGPoint:CGPointMake(4.6, 60)],
-                         [NSValue valueWithCGPoint:CGPointMake(5, 120)],
-                         [NSValue valueWithCGPoint:CGPointMake(5.2, 120)],
-                         [NSValue valueWithCGPoint:CGPointMake(5.4, 120)],
-                         [NSValue valueWithCGPoint:CGPointMake(5.6, 120)],
-                         [NSValue valueWithCGPoint:CGPointMake(6, 60)],
-                         [NSValue valueWithCGPoint:CGPointMake(6.2, 60)],
-                         nil];
-        _lineChartView = [[QHLineChartView alloc] initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, SCREEN_HEIGHT-415)];
-        [_lineChartView setMin_X:1];
-        [_lineChartView setMax_X:6];
-        [_lineChartView setMin_Y:0];
-        [_lineChartView setMax_Y:120];
-        [_lineChartView setData:data];
-        [_lineChartView setX_labels:@[@"6/1",@"6/2",@"6/3",@"6/4",@"6/5",@"6/6"]];
-        [_lineChartView setY_labels:@[@"0",@"10",@"20",@"30",@"40",@"50",@"60",@"70",@"80",@"90",@"100",@"110",@"120"]];
+        _lineChartView = [[QHLineChartView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-385)];
+        _lineChartView.backgroundColor = [UIColor greenColor];
     }
     return _lineChartView;
 }
