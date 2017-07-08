@@ -48,7 +48,7 @@
     [self.oldView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.segmentedControl.mas_bottom);
         make.centerX.equalTo(self);
-        make.size.mas_offset(CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-395));
+        make.size.mas_offset(CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-365));
     }];
 }
 -(void)changeChlidView:(int)index{
@@ -95,6 +95,7 @@
 -(EarningsSumView *)earningSumView{
     if (!_earningSumView) {
         _earningSumView = [[EarningsSumView alloc] initWithViewModel:self.viewModel];
+        _earningSumView.data = [NSArray array];
     }
     return _earningSumView;
 }

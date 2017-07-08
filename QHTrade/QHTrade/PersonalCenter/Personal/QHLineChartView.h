@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface QHLineChartView : UIView
-
 @property (nonatomic,assign) CGFloat min_X;
 @property (nonatomic,assign) CGFloat min_Y;
 @property (nonatomic,assign) CGFloat max_X;

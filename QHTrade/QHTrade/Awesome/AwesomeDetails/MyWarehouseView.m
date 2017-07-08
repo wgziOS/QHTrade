@@ -43,7 +43,7 @@
     [self.table mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
         make.left.top.equalTo(self.scroll);
-        make.size.mas_offset(CGSizeMake(414, SCREEN_HEIGHT-395));
+        make.size.mas_offset(CGSizeMake(414, SCREEN_HEIGHT-365));
     }];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{

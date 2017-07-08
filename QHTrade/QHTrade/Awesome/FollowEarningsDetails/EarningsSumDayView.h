@@ -10,4 +10,5 @@
 
 @interface EarningsSumDayView : BaseView
 
+@property(nonatomic,strong)NSArray  *array;
 @end

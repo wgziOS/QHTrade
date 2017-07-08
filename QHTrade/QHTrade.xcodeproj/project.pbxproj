@@ -526,7 +526,7 @@
 		CEF378C31F0C87B600C32D0D /* TradingSignalsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradingSignalsModel.h; sourceTree = "<group>"; };
 		CEF378C41F0C87B600C32D0D /* TradingSignalsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradingSignalsModel.m; sourceTree = "<group>"; };
 		CEF378C61F0CBDC600C32D0D /* EarningsSumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarningsSumView.h; sourceTree = "<group>"; };
-		CEF378C71F0CBDC600C32D0D /* EarningsSumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarningsSumView.m; sourceTree = "<group>"; };
+		CEF378C71F0CBDC600C32D0D /* EarningsSumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarningsSumView.m; sourceTree = "<group>"; wrapsLines = 1; };
 		CEF378C91F0CDDE500C32D0D /* FollowEarningChooseHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowEarningChooseHeadView.h; sourceTree = "<group>"; };
 		CEF378CA1F0CDDE500C32D0D /* FollowEarningChooseHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowEarningChooseHeadView.m; sourceTree = "<group>"; };
 		CEF378CC1F0D33F800C32D0D /* FollowEarningChooseFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowEarningChooseFootView.h; sourceTree = "<group>"; };
