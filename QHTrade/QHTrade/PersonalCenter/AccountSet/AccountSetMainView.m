@@ -164,17 +164,18 @@
 -(UIView *)footView{
     
     if (!_footView) {
-        _footView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 90)];
+        _footView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 45)];
         
         UIButton * logout = [UIButton buttonWithType:UIButtonTypeCustom];
-        logout.frame = CGRectMake(15, 30, SCREEN_WIDTH-30, 40);
+        logout.frame = CGRectMake(0, 5, SCREEN_WIDTH, 40);
         [logout setTitle:@"退出当前账户" forState:UIControlStateNormal];
-        [logout setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [logout setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         logout.titleLabel.font = [UIFont systemFontOfSize:16.0f];
-        [logout setBackgroundImage:[UIImage imageNamed:@"btn_ablebg_image"] forState:UIControlStateNormal];
+//        [logout setBackgroundImage:[UIImage imageNamed:@"btn_ablebg_image"] forState:UIControlStateNormal];
+        [logout setBackgroundColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [logout addTarget:self action:@selector(logoutBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [_footView addSubview:logout];
-        
+        _footView.backgroundColor = [UIColor whiteColor];
     }
     return _footView;
 }

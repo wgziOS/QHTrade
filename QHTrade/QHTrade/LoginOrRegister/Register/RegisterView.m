@@ -245,7 +245,7 @@
         _registerButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_registerButton setTitle:@"提交" forState:UIControlStateNormal];
         [_registerButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        _registerButton.titleLabel.font = [UIFont systemFontOfSize:16.0f];
+        _registerButton.titleLabel.font = [UIFont systemFontOfSize:18.0f];
         [_registerButton setBackgroundImage:[UIImage imageNamed:@"btn_ablebg_image"] forState:UIControlStateNormal];
         [_registerButton setBackgroundImage:[UIImage imageNamed:@"btn_unable_bg_image"] forState:UIControlStateDisabled];
     }

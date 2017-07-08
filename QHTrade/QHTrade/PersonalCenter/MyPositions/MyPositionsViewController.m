@@ -7,9 +7,12 @@
 //
 
 #import "MyPositionsViewController.h"
+#import "MyPositionsMainView.h"
+#import "MyPositionsViewModel.h"
 
 @interface MyPositionsViewController ()
-
+@property(nonatomic, strong) MyPositionsMainView * mainView;
+@property(nonatomic,strong) MyPositionsViewModel  * viewModel;
 @end
 
 @implementation MyPositionsViewController
@@ -17,6 +20,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"我的持仓";
+    
+    [self.view addSubview:self.mainView];
+    
+}
+-(void)updateViewConstraints{
+
+    WS(weakSelf)
+    
+    [self.mainView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(weakSelf.view);
+    }];
+    [super updateViewConstraints];
+}
+
+-(MyPositionsMainView *)mainView{
+
+    if (!_mainView) {
+        _mainView = [[MyPositionsMainView alloc]initWithViewModel:self.viewModel];
+    }
+    return _mainView;
+}
+
+-(MyPositionsViewModel *)viewModel{
+
+    if (!_viewModel) {
+        _viewModel = [[MyPositionsViewModel alloc]init];
+    }
+    return _viewModel;
 }
 
 - (void)didReceiveMemoryWarning {

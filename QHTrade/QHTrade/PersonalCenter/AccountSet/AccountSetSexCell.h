@@ -10,5 +10,6 @@
 static NSString * const kAccountSetSexCell  = @"AccountSetSexCell";
 @interface AccountSetSexCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *sexLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *imgView;
 
 @end

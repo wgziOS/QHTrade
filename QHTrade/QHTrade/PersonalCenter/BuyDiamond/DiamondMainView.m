@@ -27,15 +27,13 @@
     WS(weakSelf)
     
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.equalTo(weakSelf);
-        make.top.equalTo(weakSelf);
-        make.left.equalTo(weakSelf);
-        make.right.equalTo(weakSelf);
+
+        make.top.left.right.equalTo(weakSelf);
         make.bottom.equalTo(weakSelf).with.offset(-90);
     }];
     
     [self.commitButton mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(weakSelf.footView.mas_bottom).with.offset(25);
+        
         make.left.equalTo(weakSelf).with.offset(16);
         make.right.equalTo(weakSelf).with.offset(-16);
         make.bottom.equalTo(weakSelf).with.offset(-25);
@@ -102,14 +100,12 @@
         [_footView addSubview:label];
 
         [line mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(_footView);
-            make.left.equalTo(_footView);
-            make.right.equalTo(_footView);
+            make.top.left.right.equalTo(_footView);
             make.height.mas_equalTo(@1);
         }];
-//        WS(weakSelf)
+
         [label mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(_footView).with.insets(UIEdgeInsetsMake(10, 16, 16, 16));
+            make.edges.equalTo(_footView).with.insets(UIEdgeInsetsMake(10, 16, -16, -16));
             
         }];
         

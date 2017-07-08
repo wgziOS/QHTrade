@@ -124,7 +124,6 @@
     if (!_tickClickSubject) {
         _tickClickSubject = [RACSubject subject];
         
-        
     }
     return _tickClickSubject;
 }

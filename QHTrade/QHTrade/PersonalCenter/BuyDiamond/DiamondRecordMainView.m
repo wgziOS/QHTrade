@@ -34,24 +34,12 @@
 
     DiamondRecordCell * cell = [tableView dequeueReusableCellWithIdentifier:kDiamondRecordCell];
     
-//    cell.timeLabel
-//    [cell setMoneyLabel:];
     
     return cell;
 
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 0;
-}
--(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-
-    UIView * view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 15)];
-    
-    view.backgroundColor = RGB(244, 244, 244);
-//    UIView * view1 = [[UIView alloc]initWithFrame:CGRectMake(0, 14, SCREEN_WIDTH, 1)];
-//    view1.backgroundColor = RGB(182, 182, 182);
-//    [view addSubview:view1];
-    return view;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -85,10 +73,11 @@
         
         _tableView.backgroundColor = RGB(244, 244, 244);
         _tableView.separatorStyle = UITableViewCellAccessoryNone;
-        UIView * view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 15)];
+        
+        UIView * view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 5)];
         view.backgroundColor = RGB(244, 244, 244);
-        UIView * view1 = [[UIView alloc]initWithFrame:CGRectMake(0, 14, SCREEN_WIDTH, 1)];
-        view1.backgroundColor = RGB(182, 182, 182);
+        UIView * view1 = [[UIView alloc]initWithFrame:CGRectMake(0, 4, SCREEN_WIDTH, 1)];
+        view1.backgroundColor = RGB(180, 180, 180);
         [view addSubview:view1];
         [_tableView setTableHeaderView:view];
         _tableView.tableHeaderView.height = 5;

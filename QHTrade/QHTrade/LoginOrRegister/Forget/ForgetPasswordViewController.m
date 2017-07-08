@@ -7,23 +7,46 @@
 //
 
 #import "ForgetPasswordViewController.h"
-#import "ForgetInputCodeViewController.h"
+#import "ForgetMainView.h"
+#import "ForgetViewModel.h"
 
 @interface ForgetPasswordViewController ()
-
+@property (nonatomic,strong) ForgetMainView * mainView;
+@property (nonatomic,strong) ForgetViewModel * viewModel;
 @end
 
 @implementation ForgetPasswordViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-}
-- (IBAction)nextBtnClick:(id)sender {
     
-    ForgetInputCodeViewController * FVC = [[ForgetInputCodeViewController alloc]init];
-    FVC.title = @"密码找回";
-    [self.navigationController pushViewController:FVC animated:YES];
+    [self.view addSubview:self.mainView];
+
+}
+-(void)updateViewConstraints{
+
+    [self.mainView mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.edges.equalTo(self.view);
+    }];
+    [super updateViewConstraints];
+}
+
+
+-(ForgetViewModel *)viewModel{
+
+    if (!_viewModel) {
+        _viewModel = [[ForgetViewModel alloc]init];
+    }
+    return _viewModel;
+}
+-(ForgetMainView *)mainView{
+
+    if (!_mainView) {
+        _mainView = [[ForgetMainView alloc]initWithViewModel:self.viewModel];
+        _mainView.backgroundColor = RGB(243, 244, 245);
+    }
+    return _mainView;
 }
 
 - (void)didReceiveMemoryWarning {
