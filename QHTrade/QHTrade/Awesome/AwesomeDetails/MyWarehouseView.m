@@ -45,6 +45,8 @@
         make.left.top.equalTo(self.scroll);
         make.width.mas_offset(414);
         make.bottom.equalTo(self);
+
+
     }];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
