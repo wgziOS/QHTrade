@@ -9,10 +9,10 @@
 #import "FollowEarningsDetailsView.h"
 #import "FollowEarningsDetailsViewModel.h"
 #import "SegmentedControlView.h"
+#import "EarningsSumDayView.h"
 
 @interface FollowEarningsDetailsView()
 @property(nonatomic,strong)FollowEarningsDetailsViewModel *viewModel;
-@property(nonatomic,strong)UIScrollView *scrollView;
 @property(nonatomic,strong)UIImageView *icon;
 @property(nonatomic,strong)UILabel *name;
 @property(nonatomic,strong)UIImageView *sex;
@@ -26,6 +26,7 @@
 @property(nonatomic,strong)UIView *bottomLine;//下底线
 @property(nonatomic,strong)UILabel *promptLabel;//收益率曲线提示label
 @property(nonatomic,strong)SegmentedControlView *segmentedControl;//日 月 季
+@property(nonatomic,strong)EarningsSumDayView *earningsSumDayView;//总收益折线图
 
 @end
 
@@ -35,48 +36,46 @@
     return [super initWithViewModel:viewModel];
 }
 -(void)setupViews{
-    [self addSubview:self.scrollView];
-    [self.scrollView addSubview:self.icon];
-    [self.scrollView addSubview:self.name];
-    [self.scrollView addSubview:self.sex];
-    [self.scrollView addSubview:self.earningsRate];
-    [self.scrollView addSubview:self.totalProfit];
-    [self.scrollView addSubview:self.positionsUsage];
-    [self.scrollView addSubview:self.followingLabel];
-    [self.scrollView addSubview:self.awesomeView];
+    //    [self addSubview:self];
+    [self addSubview:self.icon];
+    [self addSubview:self.name];
+    [self addSubview:self.sex];
+    [self addSubview:self.earningsRate];
+    [self addSubview:self.totalProfit];
+    [self addSubview:self.positionsUsage];
+    [self addSubview:self.followingLabel];
+    [self addSubview:self.awesomeView];
     [self.awesomeView addSubview:self.awesomeIcon];
     [self.awesomeView addSubview:self.awesomeName];
-    [self.scrollView addSubview:self.bottomLine];
-    [self.scrollView addSubview:self.promptLabel];
-    [self.scrollView addSubview:self.segmentedControl];
-    
+    [self addSubview:self.bottomLine];
+    [self addSubview:self.promptLabel];
+    [self addSubview:self.segmentedControl];
+    [self addSubview:self.earningsSumDayView];
     [self setNeedsUpdateConstraints];
     [self updateConstraintsIfNeeded];
 }
 -(void)updateConstraints{
     [super updateConstraints];
     WS(weakSelf)
-    [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(weakSelf);
-    }];
+    
     [self.icon mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(weakSelf.scrollView).with.offset(10);
-        make.left.equalTo(weakSelf.scrollView).with.offset(16);
+        make.top.equalTo(weakSelf).with.offset(10);
+        make.left.equalTo(weakSelf).with.offset(16);
         make.size.mas_offset(CGSizeMake(30, 30));
     }];
     [self.name mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(weakSelf.scrollView).with.offset(10);
+        make.top.equalTo(weakSelf).with.offset(10);
         make.left.equalTo(weakSelf.icon.mas_right).with.offset(15);
         make.size.mas_offset(CGSizeMake(80, 20));
     }];
     [self.sex mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(weakSelf.scrollView).with.offset(13);
+        make.top.equalTo(weakSelf).with.offset(13);
         make.left.equalTo(weakSelf.name.mas_right).with.offset(5);
         make.size.mas_offset(CGSizeMake(12, 12));
     }];
     [self.earningsRate mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(weakSelf.icon.mas_bottom).with.offset(10);
-        make.left.equalTo(weakSelf.scrollView).with.offset(16);
+        make.left.equalTo(weakSelf).with.offset(16);
         make.size.mas_offset(CGSizeMake((SCREEN_WIDTH-32)*0.3, 50));
     }];
     [self.totalProfit mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -91,12 +90,12 @@
     }];
     [self.followingLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(weakSelf.earningsRate.mas_bottom).with.offset(10);
-        make.centerX.equalTo(weakSelf.scrollView);
+        make.centerX.equalTo(weakSelf);
         make.size.mas_offset(CGSizeMake(SCREEN_WIDTH+3, 40));
     }];
     [self.awesomeView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(weakSelf.followingLabel.mas_bottom);
-        make.centerX.equalTo(weakSelf.scrollView);
+        make.centerX.equalTo(weakSelf);
         make.size.mas_offset(CGSizeMake(SCREEN_WIDTH, 40));
     }];
     
@@ -112,18 +111,23 @@
     }];
     [self.bottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(weakSelf.awesomeIcon.mas_bottom).with.offset(10);
-        make.centerX.equalTo(weakSelf.scrollView);
+        make.centerX.equalTo(weakSelf);
         make.size.mas_offset(CGSizeMake(SCREEN_WIDTH, 0.5));
     }];
     [self.promptLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(weakSelf.bottomLine.mas_bottom).with.offset(10);
-        make.left.equalTo(weakSelf.scrollView).with.offset(10);
-        make.size.mas_offset(CGSizeMake(100, 30));
+        make.left.equalTo(weakSelf).with.offset(10);
+        make.size.mas_offset(CGSizeMake(100, 32));
     }];
     [self.segmentedControl mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(weakSelf.bottomLine.mas_bottom).with.offset(10);
-        make.left.equalTo(weakSelf.scrollView).with.offset(SCREEN_WIDTH-90);
+        make.left.equalTo(weakSelf).with.offset(SCREEN_WIDTH-90);
         make.size.mas_offset(CGSizeMake(80, 20));
+    }];
+    [self.earningsSumDayView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(weakSelf);
+        make.top.equalTo(weakSelf.promptLabel.mas_bottom).with.offset(10);
+        make.size.mas_offset(CGSizeMake(SCREEN_WIDTH,SCREEN_HEIGHT-316.5));
     }];
     
 }
@@ -141,21 +145,14 @@
 }
 
 /*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+ // Only override drawRect: if you perform custom drawing.
+ // An empty implementation adversely affects performance during animation.
+ - (void)drawRect:(CGRect)rect {
+ // Drawing code
+ }
+ */
 
 
--(UIScrollView *)scrollView{
-    if (!_scrollView) {
-        _scrollView = [[UIScrollView alloc] init];
-        _scrollView.contentSize = CGSizeMake(0.5f, 500);
-    }
-    return _scrollView;
-}
 -(UILabel *)name{
     if (!_name) {
         _name = [[UILabel alloc] init];
@@ -176,7 +173,6 @@
 -(UIImageView *)sex{
     if (!_sex) {
         _sex = [[UIImageView alloc] init];
-//        _sex.backgroundColor = [UIColor greenColor];
         [_sex setImage:[UIImage imageNamed:@"personal_woman_icon"]];
     }
     return _sex;
@@ -184,10 +180,11 @@
 -(UIButton *)earningsRate{
     if (!_earningsRate) {
         _earningsRate = [UIButton  buttonWithType:UIButtonTypeCustom];
-        [_earningsRate setTitle:@"收益率\n100%" forState:UIControlStateNormal];
+        [_earningsRate setAttributedTitle:[NSAttributedString getAttributedStringWithString:@"收益率\n100%" littlefont:10 bigFont:15 defultTextColor:[UIColor blackColor] specialColor:RGB(49,49,49) range:NSMakeRange(0, 3)] forState:UIControlStateNormal];
         [_earningsRate.titleLabel setFont:[UIFont systemFontOfSize:14]];
         _earningsRate.titleLabel.numberOfLines = 2;
         [_earningsRate setBackgroundImage:[UIImage imageNamed:@"personal_dikuang"] forState:UIControlStateNormal];
+        [_earningsRate.titleLabel setTextAlignment:NSTextAlignmentCenter];
         [_earningsRate setTitleColor:RGB(50, 51, 52) forState:UIControlStateNormal];
         _earningsRate.titleLabel.textAlignment = NSTextAlignmentCenter;
         
@@ -197,24 +194,24 @@
 -(UIButton *)totalProfit{
     if (!_totalProfit) {
         _totalProfit = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_totalProfit setTitle:@"总资产\n100.12W" forState:UIControlStateNormal];
         [_totalProfit.titleLabel setFont:[UIFont systemFontOfSize:14]];
+        [_totalProfit setAttributedTitle:[NSAttributedString getAttributedStringWithString:@"总资产\n100.12W" littlefont:10 bigFont:15 defultTextColor:[UIColor blackColor] specialColor:RGB(49,49,49) range:NSMakeRange(0, 3)] forState:UIControlStateNormal];
         _totalProfit.titleLabel.numberOfLines = 2;
         [_totalProfit setBackgroundImage:[UIImage imageNamed:@"personal_dikuang"] forState:UIControlStateNormal];
         [_totalProfit setTitleColor:RGB(50, 51, 52) forState:UIControlStateNormal];
-        _totalProfit.titleLabel.textAlignment = NSTextAlignmentCenter;
+        [_totalProfit.titleLabel setTextAlignment:NSTextAlignmentCenter];
     }
     return _totalProfit;
 }
 -(UIButton *)positionsUsage{
     if (!_positionsUsage) {
         _positionsUsage = [[UIButton alloc] init];
-        [_positionsUsage setTitle:@"总收益\n10.12W" forState:UIControlStateNormal];
+        [_positionsUsage setAttributedTitle:[NSAttributedString getAttributedStringWithString:@"收益率\n100%" littlefont:10 bigFont:15 defultTextColor:[UIColor blackColor] specialColor:RGB(49,49,49) range:NSMakeRange(0, 3)] forState:UIControlStateNormal];
         [_positionsUsage.titleLabel setFont:[UIFont systemFontOfSize:14]];
         _positionsUsage.titleLabel.numberOfLines = 2;
         [_positionsUsage setBackgroundImage:[UIImage imageNamed:@"personal_dikuang"] forState:UIControlStateNormal];
+        [_positionsUsage.titleLabel setTextAlignment:NSTextAlignmentCenter];
         [_positionsUsage setTitleColor:RGB(50, 51, 52) forState:UIControlStateNormal];
-        _positionsUsage.titleLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _positionsUsage;
 }
@@ -270,9 +267,9 @@
 -(UILabel *)promptLabel{
     if (!_promptLabel) {
         _promptLabel = [[UILabel alloc] init];
-        _promptLabel.text = @"总收益率曲线";
-        _promptLabel.font = [UIFont systemFontOfSize:14];
-        _promptLabel.textColor = RGB(50, 50, 50);
+        _promptLabel.attributedText = [NSAttributedString getAttributedStringWithString:@"总收益率曲线\n单位:%" littlefont:15 bigFont:10 defultTextColor:RGB(84, 85, 85) specialColor:RGB(49,49,49) range:NSMakeRange(0, 6)];
+        _promptLabel.numberOfLines = 0;
+        _promptLabel.textAlignment = NSTextAlignmentLeft;
     }
     return _promptLabel;
 }
@@ -287,14 +284,24 @@
                                                        borderWithColor:[UIColor whiteColor]
                                                             itemsArray:[NSArray arrayWithObjects:@"日",@"月",@"季", nil]
                              ];
-
-//        @weakify(self)
+        
+        @weakify(self)
         _segmentedControl.itemClick = ^(int index) {
-//            @strongify(self)
-//            [self segmentedControlClick:index];
+            @strongify(self)
+            //            [self segmentedControlClick:index];
+            self.earningsSumDayView.array = [NSMutableArray arrayWithObjects:@"", nil];
+            
         };
         
     }
     return _segmentedControl;
+}
+-(EarningsSumDayView *)earningsSumDayView{
+    if (!_earningsSumDayView) {
+        _earningsSumDayView = [[EarningsSumDayView alloc] initWithViewModel:self.viewModel];
+        _earningsSumDayView.array = [NSMutableArray arrayWithObjects:@"", nil];
+        //        _earningsSumDayView.backgroundColor = [UIColor greenColor];
+    }
+    return _earningsSumDayView;
 }
 @end

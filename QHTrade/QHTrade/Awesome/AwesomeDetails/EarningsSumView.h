@@ -9,5 +9,5 @@
 #import "BaseView.h"
 
 @interface EarningsSumView : BaseView
-
+@property(nonatomic,strong)NSArray *data;
 @end

@@ -21,7 +21,7 @@
 @property(nonatomic,strong)TradingInformationView *tradingInformationView;//交易信息view
 @property(nonatomic,strong)AwesomeDetailsViewModel *viewModel;
 @property(nonatomic,strong)UIButton *followAction;//跟单按钮
-@property(nonatomic,assign)CGFloat tradersInstructionsHeight;//操作说明ViewHeight
+@property(nonatomic,assign)CGFloat instructionsHeight;//操作说明ViewHeight
 @end
 
 @implementation AwesomeDetailsView
@@ -32,19 +32,22 @@
 }
 
 -(void)setupViews{
-//    [self addSubview:self.scroll];
-    [self addSubview:self.awesomeDetailsHeadView];
-    [self addSubview:self.tradersInstructionsView];
-    [self addSubview:self.tradingInformationView];
-    [self addSubview:self.followAction];
+    [self addSubview:self.scroll];
+    [self.scroll addSubview:self.awesomeDetailsHeadView];
+    [self.scroll addSubview:self.tradersInstructionsView];
+    [self.scroll addSubview:self.tradingInformationView];
+    [self.scroll addSubview:self.followAction];
     [self setNeedsUpdateConstraints];
     [self updateConstraintsIfNeeded];
 }
 -(void)bindViewModel{
     WS(weakSelf)
     [[self.viewModel.tradersInstructionsOpenSubject takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
-        weakSelf.tradersInstructionsHeight =[x intValue]==1?150:100;
-        [weakSelf updateConstraints];
+        if (weakSelf.viewModel.tradersInstructionsHeight) {
+            weakSelf.instructionsHeight = [x intValue]==1 ? weakSelf.viewModel.tradersInstructionsHeight+55:70;
+            _scroll.contentSize = [x intValue]==1?CGSizeMake(0.5,SCREEN_HEIGHT-77+weakSelf.viewModel.tradersInstructionsHeight):CGSizeMake(0.5,SCREEN_HEIGHT-64);
+            [weakSelf updateConstraints];
+        }
     }];
     
 }
@@ -52,13 +55,13 @@
     [super updateConstraints];
     
     @weakify(self)
-//    [self.scroll mas_makeConstraints:^(MASConstraintMaker *make){
-//        @strongify(self)
-//        make.edges.equalTo(self);
-//    }];
+    [self.scroll mas_makeConstraints:^(MASConstraintMaker *make){
+        @strongify(self)
+        make.edges.equalTo(self);
+    }];
     [self.awesomeDetailsHeadView mas_makeConstraints:^(MASConstraintMaker *make){
         @strongify(self)
-        make.left.top.equalTo(self);
+        make.left.top.equalTo(self.scroll);
         make.size.mas_offset(CGSizeMake(SCREEN_WIDTH, 150));
     }];
     
@@ -66,13 +69,13 @@
         @strongify(self)
         make.leftMargin.rightMargin.equalTo(self);
         make.top.equalTo(self.awesomeDetailsHeadView.mas_bottom).with.offset(5);
-        make.height.mas_offset(self.tradersInstructionsHeight);
+        make.height.mas_offset(self.instructionsHeight);
     }];
-    [self.tradingInformationView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.tradingInformationView mas_updateConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
         make.leftMargin.rightMargin.equalTo(self);
         make.top.equalTo(self.tradersInstructionsView.mas_bottom).with.offset(5);
-        make.height.mas_offset(SCREEN_HEIGHT-395);
+        make.height.mas_offset(SCREEN_HEIGHT-365);
     }];
     [self.followAction mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
@@ -136,10 +139,10 @@
     }
     return _followAction;
 }
--(CGFloat)tradersInstructionsHeight{
-    if (!_tradersInstructionsHeight) {
-        _tradersInstructionsHeight = 100.0f;
+-(CGFloat)instructionsHeight{
+    if (!_instructionsHeight) {
+        _instructionsHeight = 70.0f;
     }
-    return _tradersInstructionsHeight;
+    return _instructionsHeight;
 }
 @end

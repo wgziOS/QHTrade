@@ -112,15 +112,8 @@
     return _volume;
 }
 -(void)drawRect:(CGRect)rect{
-    int startY = 15;
+    int startY = 0;
     int endY = 44;
-    
-    if(self.tag == 0){
-        startY = 0;
-        endY = 15;
-    }else if(self.tag >1){
-        startY = 0;
-    }
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetLineCap(context, kCGLineCapRound);
     CGContextSetLineWidth(context, 2);  //线宽

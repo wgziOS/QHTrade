@@ -59,7 +59,6 @@
     pathlayer.strokeColor = color.CGColor;
     pathlayer.lineWidth = 1.0f;
     pathlayer.lineJoin = kCALineJoinRound;
-//    pathlayer.lineCap = kCALineCapRound;
     [pathlayer addAnimation:basicAnimation forKey:types[type]];
     
     NSMutableArray * array = [NSMutableArray arrayWithArray:shapeLayers];
