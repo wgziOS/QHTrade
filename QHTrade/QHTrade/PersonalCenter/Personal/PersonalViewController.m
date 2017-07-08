@@ -101,7 +101,7 @@
     
     
     [[self.viewModel.diamondBtnClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
-//        showMassage(@"点击了钻石")
+        
         DiamondViewController * DVC = [[DiamondViewController alloc]init];
         [weakSelf.navigationController pushViewController:DVC animated:YES];
     }];
@@ -128,22 +128,12 @@
     
 }
 //左按钮
--(UIBarButtonItem *)rightButton{
-    
-    UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
-    [btn addTarget:self action:@selector(leftButtonCilck:) forControlEvents:UIControlEventTouchUpInside];
-    [btn setImage:[UIImage imageNamed:@"message_icon"] forState:UIControlStateNormal];
-    
-    return [[UIBarButtonItem alloc]initWithCustomView:btn];
-}
--(void)leftButtonCilck:(id)sender{
-    
-}
-//右按钮
 -(UIBarButtonItem *)leftButton{
+    
     
     return nil;
 }
+
 
 -(PersonalMasterView *)masterView{
 

@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "AccountSetSexCell.h"
-#define MyEditorWidth 300.0f
-#define MyEditorHeight 150.0f
+#define MyEditorWidth 280.0f
+#define MyEditorHeight 140.0f
 typedef void(^CallBackBlock) (NSString * str);
 
 @interface ChooseSexView : UIView<UITableViewDelegate,UITableViewDataSource>

@@ -10,4 +10,9 @@
 
 @interface ForgetPasswordViewController : ViewBaseController
 
+
+
+
+
+
 @end

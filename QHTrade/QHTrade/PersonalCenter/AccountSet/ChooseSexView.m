@@ -26,7 +26,7 @@ static CGFloat kTransitionDuration = 0.15;
     [self dismissAlert];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 45;
+    return 70;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.dataArray.count;
@@ -35,6 +35,9 @@ static CGFloat kTransitionDuration = 0.15;
 
     AccountSetSexCell * cell = [tableView dequeueReusableCellWithIdentifier:kAccountSetSexCell];
     cell.sexLabel.text = self.dataArray[indexPath.row];
+    if (indexPath.row == 0) {
+        cell.imgView.image = [UIImage imageNamed:@"xingbiedianji"];
+    }else cell.imgView.image = [UIImage imageNamed:@"xingbieweidianji"];
     return cell;
 }
 

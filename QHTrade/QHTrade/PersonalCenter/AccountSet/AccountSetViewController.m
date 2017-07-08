@@ -85,7 +85,7 @@
                     break;
                 case 3:
                 {//性别
-                    ChooseSexView * sexView = [[ChooseSexView alloc]initWithDataArray:@[@"男",@"女",@"其他",@"half"]];
+                    ChooseSexView * sexView = [[ChooseSexView alloc]initWithDataArray:@[@"男",@"女"]];
                     [sexView show];
                     sexView.callBackBlock = ^(NSString * str){
                         NSLog(@"%@",str);
@@ -147,12 +147,14 @@
 #pragma mark - 选择头像
 -(void)chooseHeadImage{
     
+    
     UIAlertController * alert = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     
     UIAlertAction * cancle = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
     }];
-    
+    [cancle setValue:[UIColor blackColor] forKey:@"_titleTextColor"];
+   
     UIAlertAction * camera = [UIAlertAction actionWithTitle:@"相机拍照" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         
         UIImagePickerController * imagePicker = [[UIImagePickerController alloc]init];
@@ -164,6 +166,7 @@
         
         [self presentViewController:imagePicker animated:YES completion:nil];
     }];
+    [camera setValue:[UIColor blackColor] forKey:@"_titleTextColor"];
     
     UIAlertAction * picture = [UIAlertAction actionWithTitle:@"相册中选取" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         
@@ -178,10 +181,12 @@
         
         [self presentViewController:pickerImage animated:YES completion:nil];
     }];
+    [picture setValue:[UIColor blackColor] forKey:@"_titleTextColor"];
     
     [alert addAction:cancle];
     [alert addAction:picture];
     [alert addAction:camera];
+    
     
     [self presentViewController:alert animated:YES completion:nil];
 }

@@ -16,7 +16,6 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // ----> diamond_xuanzhong
     [self.contentView addSubview:self.selectBtn];
     
     [self.selectBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -40,7 +39,6 @@
 
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-//    [super setSelected:selected animated:animated];
 
     self.selectBtn.selected = selected;
 }
