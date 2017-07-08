@@ -11,4 +11,5 @@ static NSString * const kPersonalSecondCell = @"PersonalSecondCell";
 @interface PersonalSecondCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
+@property (nonatomic,copy) void (^tapBlock)();//
 @end

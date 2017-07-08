@@ -23,8 +23,6 @@
 		B21BEC491F04894500354274 /* ChangeNextViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC481F04894500354274 /* ChangeNextViewModel.m */; };
 		B21BEC4E1F049AD100354274 /* ChangeNickNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC4C1F049AD100354274 /* ChangeNickNameViewController.m */; };
 		B21BEC4F1F049AD100354274 /* ChangeNickNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21BEC4D1F049AD100354274 /* ChangeNickNameViewController.xib */; };
-		B21BEC621F04AB0C00354274 /* MyVisitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC611F04AB0C00354274 /* MyVisitorViewController.m */; };
-		B21BEC661F04AD8F00354274 /* FocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC651F04AD8F00354274 /* FocusViewController.m */; };
 		B21BEC6B1F04F58600354274 /* PersonalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC6A1F04F58600354274 /* PersonalModel.m */; };
 		B21E72D11F0B591C0081CF1A /* PersonalButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B21E72CF1F0B591C0081CF1A /* PersonalButtonCell.m */; };
 		B21E72D21F0B591C0081CF1A /* PersonalButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21E72D01F0B591C0081CF1A /* PersonalButtonCell.xib */; };
@@ -53,6 +51,11 @@
 		B2A215111EDEA9E900B19A4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A2150F1EDEA9E900B19A4A /* LaunchScreen.storyboard */; };
 		B2A2151C1EDEA9E900B19A4A /* QHTradeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2151B1EDEA9E900B19A4A /* QHTradeTests.m */; };
 		B2A215271EDEA9E900B19A4A /* QHTradeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A215261EDEA9E900B19A4A /* QHTradeUITests.m */; };
+		B2ADBAD71F0C8C500009D3BC /* TradeStatisticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBAD61F0C8C500009D3BC /* TradeStatisticViewController.m */; };
+		B2ADBADA1F0C8C730009D3BC /* TradeStatisticMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBAD91F0C8C730009D3BC /* TradeStatisticMainView.m */; };
+		B2ADBADD1F0C8C830009D3BC /* TradeStatisticViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBADC1F0C8C830009D3BC /* TradeStatisticViewModel.m */; };
+		B2ADBAE11F0C8E340009D3BC /* TradestatisticsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ADBADF1F0C8E340009D3BC /* TradestatisticsCell.m */; };
+		B2ADBAE21F0C8E340009D3BC /* TradestatisticsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2ADBAE01F0C8E340009D3BC /* TradestatisticsCell.xib */; };
 		B2BE01151EE93D260012AD3E /* LineChartDescribe.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BE00F41EE93D260012AD3E /* LineChartDescribe.m */; };
 		B2BE01161EE93D260012AD3E /* PersonalBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BE00F51EE93D260012AD3E /* PersonalBottomCell.m */; };
 		B2BE01171EE93D260012AD3E /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BE00F61EE93D260012AD3E /* PersonalViewController.m */; };
@@ -74,6 +77,17 @@
 		B2BE01271EE93D260012AD3E /* TradeRecordsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2BE01131EE93D260012AD3E /* TradeRecordsCell.xib */; };
 		B2BE01321EE943F30012AD3E /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BE01301EE943F30012AD3E /* SettingViewController.m */; };
 		B2BE01331EE943F30012AD3E /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2BE01311EE943F30012AD3E /* SettingViewController.xib */; };
+		B2C703FF1F0DD1C50029EC4D /* DiamondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C703FD1F0DD1C50029EC4D /* DiamondViewController.m */; };
+		B2C704001F0DD1C50029EC4D /* DiamondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C703FE1F0DD1C50029EC4D /* DiamondViewController.xib */; };
+		B2C704051F0DD8310029EC4D /* DiamondRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C704031F0DD8310029EC4D /* DiamondRecordViewController.m */; };
+		B2C704061F0DD8310029EC4D /* DiamondRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C704041F0DD8310029EC4D /* DiamondRecordViewController.xib */; };
+		B2C7040F1F0DDF650029EC4D /* DiamondRecordMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C7040E1F0DDF650029EC4D /* DiamondRecordMainView.m */; };
+		B2C704121F0DDF800029EC4D /* DiamondRecordViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C704111F0DDF800029EC4D /* DiamondRecordViewModel.m */; };
+		B2C704161F0DE1960029EC4D /* DiamondRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C704141F0DE1960029EC4D /* DiamondRecordCell.m */; };
+		B2C704171F0DE1960029EC4D /* DiamondRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C704151F0DE1960029EC4D /* DiamondRecordCell.xib */; };
+		B2C7041A1F0E0CC30029EC4D /* TradeAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C704191F0E0CC30029EC4D /* TradeAccountViewController.m */; };
+		B2C7041D1F0E0CE80029EC4D /* TradeAccountMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C7041C1F0E0CE80029EC4D /* TradeAccountMainView.m */; };
+		B2C704201F0E0D0D0029EC4D /* TradeAccountViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C7041F1F0E0D0D0029EC4D /* TradeAccountViewModel.m */; };
 		B2CCA98C1F024703002BA562 /* AboutUSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CCA98A1F024703002BA562 /* AboutUSViewController.m */; };
 		B2CCA98D1F024703002BA562 /* AboutUSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2CCA98B1F024703002BA562 /* AboutUSViewController.xib */; };
 		B2CCA9911F0251C2002BA562 /* AccountSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CCA9901F0251C2002BA562 /* AccountSetViewController.m */; };
@@ -85,6 +99,15 @@
 		B2D9721B1F03974100A04798 /* ChangePhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D9721A1F03974100A04798 /* ChangePhoneViewController.m */; };
 		B2D972211F03988F00A04798 /* ChangePhoneMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D972201F03988F00A04798 /* ChangePhoneMainView.m */; };
 		B2D972241F0398B600A04798 /* ChangePhoneViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D972231F0398B600A04798 /* ChangePhoneViewModel.m */; };
+		B2F64BD81F0F141100BB8734 /* DiamondMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F64BD71F0F141100BB8734 /* DiamondMainView.m */; };
+		B2F64BE21F0F147C00BB8734 /* DiamondPayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F64BE01F0F147B00BB8734 /* DiamondPayCell.m */; };
+		B2F64BE31F0F147C00BB8734 /* DiamondPayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F64BE11F0F147B00BB8734 /* DiamondPayCell.xib */; };
+		B2F64BE61F0F149500BB8734 /* DiamondViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F64BE51F0F149500BB8734 /* DiamondViewModel.m */; };
+		B2F64BE91F0F2FD100BB8734 /* DiamondHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F64BE81F0F2FD100BB8734 /* DiamondHeadView.m */; };
+		B2F64BED1F0F37C400BB8734 /* DiamondCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F64BEB1F0F37C400BB8734 /* DiamondCollectionCell.m */; };
+		B2F64BEE1F0F37C400BB8734 /* DiamondCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F64BEC1F0F37C400BB8734 /* DiamondCollectionCell.xib */; };
+		B2F64BF31F0F733400BB8734 /* UIButton+BackgroundColorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F64BF21F0F733400BB8734 /* UIButton+BackgroundColorExtension.m */; };
+		B2F64BF71F0F7D0400BB8734 /* MyPositionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F64BF61F0F7D0400BB8734 /* MyPositionsViewController.m */; };
 		B73AFA0A506780FED210E1D0 /* Pods_QHTrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972BB4CEA1349E67DFAA5B40 /* Pods_QHTrade.framework */; };
 		CE30CA151F05F93F00778172 /* CFFEXHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9BB1F05F93F00778172 /* CFFEXHeadView.m */; };
 		CE30CA161F05F93F00778172 /* CFFEXView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30C9BD1F05F93F00778172 /* CFFEXView.m */; };
@@ -229,10 +252,6 @@
 		B21BEC4B1F049AD100354274 /* ChangeNickNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeNickNameViewController.h; sourceTree = "<group>"; };
 		B21BEC4C1F049AD100354274 /* ChangeNickNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeNickNameViewController.m; sourceTree = "<group>"; };
 		B21BEC4D1F049AD100354274 /* ChangeNickNameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeNickNameViewController.xib; sourceTree = "<group>"; };
-		B21BEC601F04AB0C00354274 /* MyVisitorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyVisitorViewController.h; sourceTree = "<group>"; };
-		B21BEC611F04AB0C00354274 /* MyVisitorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyVisitorViewController.m; sourceTree = "<group>"; };
-		B21BEC641F04AD8F00354274 /* FocusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FocusViewController.h; sourceTree = "<group>"; };
-		B21BEC651F04AD8F00354274 /* FocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FocusViewController.m; sourceTree = "<group>"; };
 		B21BEC691F04F58600354274 /* PersonalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalModel.h; sourceTree = "<group>"; };
 		B21BEC6A1F04F58600354274 /* PersonalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalModel.m; sourceTree = "<group>"; };
 		B21E72CE1F0B591C0081CF1A /* PersonalButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalButtonCell.h; sourceTree = "<group>"; };
@@ -284,6 +303,15 @@
 		B2A215221EDEA9E900B19A4A /* QHTradeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QHTradeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A215261EDEA9E900B19A4A /* QHTradeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QHTradeUITests.m; sourceTree = "<group>"; };
 		B2A215281EDEA9E900B19A4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2ADBAD51F0C8C500009D3BC /* TradeStatisticViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeStatisticViewController.h; sourceTree = "<group>"; };
+		B2ADBAD61F0C8C500009D3BC /* TradeStatisticViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeStatisticViewController.m; sourceTree = "<group>"; };
+		B2ADBAD81F0C8C730009D3BC /* TradeStatisticMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeStatisticMainView.h; sourceTree = "<group>"; };
+		B2ADBAD91F0C8C730009D3BC /* TradeStatisticMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeStatisticMainView.m; sourceTree = "<group>"; };
+		B2ADBADB1F0C8C830009D3BC /* TradeStatisticViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeStatisticViewModel.h; sourceTree = "<group>"; };
+		B2ADBADC1F0C8C830009D3BC /* TradeStatisticViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeStatisticViewModel.m; sourceTree = "<group>"; };
+		B2ADBADE1F0C8E340009D3BC /* TradestatisticsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradestatisticsCell.h; sourceTree = "<group>"; };
+		B2ADBADF1F0C8E340009D3BC /* TradestatisticsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradestatisticsCell.m; sourceTree = "<group>"; };
+		B2ADBAE01F0C8E340009D3BC /* TradestatisticsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradestatisticsCell.xib; sourceTree = "<group>"; };
 		B2BE00F41EE93D260012AD3E /* LineChartDescribe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChartDescribe.m; sourceTree = "<group>"; };
 		B2BE00F51EE93D260012AD3E /* PersonalBottomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalBottomCell.m; sourceTree = "<group>"; };
 		B2BE00F61EE93D260012AD3E /* PersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
@@ -319,6 +347,25 @@
 		B2BE012F1EE943F30012AD3E /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		B2BE01301EE943F30012AD3E /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		B2BE01311EE943F30012AD3E /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		B2C703FC1F0DD1C50029EC4D /* DiamondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiamondViewController.h; sourceTree = "<group>"; };
+		B2C703FD1F0DD1C50029EC4D /* DiamondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiamondViewController.m; sourceTree = "<group>"; };
+		B2C703FE1F0DD1C50029EC4D /* DiamondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiamondViewController.xib; sourceTree = "<group>"; };
+		B2C704021F0DD8310029EC4D /* DiamondRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiamondRecordViewController.h; sourceTree = "<group>"; };
+		B2C704031F0DD8310029EC4D /* DiamondRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiamondRecordViewController.m; sourceTree = "<group>"; };
+		B2C704041F0DD8310029EC4D /* DiamondRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiamondRecordViewController.xib; sourceTree = "<group>"; };
+		B2C7040D1F0DDF650029EC4D /* DiamondRecordMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiamondRecordMainView.h; sourceTree = "<group>"; };
+		B2C7040E1F0DDF650029EC4D /* DiamondRecordMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiamondRecordMainView.m; sourceTree = "<group>"; };
+		B2C704101F0DDF800029EC4D /* DiamondRecordViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiamondRecordViewModel.h; sourceTree = "<group>"; };
+		B2C704111F0DDF800029EC4D /* DiamondRecordViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiamondRecordViewModel.m; sourceTree = "<group>"; };
+		B2C704131F0DE1960029EC4D /* DiamondRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiamondRecordCell.h; sourceTree = "<group>"; };
+		B2C704141F0DE1960029EC4D /* DiamondRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiamondRecordCell.m; sourceTree = "<group>"; };
+		B2C704151F0DE1960029EC4D /* DiamondRecordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiamondRecordCell.xib; sourceTree = "<group>"; };
+		B2C704181F0E0CC30029EC4D /* TradeAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeAccountViewController.h; sourceTree = "<group>"; };
+		B2C704191F0E0CC30029EC4D /* TradeAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeAccountViewController.m; sourceTree = "<group>"; };
+		B2C7041B1F0E0CE80029EC4D /* TradeAccountMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeAccountMainView.h; sourceTree = "<group>"; };
+		B2C7041C1F0E0CE80029EC4D /* TradeAccountMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeAccountMainView.m; sourceTree = "<group>"; };
+		B2C7041E1F0E0D0D0029EC4D /* TradeAccountViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeAccountViewModel.h; sourceTree = "<group>"; };
+		B2C7041F1F0E0D0D0029EC4D /* TradeAccountViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeAccountViewModel.m; sourceTree = "<group>"; };
 		B2CCA9891F024703002BA562 /* AboutUSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUSViewController.h; sourceTree = "<group>"; };
 		B2CCA98A1F024703002BA562 /* AboutUSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUSViewController.m; sourceTree = "<group>"; };
 		B2CCA98B1F024703002BA562 /* AboutUSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutUSViewController.xib; sourceTree = "<group>"; };
@@ -339,6 +386,22 @@
 		B2D972201F03988F00A04798 /* ChangePhoneMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePhoneMainView.m; sourceTree = "<group>"; };
 		B2D972221F0398B600A04798 /* ChangePhoneViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePhoneViewModel.h; sourceTree = "<group>"; };
 		B2D972231F0398B600A04798 /* ChangePhoneViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePhoneViewModel.m; sourceTree = "<group>"; };
+		B2F64BD61F0F141100BB8734 /* DiamondMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiamondMainView.h; sourceTree = "<group>"; };
+		B2F64BD71F0F141100BB8734 /* DiamondMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiamondMainView.m; sourceTree = "<group>"; };
+		B2F64BDF1F0F147B00BB8734 /* DiamondPayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiamondPayCell.h; sourceTree = "<group>"; };
+		B2F64BE01F0F147B00BB8734 /* DiamondPayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiamondPayCell.m; sourceTree = "<group>"; };
+		B2F64BE11F0F147B00BB8734 /* DiamondPayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiamondPayCell.xib; sourceTree = "<group>"; };
+		B2F64BE41F0F149500BB8734 /* DiamondViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiamondViewModel.h; sourceTree = "<group>"; };
+		B2F64BE51F0F149500BB8734 /* DiamondViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiamondViewModel.m; sourceTree = "<group>"; };
+		B2F64BE71F0F2FD100BB8734 /* DiamondHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiamondHeadView.h; sourceTree = "<group>"; };
+		B2F64BE81F0F2FD100BB8734 /* DiamondHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiamondHeadView.m; sourceTree = "<group>"; };
+		B2F64BEA1F0F37C400BB8734 /* DiamondCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiamondCollectionCell.h; sourceTree = "<group>"; };
+		B2F64BEB1F0F37C400BB8734 /* DiamondCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiamondCollectionCell.m; sourceTree = "<group>"; };
+		B2F64BEC1F0F37C400BB8734 /* DiamondCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiamondCollectionCell.xib; sourceTree = "<group>"; };
+		B2F64BF11F0F733400BB8734 /* UIButton+BackgroundColorExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BackgroundColorExtension.h"; sourceTree = "<group>"; };
+		B2F64BF21F0F733400BB8734 /* UIButton+BackgroundColorExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BackgroundColorExtension.m"; sourceTree = "<group>"; };
+		B2F64BF51F0F7D0400BB8734 /* MyPositionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPositionsViewController.h; sourceTree = "<group>"; };
+		B2F64BF61F0F7D0400BB8734 /* MyPositionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPositionsViewController.m; sourceTree = "<group>"; };
 		CE30C9BA1F05F93F00778172 /* CFFEXHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFFEXHeadView.h; sourceTree = "<group>"; };
 		CE30C9BB1F05F93F00778172 /* CFFEXHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFFEXHeadView.m; sourceTree = "<group>"; };
 		CE30C9BC1F05F93F00778172 /* CFFEXView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFFEXView.h; sourceTree = "<group>"; };
@@ -594,6 +657,9 @@
 		B203B3D21F00DFC8002581F6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B2BE012F1EE943F30012AD3E /* SettingViewController.h */,
+				B2BE01301EE943F30012AD3E /* SettingViewController.m */,
+				B2BE01311EE943F30012AD3E /* SettingViewController.xib */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -631,15 +697,16 @@
 		B21BD2C11EDFB9E500BAD836 /* PersonalCenter */ = {
 			isa = PBXGroup;
 			children = (
-				B2339C2C1F05E97100B336BB /* TradeAccountBind */,
 				B2BE00F31EE93CE30012AD3E /* Personal */,
+				B2F64BF41F0F7CA000BB8734 /* MyPositions */,
+				B2C703FB1F0DD1A50029EC4D /* BuyDiamond */,
+				B2339C2C1F05E97100B336BB /* TradeAccountBind */,
 				B2BE012E1EE943D30012AD3E /* Setting */,
 				B2CCA98E1F02519A002BA562 /* AccountSet */,
 				B21BEC4A1F049AA100354274 /* ChangeNickname */,
 				B2D972181F0396F700A04798 /* ChangePhone */,
 				B2CCA9881F0246E0002BA562 /* AboutUS */,
-				B21BEC631F04AD7400354274 /* Focus */,
-				B21BEC5F1F04AA7C00354274 /* MyVisitor */,
+				B2ADBAD11F0C8BF30009D3BC /* TradeStatistic */,
 				B203B3CE1F00D741002581F6 /* PromptView */,
 			);
 			path = PersonalCenter;
@@ -653,24 +720,6 @@
 				B21BEC4D1F049AD100354274 /* ChangeNickNameViewController.xib */,
 			);
 			path = ChangeNickname;
-			sourceTree = "<group>";
-		};
-		B21BEC5F1F04AA7C00354274 /* MyVisitor */ = {
-			isa = PBXGroup;
-			children = (
-				B21BEC601F04AB0C00354274 /* MyVisitorViewController.h */,
-				B21BEC611F04AB0C00354274 /* MyVisitorViewController.m */,
-			);
-			path = MyVisitor;
-			sourceTree = "<group>";
-		};
-		B21BEC631F04AD7400354274 /* Focus */ = {
-			isa = PBXGroup;
-			children = (
-				B21BEC641F04AD8F00354274 /* FocusViewController.h */,
-				B21BEC651F04AD8F00354274 /* FocusViewController.m */,
-			);
-			path = Focus;
 			sourceTree = "<group>";
 		};
 		B21BEC671F04CF7E00354274 /* Cell */ = {
@@ -710,6 +759,12 @@
 		B2339C2C1F05E97100B336BB /* TradeAccountBind */ = {
 			isa = PBXGroup;
 			children = (
+				B2C704181F0E0CC30029EC4D /* TradeAccountViewController.h */,
+				B2C704191F0E0CC30029EC4D /* TradeAccountViewController.m */,
+				B2C7041B1F0E0CE80029EC4D /* TradeAccountMainView.h */,
+				B2C7041C1F0E0CE80029EC4D /* TradeAccountMainView.m */,
+				B2C7041E1F0E0D0D0029EC4D /* TradeAccountViewModel.h */,
+				B2C7041F1F0E0D0D0029EC4D /* TradeAccountViewModel.m */,
 			);
 			path = TradeAccountBind;
 			sourceTree = "<group>";
@@ -743,15 +798,15 @@
 		B2339C3D1F05F35900B336BB /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				B2339C3F1F05F39500B336BB /* LoginViewModel.m */,
 				B2339C401F05F39500B336BB /* LoginViewModel.h */,
+				B2339C3F1F05F39500B336BB /* LoginViewModel.m */,
 				B2339C411F05F39500B336BB /* LoginViewController.xib */,
-				B2339C421F05F39500B336BB /* LoginViewController.m */,
 				B2339C431F05F39500B336BB /* LoginViewController.h */,
-				B2339C441F05F39500B336BB /* LoginView.m */,
+				B2339C421F05F39500B336BB /* LoginViewController.m */,
 				B2339C451F05F39500B336BB /* LoginView.h */,
-				B2339C461F05F39500B336BB /* LoginModel.m */,
+				B2339C441F05F39500B336BB /* LoginView.m */,
 				B2339C471F05F39500B336BB /* LoginModel.h */,
+				B2339C461F05F39500B336BB /* LoginModel.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -855,6 +910,46 @@
 			path = QHTradeUITests;
 			sourceTree = "<group>";
 		};
+		B2ADBAD11F0C8BF30009D3BC /* TradeStatistic */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADBAD31F0C8C150009D3BC /* ViewModel */,
+				B2ADBAD21F0C8C0F0009D3BC /* View */,
+				B2ADBAD41F0C8C1E0009D3BC /* ViewController */,
+			);
+			path = TradeStatistic;
+			sourceTree = "<group>";
+		};
+		B2ADBAD21F0C8C0F0009D3BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADBAD81F0C8C730009D3BC /* TradeStatisticMainView.h */,
+				B2ADBAD91F0C8C730009D3BC /* TradeStatisticMainView.m */,
+				B2ADBADE1F0C8E340009D3BC /* TradestatisticsCell.h */,
+				B2ADBADF1F0C8E340009D3BC /* TradestatisticsCell.m */,
+				B2ADBAE01F0C8E340009D3BC /* TradestatisticsCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B2ADBAD31F0C8C150009D3BC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADBADB1F0C8C830009D3BC /* TradeStatisticViewModel.h */,
+				B2ADBADC1F0C8C830009D3BC /* TradeStatisticViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2ADBAD41F0C8C1E0009D3BC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADBAD51F0C8C500009D3BC /* TradeStatisticViewController.h */,
+				B2ADBAD61F0C8C500009D3BC /* TradeStatisticViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		B2BE00F31EE93CE30012AD3E /* Personal */ = {
 			isa = PBXGroup;
 			children = (
@@ -930,11 +1025,96 @@
 				B203B3D81F00E41F002581F6 /* ViewModel */,
 				B203B3D31F00DFCF002581F6 /* View */,
 				B203B3D21F00DFC8002581F6 /* ViewController */,
-				B2BE012F1EE943F30012AD3E /* SettingViewController.h */,
-				B2BE01301EE943F30012AD3E /* SettingViewController.m */,
-				B2BE01311EE943F30012AD3E /* SettingViewController.xib */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		B2C703FB1F0DD1A50029EC4D /* BuyDiamond */ = {
+			isa = PBXGroup;
+			children = (
+				B2C7040C1F0DDE760029EC4D /* ViewModel */,
+				B2C7040B1F0DDE0F0029EC4D /* ViewController */,
+				B2C7040A1F0DDE080029EC4D /* View */,
+				B2C704011F0DD47C0029EC4D /* DiamondRecord */,
+			);
+			path = BuyDiamond;
+			sourceTree = "<group>";
+		};
+		B2C704011F0DD47C0029EC4D /* DiamondRecord */ = {
+			isa = PBXGroup;
+			children = (
+				B2C704091F0DDDFE0029EC4D /* ViewController */,
+				B2C704081F0DDDF50029EC4D /* ViewModel */,
+				B2C704071F0DDDD30029EC4D /* View */,
+			);
+			name = DiamondRecord;
+			sourceTree = "<group>";
+		};
+		B2C704071F0DDDD30029EC4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2C7040D1F0DDF650029EC4D /* DiamondRecordMainView.h */,
+				B2C7040E1F0DDF650029EC4D /* DiamondRecordMainView.m */,
+				B2C704131F0DE1960029EC4D /* DiamondRecordCell.h */,
+				B2C704141F0DE1960029EC4D /* DiamondRecordCell.m */,
+				B2C704151F0DE1960029EC4D /* DiamondRecordCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B2C704081F0DDDF50029EC4D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2C704101F0DDF800029EC4D /* DiamondRecordViewModel.h */,
+				B2C704111F0DDF800029EC4D /* DiamondRecordViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2C704091F0DDDFE0029EC4D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B2C704021F0DD8310029EC4D /* DiamondRecordViewController.h */,
+				B2C704031F0DD8310029EC4D /* DiamondRecordViewController.m */,
+				B2C704041F0DD8310029EC4D /* DiamondRecordViewController.xib */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		B2C7040A1F0DDE080029EC4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2F64BD61F0F141100BB8734 /* DiamondMainView.h */,
+				B2F64BD71F0F141100BB8734 /* DiamondMainView.m */,
+				B2F64BE71F0F2FD100BB8734 /* DiamondHeadView.h */,
+				B2F64BE81F0F2FD100BB8734 /* DiamondHeadView.m */,
+				B2F64BEA1F0F37C400BB8734 /* DiamondCollectionCell.h */,
+				B2F64BEB1F0F37C400BB8734 /* DiamondCollectionCell.m */,
+				B2F64BEC1F0F37C400BB8734 /* DiamondCollectionCell.xib */,
+				B2F64BDF1F0F147B00BB8734 /* DiamondPayCell.h */,
+				B2F64BE01F0F147B00BB8734 /* DiamondPayCell.m */,
+				B2F64BE11F0F147B00BB8734 /* DiamondPayCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B2C7040B1F0DDE0F0029EC4D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B2C703FC1F0DD1C50029EC4D /* DiamondViewController.h */,
+				B2C703FD1F0DD1C50029EC4D /* DiamondViewController.m */,
+				B2C703FE1F0DD1C50029EC4D /* DiamondViewController.xib */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		B2C7040C1F0DDE760029EC4D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2F64BE41F0F149500BB8734 /* DiamondViewModel.h */,
+				B2F64BE51F0F149500BB8734 /* DiamondViewModel.m */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		B2CCA9881F0246E0002BA562 /* AboutUS */ = {
@@ -1030,6 +1210,15 @@
 				B21BEC481F04894500354274 /* ChangeNextViewModel.m */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2F64BF41F0F7CA000BB8734 /* MyPositions */ = {
+			isa = PBXGroup;
+			children = (
+				B2F64BF51F0F7D0400BB8734 /* MyPositionsViewController.h */,
+				B2F64BF61F0F7D0400BB8734 /* MyPositionsViewController.m */,
+			);
+			path = MyPositions;
 			sourceTree = "<group>";
 		};
 		CE30C9B91F05F93F00778172 /* CFFEX */ = {
@@ -1566,6 +1755,8 @@
 				CEF378D31F0DFFF200C32D0D /* NSAttributedString+Extension.m */,
 				CEF378CF1F0DE0D900C32D0D /* UILabel+Extension.h */,
 				CEF378D01F0DE0D900C32D0D /* UILabel+Extension.m */,
+				B2F64BF11F0F733400BB8734 /* UIButton+BackgroundColorExtension.h */,
+				B2F64BF21F0F733400BB8734 /* UIButton+BackgroundColorExtension.m */,
 			);
 			path = Gategory;
 			sourceTree = "<group>";
@@ -1709,6 +1900,7 @@
 			files = (
 				B2BE01331EE943F30012AD3E /* SettingViewController.xib in Resources */,
 				B2339C601F05F3E000B336BB /* RegisterViewController.xib in Resources */,
+				B2F64BEE1F0F37C400BB8734 /* DiamondCollectionCell.xib in Resources */,
 				B2339C521F05F3B300B336BB /* ForgetPasswordViewController.xib in Resources */,
 				B2A215111EDEA9E900B19A4A /* LaunchScreen.storyboard in Resources */,
 				B2D972171F037D3100A04798 /* AccountSetSexCell.xib in Resources */,
@@ -1720,15 +1912,20 @@
 				B203B3E51F00EBE2002581F6 /* SettingPhoneCell.xib in Resources */,
 				B203B3EF1F00EC2C002581F6 /* SettingSwitchCell.xib in Resources */,
 				B2339C491F05F39500B336BB /* LoginViewController.xib in Resources */,
+				B2C704001F0DD1C50029EC4D /* DiamondViewController.xib in Resources */,
 				B2BE011A1EE93D260012AD3E /* PersonalBottomCell.xib in Resources */,
+				B2C704061F0DD8310029EC4D /* DiamondRecordViewController.xib in Resources */,
 				B203B3EA1F00EBFE002581F6 /* SettingDefaultCell.xib in Resources */,
+				B2F64BE31F0F147C00BB8734 /* DiamondPayCell.xib in Resources */,
 				B203B3E01F00EBC8002581F6 /* SettingHeadImgCell.xib in Resources */,
+				B2ADBAE21F0C8E340009D3BC /* TradestatisticsCell.xib in Resources */,
 				B2A2150E1EDEA9E900B19A4A /* Assets.xcassets in Resources */,
 				B2BE011C1EE93D260012AD3E /* PersonalCollectionCell.xib in Resources */,
 				B2BE011E1EE93D260012AD3E /* PersonalFirstCell.xib in Resources */,
 				B2BE01231EE93D260012AD3E /* PersonalViewController.xib in Resources */,
 				B2BE01271EE93D260012AD3E /* TradeRecordsCell.xib in Resources */,
 				B2CCA98D1F024703002BA562 /* AboutUSViewController.xib in Resources */,
+				B2C704171F0DE1960029EC4D /* DiamondRecordCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1804,16 +2001,21 @@
 				B21BEC461F04893200354274 /* ChangeNextMainView.m in Sources */,
 				B2D972211F03988F00A04798 /* ChangePhoneMainView.m in Sources */,
 				B2BE01161EE93D260012AD3E /* PersonalBottomCell.m in Sources */,
+				B2C704201F0E0D0D0029EC4D /* TradeAccountViewModel.m in Sources */,
 				B2339C611F05F3E000B336BB /* RegisterViewController.m in Sources */,
 				B21BEC4E1F049AD100354274 /* ChangeNickNameViewController.m in Sources */,
 				B2339C531F05F3B300B336BB /* ForgetInputNewPWViewController.m in Sources */,
+				B2F64BF31F0F733400BB8734 /* UIButton+BackgroundColorExtension.m in Sources */,
 				CEE2D5431F0A5B44005AC8DA /* AwesomeDetailsModel.m in Sources */,
 				B21BEC431F04891700354274 /* ChangeNextViewController.m in Sources */,
 				CE30CA2A1F05F93F00778172 /* PositionView.m in Sources */,
 				CEF378B01F0B831F00C32D0D /* TradingInformationView.m in Sources */,
+				B2F64BE61F0F149500BB8734 /* DiamondViewModel.m in Sources */,
 				B2CCA9971F02534C002BA562 /* AccountSetMainView.m in Sources */,
 				CEF331031EDF9CC50032F0EF /* BaseTableViewCell.m in Sources */,
+				B2ADBAE11F0C8E340009D3BC /* TradestatisticsCell.m in Sources */,
 				CE30CA3B1F05F93F00778172 /* ZZCEViewController.m in Sources */,
+				B2C7040F1F0DDF650029EC4D /* DiamondRecordMainView.m in Sources */,
 				B2339C481F05F39500B336BB /* LoginViewModel.m in Sources */,
 				CE30CA541F06180500778172 /* GroupViewController.m in Sources */,
 				B2BE011B1EE93D260012AD3E /* PersonalCollectionCell.m in Sources */,
@@ -1828,12 +2030,18 @@
 				B2BE01201EE93D260012AD3E /* PersonalMainView.m in Sources */,
 				CEF3311C1EDFAE330032F0EF /* QHRequestModel.m in Sources */,
 				CEF331051EDF9CC50032F0EF /* BaseViewModel.m in Sources */,
+				B2C7041A1F0E0CC30029EC4D /* TradeAccountViewController.m in Sources */,
+				B2ADBAD71F0C8C500009D3BC /* TradeStatisticViewController.m in Sources */,
 				B2339C4C1F05F39500B336BB /* LoginModel.m in Sources */,
+				B2ADBADA1F0C8C730009D3BC /* TradeStatisticMainView.m in Sources */,
 				CE30CA3A1F05F93F00778172 /* ZZCEView.m in Sources */,
 				CEF378D41F0DFFF200C32D0D /* NSAttributedString+Extension.m in Sources */,
 				CE30CA621F061E6600778172 /* AwesomeView.m in Sources */,
+				B2F64BED1F0F37C400BB8734 /* DiamondCollectionCell.m in Sources */,
 				CEF378C51F0C87B600C32D0D /* TradingSignalsModel.m in Sources */,
 				CEF378CB1F0CDDE500C32D0D /* FollowEarningChooseHeadView.m in Sources */,
+				B2C704161F0DE1960029EC4D /* DiamondRecordCell.m in Sources */,
+				B2C704051F0DD8310029EC4D /* DiamondRecordViewController.m in Sources */,
 				CE30CA1E1F05F93F00778172 /* DynamicsNavigationCenterView.m in Sources */,
 				CEF330EE1EDF9B720032F0EF /* UIImage+Extension.m in Sources */,
 				B2A215061EDEA9E900B19A4A /* AppDelegate.m in Sources */,
@@ -1843,6 +2051,7 @@
 				CE30CA271F05F93F00778172 /* HangOrderView.m in Sources */,
 				CEF378B31F0B8DC700C32D0D /* SegmentedControlView.m in Sources */,
 				B203B3D71F00E41A002581F6 /* SettingMainView.m in Sources */,
+				B2F64BE21F0F147C00BB8734 /* DiamondPayCell.m in Sources */,
 				CEE2D5401F0A5B26005AC8DA /* AwesomeDetailsView.m in Sources */,
 				CEF378B61F0C6CDE00C32D0D /* MyWarehouseView.m in Sources */,
 				CEF331061EDF9CC50032F0EF /* NavigationBaseController.m in Sources */,
@@ -1851,7 +2060,6 @@
 				CEF331081EDF9CC50032F0EF /* ViewBaseController.m in Sources */,
 				B2CCA9911F0251C2002BA562 /* AccountSetViewController.m in Sources */,
 				CEE2D5231F0A3907005AC8DA /* FollowEarningsDetailsViewController.m in Sources */,
-				B21BEC621F04AB0C00354274 /* MyVisitorViewController.m in Sources */,
 				B2339C621F05F3E000B336BB /* RegisterView.m in Sources */,
 				B2339C551F05F3B300B336BB /* ForgetPasswordViewController.m in Sources */,
 				B2BE01191EE93D260012AD3E /* BarChart.m in Sources */,
@@ -1879,8 +2087,10 @@
 				CEF331071EDF9CC50032F0EF /* TabBarBaseController.m in Sources */,
 				CEF331131EDFA4AA0032F0EF /* MBProgressHUD+NJ.m in Sources */,
 				CE30CA321F05F93F00778172 /* OptionalContractView.m in Sources */,
+				B2ADBADD1F0C8C830009D3BC /* TradeStatisticViewModel.m in Sources */,
 				CEE2D5371F0A5A86005AC8DA /* AwesomeDetailsViewController.m in Sources */,
 				CEE2D52F1F0A3A3F005AC8DA /* FollowEarningsDetailsViewModel.m in Sources */,
+				B2F64BE91F0F2FD100BB8734 /* DiamondHeadView.m in Sources */,
 				B21BEC491F04894500354274 /* ChangeNextViewModel.m in Sources */,
 				B2BE01321EE943F30012AD3E /* SettingViewController.m in Sources */,
 				CE30CA211F05F93F00778172 /* DynamicsViewModel.m in Sources */,
@@ -1891,12 +2101,12 @@
 				CEE2D5121F0A1C1B005AC8DA /* FollowEarningsTopView.m in Sources */,
 				CE30CA351F05F93F00778172 /* SHFEHeadView.m in Sources */,
 				CEE2D5181F0A1F07005AC8DA /* FollowEarningsTopTableCell.m in Sources */,
-				B21BEC661F04AD8F00354274 /* FocusViewController.m in Sources */,
 				CEDD81661F0A89EC00B81EDB /* FollowEarningChooseViewModel.m in Sources */,
 				B2339C5F1F05F3E000B336BB /* RegisterViewModel.m in Sources */,
 				CEF3311F1EDFB1E70032F0EF /* QHRequest+Api.m in Sources */,
 				CE30CA281F05F93F00778172 /* PositionModel.m in Sources */,
 				B203B3E91F00EBFE002581F6 /* SettingDefaultCell.m in Sources */,
+				B2C704121F0DDF800029EC4D /* DiamondRecordViewModel.m in Sources */,
 				CEF378C21F0C876500C32D0D /* MyWarehouseModel.m in Sources */,
 				CEF3312E1EDFDBCB0032F0EF /* QHTabBar.m in Sources */,
 				B2BE01151EE93D260012AD3E /* LineChartDescribe.m in Sources */,
@@ -1917,12 +2127,14 @@
 				CE30CA1B1F05F93F00778172 /* DCEViewController.m in Sources */,
 				B2D972161F037D3100A04798 /* AccountSetSexCell.m in Sources */,
 				CE30CA241F05F93F00778172 /* MainContractViewController.m in Sources */,
+				B2C7041D1F0E0CE80029EC4D /* TradeAccountMainView.m in Sources */,
 				B203B3DB1F00E4AD002581F6 /* SettingViewModel.m in Sources */,
 				B2A215031EDEA9E900B19A4A /* main.m in Sources */,
 				CEE2D51B1F0A359F005AC8DA /* CanFollowTableCell.m in Sources */,
 				CE30CA301F05F93F00778172 /* MyContractViewModel.m in Sources */,
 				B2749B991F0B7FE000E48C52 /* PersonalTableFootView.m in Sources */,
 				B203B3EE1F00EC2C002581F6 /* SettingSwitchCell.m in Sources */,
+				B2C703FF1F0DD1C50029EC4D /* DiamondViewController.m in Sources */,
 				CEDD81631F0A89D600B81EDB /* FollowEarningChooseView.m in Sources */,
 				CEF378B91F0C6D3100C32D0D /* TradingSignalsView.m in Sources */,
 				B2D972241F0398B600A04798 /* ChangePhoneViewModel.m in Sources */,
@@ -1931,6 +2143,7 @@
 				B236BBE91F0A0EFA00D8671D /* PersonalTabeHeadView.m in Sources */,
 				B2BE01241EE93D260012AD3E /* PersonalViewModel.m in Sources */,
 				B2BE01181EE93D260012AD3E /* QHLineChartView.m in Sources */,
+				B2F64BF71F0F7D0400BB8734 /* MyPositionsViewController.m in Sources */,
 				CE30CA201F05F93F00778172 /* DynamicsViewController.m in Sources */,
 				B2BE01261EE93D260012AD3E /* TradeRecordsCell.m in Sources */,
 				CEE2D5151F0A1CCA005AC8DA /* CanFollowView.m in Sources */,
@@ -1942,6 +2155,7 @@
 				B2339C6C1F06161600B336BB /* PersonalMasterView.m in Sources */,
 				CE30CA251F05F93F00778172 /* MainContractViewModel.m in Sources */,
 				CEF331191EDFAC750032F0EF /* QHRequest.m in Sources */,
+				B2F64BD81F0F141100BB8734 /* DiamondMainView.m in Sources */,
 				CE30CA1D1F05F93F00778172 /* DynamicsModel.m in Sources */,
 				CE30CA5F1F061E5100778172 /* AwesomeViewModel.m in Sources */,
 				CE30CA331F05F93F00778172 /* OptionalContractViewController.m in Sources */,

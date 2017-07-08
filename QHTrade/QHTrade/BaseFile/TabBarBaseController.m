@@ -80,7 +80,7 @@
     
 //    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigation_image"] forBarMetrics:UIBarMetricsDefault];
     nav.navigationBar.barTintColor = [UIColor whiteColor];
-    
+    [nav.navigationBar setBackgroundColor:[UIColor whiteColor]];
     [nav.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:RGB(51, 51, 51),
                                                 NSFontAttributeName:[UIFont boldSystemFontOfSize:18]
                                                 }];

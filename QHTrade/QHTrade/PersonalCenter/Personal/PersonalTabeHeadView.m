@@ -52,7 +52,7 @@
        
         make.top.equalTo(weakSelf).with.offset(5);
         make.left.equalTo(weakSelf.headImgView.mas_right).with.offset(15);
-        make.size.mas_equalTo(CGSizeMake(80, 18));
+        make.size.mas_equalTo(CGSizeMake(60, 18));
     }];
     
     [self.sexImgView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -125,6 +125,8 @@
         _diamondButton.titleLabel.font = [UIFont systemFontOfSize:12.0f];
         [_diamondButton setTitleColor:RGB(68, 68, 68) forState:UIControlStateNormal];
 
+        [_diamondButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 5, 0, -5)];
+        
         [[_diamondButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
             [self.viewModel.diamondBtnClick sendNext:nil];
         }];

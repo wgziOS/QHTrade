@@ -13,10 +13,11 @@
 #import "LoginViewController.h"
 #import "PromptView.h"
 #import "SettingViewController.h"
-#import "MyVisitorViewController.h"
-#import "FocusViewController.h"
-
 #import "PersonalMasterView.h"
+#import "TradeStatisticViewController.h"
+#import "DiamondViewController.h"
+#import "TradeAccountViewController.h"
+#import "MyPositionsViewController.h"
 
 @interface PersonalViewController ()
 @property (nonatomic,strong)PersonalMainView * mainView;
@@ -35,7 +36,8 @@
 
 //    [self.view addSubview:self.mainView];
 
-    
+    LoginViewController * LVC = [[LoginViewController alloc]init];
+    [self.navigationController pushViewController:LVC animated:YES];
     
 }
 
@@ -74,7 +76,9 @@
                 break;
             case 3:
             {
-                showMassage(@"数据统计")
+//                showMassage(@"交易统计")
+                TradeStatisticViewController * TVC = [[TradeStatisticViewController alloc]init];
+                [weakSelf.navigationController pushViewController:TVC animated:YES];
             }
                 break;
             case 4:
@@ -92,49 +96,32 @@
     [[self.viewModel.setBtnClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
         
         SettingViewController * SVC = [[SettingViewController alloc]init];
-        [self.navigationController pushViewController:SVC animated:YES];
+        [weakSelf.navigationController pushViewController:SVC animated:YES];
     }];
     
     
     [[self.viewModel.diamondBtnClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
-        showMassage(@"点击了钻石")
+//        showMassage(@"点击了钻石")
+        DiamondViewController * DVC = [[DiamondViewController alloc]init];
+        [weakSelf.navigationController pushViewController:DVC animated:YES];
     }];
     
-    [[self.viewModel.headImgClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
-        NSLog(@"头像点击");
-    }];
+
     
-    [[self.viewModel.questionClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
-        NSLog(@"问号点击");
-        PromptView * Pview = [[PromptView alloc]initWithTitleString:@"温馨提示" SubTitleString:@"每日登录和补充完善个人资料可获得钻石哦！"];
-        [Pview show];
-        Pview.goonBlock = ^(){
-           
-        };
+   
+    [[self.viewModel.tradeAccountLoginBtnClick  takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
+        
+        TradeAccountViewController * TVC = [[TradeAccountViewController alloc]init];
+        [weakSelf.navigationController pushViewController:TVC animated:YES];
         
     }];
     
-    [[self.viewModel.visitorsClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
-        //
-        NSLog(@"访客点击");
-        MyVisitorViewController * MVC = [[MyVisitorViewController alloc]init];
+    //持仓
+    [[self.viewModel.positionsClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
+       
+        MyPositionsViewController * MVC = [[MyPositionsViewController alloc]init];
         [weakSelf.navigationController pushViewController:MVC animated:YES];
     }];
-    
-    [[self.viewModel.focusClick takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
-        NSLog(@"关注");
-        FocusViewController * FVC = [[FocusViewController alloc]init];
-        [weakSelf.navigationController pushViewController:FVC animated:YES];
-    }];
-    
-   
-//    [[self.viewModel.userInfoCommand executionSignals] subscribeNext:^(id  _Nullable x) {
-//        
-//        [x subscribeNext:^(id  _Nullable x) {
-//            NSLog(@"userinfo= %@",x);
-//        }];
-//    }];
-//    
     /*
 
      */
@@ -155,19 +142,7 @@
 //右按钮
 -(UIBarButtonItem *)leftButton{
     
-    UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
-    [btn addTarget:self action:@selector(rightButtonCilck:) forControlEvents:UIControlEventTouchUpInside];
-    [btn setImage:[UIImage imageNamed:@"personal_diamond_icon"] forState:UIControlStateNormal];
-    
-    return [[UIBarButtonItem alloc]initWithCustomView:btn];
-}
-//去设置
--(void)rightButtonCilck:(id)sender{
-
-    SettingViewController * SVC = [[SettingViewController alloc]init];
-    [self.navigationController pushViewController:SVC animated:YES];
-
-    
+    return nil;
 }
 
 -(PersonalMasterView *)masterView{

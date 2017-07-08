@@ -34,7 +34,6 @@
 
 
 
-
 -(void)events{
     @weakify(self);
     RAC(self.viewModel, phoneNumStr) = self.loginView.phoneNumTextfield.rac_textSignal;
@@ -96,8 +95,6 @@
     
     [[self.viewModel.quickSubject takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
         NSLog(@"quick");//快速登录
-        RegisterViewController * RVC = [[RegisterViewController alloc]init];
-        [self.navigationController pushViewController:RVC animated:YES];
     }];
 }
 
@@ -114,7 +111,39 @@
     
     
 }
+-(void)registerBtnClick:(id)sender{
+    
+    RegisterViewController * RVC = [[RegisterViewController alloc]init];
+    [self.navigationController pushViewController:RVC animated:YES];
+}
+-(UIBarButtonItem *)rightButton{
+    
+    UIButton* btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 43, 23)];
+    [btn setTitle:@"注册" forState:UIControlStateNormal];
+    btn.titleLabel.textAlignment = NSTextAlignmentRight;
+    [btn setTitleColor:RGB(51, 51, 51) forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize:15.0f];
+    [btn setBackgroundColor:[UIColor whiteColor]];
+    [btn addTarget:self action:@selector(registerBtnClick:) forControlEvents:UIControlEventTouchUpInside];//设置按钮的点击事件
+    return [[UIBarButtonItem alloc] initWithCustomView:btn];
+}
 
+-(UIBarButtonItem *)leftButton{
+    
+    UIButton* btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 43, 23)];
+    [btn setTitle:@"关闭" forState:UIControlStateNormal];
+    btn.titleLabel.textAlignment = NSTextAlignmentLeft;
+    [btn setTitleColor:RGB(51, 51, 51) forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize:15.0f];
+    [btn setBackgroundColor:[UIColor whiteColor]];
+    [btn addTarget:self action:@selector(saveBtnClick:) forControlEvents:UIControlEventTouchUpInside];//设置按钮的点击事件
+    return [[UIBarButtonItem alloc] initWithCustomView:btn];
+    
+}
+-(void)saveBtnClick:(id)sender{
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
 -(LoginView *)loginView{
 
     if (!_loginView) {

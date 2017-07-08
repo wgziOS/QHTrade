@@ -68,6 +68,13 @@
     }
     return _userInfoCommand;
 }
+-(RACSubject *)positionsClick{
+
+    if (!_positionsClick) {
+        _positionsClick = [RACSubject subject];
+    }
+    return _positionsClick;
+}
 -(RACSubject *)middleCellClick{
 
     if (!_middleCellClick) {

@@ -14,6 +14,8 @@
 @property (nonatomic,strong) RegisterViewModel * viewModel;
 @property (strong, nonatomic) NSTimer *timer;
 @property (assign, nonatomic) int count;
+@property (assign, nonatomic) BOOL paramAllow;
+@property (assign, nonatomic) BOOL tickAllow;
 @end
 
 @implementation RegisterViewController
@@ -27,12 +29,29 @@
     
     [self events];
 }
+-(UIBarButtonItem *)leftButton{
+
+    UIButton* btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 65, 23)];
+    [btn setTitle:@"暂不注册" forState:UIControlStateNormal];
+    [btn setTitleColor:RGB(51, 51, 51) forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize:15.0f];
+    [btn setBackgroundColor:[UIColor whiteColor]];
+    [btn addTarget:self action:@selector(saveBtnClick:) forControlEvents:UIControlEventTouchUpInside];//设置按钮的点击事件
+    return [[UIBarButtonItem alloc] initWithCustomView:btn];
+    
+}
+-(void)saveBtnClick:(id)sender{
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 -(void)events{
     
     @weakify(self);
     RAC(self.viewModel, phoneNumStr) = self.mainView.phoneNumTextfield.rac_textSignal;
     RAC(self.viewModel, codeStr) = self.mainView.codeTextfield.rac_textSignal;
     RAC(self.viewModel, passWordStr) = self.mainView.passWordTextfield.rac_textSignal;
+    
     
     [self.mainView.phoneNumTextfield.rac_textSignal subscribeNext:^(NSString * _Nullable x) {
        
@@ -60,7 +79,9 @@
     
     [self.viewModel.registerBtnEnable subscribeNext:^(NSNumber * x) {
         @strongify(self);
-        self.mainView.registerButton.enabled  = [x boolValue];
+//        self.mainView.registerButton.enabled  = [x boolValue];
+        self.paramAllow = [x boolValue];
+        self.mainView.registerButton.enabled =  self.tickAllow && self.paramAllow;
     }];
     
     [[self.viewModel.registerCommand executionSignals] subscribeNext:^(id  _Nullable x) {
@@ -78,6 +99,12 @@
     [[self.viewModel.quickSubject takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
         NSLog(@"quick快速登录");//快速登录
     
+    }];
+    
+    [[self.viewModel.tickClickSubject takeUntil:self.rac_willDeallocSignal] subscribeNext:^(NSString * x) {
+//        self.mainView.registerButton.enabled = [x boolValue];
+        self.tickAllow = [x boolValue];
+        self.mainView.registerButton.enabled =  self.tickAllow && self.paramAllow;
     }];
     
     

@@ -119,6 +119,16 @@
     return _codeCommand;
 }
 
+-(RACSubject *)tickClickSubject{
+
+    if (!_tickClickSubject) {
+        _tickClickSubject = [RACSubject subject];
+        
+        
+    }
+    return _tickClickSubject;
+}
+
 -(RACSubject *)getCodeSubject{
 
     if (!_getCodeSubject) {

@@ -53,18 +53,30 @@
     
     NSArray *data = [NSArray arrayWithObjects:
                      
-                     [NSValue valueWithCGPoint:CGPointMake(1, 20)],
-//                     [NSValue valueWithCGPoint:CGPointMake(1.2, 80)],
-//                     [NSValue valueWithCGPoint:CGPointMake(1.4, 120)],
-//                     [NSValue valueWithCGPoint:CGPointMake(1.6, 60)],
-                     [NSValue valueWithCGPoint:CGPointMake(2, 40)],
+                     [NSValue valueWithCGPoint:CGPointMake(1, 10)],
+                     [NSValue valueWithCGPoint:CGPointMake(1.2, 60)],
+                     [NSValue valueWithCGPoint:CGPointMake(1.4, 60)],
+                     [NSValue valueWithCGPoint:CGPointMake(1.6, 60)],
+                     [NSValue valueWithCGPoint:CGPointMake(2, 120)],
+                     [NSValue valueWithCGPoint:CGPointMake(2.2, 120)],
+                     [NSValue valueWithCGPoint:CGPointMake(2.4, 120)],
+                     [NSValue valueWithCGPoint:CGPointMake(2.6, 120)],
                      [NSValue valueWithCGPoint:CGPointMake(3, 60)],
-                     [NSValue valueWithCGPoint:CGPointMake(4, 120)],
-                     [NSValue valueWithCGPoint:CGPointMake(5, 80)],
-//                     [NSValue valueWithCGPoint:CGPointMake(5.5, 60)],
-                     [NSValue valueWithCGPoint:CGPointMake(6, 100)],
-                     
+                     [NSValue valueWithCGPoint:CGPointMake(3.2, 60)],
+                     [NSValue valueWithCGPoint:CGPointMake(3.4, 60)],
+                     [NSValue valueWithCGPoint:CGPointMake(3.6, 20)],
+                     [NSValue valueWithCGPoint:CGPointMake(4, 20)],
+                     [NSValue valueWithCGPoint:CGPointMake(4.2, 60)],
+                     [NSValue valueWithCGPoint:CGPointMake(4.4, 60)],
+                     [NSValue valueWithCGPoint:CGPointMake(4.6, 60)],
+                     [NSValue valueWithCGPoint:CGPointMake(5, 120)],
+                     [NSValue valueWithCGPoint:CGPointMake(5.2, 120)],
+                     [NSValue valueWithCGPoint:CGPointMake(5.4, 120)],
+                     [NSValue valueWithCGPoint:CGPointMake(5.6, 120)],
+                     [NSValue valueWithCGPoint:CGPointMake(6, 60)],
+                     [NSValue valueWithCGPoint:CGPointMake(6.2, 60)],
                      nil];
+    
     self.lineChartView = [[QHLineChartView alloc] initWithFrame:CGRectMake(15, 50, SCREEN_WIDTH-30, 220)];
     [self.lineChartView setMin_X:1];
     [self.lineChartView setMax_X:6];
@@ -73,8 +85,7 @@
     [self.lineChartView setData:data];
     [self.lineChartView setX_labels:@[@"6/1",@"6/2",@"6/3",@"6/4",@"6/5",@"6/6"]];
     [self.lineChartView setY_labels:@[@"0",@"10",@"20",@"30",@"40",@"50",@"60",@"70",@"80",@"90",@"100",@"110",@"120"]];
-    //@[@"0",@"10",@"20",@"30",@"40",@"50",@"60",@"70",@"80",@"90",@"100",@"110",@"120"]
-    //@[@"0",@"20",@"40",@"60",@"80",@"100",@"120"]
+
     [self addSubview:self.lineChartView];
 }
 
