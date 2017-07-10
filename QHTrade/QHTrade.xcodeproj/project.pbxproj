@@ -18,6 +18,9 @@
 		B203B3EA1F00EBFE002581F6 /* SettingDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B203B3E81F00EBFE002581F6 /* SettingDefaultCell.xib */; };
 		B203B3EE1F00EC2C002581F6 /* SettingSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B203B3EC1F00EC2C002581F6 /* SettingSwitchCell.m */; };
 		B203B3EF1F00EC2C002581F6 /* SettingSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B203B3ED1F00EC2C002581F6 /* SettingSwitchCell.xib */; };
+		B212BD7C1F130D0B008D2340 /* DataReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B212BD7B1F130D0B008D2340 /* DataReportViewController.m */; };
+		B212BD821F130F11008D2340 /* DataReportMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B212BD811F130F11008D2340 /* DataReportMainView.m */; };
+		B212BD851F130F2D008D2340 /* DataReportViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B212BD841F130F2D008D2340 /* DataReportViewModel.m */; };
 		B21BEC431F04891700354274 /* ChangeNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC421F04891700354274 /* ChangeNextViewController.m */; };
 		B21BEC461F04893200354274 /* ChangeNextMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC451F04893200354274 /* ChangeNextMainView.m */; };
 		B21BEC491F04894500354274 /* ChangeNextViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC481F04894500354274 /* ChangeNextViewModel.m */; };
@@ -26,6 +29,8 @@
 		B21BEC6B1F04F58600354274 /* PersonalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BEC6A1F04F58600354274 /* PersonalModel.m */; };
 		B21E72D11F0B591C0081CF1A /* PersonalButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B21E72CF1F0B591C0081CF1A /* PersonalButtonCell.m */; };
 		B21E72D21F0B591C0081CF1A /* PersonalButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21E72D01F0B591C0081CF1A /* PersonalButtonCell.xib */; };
+		B2315A621F13461A00B6DCDE /* EarningsSumView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2315A611F13461A00B6DCDE /* EarningsSumView.m */; };
+		B2315A651F13463F00B6DCDE /* RateOfEarningsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2315A641F13463F00B6DCDE /* RateOfEarningsView.m */; };
 		B2339C481F05F39500B336BB /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2339C3F1F05F39500B336BB /* LoginViewModel.m */; };
 		B2339C491F05F39500B336BB /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2339C411F05F39500B336BB /* LoginViewController.xib */; };
 		B2339C4A1F05F39500B336BB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2339C421F05F39500B336BB /* LoginViewController.m */; };
@@ -243,6 +248,12 @@
 		B203B3EB1F00EC2C002581F6 /* SettingSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingSwitchCell.h; sourceTree = "<group>"; };
 		B203B3EC1F00EC2C002581F6 /* SettingSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingSwitchCell.m; sourceTree = "<group>"; };
 		B203B3ED1F00EC2C002581F6 /* SettingSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingSwitchCell.xib; sourceTree = "<group>"; };
+		B212BD7A1F130D0B008D2340 /* DataReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataReportViewController.h; sourceTree = "<group>"; };
+		B212BD7B1F130D0B008D2340 /* DataReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataReportViewController.m; sourceTree = "<group>"; };
+		B212BD801F130F11008D2340 /* DataReportMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataReportMainView.h; sourceTree = "<group>"; };
+		B212BD811F130F11008D2340 /* DataReportMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataReportMainView.m; sourceTree = "<group>"; };
+		B212BD831F130F2D008D2340 /* DataReportViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataReportViewModel.h; sourceTree = "<group>"; };
+		B212BD841F130F2D008D2340 /* DataReportViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataReportViewModel.m; sourceTree = "<group>"; };
 		B21BEC411F04891700354274 /* ChangeNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeNextViewController.h; sourceTree = "<group>"; };
 		B21BEC421F04891700354274 /* ChangeNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeNextViewController.m; sourceTree = "<group>"; };
 		B21BEC441F04893200354274 /* ChangeNextMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeNextMainView.h; sourceTree = "<group>"; };
@@ -257,6 +268,10 @@
 		B21E72CE1F0B591C0081CF1A /* PersonalButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalButtonCell.h; sourceTree = "<group>"; };
 		B21E72CF1F0B591C0081CF1A /* PersonalButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalButtonCell.m; sourceTree = "<group>"; };
 		B21E72D01F0B591C0081CF1A /* PersonalButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalButtonCell.xib; sourceTree = "<group>"; };
+		B2315A601F13461A00B6DCDE /* EarningsSumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarningsSumView.h; sourceTree = "<group>"; };
+		B2315A611F13461A00B6DCDE /* EarningsSumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarningsSumView.m; sourceTree = "<group>"; };
+		B2315A631F13463F00B6DCDE /* RateOfEarningsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateOfEarningsView.h; sourceTree = "<group>"; };
+		B2315A641F13463F00B6DCDE /* RateOfEarningsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateOfEarningsView.m; sourceTree = "<group>"; };
 		B2339C3F1F05F39500B336BB /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		B2339C401F05F39500B336BB /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
 		B2339C411F05F39500B336BB /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -696,9 +711,51 @@
 			name = ViewModel;
 			sourceTree = "<group>";
 		};
+		B212BD791F130CB2008D2340 /* DataReport */ = {
+			isa = PBXGroup;
+			children = (
+				B212BD7F1F130E3D008D2340 /* ViewModel */,
+				B212BD7E1F130E2E008D2340 /* View */,
+				B212BD7D1F130E1B008D2340 /* ViewController */,
+			);
+			path = DataReport;
+			sourceTree = "<group>";
+		};
+		B212BD7D1F130E1B008D2340 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B212BD7A1F130D0B008D2340 /* DataReportViewController.h */,
+				B212BD7B1F130D0B008D2340 /* DataReportViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		B212BD7E1F130E2E008D2340 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B212BD801F130F11008D2340 /* DataReportMainView.h */,
+				B212BD811F130F11008D2340 /* DataReportMainView.m */,
+				B2315A601F13461A00B6DCDE /* EarningsSumView.h */,
+				B2315A611F13461A00B6DCDE /* EarningsSumView.m */,
+				B2315A631F13463F00B6DCDE /* RateOfEarningsView.h */,
+				B2315A641F13463F00B6DCDE /* RateOfEarningsView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B212BD7F1F130E3D008D2340 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B212BD831F130F2D008D2340 /* DataReportViewModel.h */,
+				B212BD841F130F2D008D2340 /* DataReportViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
 		B21BD2C11EDFB9E500BAD836 /* PersonalCenter */ = {
 			isa = PBXGroup;
 			children = (
+				B212BD791F130CB2008D2340 /* DataReport */,
 				B2BE00F31EE93CE30012AD3E /* Personal */,
 				B2F64BF41F0F7CA000BB8734 /* MyPositions */,
 				B2C703FB1F0DD1A50029EC4D /* BuyDiamond */,
@@ -2059,9 +2116,11 @@
 				CEF331051EDF9CC50032F0EF /* BaseViewModel.m in Sources */,
 				B2C7041A1F0E0CC30029EC4D /* TradeAccountViewController.m in Sources */,
 				B2ADBAD71F0C8C500009D3BC /* TradeStatisticViewController.m in Sources */,
+				B2315A651F13463F00B6DCDE /* RateOfEarningsView.m in Sources */,
 				B2339C4C1F05F39500B336BB /* LoginModel.m in Sources */,
 				B2ADBADA1F0C8C730009D3BC /* TradeStatisticMainView.m in Sources */,
 				CE30CA3A1F05F93F00778172 /* ZZCEView.m in Sources */,
+				B212BD851F130F2D008D2340 /* DataReportViewModel.m in Sources */,
 				CEF378D41F0DFFF200C32D0D /* NSAttributedString+Extension.m in Sources */,
 				CE30CA621F061E6600778172 /* AwesomeView.m in Sources */,
 				B2F64BED1F0F37C400BB8734 /* DiamondCollectionCell.m in Sources */,
@@ -2098,6 +2157,7 @@
 				B203B3E41F00EBE2002581F6 /* SettingPhoneCell.m in Sources */,
 				CEF378AD1F0B634700C32D0D /* TradersInstructionsView.m in Sources */,
 				CEDD816C1F0A8EA300B81EDB /* FollowEarningChooseCell.m in Sources */,
+				B2315A621F13461A00B6DCDE /* EarningsSumView.m in Sources */,
 				CEF378CE1F0D33F800C32D0D /* FollowEarningChooseFootView.m in Sources */,
 				CEF378BC1F0C719600C32D0D /* TradingSignalsCell.m in Sources */,
 				CE30CA171F05F93F00778172 /* CFFEXViewController.m in Sources */,
@@ -2111,6 +2171,7 @@
 				B2CCA98C1F024703002BA562 /* AboutUSViewController.m in Sources */,
 				CEDD81691F0A8A0000B81EDB /* FollowEarningChooseModel.m in Sources */,
 				CEF378D11F0DE0D900C32D0D /* UILabel+Extension.m in Sources */,
+				B212BD7C1F130D0B008D2340 /* DataReportViewController.m in Sources */,
 				CEF378BF1F0C85FF00C32D0D /* MyWarehouseCell.m in Sources */,
 				CEF331071EDF9CC50032F0EF /* TabBarBaseController.m in Sources */,
 				CEF331131EDFA4AA0032F0EF /* MBProgressHUD+NJ.m in Sources */,
@@ -2154,6 +2215,7 @@
 				CE30CA1B1F05F93F00778172 /* DCEViewController.m in Sources */,
 				B2D972161F037D3100A04798 /* AccountSetSexCell.m in Sources */,
 				CE30CA241F05F93F00778172 /* MainContractViewController.m in Sources */,
+				B212BD821F130F11008D2340 /* DataReportMainView.m in Sources */,
 				B2C7041D1F0E0CE80029EC4D /* TradeAccountMainView.m in Sources */,
 				B203B3DB1F00E4AD002581F6 /* SettingViewModel.m in Sources */,
 				B2A215031EDEA9E900B19A4A /* main.m in Sources */,

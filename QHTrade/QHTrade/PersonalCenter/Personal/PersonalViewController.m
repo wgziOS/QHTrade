@@ -18,6 +18,7 @@
 #import "DiamondViewController.h"
 #import "TradeAccountViewController.h"
 #import "MyPositionsViewController.h"
+#import "DataReportViewController.h"
 
 @interface PersonalViewController ()
 @property (nonatomic,strong)PersonalMainView * mainView;
@@ -83,7 +84,9 @@
                 break;
             case 4:
             {
-                showMassage(@"数据报表")
+//                showMassage(@"数据报表")
+                DataReportViewController * DVC = [[DataReportViewController alloc]init];
+                [weakSelf.navigationController pushViewController:DVC animated:YES];
             }
                 break;
                 
