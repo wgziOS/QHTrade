@@ -129,7 +129,7 @@
 -(MyWarehouseModel *)model{
     if (!_model) {
         _model = [[MyWarehouseModel alloc] init];
-        _model.contractName = @"我的合约啊";
+        _model.contractName = @"土豆1902";
         _model.moreEmpty = YES;
         _model.numberHand = @"1000";
         _model.canUsed = @"1000";

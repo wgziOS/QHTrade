@@ -31,7 +31,7 @@
     return [super initWithViewModel:viewModel];
 }
 
--(void)setupViews{
+-(void)setupViews {
     [self addSubview:self.scroll];
     [self.scroll addSubview:self.awesomeDetailsHeadView];
     [self.scroll addSubview:self.tradersInstructionsView];
@@ -51,7 +51,7 @@
     }];
     
 }
--(void)updateConstraints{
+-(void)updateConstraints {
     [super updateConstraints];
     
     @weakify(self)

@@ -184,10 +184,8 @@
         [_earningsRate.titleLabel setFont:[UIFont systemFontOfSize:14]];
         _earningsRate.titleLabel.numberOfLines = 2;
         [_earningsRate setBackgroundImage:[UIImage imageNamed:@"personal_dikuang"] forState:UIControlStateNormal];
-        [_earningsRate.titleLabel setTextAlignment:NSTextAlignmentCenter];
         [_earningsRate setTitleColor:RGB(50, 51, 52) forState:UIControlStateNormal];
-        _earningsRate.titleLabel.textAlignment = NSTextAlignmentCenter;
-        
+        _earningsRate.userInteractionEnabled = NO;
     }
     return _earningsRate;
 }
@@ -200,6 +198,7 @@
         [_totalProfit setBackgroundImage:[UIImage imageNamed:@"personal_dikuang"] forState:UIControlStateNormal];
         [_totalProfit setTitleColor:RGB(50, 51, 52) forState:UIControlStateNormal];
         [_totalProfit.titleLabel setTextAlignment:NSTextAlignmentCenter];
+        _totalProfit.userInteractionEnabled = NO;
     }
     return _totalProfit;
 }
@@ -207,11 +206,11 @@
     if (!_positionsUsage) {
         _positionsUsage = [[UIButton alloc] init];
         [_positionsUsage setAttributedTitle:[NSAttributedString getAttributedStringWithString:@"收益率\n100%" littlefont:10 bigFont:15 defultTextColor:[UIColor blackColor] specialColor:RGB(49,49,49) range:NSMakeRange(0, 3)] forState:UIControlStateNormal];
+        [_positionsUsage setBackgroundImage:[UIImage imageNamed:@"personal_dikuang"] forState:UIControlStateNormal];
         [_positionsUsage.titleLabel setFont:[UIFont systemFontOfSize:14]];
         _positionsUsage.titleLabel.numberOfLines = 2;
-        [_positionsUsage setBackgroundImage:[UIImage imageNamed:@"personal_dikuang"] forState:UIControlStateNormal];
-        [_positionsUsage.titleLabel setTextAlignment:NSTextAlignmentCenter];
         [_positionsUsage setTitleColor:RGB(50, 51, 52) forState:UIControlStateNormal];
+        _positionsUsage.userInteractionEnabled = NO;
     }
     return _positionsUsage;
 }
@@ -288,7 +287,6 @@
         @weakify(self)
         _segmentedControl.itemClick = ^(int index) {
             @strongify(self)
-            //            [self segmentedControlClick:index];
             self.earningsSumDayView.array = [NSMutableArray arrayWithObjects:@"", nil];
             
         };
@@ -300,7 +298,6 @@
     if (!_earningsSumDayView) {
         _earningsSumDayView = [[EarningsSumDayView alloc] initWithViewModel:self.viewModel];
         _earningsSumDayView.array = [NSMutableArray arrayWithObjects:@"", nil];
-        //        _earningsSumDayView.backgroundColor = [UIColor greenColor];
     }
     return _earningsSumDayView;
 }

@@ -163,6 +163,7 @@
 		CEDD81691F0A8A0000B81EDB /* FollowEarningChooseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDD81681F0A8A0000B81EDB /* FollowEarningChooseModel.m */; };
 		CEDD816C1F0A8EA300B81EDB /* FollowEarningChooseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDD816B1F0A8EA300B81EDB /* FollowEarningChooseCell.m */; };
 		CEDD816F1F0B3DDC00B81EDB /* AwesomeDetailsHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDD816E1F0B3DDC00B81EDB /* AwesomeDetailsHeadView.m */; };
+		CEDF43541F107BE600642799 /* MyWarehouseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF378B51F0C6CDE00C32D0D /* MyWarehouseView.m */; };
 		CEE2D50B1F0A105A005AC8DA /* RookieView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2D50A1F0A105A005AC8DA /* RookieView.m */; };
 		CEE2D5121F0A1C1B005AC8DA /* FollowEarningsTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2D5111F0A1C1B005AC8DA /* FollowEarningsTopView.m */; };
 		CEE2D5151F0A1CCA005AC8DA /* CanFollowView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2D5141F0A1CCA005AC8DA /* CanFollowView.m */; };
@@ -2179,6 +2180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDF43541F107BE600642799 /* MyWarehouseView.m in Sources */,
 				B2A215271EDEA9E900B19A4A /* QHTradeUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
